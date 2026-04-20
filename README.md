@@ -73,28 +73,6 @@ Each generated theme follows the same token contract:
 }
 ```
 
-Use `themes/index.json` to discover every theme and its file path.
 
-## Add Or Edit Themes
 
-Edit `themes/theme-seeds.json`, then regenerate the catalog:
 
-```bash
-npm run build
-```
-
-Run the full validation before publishing:
-
-```bash
-npm run check
-```
-
-## Publish To GitHub Pages
-
-1. Push this folder to a GitHub repository.
-2. Open the repository settings.
-3. Go to **Pages**.
-4. Set **Source** to **GitHub Actions**.
-5. Push to `main` or run the **Deploy Theme Atlas** workflow manually.
-
-The workflow runs `npm run check` and deploys the static site.
