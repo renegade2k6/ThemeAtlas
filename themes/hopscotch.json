@@ -1,0 +1,36 @@
+{
+  "name": "Hopscotch",
+  "slug": "hopscotch",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#322931",
+    "foreground": "#b9b5b8",
+    "surface": "#3f373e",
+    "surfaceRaised": "#433b42",
+    "border": "#5b535a",
+    "accent": "#1290bf",
+    "accentForeground": "#322931",
+    "mutedForeground": "#8a8489",
+    "success": "#8fc13e",
+    "warning": "#fdcc59",
+    "error": "#dd464c",
+    "info": "#149b93",
+    "selection": "#384e5e",
+    "cursor": "#1290bf",
+    "syntax": {
+      "comment": "#787277",
+      "keyword": "#dd464c",
+      "function": "#1290bf",
+      "string": "#8fc13e",
+      "number": "#fdcc59",
+      "type": "#149b93",
+      "variable": "#b9b5b8",
+      "constant": "#fdcc59"
+    }
+  }
+}

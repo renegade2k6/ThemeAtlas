@@ -1,0 +1,36 @@
+{
+  "name": "Cobalt2",
+  "slug": "cobalt2",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#193549",
+    "foreground": "#ffffff",
+    "surface": "#103954",
+    "surfaceRaised": "#0d3a58",
+    "border": "#3d6179",
+    "accent": "#ffc600",
+    "accentForeground": "#193549",
+    "mutedForeground": "#afb8bf",
+    "success": "#3ad900",
+    "warning": "#ff9d00",
+    "error": "#ff628c",
+    "info": "#80ffbb",
+    "selection": "#425945",
+    "cursor": "#ffc600",
+    "syntax": {
+      "comment": "#919ea8",
+      "keyword": "#ff628c",
+      "function": "#ffc600",
+      "string": "#3ad900",
+      "number": "#ff9d00",
+      "type": "#80ffbb",
+      "variable": "#ffffff",
+      "constant": "#ff9d00"
+    }
+  }
+}

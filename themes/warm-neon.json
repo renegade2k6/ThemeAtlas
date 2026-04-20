@@ -1,0 +1,37 @@
+{
+  "name": "Warm Neon",
+  "slug": "warm-neon",
+  "appearance": "dark",
+  "group": "Cyberpunk / Neon",
+  "tags": [
+    "cyberpunk",
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#404040",
+    "foreground": "#afdab6",
+    "surface": "#484848",
+    "surfaceRaised": "#4a4a4a",
+    "border": "#5e6760",
+    "accent": "#4261c5",
+    "accentForeground": "#404040",
+    "mutedForeground": "#88a48d",
+    "success": "#39b13a",
+    "warning": "#dae145",
+    "error": "#e24346",
+    "info": "#2abbd4",
+    "selection": "#484f65",
+    "cursor": "#4261c5",
+    "syntax": {
+      "comment": "#7a907d",
+      "keyword": "#e24346",
+      "function": "#4261c5",
+      "string": "#39b13a",
+      "number": "#dae145",
+      "type": "#2abbd4",
+      "variable": "#afdab6",
+      "constant": "#dae145"
+    }
+  }
+}

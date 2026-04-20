@@ -1,0 +1,37 @@
+{
+  "name": "Blue Matrix",
+  "slug": "blue-matrix",
+  "appearance": "dark",
+  "group": "Cyberpunk / Neon",
+  "tags": [
+    "cyberpunk",
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#101116",
+    "foreground": "#d9e6f2",
+    "surface": "#161920",
+    "surfaceRaised": "#181b23",
+    "border": "#3f444c",
+    "accent": "#00a2ff",
+    "accentForeground": "#101116",
+    "mutedForeground": "#939ba5",
+    "success": "#00ff9c",
+    "warning": "#ffee58",
+    "error": "#ff3d7f",
+    "info": "#00e5ff",
+    "selection": "#133953",
+    "cursor": "#00a2ff",
+    "syntax": {
+      "comment": "#798088",
+      "keyword": "#ff3d7f",
+      "function": "#00a2ff",
+      "string": "#00ff9c",
+      "number": "#ffee58",
+      "type": "#00e5ff",
+      "variable": "#d9e6f2",
+      "constant": "#ffee58"
+    }
+  }
+}

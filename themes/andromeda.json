@@ -1,0 +1,36 @@
+{
+  "name": "Andromeda",
+  "slug": "andromeda",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#23262e",
+    "foreground": "#d5ced9",
+    "surface": "#292e38",
+    "surfaceRaised": "#2b303b",
+    "border": "#4d505b",
+    "accent": "#c74ded",
+    "accentForeground": "#23262e",
+    "mutedForeground": "#97939d",
+    "success": "#96e072",
+    "warning": "#ffe66d",
+    "error": "#ee5d43",
+    "info": "#00e8c6",
+    "selection": "#4d3662",
+    "cursor": "#c74ded",
+    "syntax": {
+      "comment": "#807d87",
+      "keyword": "#ee5d43",
+      "function": "#c74ded",
+      "string": "#96e072",
+      "number": "#ffe66d",
+      "type": "#00e8c6",
+      "variable": "#d5ced9",
+      "constant": "#ffe66d"
+    }
+  }
+}

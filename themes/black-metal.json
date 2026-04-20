@@ -1,0 +1,37 @@
+{
+  "name": "Black Metal",
+  "slug": "black-metal",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor",
+    "oled"
+  ],
+  "colors": {
+    "background": "#000000",
+    "foreground": "#c1c1c1",
+    "surface": "#0e0e0e",
+    "surfaceRaised": "#121212",
+    "border": "#353535",
+    "accent": "#888888",
+    "accentForeground": "#000000",
+    "mutedForeground": "#7d7d7d",
+    "success": "#8f9d6a",
+    "warning": "#dd9999",
+    "error": "#5f8787",
+    "info": "#aaaaaa",
+    "selection": "#2c2c2c",
+    "cursor": "#888888",
+    "syntax": {
+      "comment": "#646464",
+      "keyword": "#5f8787",
+      "function": "#888888",
+      "string": "#8f9d6a",
+      "number": "#dd9999",
+      "type": "#aaaaaa",
+      "variable": "#c1c1c1",
+      "constant": "#dd9999"
+    }
+  }
+}

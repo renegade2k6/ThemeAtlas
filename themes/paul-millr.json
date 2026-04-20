@@ -1,0 +1,36 @@
+{
+  "name": "Paul Millr",
+  "slug": "paul-millr",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#000000",
+    "foreground": "#f2f2f2",
+    "surface": "#171717",
+    "surfaceRaised": "#1f1f1f",
+    "border": "#494949",
+    "accent": "#396bd7",
+    "accentForeground": "#000000",
+    "mutedForeground": "#9d9d9d",
+    "success": "#66cc66",
+    "warning": "#e7bf00",
+    "error": "#ff0000",
+    "info": "#66ccff",
+    "selection": "#253047",
+    "cursor": "#396bd7",
+    "syntax": {
+      "comment": "#7e7e7e",
+      "keyword": "#ff0000",
+      "function": "#396bd7",
+      "string": "#66cc66",
+      "number": "#e7bf00",
+      "type": "#66ccff",
+      "variable": "#f2f2f2",
+      "constant": "#e7bf00"
+    }
+  }
+}

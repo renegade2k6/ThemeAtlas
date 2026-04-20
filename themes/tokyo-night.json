@@ -1,0 +1,38 @@
+{
+  "name": "Tokyo Night",
+  "slug": "tokyo-night",
+  "appearance": "dark",
+  "group": "Tokyo Night",
+  "tags": [
+    "dark",
+    "editor",
+    "featured",
+    "popular"
+  ],
+  "colors": {
+    "background": "#1a1b26",
+    "foreground": "#c0caf5",
+    "surface": "#25293b",
+    "surfaceRaised": "#292e42",
+    "border": "#474d66",
+    "accent": "#7aa2f7",
+    "accentForeground": "#1a1b26",
+    "mutedForeground": "#868dad",
+    "success": "#9ece6a",
+    "warning": "#e0af68",
+    "error": "#f7768e",
+    "info": "#7dcfff",
+    "selection": "#3b486a",
+    "cursor": "#7aa2f7",
+    "syntax": {
+      "comment": "#707692",
+      "keyword": "#f7768e",
+      "function": "#7aa2f7",
+      "string": "#9ece6a",
+      "number": "#e0af68",
+      "type": "#7dcfff",
+      "variable": "#c0caf5",
+      "constant": "#e0af68"
+    }
+  }
+}

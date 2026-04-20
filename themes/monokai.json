@@ -1,0 +1,36 @@
+{
+  "name": "Monokai",
+  "slug": "monokai",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#272822",
+    "foreground": "#f8f8f2",
+    "surface": "#38382e",
+    "surfaceRaised": "#3e3d32",
+    "border": "#636258",
+    "accent": "#66d9ef",
+    "accentForeground": "#272822",
+    "mutedForeground": "#afafa9",
+    "success": "#a6e22e",
+    "warning": "#e6db74",
+    "error": "#f92672",
+    "info": "#ae81ff",
+    "selection": "#475f5c",
+    "cursor": "#66d9ef",
+    "syntax": {
+      "comment": "#94948e",
+      "keyword": "#f92672",
+      "function": "#66d9ef",
+      "string": "#a6e22e",
+      "number": "#e6db74",
+      "type": "#ae81ff",
+      "variable": "#f8f8f2",
+      "constant": "#e6db74"
+    }
+  }
+}

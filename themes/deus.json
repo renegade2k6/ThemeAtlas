@@ -1,0 +1,37 @@
+{
+  "name": "Deus",
+  "slug": "deus",
+  "appearance": "dark",
+  "group": "Terminal Classics",
+  "tags": [
+    "dark",
+    "editor",
+    "terminal"
+  ],
+  "colors": {
+    "background": "#2c323b",
+    "foreground": "#eaeaea",
+    "surface": "#323943",
+    "surfaceRaised": "#343b46",
+    "border": "#585e67",
+    "accent": "#2c89a0",
+    "accentForeground": "#2c323b",
+    "mutedForeground": "#a8aaad",
+    "success": "#98c379",
+    "warning": "#e5c07b",
+    "error": "#ec3a37",
+    "info": "#46d9ff",
+    "selection": "#324c5a",
+    "cursor": "#2c89a0",
+    "syntax": {
+      "comment": "#8f9296",
+      "keyword": "#ec3a37",
+      "function": "#2c89a0",
+      "string": "#98c379",
+      "number": "#e5c07b",
+      "type": "#46d9ff",
+      "variable": "#eaeaea",
+      "constant": "#e5c07b"
+    }
+  }
+}

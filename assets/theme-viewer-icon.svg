@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">Theme Viewer Icon</title>
+  <desc id="desc">A dark rounded tile with layered color cards and a glowing accent ring.</desc>
+  <defs>
+    <linearGradient id="bg" x1="18" y1="12" x2="110" y2="116" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#151922"/>
+      <stop offset="1" stop-color="#07090d"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="28" y1="24" x2="100" y2="104" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00f5d4"/>
+      <stop offset="0.45" stop-color="#7aa2f7"/>
+      <stop offset="1" stop-color="#ff2e88"/>
+    </linearGradient>
+    <filter id="glow" x="-35%" y="-35%" width="170%" height="170%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feColorMatrix in="blur" values="0 0 0 0 0.28 0 0 0 0 0.72 0 0 0 0 1 0 0 0 0.7 0"/>
+      <feBlend in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="url(#bg)"/>
+  <path d="M32 28h64a4 4 0 0 1 4 4v64a4 4 0 0 1-4 4H32a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4Z" fill="#10151f" stroke="url(#accent)" stroke-width="4" filter="url(#glow)"/>
+  <path d="M42 42h20v44H42z" rx="4" fill="#00f5d4"/>
+  <path d="M62 42h20v44H62z" rx="4" fill="#7aa2f7"/>
+  <path d="M82 42h20v44H82z" rx="4" fill="#ff2e88"/>
+  <path d="M38 94h52" stroke="#f8fbff" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="98" cy="94" r="7" fill="#fcee09"/>
+</svg>

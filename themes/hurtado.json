@@ -1,0 +1,36 @@
+{
+  "name": "Hurtado",
+  "slug": "hurtado",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#000000",
+    "foreground": "#dbdbdb",
+    "surface": "#1d1d1d",
+    "surfaceRaised": "#262626",
+    "border": "#4a4a4a",
+    "accent": "#496487",
+    "accentForeground": "#000000",
+    "mutedForeground": "#8e8e8e",
+    "success": "#a5e055",
+    "warning": "#fbe74a",
+    "error": "#ff1b00",
+    "info": "#86e9fe",
+    "selection": "#2e343b",
+    "cursor": "#496487",
+    "syntax": {
+      "comment": "#727272",
+      "keyword": "#ff1b00",
+      "function": "#496487",
+      "string": "#a5e055",
+      "number": "#fbe74a",
+      "type": "#86e9fe",
+      "variable": "#dbdbdb",
+      "constant": "#fbe74a"
+    }
+  }
+}

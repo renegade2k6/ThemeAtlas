@@ -1,0 +1,38 @@
+{
+  "name": "Dracula",
+  "slug": "dracula",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor",
+    "featured",
+    "popular"
+  ],
+  "colors": {
+    "background": "#282a36",
+    "foreground": "#f8f8f2",
+    "surface": "#3d4051",
+    "surfaceRaised": "#44475a",
+    "border": "#686a78",
+    "accent": "#bd93f9",
+    "accentForeground": "#282a36",
+    "mutedForeground": "#afb0b0",
+    "success": "#50fa7b",
+    "warning": "#f1fa8c",
+    "error": "#ff5555",
+    "info": "#8be9fd",
+    "selection": "#5f587d",
+    "cursor": "#bd93f9",
+    "syntax": {
+      "comment": "#949598",
+      "keyword": "#ff5555",
+      "function": "#bd93f9",
+      "string": "#50fa7b",
+      "number": "#f1fa8c",
+      "type": "#8be9fd",
+      "variable": "#f8f8f2",
+      "constant": "#f1fa8c"
+    }
+  }
+}

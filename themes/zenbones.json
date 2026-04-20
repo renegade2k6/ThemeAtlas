@@ -1,0 +1,37 @@
+{
+  "name": "Zenbones",
+  "slug": "zenbones",
+  "appearance": "dark",
+  "group": "Terminal Classics",
+  "tags": [
+    "dark",
+    "editor",
+    "terminal"
+  ],
+  "colors": {
+    "background": "#191919",
+    "foreground": "#b4bdc3",
+    "surface": "#222222",
+    "surfaceRaised": "#252525",
+    "border": "#424345",
+    "accent": "#6099c0",
+    "accentForeground": "#191919",
+    "mutedForeground": "#7e8488",
+    "success": "#819b69",
+    "warning": "#b77e64",
+    "error": "#de6e7c",
+    "info": "#66a5ad",
+    "selection": "#323f47",
+    "cursor": "#6099c0",
+    "syntax": {
+      "comment": "#6a6e71",
+      "keyword": "#de6e7c",
+      "function": "#6099c0",
+      "string": "#819b69",
+      "number": "#b77e64",
+      "type": "#66a5ad",
+      "variable": "#b4bdc3",
+      "constant": "#b77e64"
+    }
+  }
+}

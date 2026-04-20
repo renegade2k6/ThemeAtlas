@@ -1,0 +1,37 @@
+{
+  "name": "Ayu Mirage",
+  "slug": "ayu-mirage",
+  "appearance": "dark",
+  "group": "Ayu",
+  "tags": [
+    "dark",
+    "editor",
+    "popular"
+  ],
+  "colors": {
+    "background": "#1f2430",
+    "foreground": "#cbccc6",
+    "surface": "#232835",
+    "surfaceRaised": "#242936",
+    "border": "#454a53",
+    "accent": "#ffcc66",
+    "accentForeground": "#1f2430",
+    "mutedForeground": "#8f9192",
+    "success": "#bae67e",
+    "warning": "#ffd580",
+    "error": "#f28779",
+    "info": "#5ccfe6",
+    "selection": "#544d41",
+    "cursor": "#ffcc66",
+    "syntax": {
+      "comment": "#787b7e",
+      "keyword": "#f28779",
+      "function": "#ffcc66",
+      "string": "#bae67e",
+      "number": "#ffd580",
+      "type": "#5ccfe6",
+      "variable": "#cbccc6",
+      "constant": "#ffd580"
+    }
+  }
+}

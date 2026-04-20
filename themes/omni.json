@@ -1,0 +1,36 @@
+{
+  "name": "Omni",
+  "slug": "omni",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#191622",
+    "foreground": "#e1e1e6",
+    "surface": "#1f1b29",
+    "surfaceRaised": "#211d2b",
+    "border": "#474450",
+    "accent": "#ff79c6",
+    "accentForeground": "#191622",
+    "mutedForeground": "#9b9aa1",
+    "success": "#67e480",
+    "warning": "#e7de79",
+    "error": "#e96379",
+    "info": "#78d1e1",
+    "selection": "#52314d",
+    "cursor": "#ff79c6",
+    "syntax": {
+      "comment": "#818088",
+      "keyword": "#e96379",
+      "function": "#ff79c6",
+      "string": "#67e480",
+      "number": "#e7de79",
+      "type": "#78d1e1",
+      "variable": "#e1e1e6",
+      "constant": "#e7de79"
+    }
+  }
+}

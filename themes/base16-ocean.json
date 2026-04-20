@@ -1,0 +1,37 @@
+{
+  "name": "Base16 Ocean",
+  "slug": "base16-ocean",
+  "appearance": "dark",
+  "group": "Base16",
+  "tags": [
+    "dark",
+    "editor",
+    "terminal"
+  ],
+  "colors": {
+    "background": "#2b303b",
+    "foreground": "#c0c5ce",
+    "surface": "#323a43",
+    "surfaceRaised": "#343d46",
+    "border": "#505861",
+    "accent": "#8fa1b3",
+    "accentForeground": "#2b303b",
+    "mutedForeground": "#8c919b",
+    "success": "#a3be8c",
+    "warning": "#ebcb8b",
+    "error": "#bf616a",
+    "info": "#96b5b4",
+    "selection": "#48535e",
+    "cursor": "#8fa1b3",
+    "syntax": {
+      "comment": "#787d87",
+      "keyword": "#bf616a",
+      "function": "#8fa1b3",
+      "string": "#a3be8c",
+      "number": "#ebcb8b",
+      "type": "#96b5b4",
+      "variable": "#c0c5ce",
+      "constant": "#ebcb8b"
+    }
+  }
+}

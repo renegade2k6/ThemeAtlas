@@ -1,0 +1,849 @@
+{
+  "themes": [
+    {
+      "name": "Dracula",
+      "slug": "dracula",
+      "path": "themes/dracula.json"
+    },
+    {
+      "name": "Tokyo Night",
+      "slug": "tokyo-night",
+      "path": "themes/tokyo-night.json"
+    },
+    {
+      "name": "Nord",
+      "slug": "nord",
+      "path": "themes/nord.json"
+    },
+    {
+      "name": "Catppuccin Mocha",
+      "slug": "catppuccin-mocha",
+      "path": "themes/catppuccin-mocha.json"
+    },
+    {
+      "name": "Rose Pine",
+      "slug": "rose-pine",
+      "path": "themes/rose-pine.json"
+    },
+    {
+      "name": "One Dark",
+      "slug": "one-dark",
+      "path": "themes/one-dark.json"
+    },
+    {
+      "name": "Gruvbox",
+      "slug": "gruvbox",
+      "path": "themes/gruvbox.json"
+    },
+    {
+      "name": "GitHub Dark",
+      "slug": "github-dark",
+      "path": "themes/github-dark.json"
+    },
+    {
+      "name": "Solarized Dark",
+      "slug": "solarized-dark",
+      "path": "themes/solarized-dark.json"
+    },
+    {
+      "name": "Monokai",
+      "slug": "monokai",
+      "path": "themes/monokai.json"
+    },
+    {
+      "name": "Synthwave",
+      "slug": "synthwave",
+      "path": "themes/synthwave.json"
+    },
+    {
+      "name": "Everforest",
+      "slug": "everforest",
+      "path": "themes/everforest.json"
+    },
+    {
+      "name": "OLED Black",
+      "slug": "oled-black",
+      "path": "themes/oled-black.json"
+    },
+    {
+      "name": "Cyberpunk",
+      "slug": "cyberpunk",
+      "path": "themes/cyberpunk.json"
+    },
+    {
+      "name": "Cyberpunk 2077",
+      "slug": "cyberpunk-2077",
+      "path": "themes/cyberpunk-2077.json"
+    },
+    {
+      "name": "Neon Candy",
+      "slug": "neon-candy",
+      "path": "themes/neon-candy.json"
+    },
+    {
+      "name": "Forest Flare",
+      "slug": "forest-flare",
+      "path": "themes/forest-flare.json"
+    },
+    {
+      "name": "Signal Bloom",
+      "slug": "signal-bloom",
+      "path": "themes/signal-bloom.json"
+    },
+    {
+      "name": "Molten Moss",
+      "slug": "molten-moss",
+      "path": "themes/molten-moss.json"
+    },
+    {
+      "name": "Orchard Ember",
+      "slug": "orchard-ember",
+      "path": "themes/orchard-ember.json"
+    },
+    {
+      "name": "Golden Grove",
+      "slug": "golden-grove",
+      "path": "themes/golden-grove.json"
+    },
+    {
+      "name": "Pacific Ember",
+      "slug": "pacific-ember",
+      "path": "themes/pacific-ember.json"
+    },
+    {
+      "name": "Arcade Pop",
+      "slug": "arcade-pop",
+      "path": "themes/arcade-pop.json"
+    },
+    {
+      "name": "One Dark Pro",
+      "slug": "one-dark-pro",
+      "path": "themes/one-dark-pro.json"
+    },
+    {
+      "name": "Ayu Dark",
+      "slug": "ayu-dark",
+      "path": "themes/ayu-dark.json"
+    },
+    {
+      "name": "Ayu Mirage",
+      "slug": "ayu-mirage",
+      "path": "themes/ayu-mirage.json"
+    },
+    {
+      "name": "Material Palenight",
+      "slug": "material-palenight",
+      "path": "themes/material-palenight.json"
+    },
+    {
+      "name": "Material Ocean",
+      "slug": "material-ocean",
+      "path": "themes/material-ocean.json"
+    },
+    {
+      "name": "Night Owl",
+      "slug": "night-owl",
+      "path": "themes/night-owl.json"
+    },
+    {
+      "name": "Cobalt2",
+      "slug": "cobalt2",
+      "path": "themes/cobalt2.json"
+    },
+    {
+      "name": "Shades of Purple",
+      "slug": "shades-of-purple",
+      "path": "themes/shades-of-purple.json"
+    },
+    {
+      "name": "Omni",
+      "slug": "omni",
+      "path": "themes/omni.json"
+    },
+    {
+      "name": "Kanagawa",
+      "slug": "kanagawa",
+      "path": "themes/kanagawa.json"
+    },
+    {
+      "name": "Kanagawa Dragon",
+      "slug": "kanagawa-dragon",
+      "path": "themes/kanagawa-dragon.json"
+    },
+    {
+      "name": "Nightfox",
+      "slug": "nightfox",
+      "path": "themes/nightfox.json"
+    },
+    {
+      "name": "Carbonfox",
+      "slug": "carbonfox",
+      "path": "themes/carbonfox.json"
+    },
+    {
+      "name": "Duskfox",
+      "slug": "duskfox",
+      "path": "themes/duskfox.json"
+    },
+    {
+      "name": "Oxocarbon",
+      "slug": "oxocarbon",
+      "path": "themes/oxocarbon.json"
+    },
+    {
+      "name": "Poimandres",
+      "slug": "poimandres",
+      "path": "themes/poimandres.json"
+    },
+    {
+      "name": "Vitesse Dark",
+      "slug": "vitesse-dark",
+      "path": "themes/vitesse-dark.json"
+    },
+    {
+      "name": "Flexoki Dark",
+      "slug": "flexoki-dark",
+      "path": "themes/flexoki-dark.json"
+    },
+    {
+      "name": "Vesper",
+      "slug": "vesper",
+      "path": "themes/vesper.json"
+    },
+    {
+      "name": "Horizon",
+      "slug": "horizon",
+      "path": "themes/horizon.json"
+    },
+    {
+      "name": "City Lights",
+      "slug": "city-lights",
+      "path": "themes/city-lights.json"
+    },
+    {
+      "name": "Andromeda",
+      "slug": "andromeda",
+      "path": "themes/andromeda.json"
+    },
+    {
+      "name": "Moonlight",
+      "slug": "moonlight",
+      "path": "themes/moonlight.json"
+    },
+    {
+      "name": "Lucario",
+      "slug": "lucario",
+      "path": "themes/lucario.json"
+    },
+    {
+      "name": "Panda",
+      "slug": "panda",
+      "path": "themes/panda.json"
+    },
+    {
+      "name": "Jellybeans",
+      "slug": "jellybeans",
+      "path": "themes/jellybeans.json"
+    },
+    {
+      "name": "Iceberg",
+      "slug": "iceberg",
+      "path": "themes/iceberg.json"
+    },
+    {
+      "name": "Noctis",
+      "slug": "noctis",
+      "path": "themes/noctis.json"
+    },
+    {
+      "name": "Sonokai",
+      "slug": "sonokai",
+      "path": "themes/sonokai.json"
+    },
+    {
+      "name": "Srcery",
+      "slug": "srcery",
+      "path": "themes/srcery.json"
+    },
+    {
+      "name": "Tender",
+      "slug": "tender",
+      "path": "themes/tender.json"
+    },
+    {
+      "name": "Tomorrow Night",
+      "slug": "tomorrow-night",
+      "path": "themes/tomorrow-night.json"
+    },
+    {
+      "name": "Tomorrow Night Blue",
+      "slug": "tomorrow-night-blue",
+      "path": "themes/tomorrow-night-blue.json"
+    },
+    {
+      "name": "Base16 Eighties",
+      "slug": "base16-eighties",
+      "path": "themes/base16-eighties.json"
+    },
+    {
+      "name": "Base16 Ocean",
+      "slug": "base16-ocean",
+      "path": "themes/base16-ocean.json"
+    },
+    {
+      "name": "One Half Dark",
+      "slug": "one-half-dark",
+      "path": "themes/one-half-dark.json"
+    },
+    {
+      "name": "Matrix",
+      "slug": "matrix",
+      "path": "themes/matrix.json"
+    },
+    {
+      "name": "High Contrast",
+      "slug": "high-contrast",
+      "path": "themes/high-contrast.json"
+    },
+    {
+      "name": "Catppuccin Frappe",
+      "slug": "catppuccin-frappe",
+      "path": "themes/catppuccin-frappe.json"
+    },
+    {
+      "name": "Catppuccin Macchiato",
+      "slug": "catppuccin-macchiato",
+      "path": "themes/catppuccin-macchiato.json"
+    },
+    {
+      "name": "Catppuccin Latte",
+      "slug": "catppuccin-latte",
+      "path": "themes/catppuccin-latte.json"
+    },
+    {
+      "name": "Rose Pine Moon",
+      "slug": "rose-pine-moon",
+      "path": "themes/rose-pine-moon.json"
+    },
+    {
+      "name": "Rose Pine Dawn",
+      "slug": "rose-pine-dawn",
+      "path": "themes/rose-pine-dawn.json"
+    },
+    {
+      "name": "GitHub Dimmed",
+      "slug": "github-dimmed",
+      "path": "themes/github-dimmed.json"
+    },
+    {
+      "name": "GitHub Light",
+      "slug": "github-light",
+      "path": "themes/github-light.json"
+    },
+    {
+      "name": "Solarized Light",
+      "slug": "solarized-light",
+      "path": "themes/solarized-light.json"
+    },
+    {
+      "name": "Ayu Light",
+      "slug": "ayu-light",
+      "path": "themes/ayu-light.json"
+    },
+    {
+      "name": "One Half Light",
+      "slug": "one-half-light",
+      "path": "themes/one-half-light.json"
+    },
+    {
+      "name": "Atom One Light",
+      "slug": "atom-one-light",
+      "path": "themes/atom-one-light.json"
+    },
+    {
+      "name": "Everforest Light",
+      "slug": "everforest-light",
+      "path": "themes/everforest-light.json"
+    },
+    {
+      "name": "Apprentice",
+      "slug": "apprentice",
+      "path": "themes/apprentice.json"
+    },
+    {
+      "name": "Deus",
+      "slug": "deus",
+      "path": "themes/deus.json"
+    },
+    {
+      "name": "Gotham",
+      "slug": "gotham",
+      "path": "themes/gotham.json"
+    },
+    {
+      "name": "Miasma",
+      "slug": "miasma",
+      "path": "themes/miasma.json"
+    },
+    {
+      "name": "Moonfly",
+      "slug": "moonfly",
+      "path": "themes/moonfly.json"
+    },
+    {
+      "name": "Nightfly",
+      "slug": "nightfly",
+      "path": "themes/nightfly.json"
+    },
+    {
+      "name": "Nordic",
+      "slug": "nordic",
+      "path": "themes/nordic.json"
+    },
+    {
+      "name": "Posterpole",
+      "slug": "posterpole",
+      "path": "themes/posterpole.json"
+    },
+    {
+      "name": "Seoul256",
+      "slug": "seoul256",
+      "path": "themes/seoul256.json"
+    },
+    {
+      "name": "Zenbones",
+      "slug": "zenbones",
+      "path": "themes/zenbones.json"
+    },
+    {
+      "name": "Cyberdream",
+      "slug": "cyberdream",
+      "path": "themes/cyberdream.json"
+    },
+    {
+      "name": "VS Code Dark",
+      "slug": "vscode-dark",
+      "path": "themes/vscode-dark.json"
+    },
+    {
+      "name": "Darcula",
+      "slug": "darcula",
+      "path": "themes/darcula.json"
+    },
+    {
+      "name": "Quiet Light",
+      "slug": "quiet-light",
+      "path": "themes/quiet-light.json"
+    },
+    {
+      "name": "Light Owl",
+      "slug": "light-owl",
+      "path": "themes/light-owl.json"
+    },
+    {
+      "name": "Noctis Lux",
+      "slug": "noctis-lux",
+      "path": "themes/noctis-lux.json"
+    },
+    {
+      "name": "Solarized Osaka",
+      "slug": "solarized-osaka",
+      "path": "themes/solarized-osaka.json"
+    },
+    {
+      "name": "Material Deep Ocean",
+      "slug": "material-deep-ocean",
+      "path": "themes/material-deep-ocean.json"
+    },
+    {
+      "name": "Material Lighter",
+      "slug": "material-lighter",
+      "path": "themes/material-lighter.json"
+    },
+    {
+      "name": "Tokyo Night Storm",
+      "slug": "tokyo-night-storm",
+      "path": "themes/tokyo-night-storm.json"
+    },
+    {
+      "name": "Tokyo Night Moon",
+      "slug": "tokyo-night-moon",
+      "path": "themes/tokyo-night-moon.json"
+    },
+    {
+      "name": "Gruvbox Material",
+      "slug": "gruvbox-material",
+      "path": "themes/gruvbox-material.json"
+    },
+    {
+      "name": "Gruvbox Light",
+      "slug": "gruvbox-light",
+      "path": "themes/gruvbox-light.json"
+    },
+    {
+      "name": "PaperColor Dark",
+      "slug": "papercolor-dark",
+      "path": "themes/papercolor-dark.json"
+    },
+    {
+      "name": "PaperColor Light",
+      "slug": "papercolor-light",
+      "path": "themes/papercolor-light.json"
+    },
+    {
+      "name": "Flatland",
+      "slug": "flatland",
+      "path": "themes/flatland.json"
+    },
+    {
+      "name": "Spacedust",
+      "slug": "spacedust",
+      "path": "themes/spacedust.json"
+    },
+    {
+      "name": "Blue Matrix",
+      "slug": "blue-matrix",
+      "path": "themes/blue-matrix.json"
+    },
+    {
+      "name": "Hotline Miami",
+      "slug": "hotline-miami",
+      "path": "themes/hotline-miami.json"
+    },
+    {
+      "name": "Miami Vice",
+      "slug": "miami-vice",
+      "path": "themes/miami-vice.json"
+    },
+    {
+      "name": "Aurora",
+      "slug": "aurora",
+      "path": "themes/aurora.json"
+    },
+    {
+      "name": "Nebula",
+      "slug": "nebula",
+      "path": "themes/nebula.json"
+    },
+    {
+      "name": "Black Metal",
+      "slug": "black-metal",
+      "path": "themes/black-metal.json"
+    },
+    {
+      "name": "Laserwave",
+      "slug": "laserwave",
+      "path": "themes/laserwave.json"
+    },
+    {
+      "name": "Bluloco Dark",
+      "slug": "bluloco-dark",
+      "path": "themes/bluloco-dark.json"
+    },
+    {
+      "name": "Min Dark",
+      "slug": "min-dark",
+      "path": "themes/min-dark.json"
+    },
+    {
+      "name": "Afterglow",
+      "slug": "afterglow",
+      "path": "themes/afterglow.json"
+    },
+    {
+      "name": "Alabaster Dark",
+      "slug": "alabaster-dark",
+      "path": "themes/alabaster-dark.json"
+    },
+    {
+      "name": "Argonaut",
+      "slug": "argonaut",
+      "path": "themes/argonaut.json"
+    },
+    {
+      "name": "Batman",
+      "slug": "batman",
+      "path": "themes/batman.json"
+    },
+    {
+      "name": "Birds of Paradise",
+      "slug": "birds-of-paradise",
+      "path": "themes/birds-of-paradise.json"
+    },
+    {
+      "name": "Broadcast",
+      "slug": "broadcast",
+      "path": "themes/broadcast.json"
+    },
+    {
+      "name": "Chalk",
+      "slug": "chalk",
+      "path": "themes/chalk.json"
+    },
+    {
+      "name": "Chalkboard",
+      "slug": "chalkboard",
+      "path": "themes/chalkboard.json"
+    },
+    {
+      "name": "Ciapre",
+      "slug": "ciapre",
+      "path": "themes/ciapre.json"
+    },
+    {
+      "name": "Dimmed Monokai",
+      "slug": "dimmed-monokai",
+      "path": "themes/dimmed-monokai.json"
+    },
+    {
+      "name": "Espresso Libre",
+      "slug": "espresso-libre",
+      "path": "themes/espresso-libre.json"
+    },
+    {
+      "name": "Firefox Dev",
+      "slug": "firefox-dev",
+      "path": "themes/firefox-dev.json"
+    },
+    {
+      "name": "Firewatch",
+      "slug": "firewatch",
+      "path": "themes/firewatch.json"
+    },
+    {
+      "name": "Fish Tank",
+      "slug": "fish-tank",
+      "path": "themes/fish-tank.json"
+    },
+    {
+      "name": "Forest Blue",
+      "slug": "forest-blue",
+      "path": "themes/forest-blue.json"
+    },
+    {
+      "name": "Frontend Delight",
+      "slug": "frontend-delight",
+      "path": "themes/frontend-delight.json"
+    },
+    {
+      "name": "Galaxy",
+      "slug": "galaxy",
+      "path": "themes/galaxy.json"
+    },
+    {
+      "name": "Glacier",
+      "slug": "glacier",
+      "path": "themes/glacier.json"
+    },
+    {
+      "name": "Hardcore",
+      "slug": "hardcore",
+      "path": "themes/hardcore.json"
+    },
+    {
+      "name": "Harper",
+      "slug": "harper",
+      "path": "themes/harper.json"
+    },
+    {
+      "name": "Hemisu Dark",
+      "slug": "hemisu-dark",
+      "path": "themes/hemisu-dark.json"
+    },
+    {
+      "name": "Hopscotch",
+      "slug": "hopscotch",
+      "path": "themes/hopscotch.json"
+    },
+    {
+      "name": "Hurtado",
+      "slug": "hurtado",
+      "path": "themes/hurtado.json"
+    },
+    {
+      "name": "Hybrid",
+      "slug": "hybrid",
+      "path": "themes/hybrid.json"
+    },
+    {
+      "name": "IR Black",
+      "slug": "ir-black",
+      "path": "themes/ir-black.json"
+    },
+    {
+      "name": "Jackie Brown",
+      "slug": "jackie-brown",
+      "path": "themes/jackie-brown.json"
+    },
+    {
+      "name": "Japanesque",
+      "slug": "japanesque",
+      "path": "themes/japanesque.json"
+    },
+    {
+      "name": "Kibble",
+      "slug": "kibble",
+      "path": "themes/kibble.json"
+    },
+    {
+      "name": "Later This Evening",
+      "slug": "later-this-evening",
+      "path": "themes/later-this-evening.json"
+    },
+    {
+      "name": "Lavandula",
+      "slug": "lavandula",
+      "path": "themes/lavandula.json"
+    },
+    {
+      "name": "Liquid Carbon",
+      "slug": "liquid-carbon",
+      "path": "themes/liquid-carbon.json"
+    },
+    {
+      "name": "Man Page",
+      "slug": "man-page",
+      "path": "themes/man-page.json"
+    },
+    {
+      "name": "Misterioso",
+      "slug": "misterioso",
+      "path": "themes/misterioso.json"
+    },
+    {
+      "name": "Molokai",
+      "slug": "molokai",
+      "path": "themes/molokai.json"
+    },
+    {
+      "name": "N0tch2k",
+      "slug": "n0tch2k",
+      "path": "themes/n0tch2k.json"
+    },
+    {
+      "name": "Neopolitan",
+      "slug": "neopolitan",
+      "path": "themes/neopolitan.json"
+    },
+    {
+      "name": "Obsidian",
+      "slug": "obsidian",
+      "path": "themes/obsidian.json"
+    },
+    {
+      "name": "Oceanic Next",
+      "slug": "oceanic-next",
+      "path": "themes/oceanic-next.json"
+    },
+    {
+      "name": "Paraiso Dark",
+      "slug": "paraiso-dark",
+      "path": "themes/paraiso-dark.json"
+    },
+    {
+      "name": "Paul Millr",
+      "slug": "paul-millr",
+      "path": "themes/paul-millr.json"
+    },
+    {
+      "name": "Peppermint",
+      "slug": "peppermint",
+      "path": "themes/peppermint.json"
+    },
+    {
+      "name": "Pro",
+      "slug": "pro",
+      "path": "themes/pro.json"
+    },
+    {
+      "name": "Red Alert",
+      "slug": "red-alert",
+      "path": "themes/red-alert.json"
+    },
+    {
+      "name": "Sea Shells",
+      "slug": "sea-shells",
+      "path": "themes/sea-shells.json"
+    },
+    {
+      "name": "Smyck",
+      "slug": "smyck",
+      "path": "themes/smyck.json"
+    },
+    {
+      "name": "Space Gray",
+      "slug": "space-gray",
+      "path": "themes/space-gray.json"
+    },
+    {
+      "name": "Sundried",
+      "slug": "sundried",
+      "path": "themes/sundried.json"
+    },
+    {
+      "name": "Teerb",
+      "slug": "teerb",
+      "path": "themes/teerb.json"
+    },
+    {
+      "name": "Thayer Bright",
+      "slug": "thayer-bright",
+      "path": "themes/thayer-bright.json"
+    },
+    {
+      "name": "Tinacious Design Dark",
+      "slug": "tinacious-design-dark",
+      "path": "themes/tinacious-design-dark.json"
+    },
+    {
+      "name": "Under The Sea",
+      "slug": "under-the-sea",
+      "path": "themes/under-the-sea.json"
+    },
+    {
+      "name": "Urple",
+      "slug": "urple",
+      "path": "themes/urple.json"
+    },
+    {
+      "name": "Vaughn",
+      "slug": "vaughn",
+      "path": "themes/vaughn.json"
+    },
+    {
+      "name": "Vibrant Ink",
+      "slug": "vibrant-ink",
+      "path": "themes/vibrant-ink.json"
+    },
+    {
+      "name": "Warm Neon",
+      "slug": "warm-neon",
+      "path": "themes/warm-neon.json"
+    },
+    {
+      "name": "Wez",
+      "slug": "wez",
+      "path": "themes/wez.json"
+    },
+    {
+      "name": "Wild Cherry",
+      "slug": "wild-cherry",
+      "path": "themes/wild-cherry.json"
+    },
+    {
+      "name": "Wombat",
+      "slug": "wombat",
+      "path": "themes/wombat.json"
+    },
+    {
+      "name": "Wryan",
+      "slug": "wryan",
+      "path": "themes/wryan.json"
+    },
+    {
+      "name": "Zenburn",
+      "slug": "zenburn",
+      "path": "themes/zenburn.json"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Quiet Light",
+  "slug": "quiet-light",
+  "appearance": "light",
+  "group": "Light Themes",
+  "tags": [
+    "editor",
+    "light"
+  ],
+  "colors": {
+    "background": "#f5f5f5",
+    "foreground": "#333333",
+    "surface": "#f0f0f0",
+    "surfaceRaised": "#eeeeee",
+    "border": "#c9c9c9",
+    "accent": "#4b69c6",
+    "accentForeground": "#f5f5f5",
+    "mutedForeground": "#777777",
+    "success": "#448c27",
+    "warning": "#aa5d00",
+    "error": "#aa3731",
+    "info": "#0084bc",
+    "selection": "#cad1e5",
+    "cursor": "#4b69c6",
+    "syntax": {
+      "comment": "#909090",
+      "keyword": "#aa3731",
+      "function": "#4b69c6",
+      "string": "#448c27",
+      "number": "#aa5d00",
+      "type": "#0084bc",
+      "variable": "#333333",
+      "constant": "#aa5d00"
+    }
+  }
+}

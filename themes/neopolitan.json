@@ -1,0 +1,36 @@
+{
+  "name": "Neopolitan",
+  "slug": "neopolitan",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#271f19",
+    "foreground": "#ffffff",
+    "surface": "#352820",
+    "surfaceRaised": "#3a2b22",
+    "border": "#61554e",
+    "accent": "#253b76",
+    "accentForeground": "#271f19",
+    "mutedForeground": "#b3b1af",
+    "success": "#61ce3c",
+    "warning": "#fbde2d",
+    "error": "#800000",
+    "info": "#8da6ce",
+    "selection": "#352f34",
+    "cursor": "#253b76",
+    "syntax": {
+      "comment": "#979391",
+      "keyword": "#800000",
+      "function": "#253b76",
+      "string": "#61ce3c",
+      "number": "#fbde2d",
+      "type": "#8da6ce",
+      "variable": "#ffffff",
+      "constant": "#fbde2d"
+    }
+  }
+}

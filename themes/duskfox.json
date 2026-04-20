@@ -1,0 +1,37 @@
+{
+  "name": "Duskfox",
+  "slug": "duskfox",
+  "appearance": "dark",
+  "group": "Nightfox",
+  "tags": [
+    "dark",
+    "editor",
+    "pastel"
+  ],
+  "colors": {
+    "background": "#232136",
+    "foreground": "#e0def4",
+    "surface": "#2b2841",
+    "surfaceRaised": "#2d2a45",
+    "border": "#514e68",
+    "accent": "#569fba",
+    "accentForeground": "#232136",
+    "mutedForeground": "#9e9cb2",
+    "success": "#a3be8c",
+    "warning": "#f6c177",
+    "error": "#eb6f92",
+    "info": "#9ccfd8",
+    "selection": "#36445f",
+    "cursor": "#569fba",
+    "syntax": {
+      "comment": "#858399",
+      "keyword": "#eb6f92",
+      "function": "#569fba",
+      "string": "#a3be8c",
+      "number": "#f6c177",
+      "type": "#9ccfd8",
+      "variable": "#e0def4",
+      "constant": "#f6c177"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Urple",
+  "slug": "urple",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#1b1b23",
+    "foreground": "#877a9b",
+    "surface": "#26262f",
+    "surfaceRaised": "#292933",
+    "border": "#3c3948",
+    "accent": "#564d9b",
+    "accentForeground": "#1b1b23",
+    "mutedForeground": "#615971",
+    "success": "#37a415",
+    "warning": "#808080",
+    "error": "#b0425b",
+    "info": "#808080",
+    "selection": "#33314a",
+    "cursor": "#564d9b",
+    "syntax": {
+      "comment": "#534c61",
+      "keyword": "#b0425b",
+      "function": "#564d9b",
+      "string": "#37a415",
+      "number": "#808080",
+      "type": "#808080",
+      "variable": "#877a9b",
+      "constant": "#808080"
+    }
+  }
+}

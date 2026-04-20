@@ -1,0 +1,38 @@
+{
+  "name": "Catppuccin Frappe",
+  "slug": "catppuccin-frappe",
+  "appearance": "dark",
+  "group": "Catppuccin",
+  "tags": [
+    "dark",
+    "editor",
+    "pastel",
+    "popular"
+  ],
+  "colors": {
+    "background": "#303446",
+    "foreground": "#c6d0f5",
+    "surface": "#3d4154",
+    "surfaceRaised": "#414559",
+    "border": "#5c6178",
+    "accent": "#ca9ee6",
+    "accentForeground": "#303446",
+    "mutedForeground": "#9299b8",
+    "success": "#a6d189",
+    "warning": "#e5c890",
+    "error": "#e78284",
+    "info": "#99d1db",
+    "selection": "#5f5978",
+    "cursor": "#ca9ee6",
+    "syntax": {
+      "comment": "#7e85a1",
+      "keyword": "#e78284",
+      "function": "#ca9ee6",
+      "string": "#a6d189",
+      "number": "#e5c890",
+      "type": "#99d1db",
+      "variable": "#c6d0f5",
+      "constant": "#e5c890"
+    }
+  }
+}

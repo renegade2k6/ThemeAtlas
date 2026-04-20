@@ -1,0 +1,36 @@
+{
+  "name": "Tomorrow Night Blue",
+  "slug": "tomorrow-night-blue",
+  "appearance": "dark",
+  "group": "Terminal Classics",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#002451",
+    "foreground": "#ffffff",
+    "surface": "#003067",
+    "surfaceRaised": "#00346e",
+    "border": "#335d8b",
+    "accent": "#ff9da4",
+    "accentForeground": "#002451",
+    "mutedForeground": "#a6b2c2",
+    "success": "#d1f1a9",
+    "warning": "#ffeead",
+    "error": "#ff9da4",
+    "info": "#bbdaff",
+    "selection": "#384b7a",
+    "cursor": "#ff9da4",
+    "syntax": {
+      "comment": "#8596ab",
+      "keyword": "#ff9da4",
+      "function": "#ff9da4",
+      "string": "#d1f1a9",
+      "number": "#ffeead",
+      "type": "#bbdaff",
+      "variable": "#ffffff",
+      "constant": "#ffeead"
+    }
+  }
+}

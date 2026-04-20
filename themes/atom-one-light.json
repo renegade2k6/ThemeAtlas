@@ -1,0 +1,36 @@
+{
+  "name": "Atom One Light",
+  "slug": "atom-one-light",
+  "appearance": "light",
+  "group": "One / Atom",
+  "tags": [
+    "editor",
+    "light"
+  ],
+  "colors": {
+    "background": "#fafafa",
+    "foreground": "#383a42",
+    "surface": "#eeeeef",
+    "surfaceRaised": "#eaeaeb",
+    "border": "#c6c7c9",
+    "accent": "#4078f2",
+    "accentForeground": "#fafafa",
+    "mutedForeground": "#7c7d82",
+    "success": "#50a14f",
+    "warning": "#c18401",
+    "error": "#e45649",
+    "info": "#0184bc",
+    "selection": "#c5d1ed",
+    "cursor": "#4078f2",
+    "syntax": {
+      "comment": "#95969a",
+      "keyword": "#e45649",
+      "function": "#4078f2",
+      "string": "#50a14f",
+      "number": "#c18401",
+      "type": "#0184bc",
+      "variable": "#383a42",
+      "constant": "#c18401"
+    }
+  }
+}

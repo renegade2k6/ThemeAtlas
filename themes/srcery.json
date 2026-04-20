@@ -1,0 +1,37 @@
+{
+  "name": "Srcery",
+  "slug": "srcery",
+  "appearance": "dark",
+  "group": "Terminal Classics",
+  "tags": [
+    "dark",
+    "editor",
+    "terminal"
+  ],
+  "colors": {
+    "background": "#1c1b19",
+    "foreground": "#fce8c3",
+    "surface": "#292724",
+    "surfaceRaised": "#2d2b28",
+    "border": "#565147",
+    "accent": "#68a8e4",
+    "accentForeground": "#1c1b19",
+    "mutedForeground": "#aea088",
+    "success": "#98bc37",
+    "warning": "#fbb829",
+    "error": "#ef2f27",
+    "info": "#2c78bf",
+    "selection": "#3a4751",
+    "cursor": "#68a8e4",
+    "syntax": {
+      "comment": "#908671",
+      "keyword": "#ef2f27",
+      "function": "#68a8e4",
+      "string": "#98bc37",
+      "number": "#fbb829",
+      "type": "#2c78bf",
+      "variable": "#fce8c3",
+      "constant": "#fbb829"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Afterglow",
+  "slug": "afterglow",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#222222",
+    "foreground": "#d0d0d0",
+    "surface": "#2c2c2c",
+    "surfaceRaised": "#2f2f2f",
+    "border": "#4f4f4f",
+    "accent": "#7e8e91",
+    "accentForeground": "#222222",
+    "mutedForeground": "#939393",
+    "success": "#7e8e50",
+    "warning": "#e5b567",
+    "error": "#ac4142",
+    "info": "#6c99bb",
+    "selection": "#404445",
+    "cursor": "#7e8e91",
+    "syntax": {
+      "comment": "#7c7c7c",
+      "keyword": "#ac4142",
+      "function": "#7e8e91",
+      "string": "#7e8e50",
+      "number": "#e5b567",
+      "type": "#6c99bb",
+      "variable": "#d0d0d0",
+      "constant": "#e5b567"
+    }
+  }
+}

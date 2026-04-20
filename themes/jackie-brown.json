@@ -1,0 +1,36 @@
+{
+  "name": "Jackie Brown",
+  "slug": "jackie-brown",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#2c1d16",
+    "foreground": "#ffcc2f",
+    "surface": "#37231b",
+    "surfaceRaised": "#3a251c",
+    "border": "#614620",
+    "accent": "#246eb2",
+    "accentForeground": "#2c1d16",
+    "mutedForeground": "#b58f26",
+    "success": "#2baf2b",
+    "warning": "#bebf00",
+    "error": "#ef5734",
+    "info": "#00acee",
+    "selection": "#35353d",
+    "cursor": "#246eb2",
+    "syntax": {
+      "comment": "#9a7823",
+      "keyword": "#ef5734",
+      "function": "#246eb2",
+      "string": "#2baf2b",
+      "number": "#bebf00",
+      "type": "#00acee",
+      "variable": "#ffcc2f",
+      "constant": "#bebf00"
+    }
+  }
+}

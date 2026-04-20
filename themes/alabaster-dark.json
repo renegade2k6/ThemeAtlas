@@ -1,0 +1,36 @@
+{
+  "name": "Alabaster Dark",
+  "slug": "alabaster-dark",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#0e1415",
+    "foreground": "#cecece",
+    "surface": "#1b2325",
+    "surfaceRaised": "#1f282a",
+    "border": "#42494b",
+    "accent": "#0e6f91",
+    "accentForeground": "#0e1415",
+    "mutedForeground": "#8b8d8d",
+    "success": "#448c27",
+    "warning": "#aa5d00",
+    "error": "#aa3731",
+    "info": "#325cc0",
+    "selection": "#1b3841",
+    "cursor": "#0e6f91",
+    "syntax": {
+      "comment": "#727575",
+      "keyword": "#aa3731",
+      "function": "#0e6f91",
+      "string": "#448c27",
+      "number": "#aa5d00",
+      "type": "#325cc0",
+      "variable": "#cecece",
+      "constant": "#aa5d00"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Firewatch",
+  "slug": "firewatch",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#1e2027",
+    "foreground": "#9ba2b2",
+    "surface": "#262931",
+    "surfaceRaised": "#282c34",
+    "border": "#3f444d",
+    "accent": "#4d89c4",
+    "accentForeground": "#1e2027",
+    "mutedForeground": "#6f7581",
+    "success": "#5ab977",
+    "warning": "#dfb563",
+    "error": "#d95360",
+    "info": "#44a8b6",
+    "selection": "#304054",
+    "cursor": "#4d89c4",
+    "syntax": {
+      "comment": "#5f646f",
+      "keyword": "#d95360",
+      "function": "#4d89c4",
+      "string": "#5ab977",
+      "number": "#dfb563",
+      "type": "#44a8b6",
+      "variable": "#9ba2b2",
+      "constant": "#dfb563"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "Miami Vice",
+  "slug": "miami-vice",
+  "appearance": "dark",
+  "group": "Cyberpunk / Neon",
+  "tags": [
+    "cyberpunk",
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#0f1021",
+    "foreground": "#fdfcff",
+    "surface": "#1b1c39",
+    "surfaceRaised": "#1f2041",
+    "border": "#4b4c67",
+    "accent": "#ff2e88",
+    "accentForeground": "#0f1021",
+    "mutedForeground": "#aaa9b1",
+    "success": "#00f5d4",
+    "warning": "#ffd166",
+    "error": "#ff6b6b",
+    "info": "#00bbf9",
+    "selection": "#502351",
+    "cursor": "#ff2e88",
+    "syntax": {
+      "comment": "#8b8b94",
+      "keyword": "#ff6b6b",
+      "function": "#ff2e88",
+      "string": "#00f5d4",
+      "number": "#ffd166",
+      "type": "#00bbf9",
+      "variable": "#fdfcff",
+      "constant": "#ffd166"
+    }
+  }
+}

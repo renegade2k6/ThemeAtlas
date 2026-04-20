@@ -1,0 +1,36 @@
+{
+  "name": "City Lights",
+  "slug": "city-lights",
+  "appearance": "dark",
+  "group": "Light Themes",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#1d252c",
+    "foreground": "#a0b3c5",
+    "surface": "#252f37",
+    "surfaceRaised": "#28323a",
+    "border": "#404c56",
+    "accent": "#5ec4ff",
+    "accentForeground": "#1d252c",
+    "mutedForeground": "#72818f",
+    "success": "#8bd49c",
+    "warning": "#ebbf83",
+    "error": "#d95468",
+    "info": "#70e1e8",
+    "selection": "#345265",
+    "cursor": "#5ec4ff",
+    "syntax": {
+      "comment": "#616f7c",
+      "keyword": "#d95468",
+      "function": "#5ec4ff",
+      "string": "#8bd49c",
+      "number": "#ebbf83",
+      "type": "#70e1e8",
+      "variable": "#a0b3c5",
+      "constant": "#ebbf83"
+    }
+  }
+}

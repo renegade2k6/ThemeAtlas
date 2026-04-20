@@ -1,0 +1,37 @@
+{
+  "name": "High Contrast",
+  "slug": "high-contrast",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor",
+    "oled"
+  ],
+  "colors": {
+    "background": "#000000",
+    "foreground": "#ffffff",
+    "surface": "#141414",
+    "surfaceRaised": "#1a1a1a",
+    "border": "#484848",
+    "accent": "#ffff00",
+    "accentForeground": "#000000",
+    "mutedForeground": "#a6a6a6",
+    "success": "#00ff66",
+    "warning": "#ffcc00",
+    "error": "#ff3b30",
+    "info": "#00ccff",
+    "selection": "#4c4c14",
+    "cursor": "#ffff00",
+    "syntax": {
+      "comment": "#858585",
+      "keyword": "#ff3b30",
+      "function": "#ffff00",
+      "string": "#00ff66",
+      "number": "#ffcc00",
+      "type": "#00ccff",
+      "variable": "#ffffff",
+      "constant": "#ffcc00"
+    }
+  }
+}

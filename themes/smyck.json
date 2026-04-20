@@ -1,0 +1,36 @@
+{
+  "name": "Smyck",
+  "slug": "smyck",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#1b1b1b",
+    "foreground": "#f7f7f7",
+    "surface": "#2b2b2b",
+    "surfaceRaised": "#303030",
+    "border": "#585858",
+    "accent": "#62a3c4",
+    "accentForeground": "#1b1b1b",
+    "mutedForeground": "#aaaaaa",
+    "success": "#7da900",
+    "warning": "#c4a500",
+    "error": "#b84131",
+    "info": "#207383",
+    "selection": "#3b4951",
+    "cursor": "#62a3c4",
+    "syntax": {
+      "comment": "#8d8d8d",
+      "keyword": "#b84131",
+      "function": "#62a3c4",
+      "string": "#7da900",
+      "number": "#c4a500",
+      "type": "#207383",
+      "variable": "#f7f7f7",
+      "constant": "#c4a500"
+    }
+  }
+}

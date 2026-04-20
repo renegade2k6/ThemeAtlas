@@ -1,0 +1,36 @@
+{
+  "name": "Molokai",
+  "slug": "molokai",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#1b1d1e",
+    "foreground": "#f8f8f2",
+    "surface": "#263132",
+    "surfaceRaised": "#293739",
+    "border": "#525e5e",
+    "accent": "#66d9ef",
+    "accentForeground": "#1b1d1e",
+    "mutedForeground": "#ababa8",
+    "success": "#a6e22e",
+    "warning": "#e6db74",
+    "error": "#f92672",
+    "info": "#ae81ff",
+    "selection": "#365b61",
+    "cursor": "#66d9ef",
+    "syntax": {
+      "comment": "#8e8f8c",
+      "keyword": "#f92672",
+      "function": "#66d9ef",
+      "string": "#a6e22e",
+      "number": "#e6db74",
+      "type": "#ae81ff",
+      "variable": "#f8f8f2",
+      "constant": "#e6db74"
+    }
+  }
+}

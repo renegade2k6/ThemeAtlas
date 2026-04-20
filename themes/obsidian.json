@@ -1,0 +1,36 @@
+{
+  "name": "Obsidian",
+  "slug": "obsidian",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#283033",
+    "foreground": "#cdcdcd",
+    "surface": "#394448",
+    "surfaceRaised": "#3e4a4f",
+    "border": "#5b6468",
+    "accent": "#3a9bdb",
+    "accentForeground": "#283033",
+    "mutedForeground": "#939697",
+    "success": "#00bb00",
+    "warning": "#fecd22",
+    "error": "#a60001",
+    "info": "#00bbbb",
+    "selection": "#3d5c6e",
+    "cursor": "#3a9bdb",
+    "syntax": {
+      "comment": "#7e8283",
+      "keyword": "#a60001",
+      "function": "#3a9bdb",
+      "string": "#00bb00",
+      "number": "#fecd22",
+      "type": "#00bbbb",
+      "variable": "#cdcdcd",
+      "constant": "#fecd22"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Forest Blue",
+  "slug": "forest-blue",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#051519",
+    "foreground": "#e2d8cd",
+    "surface": "#0f2127",
+    "surfaceRaised": "#12252b",
+    "border": "#3c494b",
+    "accent": "#8ed0ce",
+    "accentForeground": "#051519",
+    "mutedForeground": "#95948e",
+    "success": "#6bb48d",
+    "warning": "#c7a06d",
+    "error": "#f8818e",
+    "info": "#31658c",
+    "selection": "#2d4b4f",
+    "cursor": "#8ed0ce",
+    "syntax": {
+      "comment": "#787a77",
+      "keyword": "#f8818e",
+      "function": "#8ed0ce",
+      "string": "#6bb48d",
+      "number": "#c7a06d",
+      "type": "#31658c",
+      "variable": "#e2d8cd",
+      "constant": "#c7a06d"
+    }
+  }
+}

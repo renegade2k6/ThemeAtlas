@@ -1,0 +1,36 @@
+{
+  "name": "Forest Flare",
+  "slug": "forest-flare",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#172622",
+    "foreground": "#f0e6af",
+    "surface": "#243935",
+    "surfaceRaised": "#283f3b",
+    "border": "#506052",
+    "accent": "#fc7753",
+    "accentForeground": "#172622",
+    "mutedForeground": "#a4a37e",
+    "success": "#8eb06a",
+    "warning": "#f0e6af",
+    "error": "#fc7753",
+    "info": "#a49db5",
+    "selection": "#574b40",
+    "cursor": "#fc7753",
+    "syntax": {
+      "comment": "#888a6b",
+      "keyword": "#fc7753",
+      "function": "#fc7753",
+      "string": "#8eb06a",
+      "number": "#f0e6af",
+      "type": "#a49db5",
+      "variable": "#f0e6af",
+      "constant": "#f0e6af"
+    }
+  }
+}

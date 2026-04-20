@@ -1,0 +1,36 @@
+{
+  "name": "Firefox Dev",
+  "slug": "firefox-dev",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#0e1011",
+    "foreground": "#f2f5f6",
+    "surface": "#193f5b",
+    "surfaceRaised": "#1d4f73",
+    "border": "#48708d",
+    "accent": "#359ddf",
+    "accentForeground": "#0e1011",
+    "mutedForeground": "#a2a5a6",
+    "success": "#5eb83c",
+    "warning": "#a57706",
+    "error": "#e63853",
+    "info": "#4b73a2",
+    "selection": "#22608b",
+    "cursor": "#359ddf",
+    "syntax": {
+      "comment": "#858788",
+      "keyword": "#e63853",
+      "function": "#359ddf",
+      "string": "#5eb83c",
+      "number": "#a57706",
+      "type": "#4b73a2",
+      "variable": "#f2f5f6",
+      "constant": "#a57706"
+    }
+  }
+}

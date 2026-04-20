@@ -1,0 +1,36 @@
+{
+  "name": "Shades of Purple",
+  "slug": "shades-of-purple",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#2d2b55",
+    "foreground": "#ffffff",
+    "surface": "#393669",
+    "surfaceRaised": "#3d3a70",
+    "border": "#64618d",
+    "accent": "#fad000",
+    "accentForeground": "#2d2b55",
+    "mutedForeground": "#b6b5c4",
+    "success": "#a5ff90",
+    "warning": "#ff9d00",
+    "error": "#ff628c",
+    "info": "#9effff",
+    "selection": "#675b57",
+    "cursor": "#fad000",
+    "syntax": {
+      "comment": "#9a99ad",
+      "keyword": "#ff628c",
+      "function": "#fad000",
+      "string": "#a5ff90",
+      "number": "#ff9d00",
+      "type": "#9effff",
+      "variable": "#ffffff",
+      "constant": "#ff9d00"
+    }
+  }
+}

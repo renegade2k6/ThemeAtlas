@@ -1,0 +1,36 @@
+{
+  "name": "Kibble",
+  "slug": "kibble",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#0e100a",
+    "foreground": "#f7f7f7",
+    "surface": "#252724",
+    "surfaceRaised": "#2d2e2c",
+    "border": "#555655",
+    "accent": "#3449d1",
+    "accentForeground": "#0e100a",
+    "mutedForeground": "#a5a6a4",
+    "success": "#29cf13",
+    "warning": "#d8e30e",
+    "error": "#c70031",
+    "info": "#0798ab",
+    "selection": "#2f3450",
+    "cursor": "#3449d1",
+    "syntax": {
+      "comment": "#878885",
+      "keyword": "#c70031",
+      "function": "#3449d1",
+      "string": "#29cf13",
+      "number": "#d8e30e",
+      "type": "#0798ab",
+      "variable": "#f7f7f7",
+      "constant": "#d8e30e"
+    }
+  }
+}

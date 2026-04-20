@@ -1,0 +1,37 @@
+{
+  "name": "Synthwave",
+  "slug": "synthwave",
+  "appearance": "dark",
+  "group": "Cyberpunk / Neon",
+  "tags": [
+    "cyberpunk",
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#241b2f",
+    "foreground": "#f8f8f2",
+    "surface": "#352646",
+    "surfaceRaised": "#3a2a4d",
+    "border": "#60536e",
+    "accent": "#ff7edb",
+    "accentForeground": "#241b2f",
+    "mutedForeground": "#aeabae",
+    "success": "#72f1b8",
+    "warning": "#fede5d",
+    "error": "#fe4450",
+    "info": "#36f9f6",
+    "selection": "#653c6c",
+    "cursor": "#ff7edb",
+    "syntax": {
+      "comment": "#928e94",
+      "keyword": "#fe4450",
+      "function": "#ff7edb",
+      "string": "#72f1b8",
+      "number": "#fede5d",
+      "type": "#36f9f6",
+      "variable": "#f8f8f2",
+      "constant": "#fede5d"
+    }
+  }
+}

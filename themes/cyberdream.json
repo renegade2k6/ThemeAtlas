@@ -1,0 +1,37 @@
+{
+  "name": "Cyberdream",
+  "slug": "cyberdream",
+  "appearance": "dark",
+  "group": "Cyberpunk / Neon",
+  "tags": [
+    "cyberpunk",
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#16181a",
+    "foreground": "#ffffff",
+    "surface": "#1c1f22",
+    "surfaceRaised": "#1e2124",
+    "border": "#4b4d50",
+    "accent": "#5ea1ff",
+    "accentForeground": "#16181a",
+    "mutedForeground": "#adaeaf",
+    "success": "#5eff6c",
+    "warning": "#f1ff5e",
+    "error": "#ff6e5e",
+    "info": "#5ef1ff",
+    "selection": "#2c3d54",
+    "cursor": "#5ea1ff",
+    "syntax": {
+      "comment": "#8f9091",
+      "keyword": "#ff6e5e",
+      "function": "#5ea1ff",
+      "string": "#5eff6c",
+      "number": "#f1ff5e",
+      "type": "#5ef1ff",
+      "variable": "#ffffff",
+      "constant": "#f1ff5e"
+    }
+  }
+}

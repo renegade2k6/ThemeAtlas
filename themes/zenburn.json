@@ -1,0 +1,36 @@
+{
+  "name": "Zenburn",
+  "slug": "zenburn",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#3f3f3f",
+    "foreground": "#dcdccc",
+    "surface": "#4b4b4b",
+    "surfaceRaised": "#4f4f4f",
+    "border": "#6b6b68",
+    "accent": "#8cd0d3",
+    "accentForeground": "#3f3f3f",
+    "mutedForeground": "#a5a59b",
+    "success": "#7f9f7f",
+    "warning": "#f0dfaf",
+    "error": "#cc9393",
+    "info": "#93e0e3",
+    "selection": "#5c6b6c",
+    "cursor": "#8cd0d3",
+    "syntax": {
+      "comment": "#919188",
+      "keyword": "#cc9393",
+      "function": "#8cd0d3",
+      "string": "#7f9f7f",
+      "number": "#f0dfaf",
+      "type": "#93e0e3",
+      "variable": "#dcdccc",
+      "constant": "#f0dfaf"
+    }
+  }
+}

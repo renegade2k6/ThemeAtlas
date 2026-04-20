@@ -1,0 +1,36 @@
+{
+  "name": "Red Alert",
+  "slug": "red-alert",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#762423",
+    "foreground": "#ffffff",
+    "surface": "#852b2a",
+    "surfaceRaised": "#8a2d2c",
+    "border": "#a15756",
+    "accent": "#489bee",
+    "accentForeground": "#762423",
+    "mutedForeground": "#cfb2b2",
+    "success": "#71be6b",
+    "warning": "#beb86b",
+    "error": "#d62e4e",
+    "info": "#6bbeb8",
+    "selection": "#7b4557",
+    "cursor": "#489bee",
+    "syntax": {
+      "comment": "#bd9695",
+      "keyword": "#d62e4e",
+      "function": "#489bee",
+      "string": "#71be6b",
+      "number": "#beb86b",
+      "type": "#6bbeb8",
+      "variable": "#ffffff",
+      "constant": "#beb86b"
+    }
+  }
+}

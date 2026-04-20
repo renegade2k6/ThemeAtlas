@@ -1,0 +1,36 @@
+{
+  "name": "Horizon",
+  "slug": "horizon",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#1c1e26",
+    "foreground": "#d5d8da",
+    "surface": "#21232e",
+    "surfaceRaised": "#232530",
+    "border": "#474952",
+    "accent": "#e95678",
+    "accentForeground": "#1c1e26",
+    "mutedForeground": "#94979b",
+    "success": "#29d398",
+    "warning": "#fab795",
+    "error": "#f43e5c",
+    "info": "#26bbd9",
+    "selection": "#4f3040",
+    "cursor": "#e95678",
+    "syntax": {
+      "comment": "#7c7f84",
+      "keyword": "#f43e5c",
+      "function": "#e95678",
+      "string": "#29d398",
+      "number": "#fab795",
+      "type": "#26bbd9",
+      "variable": "#d5d8da",
+      "constant": "#fab795"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "N0tch2k",
+  "slug": "n0tch2k",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#222222",
+    "foreground": "#a0a0a0",
+    "surface": "#2f2f2f",
+    "surfaceRaised": "#333333",
+    "border": "#494949",
+    "accent": "#98bd5e",
+    "accentForeground": "#222222",
+    "mutedForeground": "#747474",
+    "success": "#666666",
+    "warning": "#a98051",
+    "error": "#a95551",
+    "info": "#c9c9c9",
+    "selection": "#49513c",
+    "cursor": "#98bd5e",
+    "syntax": {
+      "comment": "#646464",
+      "keyword": "#a95551",
+      "function": "#98bd5e",
+      "string": "#666666",
+      "number": "#a98051",
+      "type": "#c9c9c9",
+      "variable": "#a0a0a0",
+      "constant": "#a98051"
+    }
+  }
+}

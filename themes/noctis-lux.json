@@ -1,0 +1,36 @@
+{
+  "name": "Noctis Lux",
+  "slug": "noctis-lux",
+  "appearance": "light",
+  "group": "Light Themes",
+  "tags": [
+    "editor",
+    "light"
+  ],
+  "colors": {
+    "background": "#fef8ec",
+    "foreground": "#005661",
+    "surface": "#f8f1e5",
+    "surfaceRaised": "#f6efe3",
+    "border": "#c5d0c9",
+    "accent": "#0094f0",
+    "accentForeground": "#fef8ec",
+    "mutedForeground": "#598f92",
+    "success": "#00b368",
+    "warning": "#a87500",
+    "error": "#c82f5c",
+    "info": "#00a5c8",
+    "selection": "#c0dbe6",
+    "cursor": "#0094f0",
+    "syntax": {
+      "comment": "#7aa4a4",
+      "keyword": "#c82f5c",
+      "function": "#0094f0",
+      "string": "#00b368",
+      "number": "#a87500",
+      "type": "#00a5c8",
+      "variable": "#005661",
+      "constant": "#a87500"
+    }
+  }
+}

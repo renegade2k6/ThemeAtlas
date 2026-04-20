@@ -1,0 +1,36 @@
+{
+  "name": "Bluloco Dark",
+  "slug": "bluloco-dark",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#282c34",
+    "foreground": "#abb2bf",
+    "surface": "#30353f",
+    "surfaceRaised": "#323842",
+    "border": "#4a505b",
+    "accent": "#10b1fe",
+    "accentForeground": "#282c34",
+    "mutedForeground": "#7d838e",
+    "success": "#3fc56b",
+    "warning": "#f9c859",
+    "error": "#ff6480",
+    "info": "#ff78f8",
+    "selection": "#2b536b",
+    "cursor": "#10b1fe",
+    "syntax": {
+      "comment": "#6c727c",
+      "keyword": "#ff6480",
+      "function": "#10b1fe",
+      "string": "#3fc56b",
+      "number": "#f9c859",
+      "type": "#ff78f8",
+      "variable": "#abb2bf",
+      "constant": "#f9c859"
+    }
+  }
+}

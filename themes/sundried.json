@@ -1,0 +1,36 @@
+{
+  "name": "Sundried",
+  "slug": "sundried",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#1a1818",
+    "foreground": "#c9c9c9",
+    "surface": "#2b2626",
+    "surfaceRaised": "#302b2a",
+    "border": "#4f4b4a",
+    "accent": "#485b98",
+    "accentForeground": "#1a1818",
+    "mutedForeground": "#8c8b8b",
+    "success": "#587744",
+    "warning": "#9d602a",
+    "error": "#a7463d",
+    "info": "#9c814f",
+    "selection": "#353642",
+    "cursor": "#485b98",
+    "syntax": {
+      "comment": "#757474",
+      "keyword": "#a7463d",
+      "function": "#485b98",
+      "string": "#587744",
+      "number": "#9d602a",
+      "type": "#9c814f",
+      "variable": "#c9c9c9",
+      "constant": "#9d602a"
+    }
+  }
+}

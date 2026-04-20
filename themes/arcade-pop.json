@@ -1,0 +1,37 @@
+{
+  "name": "Arcade Pop",
+  "slug": "arcade-pop",
+  "appearance": "dark",
+  "group": "Cyberpunk / Neon",
+  "tags": [
+    "cyberpunk",
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#13071f",
+    "foreground": "#f9f7ff",
+    "surface": "#23123c",
+    "surfaceRaised": "#281545",
+    "border": "#52426a",
+    "accent": "#ff006e",
+    "accentForeground": "#13071f",
+    "mutedForeground": "#a9a3b1",
+    "success": "#06d6a0",
+    "warning": "#ffbe0b",
+    "error": "#fb5607",
+    "info": "#3a86ff",
+    "selection": "#57104e",
+    "cursor": "#ff006e",
+    "syntax": {
+      "comment": "#8b8493",
+      "keyword": "#fb5607",
+      "function": "#ff006e",
+      "string": "#06d6a0",
+      "number": "#ffbe0b",
+      "type": "#3a86ff",
+      "variable": "#f9f7ff",
+      "constant": "#ffbe0b"
+    }
+  }
+}

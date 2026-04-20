@@ -1,0 +1,37 @@
+{
+  "name": "Material Palenight",
+  "slug": "material-palenight",
+  "appearance": "dark",
+  "group": "Material",
+  "tags": [
+    "dark",
+    "editor",
+    "popular"
+  ],
+  "colors": {
+    "background": "#292d3e",
+    "foreground": "#a6accd",
+    "surface": "#313147",
+    "surfaceRaised": "#34324a",
+    "border": "#4b4a64",
+    "accent": "#c792ea",
+    "accentForeground": "#292d3e",
+    "mutedForeground": "#7a809b",
+    "success": "#c3e88d",
+    "warning": "#ffcb6b",
+    "error": "#f07178",
+    "info": "#89ddff",
+    "selection": "#54476d",
+    "cursor": "#c792ea",
+    "syntax": {
+      "comment": "#6a6f88",
+      "keyword": "#f07178",
+      "function": "#c792ea",
+      "string": "#c3e88d",
+      "number": "#ffcb6b",
+      "type": "#89ddff",
+      "variable": "#a6accd",
+      "constant": "#ffcb6b"
+    }
+  }
+}

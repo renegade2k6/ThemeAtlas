@@ -1,0 +1,1072 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Theme Atlas</title>
+  <meta name="description" content="Browse, preview, favorite, copy, and export a comprehensive catalog of reusable app theme color tokens.">
+  <meta name="application-name" content="Theme Atlas">
+  <meta name="theme-color" content="#00f5d4">
+  <meta name="color-scheme" content="dark light">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Theme Atlas">
+  <meta property="og:description" content="A comprehensive browser-based catalog of reusable app theme color tokens.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/theme-atlas-og.svg">
+  <meta property="og:image:type" content="image/svg+xml">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Theme Atlas color token catalog preview">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Theme Atlas">
+  <meta name="twitter:description" content="Browse, preview, favorite, copy, and export reusable app theme color tokens.">
+  <meta name="twitter:image" content="assets/theme-atlas-og.svg">
+  <meta name="twitter:image:alt" content="Theme Atlas color token catalog preview">
+  <link rel="icon" href="assets/theme-viewer-icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/theme-viewer-icon.svg">
+  <link rel="manifest" href="site.webmanifest">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Theme Atlas",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Any",
+      "description": "Browse, preview, favorite, copy, and export a comprehensive catalog of reusable app theme color tokens.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+  </script>
+  <style>
+    :root {
+      color-scheme: dark;
+      --page: #111318;
+      --ink: #f3f5f7;
+      --muted: #aeb6c2;
+      --line: #343944;
+      --panel: #191d24;
+      --accent: #67ca94;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--page);
+      color: var(--ink);
+      overflow: hidden;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    .shell {
+      display: grid;
+      grid-template-columns: minmax(240px, 320px) 1fr;
+      height: 100vh;
+      min-height: 0;
+    }
+
+    .sidebar {
+      border-right: 1px solid var(--line);
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.04), transparent 28%),
+        #151922;
+      padding: 24px;
+      overflow: auto;
+      min-height: 0;
+    }
+
+    .brand {
+      display: grid;
+      grid-template-columns: 48px 1fr;
+      gap: 12px;
+      align-items: center;
+      margin: 0 0 10px;
+      color: var(--ink);
+      text-decoration: none;
+    }
+
+    .brand img {
+      width: 48px;
+      height: 48px;
+      border-radius: 8px;
+      box-shadow: 0 0 24px rgba(0, 245, 212, 0.18);
+    }
+
+    .brand h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      line-height: 1.1;
+    }
+
+    .sidebar p {
+      margin: 0 0 20px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .toolbar {
+      display: grid;
+      gap: 10px;
+      margin: 0 0 16px;
+    }
+
+    .theme-search {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #0f131a;
+      color: var(--ink);
+      padding: 11px 12px;
+      font: inherit;
+      outline: none;
+    }
+
+    .theme-search:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent), transparent 75%);
+    }
+
+    .toolbar-row {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .random-button {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #202631;
+      color: var(--ink);
+      padding: 8px 10px;
+      cursor: pointer;
+    }
+
+    .filter-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .filter-chip {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #202631;
+      color: var(--ink);
+      padding: 7px 9px;
+      cursor: pointer;
+      font-size: 13px;
+    }
+
+    .filter-chip[aria-pressed="true"] {
+      border-color: var(--accent);
+      background: color-mix(in srgb, var(--accent), #202631 72%);
+    }
+
+    .random-button:hover {
+      border-color: var(--accent);
+    }
+
+    .theme-list {
+      display: grid;
+      gap: 8px;
+    }
+
+    .theme-section {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      background: #171c25;
+    }
+
+    .theme-section summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 11px 12px;
+      cursor: pointer;
+      color: var(--ink);
+      list-style: none;
+    }
+
+    .theme-section summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .section-count {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .section-list {
+      display: grid;
+      gap: 7px;
+      padding: 0 8px 8px;
+    }
+
+    .theme-button {
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 12px;
+      align-items: center;
+      padding: 10px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #1d222c;
+      color: var(--ink);
+      cursor: pointer;
+      text-align: left;
+      transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+    }
+
+    .favorite-toggle {
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      padding: 0;
+      cursor: pointer;
+      font-size: 18px;
+      line-height: 1;
+    }
+
+    .favorite-toggle.is-favorite {
+      color: #f5c542;
+    }
+
+    .theme-meta {
+      min-width: 0;
+    }
+
+    .theme-meta strong {
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .badges {
+      display: flex;
+      gap: 4px;
+      flex-wrap: wrap;
+      margin-top: 5px;
+    }
+
+    .badge {
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 6px;
+      padding: 2px 5px;
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.1;
+    }
+
+    .theme-button:hover {
+      transform: translateX(3px);
+      background: #242a36;
+    }
+
+    .theme-button[aria-pressed="true"] {
+      border-color: var(--accent);
+      outline: 2px solid color-mix(in srgb, var(--accent), transparent 70%);
+    }
+
+    .swatches {
+      display: flex;
+      gap: 3px;
+    }
+
+    .swatches span {
+      width: 14px;
+      height: 28px;
+      border-radius: 4px;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+    }
+
+    .stage {
+      position: relative;
+      background: var(--theme-background);
+      color: var(--theme-foreground);
+      padding: 32px;
+      overflow: auto;
+      min-height: 0;
+    }
+
+    .stage::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background:
+        linear-gradient(120deg, color-mix(in srgb, var(--theme-accent), transparent 82%), transparent 28%, color-mix(in srgb, var(--theme-info), transparent 88%)),
+        repeating-linear-gradient(90deg, transparent 0 32px, color-mix(in srgb, var(--theme-border), transparent 82%) 32px 33px);
+      opacity: 0.38;
+      animation: drift 14s linear infinite;
+    }
+
+    @keyframes drift {
+      from { transform: translateX(0); }
+      to { transform: translateX(34px); }
+    }
+
+    .preview {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      gap: 24px;
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      border-bottom: 1px solid var(--theme-border);
+      padding-bottom: 18px;
+    }
+
+    .theme-kicker {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      margin-bottom: 10px;
+      color: var(--theme-muted);
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 0;
+    }
+
+    .pulse {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--theme-accent);
+      box-shadow: 0 0 18px var(--theme-accent);
+      animation: pulse 1.8s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(0.85); opacity: 0.75; }
+      50% { transform: scale(1.2); opacity: 1; }
+    }
+
+    .topbar h2 {
+      margin: 0;
+      font-size: 34px;
+      line-height: 1.1;
+    }
+
+    .topbar span {
+      color: var(--theme-muted);
+    }
+
+    .actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .primary,
+    .secondary {
+      border-radius: 8px;
+      padding: 10px 14px;
+      border: 1px solid var(--theme-border);
+    }
+
+    .primary {
+      background: var(--theme-accent);
+      color: var(--theme-accent-foreground);
+    }
+
+    .secondary {
+      background: var(--theme-surface);
+      color: var(--theme-foreground);
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+      gap: 18px;
+    }
+
+    .panel {
+      border: 1px solid var(--theme-border);
+      border-radius: 8px;
+      background: var(--theme-surface);
+      padding: 18px;
+      min-width: 0;
+      box-shadow: 0 18px 48px rgba(0, 0, 0, 0.22);
+    }
+
+    .panel.raised {
+      background: var(--theme-raised);
+    }
+
+    .panel h3 {
+      margin: 0 0 14px;
+    }
+
+    .metric-row {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .metric {
+      border: 1px solid var(--theme-border);
+      border-radius: 8px;
+      padding: 14px;
+      background: var(--theme-background);
+    }
+
+    .metric strong {
+      display: block;
+      font-size: 24px;
+      color: var(--theme-accent);
+    }
+
+    .metric span,
+    .token-name {
+      color: var(--theme-muted);
+    }
+
+    pre {
+      margin: 0;
+      padding: 16px;
+      border-radius: 8px;
+      overflow: auto;
+      background: var(--theme-background);
+      border: 1px solid var(--theme-border);
+      line-height: 1.5;
+    }
+
+    .comment { color: var(--syntax-comment); }
+    .keyword { color: var(--syntax-keyword); }
+    .fn { color: var(--syntax-function); }
+    .string { color: var(--syntax-string); }
+    .number { color: var(--syntax-number); }
+    .type { color: var(--syntax-type); }
+    .constant { color: var(--syntax-constant); }
+
+    .token-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 10px;
+    }
+
+    .utility-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .copy-grid {
+      display: grid;
+      gap: 10px;
+    }
+
+    .copy-grid button {
+      border: 1px solid var(--theme-border);
+      border-radius: 8px;
+      background: var(--theme-background);
+      color: var(--theme-foreground);
+      padding: 10px 12px;
+      cursor: pointer;
+      text-align: left;
+    }
+
+    .copy-grid button:hover {
+      border-color: var(--theme-accent);
+    }
+
+    .contrast-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .contrast-item {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 12px;
+      align-items: center;
+      border: 1px solid var(--theme-border);
+      border-radius: 8px;
+      background: var(--theme-background);
+      padding: 10px 12px;
+    }
+
+    .contrast-score {
+      font-weight: 700;
+      color: var(--theme-accent);
+    }
+
+    .hero-strip {
+      display: grid;
+      grid-template-columns: repeat(8, minmax(0, 1fr));
+      min-height: 96px;
+      overflow: hidden;
+      border: 1px solid var(--theme-border);
+      border-radius: 8px;
+      background: var(--theme-surface);
+    }
+
+    .hero-strip span {
+      min-height: 96px;
+      animation: lift 3s ease-in-out infinite;
+    }
+
+    .hero-strip span:nth-child(2n) {
+      animation-delay: 220ms;
+    }
+
+    .hero-strip span:nth-child(3n) {
+      animation-delay: 440ms;
+    }
+
+    @keyframes lift {
+      0%, 100% { filter: brightness(0.9); }
+      50% { filter: brightness(1.2); }
+    }
+
+    .token {
+      display: grid;
+      grid-template-columns: 32px 1fr;
+      gap: 10px;
+      align-items: center;
+      min-width: 0;
+    }
+
+    .chip {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      border: 1px solid var(--theme-border);
+    }
+
+    .token-value {
+      font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+      font-size: 13px;
+    }
+
+    @media (max-width: 860px) {
+      .shell {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto minmax(0, 1fr);
+      }
+
+      .content-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+        max-height: 48vh;
+      }
+
+      .stage {
+        padding: 20px;
+      }
+
+      .topbar,
+      .metric-row {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <aside class="sidebar">
+      <a class="brand" href="./index.html" aria-label="Theme Atlas home">
+        <img src="assets/theme-viewer-icon.svg" alt="">
+        <h1>Theme Atlas</h1>
+      </a>
+      <p>Shared color tokens for apps, dashboards, editors, and tools.</p>
+      <div class="toolbar">
+        <input class="theme-search" id="themeSearch" type="search" placeholder="Search themes" autocomplete="off">
+        <div class="toolbar-row">
+          <span id="themeCount"></span>
+          <button class="random-button" id="randomTheme" type="button">Surprise me</button>
+        </div>
+        <div class="filter-chips" id="filterChips"></div>
+      </div>
+      <div class="theme-list" id="themeList"></div>
+    </aside>
+
+    <section class="stage" id="stage">
+      <div class="preview">
+        <div class="topbar">
+          <div>
+            <div class="theme-kicker"><span class="pulse"></span><span id="themeMode"></span></div>
+            <h2 id="themeName"></h2>
+            <span id="themeSlug"></span>
+          </div>
+        <div class="actions">
+          <button class="secondary" id="favoriteCurrent" type="button">Favorite</button>
+          <button class="primary" id="exportCurrent" type="button">Export current JSON</button>
+          <button class="secondary" id="exportAll" type="button">Export all JSON</button>
+        </div>
+        </div>
+
+        <div class="content-grid">
+          <section class="panel raised">
+            <h3>Dashboard Preview</h3>
+            <div class="metric-row">
+              <div class="metric"><strong>92%</strong><span>Health</span></div>
+              <div class="metric"><strong>18</strong><span>Tasks</span></div>
+              <div class="metric"><strong>4.8</strong><span>Score</span></div>
+            </div>
+          </section>
+
+          <section class="panel">
+            <h3>Status Colors</h3>
+            <div class="token-grid" id="statusGrid"></div>
+          </section>
+        </div>
+
+        <section class="hero-strip" id="heroStrip" aria-hidden="true"></section>
+
+        <section class="panel">
+          <h3>Syntax Preview</h3>
+          <pre><code><span class="comment">// Theme tokens stay portable across apps.</span>
+<span class="keyword">const</span> <span class="fn">applyTheme</span> = (<span class="type">theme</span>) => {
+  <span class="keyword">return</span> {
+    accent: <span class="string">"var(--theme-accent)"</span>,
+    radius: <span class="number">8</span>,
+    mode: <span class="constant">theme.appearance</span>
+  };
+};</code></pre>
+        </section>
+
+        <section class="panel">
+          <h3>Core Tokens</h3>
+          <div class="token-grid" id="tokenGrid"></div>
+        </section>
+
+        <section class="utility-grid">
+          <div class="panel">
+            <h3>Copy Formats</h3>
+            <div class="copy-grid">
+              <button type="button" data-copy="slug">Copy slug</button>
+              <button type="button" data-copy="hex">Copy hex palette</button>
+              <button type="button" data-copy="css">Copy CSS variables</button>
+              <button type="button" data-copy="ts">Copy TypeScript export</button>
+              <button type="button" data-copy="json">Copy labelled JSON</button>
+            </div>
+          </div>
+
+          <div class="panel">
+            <h3>Contrast Checks</h3>
+            <div class="contrast-list" id="contrastList"></div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <script src="themes/theme-data.js"></script>
+  <script>
+    const themes = window.THEME_DATA || [];
+
+    const themeList = document.querySelector("#themeList");
+    const stage = document.querySelector("#stage");
+    const themeName = document.querySelector("#themeName");
+    const themeSlug = document.querySelector("#themeSlug");
+    const themeMode = document.querySelector("#themeMode");
+    const themeSearch = document.querySelector("#themeSearch");
+    const themeCount = document.querySelector("#themeCount");
+    const randomTheme = document.querySelector("#randomTheme");
+    const filterChips = document.querySelector("#filterChips");
+    const favoriteCurrent = document.querySelector("#favoriteCurrent");
+    const exportCurrent = document.querySelector("#exportCurrent");
+    const exportAll = document.querySelector("#exportAll");
+    const heroStrip = document.querySelector("#heroStrip");
+    const tokenGrid = document.querySelector("#tokenGrid");
+    const statusGrid = document.querySelector("#statusGrid");
+    const contrastList = document.querySelector("#contrastList");
+
+    let currentSlug = themes[0]?.slug;
+    let filterText = "";
+    let activeFilter = "all";
+    const filterOptions = ["all", "favorites", "featured", "popular", "dark", "light", "oled", "cyberpunk", "pastel", "terminal"];
+    const favoriteKey = "theme-viewer-favorites";
+    const favorites = new Set(JSON.parse(localStorage.getItem(favoriteKey) || "[]"));
+
+    function getTheme(slug) {
+      return themes.find((theme) => theme.slug === slug) || themes[0];
+    }
+
+    function setVar(name, value) {
+      stage.style.setProperty(name, value);
+    }
+
+    function visibleThemes() {
+      const query = filterText.trim().toLowerCase();
+      return themes.filter((theme) => {
+        const searchable = `${theme.name} ${theme.slug} ${theme.appearance} ${theme.group} ${(theme.tags || []).join(" ")}`.toLowerCase();
+        const matchesSearch = !query || searchable.includes(query);
+        const matchesFilter = activeFilter === "all"
+          || (activeFilter === "favorites" && favorites.has(theme.slug))
+          || (theme.tags || []).includes(activeFilter);
+        return matchesSearch && matchesFilter;
+      });
+    }
+
+    function renderFilters() {
+      filterChips.innerHTML = filterOptions.map((filter) => {
+        const label = filter === "all" ? "All" : filter[0].toUpperCase() + filter.slice(1);
+        return `<button class="filter-chip" type="button" data-filter="${filter}" aria-pressed="${filter === activeFilter}">${label}</button>`;
+      }).join("");
+    }
+
+    function renderThemeButton(theme) {
+      const colors = theme.colors;
+      const tags = (theme.tags || [])
+        .filter((tag) => ["popular", "oled", "cyberpunk", "pastel", "terminal", "light"].includes(tag))
+        .slice(0, 3)
+        .map((tag) => `<span class="badge">${tag}</span>`)
+        .join("");
+      const swatches = [
+        colors.background,
+        colors.foreground,
+        colors.surfaceRaised,
+        colors.accent,
+        colors.success,
+        colors.error
+      ].map((color) => `<span style="background:${color}"></span>`).join("");
+
+      return `<button class="theme-button" type="button" data-slug="${theme.slug}" aria-pressed="${theme.slug === currentSlug}">
+        <span class="favorite-toggle ${favorites.has(theme.slug) ? "is-favorite" : ""}" data-favorite="${theme.slug}" title="Toggle favorite">${favorites.has(theme.slug) ? "★" : "☆"}</span>
+        <span class="theme-meta"><strong>${theme.name}</strong><span class="badges">${tags}</span></span>
+        <span class="swatches" aria-hidden="true">${swatches}</span>
+      </button>`;
+    }
+
+    function renderList() {
+      const items = visibleThemes();
+      themeCount.textContent = `${items.length} of ${themes.length} themes`;
+      const searching = filterText.trim().length > 0;
+
+      if (searching) {
+        themeList.innerHTML = items.map(renderThemeButton).join("");
+      } else {
+        const featured = items.filter((theme) => (theme.tags || []).includes("featured"));
+        const grouped = new Map();
+        for (const theme of items) {
+          const group = theme.group || "Other";
+          if (!grouped.has(group)) grouped.set(group, []);
+          grouped.get(group).push(theme);
+        }
+
+        const sections = [];
+        if (featured.length && activeFilter === "all") {
+          sections.push(sectionHtml("Featured", featured, true));
+        }
+
+        for (const [group, groupThemes] of [...grouped.entries()].sort((a, b) => a[0].localeCompare(b[0]))) {
+          if (group === "Featured") continue;
+          sections.push(sectionHtml(group, groupThemes, activeFilter !== "all" || groupThemes.some((theme) => theme.slug === currentSlug)));
+        }
+
+        themeList.innerHTML = sections.join("");
+      }
+
+      if (!items.length) {
+        themeList.innerHTML = `<div class="panel">No matching themes.</div>`;
+      }
+    }
+
+    function sectionHtml(title, items, open) {
+      return `<details class="theme-section" ${open ? "open" : ""}>
+        <summary><span>${title}</span><span class="section-count">${items.length}</span></summary>
+        <div class="section-list">${items.map(renderThemeButton).join("")}</div>
+      </details>`;
+    }
+
+    function renderTokens(container, tokens) {
+      container.innerHTML = Object.entries(tokens).map(([name, value]) => `
+        <div class="token">
+          <span class="chip" style="background:${value}"></span>
+          <span>
+            <span class="token-name">${name}</span><br>
+            <span class="token-value">${value}</span>
+          </span>
+        </div>
+      `).join("");
+    }
+
+    function downloadJson(filename, payload) {
+      const blob = new Blob([JSON.stringify(payload, null, 2) + "\n"], {
+        type: "application/json"
+      });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = filename;
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      URL.revokeObjectURL(url);
+    }
+
+    function labelledTheme(theme) {
+      return {
+        label: theme.name,
+        slug: theme.slug,
+        file: `themes/${theme.slug}.json`,
+        appearance: theme.appearance,
+        colors: theme.colors
+      };
+    }
+
+    function saveFavorites() {
+      localStorage.setItem(favoriteKey, JSON.stringify([...favorites].sort()));
+    }
+
+    function hexToRgb(hex) {
+      const clean = hex.replace("#", "");
+      return [
+        parseInt(clean.slice(0, 2), 16) / 255,
+        parseInt(clean.slice(2, 4), 16) / 255,
+        parseInt(clean.slice(4, 6), 16) / 255
+      ];
+    }
+
+    function luminance(hex) {
+      return hexToRgb(hex).map((value) => {
+        return value <= 0.03928 ? value / 12.92 : Math.pow((value + 0.055) / 1.055, 2.4);
+      }).reduce((sum, value, index) => sum + value * [0.2126, 0.7152, 0.0722][index], 0);
+    }
+
+    function contrastRatio(a, b) {
+      const first = luminance(a);
+      const second = luminance(b);
+      const light = Math.max(first, second);
+      const dark = Math.min(first, second);
+      return (light + 0.05) / (dark + 0.05);
+    }
+
+    function contrastLabel(score) {
+      if (score >= 7) return "AAA";
+      if (score >= 4.5) return "AA";
+      if (score >= 3) return "Large";
+      return "Low";
+    }
+
+    function renderContrast(colors) {
+      const pairs = [
+        ["Text on background", colors.foreground, colors.background],
+        ["Accent on background", colors.accent, colors.background],
+        ["Text on surface", colors.foreground, colors.surface],
+        ["Error on background", colors.error, colors.background],
+        ["Success on background", colors.success, colors.background]
+      ];
+
+      contrastList.innerHTML = pairs.map(([name, fg, bg]) => {
+        const score = contrastRatio(fg, bg);
+        return `<div class="contrast-item">
+          <span>${name}</span>
+          <span class="contrast-score">${score.toFixed(2)} ${contrastLabel(score)}</span>
+        </div>`;
+      }).join("");
+    }
+
+    function cssVariables(theme) {
+      return Object.entries(theme.colors)
+        .filter(([, value]) => typeof value === "string")
+        .map(([key, value]) => `  --${theme.slug}-${key.replace(/[A-Z]/g, (letter) => "-" + letter.toLowerCase())}: ${value};`)
+        .join("\n");
+    }
+
+    function copyPayload(type) {
+      const theme = getTheme(currentSlug);
+      const colors = theme.colors;
+      if (type === "slug") return theme.slug;
+      if (type === "hex") {
+        return [
+          colors.background,
+          colors.foreground,
+          colors.surface,
+          colors.surfaceRaised,
+          colors.border,
+          colors.accent,
+          colors.success,
+          colors.warning,
+          colors.error,
+          colors.info
+        ].join(", ");
+      }
+      if (type === "css") return `:root {\n${cssVariables(theme)}\n}`;
+      if (type === "ts") return `export const ${theme.slug.replace(/-([a-z])/g, (_, letter) => letter.toUpperCase())}Theme = ${JSON.stringify(labelledTheme(theme), null, 2)} as const;`;
+      return JSON.stringify({ exportType: "single-theme", theme: labelledTheme(theme) }, null, 2);
+    }
+
+    async function copyText(text) {
+      if (navigator.clipboard?.writeText) {
+        await navigator.clipboard.writeText(text);
+        return;
+      }
+      const textarea = document.createElement("textarea");
+      textarea.value = text;
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand("copy");
+      textarea.remove();
+    }
+
+    function applyTheme(slug) {
+      currentSlug = slug;
+      const theme = getTheme(slug);
+      const colors = theme.colors;
+
+      themeName.textContent = theme.name;
+      themeSlug.textContent = `themes/${theme.slug}.json`;
+      themeMode.textContent = `${theme.appearance} theme`;
+      favoriteCurrent.textContent = favorites.has(theme.slug) ? "Unfavorite" : "Favorite";
+
+      setVar("--theme-background", colors.background);
+      setVar("--theme-foreground", colors.foreground);
+      setVar("--theme-surface", colors.surface);
+      setVar("--theme-raised", colors.surfaceRaised);
+      setVar("--theme-border", colors.border);
+      setVar("--theme-accent", colors.accent);
+      setVar("--theme-accent-foreground", colors.accentForeground);
+      setVar("--theme-muted", colors.mutedForeground);
+      setVar("--theme-info", colors.info);
+      setVar("--syntax-comment", colors.syntax.comment);
+      setVar("--syntax-keyword", colors.syntax.keyword);
+      setVar("--syntax-function", colors.syntax.function);
+      setVar("--syntax-string", colors.syntax.string);
+      setVar("--syntax-number", colors.syntax.number);
+      setVar("--syntax-type", colors.syntax.type);
+      setVar("--syntax-constant", colors.syntax.constant);
+
+      renderTokens(statusGrid, {
+        success: colors.success,
+        warning: colors.warning,
+        error: colors.error,
+        info: colors.info
+      });
+
+      renderTokens(tokenGrid, {
+        background: colors.background,
+        foreground: colors.foreground,
+        surface: colors.surface,
+        surfaceRaised: colors.surfaceRaised,
+        border: colors.border,
+        accent: colors.accent,
+        mutedForeground: colors.mutedForeground,
+        selection: colors.selection,
+        cursor: colors.cursor
+      });
+
+      heroStrip.innerHTML = [
+        colors.background,
+        colors.surface,
+        colors.surfaceRaised,
+        colors.accent,
+        colors.success,
+        colors.warning,
+        colors.error,
+        colors.info
+      ].map((color) => `<span style="background:${color}"></span>`).join("");
+
+      renderContrast(colors);
+      renderList();
+    }
+
+    themeList.addEventListener("click", (event) => {
+      const favorite = event.target.closest("[data-favorite]");
+      if (favorite) {
+        const slug = favorite.dataset.favorite;
+        favorites.has(slug) ? favorites.delete(slug) : favorites.add(slug);
+        saveFavorites();
+        applyTheme(currentSlug);
+        event.stopPropagation();
+        return;
+      }
+
+      const button = event.target.closest("button[data-slug]");
+      if (!button) return;
+      applyTheme(button.dataset.slug);
+    });
+
+    themeSearch.addEventListener("input", () => {
+      filterText = themeSearch.value;
+      renderList();
+    });
+
+    filterChips.addEventListener("click", (event) => {
+      const button = event.target.closest("button[data-filter]");
+      if (!button) return;
+      activeFilter = button.dataset.filter;
+      renderFilters();
+      renderList();
+    });
+
+    randomTheme.addEventListener("click", () => {
+      const items = visibleThemes();
+      const pool = items.length ? items : themes;
+      const next = pool[Math.floor(Math.random() * pool.length)];
+      applyTheme(next.slug);
+    });
+
+    favoriteCurrent.addEventListener("click", () => {
+      favorites.has(currentSlug) ? favorites.delete(currentSlug) : favorites.add(currentSlug);
+      saveFavorites();
+      applyTheme(currentSlug);
+    });
+
+    document.addEventListener("click", async (event) => {
+      const button = event.target.closest("button[data-copy]");
+      if (!button) return;
+      const original = button.textContent;
+      await copyText(copyPayload(button.dataset.copy));
+      button.textContent = "Copied";
+      setTimeout(() => {
+        button.textContent = original;
+      }, 900);
+    });
+
+    exportCurrent.addEventListener("click", () => {
+      const theme = getTheme(currentSlug);
+      downloadJson(`${theme.slug}.theme.json`, {
+        exportType: "single-theme",
+        theme: labelledTheme(theme)
+      });
+    });
+
+    exportAll.addEventListener("click", () => {
+      downloadJson("theme-catalog.json", {
+        exportType: "theme-catalog",
+        count: themes.length,
+        themes: themes.map(labelledTheme)
+      });
+    });
+
+    renderFilters();
+    applyTheme(currentSlug);
+  </script>
+</body>
+</html>

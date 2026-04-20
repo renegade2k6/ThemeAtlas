@@ -1,0 +1,37 @@
+{
+  "name": "Moonlight",
+  "slug": "moonlight",
+  "appearance": "dark",
+  "group": "Light Themes",
+  "tags": [
+    "dark",
+    "editor",
+    "pastel"
+  ],
+  "colors": {
+    "background": "#212337",
+    "foreground": "#c8d3f5",
+    "surface": "#2c2f48",
+    "surfaceRaised": "#2f334d",
+    "border": "#4e536f",
+    "accent": "#82aaff",
+    "accentForeground": "#212337",
+    "mutedForeground": "#8e95b3",
+    "success": "#c3e88d",
+    "warning": "#ffc777",
+    "error": "#ff5370",
+    "info": "#86e1fc",
+    "selection": "#414d74",
+    "cursor": "#82aaff",
+    "syntax": {
+      "comment": "#787f9a",
+      "keyword": "#ff5370",
+      "function": "#82aaff",
+      "string": "#c3e88d",
+      "number": "#ffc777",
+      "type": "#86e1fc",
+      "variable": "#c8d3f5",
+      "constant": "#ffc777"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Nebula",
+  "slug": "nebula",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#15112b",
+    "foreground": "#eee8ff",
+    "surface": "#1e1839",
+    "surfaceRaised": "#211a3d",
+    "border": "#4a4364",
+    "accent": "#8b5cf6",
+    "accentForeground": "#15112b",
+    "mutedForeground": "#a29db5",
+    "success": "#34d399",
+    "warning": "#fbbf24",
+    "error": "#fb7185",
+    "info": "#22d3ee",
+    "selection": "#382966",
+    "cursor": "#8b5cf6",
+    "syntax": {
+      "comment": "#868199",
+      "keyword": "#fb7185",
+      "function": "#8b5cf6",
+      "string": "#34d399",
+      "number": "#fbbf24",
+      "type": "#22d3ee",
+      "variable": "#eee8ff",
+      "constant": "#fbbf24"
+    }
+  }
+}

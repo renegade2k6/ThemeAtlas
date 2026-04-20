@@ -1,0 +1,36 @@
+{
+  "name": "Noctis",
+  "slug": "noctis",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#122738",
+    "foreground": "#dbe5f0",
+    "surface": "#192e42",
+    "surfaceRaised": "#1b3045",
+    "border": "#415467",
+    "accent": "#5eb1ff",
+    "accentForeground": "#122738",
+    "mutedForeground": "#95a3b0",
+    "success": "#49e9a6",
+    "warning": "#ffcb6b",
+    "error": "#ff5370",
+    "info": "#89ddff",
+    "selection": "#2a4c6e",
+    "cursor": "#5eb1ff",
+    "syntax": {
+      "comment": "#7b8a98",
+      "keyword": "#ff5370",
+      "function": "#5eb1ff",
+      "string": "#49e9a6",
+      "number": "#ffcb6b",
+      "type": "#89ddff",
+      "variable": "#dbe5f0",
+      "constant": "#ffcb6b"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Ciapre",
+  "slug": "ciapre",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#191c27",
+    "foreground": "#aea47a",
+    "surface": "#262935",
+    "surfaceRaised": "#2a2d3a",
+    "border": "#444547",
+    "accent": "#566d8c",
+    "accentForeground": "#191c27",
+    "mutedForeground": "#7a745d",
+    "success": "#48513b",
+    "warning": "#cc8b3f",
+    "error": "#810009",
+    "info": "#5b4f4a",
+    "selection": "#343b4c",
+    "cursor": "#566d8c",
+    "syntax": {
+      "comment": "#666352",
+      "keyword": "#810009",
+      "function": "#566d8c",
+      "string": "#48513b",
+      "number": "#cc8b3f",
+      "type": "#5b4f4a",
+      "variable": "#aea47a",
+      "constant": "#cc8b3f"
+    }
+  }
+}

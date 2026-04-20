@@ -1,0 +1,36 @@
+{
+  "name": "Nightfox",
+  "slug": "nightfox",
+  "appearance": "dark",
+  "group": "Nightfox",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#192330",
+    "foreground": "#cdcecf",
+    "surface": "#1f2b3b",
+    "surfaceRaised": "#212e3f",
+    "border": "#434e5c",
+    "accent": "#719cd6",
+    "accentForeground": "#192330",
+    "mutedForeground": "#8e9297",
+    "success": "#81b29a",
+    "warning": "#dbc074",
+    "error": "#c94f6d",
+    "info": "#63cdcf",
+    "selection": "#334660",
+    "cursor": "#719cd6",
+    "syntax": {
+      "comment": "#777c83",
+      "keyword": "#c94f6d",
+      "function": "#719cd6",
+      "string": "#81b29a",
+      "number": "#dbc074",
+      "type": "#63cdcf",
+      "variable": "#cdcecf",
+      "constant": "#dbc074"
+    }
+  }
+}

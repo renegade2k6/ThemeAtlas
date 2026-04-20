@@ -1,0 +1,37 @@
+{
+  "name": "Ayu Dark",
+  "slug": "ayu-dark",
+  "appearance": "dark",
+  "group": "Ayu",
+  "tags": [
+    "dark",
+    "editor",
+    "popular"
+  ],
+  "colors": {
+    "background": "#0f1419",
+    "foreground": "#e6e1cf",
+    "surface": "#1b202a",
+    "surfaceRaised": "#1f2430",
+    "border": "#474a50",
+    "accent": "#ffb454",
+    "accentForeground": "#0f1419",
+    "mutedForeground": "#9b998f",
+    "success": "#b8cc52",
+    "warning": "#ffee99",
+    "error": "#f07178",
+    "info": "#59c2ff",
+    "selection": "#504438",
+    "cursor": "#ffb454",
+    "syntax": {
+      "comment": "#7f7f78",
+      "keyword": "#f07178",
+      "function": "#ffb454",
+      "string": "#b8cc52",
+      "number": "#ffee99",
+      "type": "#59c2ff",
+      "variable": "#e6e1cf",
+      "constant": "#ffee99"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "Kanagawa Dragon",
+  "slug": "kanagawa-dragon",
+  "appearance": "dark",
+  "group": "Kanagawa",
+  "tags": [
+    "dark",
+    "editor",
+    "popular"
+  ],
+  "colors": {
+    "background": "#181616",
+    "foreground": "#c5c9c5",
+    "surface": "#242323",
+    "surfaceRaised": "#282727",
+    "border": "#474747",
+    "accent": "#8ba4b0",
+    "accentForeground": "#181616",
+    "mutedForeground": "#888a88",
+    "success": "#8a9a7b",
+    "warning": "#c4b28a",
+    "error": "#c4746e",
+    "info": "#8ea4a2",
+    "selection": "#3e4345",
+    "cursor": "#8ba4b0",
+    "syntax": {
+      "comment": "#727371",
+      "keyword": "#c4746e",
+      "function": "#8ba4b0",
+      "string": "#8a9a7b",
+      "number": "#c4b28a",
+      "type": "#8ea4a2",
+      "variable": "#c5c9c5",
+      "constant": "#c4b28a"
+    }
+  }
+}

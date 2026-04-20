@@ -1,0 +1,37 @@
+{
+  "name": "Material Lighter",
+  "slug": "material-lighter",
+  "appearance": "light",
+  "group": "Material",
+  "tags": [
+    "editor",
+    "light",
+    "popular"
+  ],
+  "colors": {
+    "background": "#fafafa",
+    "foreground": "#546e7a",
+    "surface": "#f6f6f6",
+    "surfaceRaised": "#f5f5f5",
+    "border": "#d5dadc",
+    "accent": "#6182b8",
+    "accentForeground": "#fafafa",
+    "mutedForeground": "#8e9fa7",
+    "success": "#91b859",
+    "warning": "#f6a434",
+    "error": "#e53935",
+    "info": "#39adb5",
+    "selection": "#d4dce8",
+    "cursor": "#6182b8",
+    "syntax": {
+      "comment": "#a4b1b7",
+      "keyword": "#e53935",
+      "function": "#6182b8",
+      "string": "#91b859",
+      "number": "#f6a434",
+      "type": "#39adb5",
+      "variable": "#546e7a",
+      "constant": "#f6a434"
+    }
+  }
+}

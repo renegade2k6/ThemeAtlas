@@ -1,0 +1,37 @@
+{
+  "name": "Hotline Miami",
+  "slug": "hotline-miami",
+  "appearance": "dark",
+  "group": "Cyberpunk / Neon",
+  "tags": [
+    "cyberpunk",
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#12041f",
+    "foreground": "#fff5fb",
+    "surface": "#200e33",
+    "surfaceRaised": "#24113a",
+    "border": "#503f61",
+    "accent": "#ff2a6d",
+    "accentForeground": "#12041f",
+    "mutedForeground": "#aca1ae",
+    "success": "#05ffa1",
+    "warning": "#f9f871",
+    "error": "#ff3864",
+    "info": "#01cdfe",
+    "selection": "#541745",
+    "cursor": "#ff2a6d",
+    "syntax": {
+      "comment": "#8d8191",
+      "keyword": "#ff3864",
+      "function": "#ff2a6d",
+      "string": "#05ffa1",
+      "number": "#f9f871",
+      "type": "#01cdfe",
+      "variable": "#fff5fb",
+      "constant": "#f9f871"
+    }
+  }
+}

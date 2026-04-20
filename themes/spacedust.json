@@ -1,0 +1,36 @@
+{
+  "name": "Spacedust",
+  "slug": "spacedust",
+  "appearance": "dark",
+  "group": "Terminal Classics",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#0a1e24",
+    "foreground": "#ecf0c1",
+    "surface": "#0f282f",
+    "surfaceRaised": "#112b33",
+    "border": "#3d524f",
+    "accent": "#5cab96",
+    "accentForeground": "#0a1e24",
+    "mutedForeground": "#9da78a",
+    "success": "#5cab96",
+    "warning": "#e3cd7b",
+    "error": "#e35b00",
+    "info": "#0f548b",
+    "selection": "#224749",
+    "cursor": "#5cab96",
+    "syntax": {
+      "comment": "#808b76",
+      "keyword": "#e35b00",
+      "function": "#5cab96",
+      "string": "#5cab96",
+      "number": "#e3cd7b",
+      "type": "#0f548b",
+      "variable": "#ecf0c1",
+      "constant": "#e3cd7b"
+    }
+  }
+}

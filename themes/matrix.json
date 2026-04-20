@@ -1,0 +1,37 @@
+{
+  "name": "Matrix",
+  "slug": "matrix",
+  "appearance": "dark",
+  "group": "Cyberpunk / Neon",
+  "tags": [
+    "cyberpunk",
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#000000",
+    "foreground": "#00ff41",
+    "surface": "#031708",
+    "surfaceRaised": "#041f0b",
+    "border": "#034c16",
+    "accent": "#00ff41",
+    "accentForeground": "#000000",
+    "mutedForeground": "#00a62a",
+    "success": "#00cc33",
+    "warning": "#b6ff00",
+    "error": "#ff1744",
+    "info": "#00e676",
+    "selection": "#035017",
+    "cursor": "#00ff41",
+    "syntax": {
+      "comment": "#008522",
+      "keyword": "#ff1744",
+      "function": "#00ff41",
+      "string": "#00cc33",
+      "number": "#b6ff00",
+      "type": "#00e676",
+      "variable": "#00ff41",
+      "constant": "#b6ff00"
+    }
+  }
+}

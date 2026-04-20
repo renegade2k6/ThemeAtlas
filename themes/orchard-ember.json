@@ -1,0 +1,36 @@
+{
+  "name": "Orchard Ember",
+  "slug": "orchard-ember",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#090b09",
+    "foreground": "#fffefe",
+    "surface": "#1a211a",
+    "surfaceRaised": "#20281f",
+    "border": "#4d534c",
+    "accent": "#ce94a2",
+    "accentForeground": "#090b09",
+    "mutedForeground": "#a9a9a8",
+    "success": "#7f9f70",
+    "warning": "#d9b76f",
+    "error": "#a74906",
+    "info": "#ce94a2",
+    "selection": "#46403c",
+    "cursor": "#ce94a2",
+    "syntax": {
+      "comment": "#898988",
+      "keyword": "#a74906",
+      "function": "#ce94a2",
+      "string": "#7f9f70",
+      "number": "#d9b76f",
+      "type": "#ce94a2",
+      "variable": "#fffefe",
+      "constant": "#d9b76f"
+    }
+  }
+}

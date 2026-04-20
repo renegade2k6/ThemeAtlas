@@ -1,0 +1,38 @@
+{
+  "name": "Tokyo Night Moon",
+  "slug": "tokyo-night-moon",
+  "appearance": "dark",
+  "group": "Tokyo Night",
+  "tags": [
+    "dark",
+    "editor",
+    "pastel",
+    "popular"
+  ],
+  "colors": {
+    "background": "#222436",
+    "foreground": "#c8d3f5",
+    "surface": "#2c2f47",
+    "surfaceRaised": "#2f334d",
+    "border": "#4e536f",
+    "accent": "#82aaff",
+    "accentForeground": "#222436",
+    "mutedForeground": "#8e96b2",
+    "success": "#c3e88d",
+    "warning": "#ffc777",
+    "error": "#ff757f",
+    "info": "#86e1fc",
+    "selection": "#414d74",
+    "cursor": "#82aaff",
+    "syntax": {
+      "comment": "#787f99",
+      "keyword": "#ff757f",
+      "function": "#82aaff",
+      "string": "#c3e88d",
+      "number": "#ffc777",
+      "type": "#86e1fc",
+      "variable": "#c8d3f5",
+      "constant": "#ffc777"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Vesper",
+  "slug": "vesper",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#101010",
+    "foreground": "#ffffff",
+    "surface": "#1b1b1b",
+    "surfaceRaised": "#1f1f1f",
+    "border": "#4c4c4c",
+    "accent": "#ffc799",
+    "accentForeground": "#101010",
+    "mutedForeground": "#ababab",
+    "success": "#99ffe4",
+    "warning": "#ffc799",
+    "error": "#ff8080",
+    "info": "#a0a0ff",
+    "selection": "#50443a",
+    "cursor": "#ffc799",
+    "syntax": {
+      "comment": "#8c8c8c",
+      "keyword": "#ff8080",
+      "function": "#ffc799",
+      "string": "#99ffe4",
+      "number": "#ffc799",
+      "type": "#a0a0ff",
+      "variable": "#ffffff",
+      "constant": "#ffc799"
+    }
+  }
+}

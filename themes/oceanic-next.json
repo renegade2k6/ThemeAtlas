@@ -1,0 +1,36 @@
+{
+  "name": "Oceanic Next",
+  "slug": "oceanic-next",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#1b2b34",
+    "foreground": "#c0c5ce",
+    "surface": "#2e3942",
+    "surfaceRaised": "#343d46",
+    "border": "#505861",
+    "accent": "#6699cc",
+    "accentForeground": "#1b2b34",
+    "mutedForeground": "#868f98",
+    "success": "#99c794",
+    "warning": "#fac863",
+    "error": "#ec5f67",
+    "info": "#5fb3b3",
+    "selection": "#3f5163",
+    "cursor": "#6699cc",
+    "syntax": {
+      "comment": "#717b84",
+      "keyword": "#ec5f67",
+      "function": "#6699cc",
+      "string": "#99c794",
+      "number": "#fac863",
+      "type": "#5fb3b3",
+      "variable": "#c0c5ce",
+      "constant": "#fac863"
+    }
+  }
+}

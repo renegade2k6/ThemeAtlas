@@ -1,0 +1,36 @@
+{
+  "name": "Lucario",
+  "slug": "lucario",
+  "appearance": "dark",
+  "group": "Terminal Classics",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#2b3e50",
+    "foreground": "#f8f8f2",
+    "surface": "#32465b",
+    "surfaceRaised": "#34495e",
+    "border": "#5b6c7c",
+    "accent": "#66d9ef",
+    "accentForeground": "#2b3e50",
+    "mutedForeground": "#b0b7b9",
+    "success": "#a6e22e",
+    "warning": "#e6db74",
+    "error": "#ff6e6e",
+    "info": "#72c7d1",
+    "selection": "#3f697e",
+    "cursor": "#66d9ef",
+    "syntax": {
+      "comment": "#969fa4",
+      "keyword": "#ff6e6e",
+      "function": "#66d9ef",
+      "string": "#a6e22e",
+      "number": "#e6db74",
+      "type": "#72c7d1",
+      "variable": "#f8f8f2",
+      "constant": "#e6db74"
+    }
+  }
+}

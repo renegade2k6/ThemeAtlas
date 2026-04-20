@@ -1,0 +1,36 @@
+{
+  "name": "Iceberg",
+  "slug": "iceberg",
+  "appearance": "dark",
+  "group": "Terminal Classics",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#161821",
+    "foreground": "#c6c8d1",
+    "surface": "#1c1f2e",
+    "surfaceRaised": "#1e2132",
+    "border": "#404252",
+    "accent": "#84a0c6",
+    "accentForeground": "#161821",
+    "mutedForeground": "#888a93",
+    "success": "#b4be82",
+    "warning": "#e2a478",
+    "error": "#e27878",
+    "info": "#89b8c2",
+    "selection": "#343d53",
+    "cursor": "#84a0c6",
+    "syntax": {
+      "comment": "#72747d",
+      "keyword": "#e27878",
+      "function": "#84a0c6",
+      "string": "#b4be82",
+      "number": "#e2a478",
+      "type": "#89b8c2",
+      "variable": "#c6c8d1",
+      "constant": "#e2a478"
+    }
+  }
+}

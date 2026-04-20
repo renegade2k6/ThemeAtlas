@@ -1,0 +1,36 @@
+{
+  "name": "Hybrid",
+  "slug": "hybrid",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#161719",
+    "foreground": "#c5c8c6",
+    "surface": "#1d1e20",
+    "surfaceRaised": "#1f2022",
+    "border": "#404243",
+    "accent": "#5f819d",
+    "accentForeground": "#161719",
+    "mutedForeground": "#888a89",
+    "success": "#8c9440",
+    "warning": "#de935f",
+    "error": "#a54242",
+    "info": "#5e8d87",
+    "selection": "#2d353d",
+    "cursor": "#5f819d",
+    "syntax": {
+      "comment": "#717373",
+      "keyword": "#a54242",
+      "function": "#5f819d",
+      "string": "#8c9440",
+      "number": "#de935f",
+      "type": "#5e8d87",
+      "variable": "#c5c8c6",
+      "constant": "#de935f"
+    }
+  }
+}

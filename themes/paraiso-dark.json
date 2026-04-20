@@ -1,0 +1,36 @@
+{
+  "name": "Paraiso Dark",
+  "slug": "paraiso-dark",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#2f1e2e",
+    "foreground": "#a39e9b",
+    "surface": "#3d2d3b",
+    "surfaceRaised": "#41323f",
+    "border": "#554851",
+    "accent": "#06b6ef",
+    "accentForeground": "#2f1e2e",
+    "mutedForeground": "#7a7175",
+    "success": "#48b685",
+    "warning": "#fec418",
+    "error": "#ef6155",
+    "info": "#5bc4bf",
+    "selection": "#344f66",
+    "cursor": "#06b6ef",
+    "syntax": {
+      "comment": "#6b6167",
+      "keyword": "#ef6155",
+      "function": "#06b6ef",
+      "string": "#48b685",
+      "number": "#fec418",
+      "type": "#5bc4bf",
+      "variable": "#a39e9b",
+      "constant": "#fec418"
+    }
+  }
+}

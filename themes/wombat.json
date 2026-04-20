@@ -1,0 +1,36 @@
+{
+  "name": "Wombat",
+  "slug": "wombat",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#171717",
+    "foreground": "#dedacf",
+    "surface": "#282828",
+    "surfaceRaised": "#2d2d2d",
+    "border": "#50504d",
+    "accent": "#5da9f6",
+    "accentForeground": "#171717",
+    "mutedForeground": "#98968f",
+    "success": "#b1e969",
+    "warning": "#ebd99c",
+    "error": "#ff615a",
+    "info": "#82fff7",
+    "selection": "#384859",
+    "cursor": "#5da9f6",
+    "syntax": {
+      "comment": "#7e7c77",
+      "keyword": "#ff615a",
+      "function": "#5da9f6",
+      "string": "#b1e969",
+      "number": "#ebd99c",
+      "type": "#82fff7",
+      "variable": "#dedacf",
+      "constant": "#ebd99c"
+    }
+  }
+}

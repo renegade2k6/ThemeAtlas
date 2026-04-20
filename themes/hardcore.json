@@ -1,0 +1,36 @@
+{
+  "name": "Hardcore",
+  "slug": "hardcore",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#121212",
+    "foreground": "#a0a0a0",
+    "surface": "#1a1a1a",
+    "surfaceRaised": "#1c1c1c",
+    "border": "#363636",
+    "accent": "#66d9ef",
+    "accentForeground": "#121212",
+    "mutedForeground": "#6e6e6e",
+    "success": "#a6e22e",
+    "warning": "#fd971f",
+    "error": "#f92672",
+    "info": "#5e7175",
+    "selection": "#2c464a",
+    "cursor": "#66d9ef",
+    "syntax": {
+      "comment": "#5c5c5c",
+      "keyword": "#f92672",
+      "function": "#66d9ef",
+      "string": "#a6e22e",
+      "number": "#fd971f",
+      "type": "#5e7175",
+      "variable": "#a0a0a0",
+      "constant": "#fd971f"
+    }
+  }
+}

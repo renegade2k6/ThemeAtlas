@@ -1,0 +1,36 @@
+{
+  "name": "Min Dark",
+  "slug": "min-dark",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#1f1f1f",
+    "foreground": "#d4d4d4",
+    "surface": "#272727",
+    "surfaceRaised": "#292929",
+    "border": "#4b4b4b",
+    "accent": "#7aa2f7",
+    "accentForeground": "#1f1f1f",
+    "mutedForeground": "#959595",
+    "success": "#9ece6a",
+    "warning": "#e0af68",
+    "error": "#f7768e",
+    "info": "#7dcfff",
+    "selection": "#3b4456",
+    "cursor": "#7aa2f7",
+    "syntax": {
+      "comment": "#7d7d7d",
+      "keyword": "#f7768e",
+      "function": "#7aa2f7",
+      "string": "#9ece6a",
+      "number": "#e0af68",
+      "type": "#7dcfff",
+      "variable": "#d4d4d4",
+      "constant": "#e0af68"
+    }
+  }
+}

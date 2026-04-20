@@ -1,0 +1,36 @@
+{
+  "name": "Wryan",
+  "slug": "wryan",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#101010",
+    "foreground": "#999993",
+    "surface": "#2a2a2a",
+    "surfaceRaised": "#333333",
+    "border": "#474746",
+    "accent": "#395573",
+    "accentForeground": "#101010",
+    "mutedForeground": "#696965",
+    "success": "#287373",
+    "warning": "#7c7c99",
+    "error": "#8c4665",
+    "info": "#31658c",
+    "selection": "#343a41",
+    "cursor": "#395573",
+    "syntax": {
+      "comment": "#575754",
+      "keyword": "#8c4665",
+      "function": "#395573",
+      "string": "#287373",
+      "number": "#7c7c99",
+      "type": "#31658c",
+      "variable": "#999993",
+      "constant": "#7c7c99"
+    }
+  }
+}

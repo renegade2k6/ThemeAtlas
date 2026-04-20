@@ -1,0 +1,36 @@
+{
+  "name": "Under The Sea",
+  "slug": "under-the-sea",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#011116",
+    "foreground": "#ffffff",
+    "surface": "#02252e",
+    "surfaceRaised": "#022b36",
+    "border": "#35555e",
+    "accent": "#459a86",
+    "accentForeground": "#011116",
+    "mutedForeground": "#a6acad",
+    "success": "#00a941",
+    "warning": "#59819c",
+    "error": "#b2302d",
+    "info": "#5fb4b4",
+    "selection": "#114348",
+    "cursor": "#459a86",
+    "syntax": {
+      "comment": "#858d8f",
+      "keyword": "#b2302d",
+      "function": "#459a86",
+      "string": "#00a941",
+      "number": "#59819c",
+      "type": "#5fb4b4",
+      "variable": "#ffffff",
+      "constant": "#59819c"
+    }
+  }
+}

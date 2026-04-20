@@ -1,0 +1,36 @@
+{
+  "name": "Panda",
+  "slug": "panda",
+  "appearance": "dark",
+  "group": "Terminal Classics",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#292a2b",
+    "foreground": "#e6e6e6",
+    "surface": "#313236",
+    "surfaceRaised": "#34353a",
+    "border": "#58585c",
+    "accent": "#ff2c6d",
+    "accentForeground": "#292a2b",
+    "mutedForeground": "#a4a4a5",
+    "success": "#19f9d8",
+    "warning": "#ffb86c",
+    "error": "#ff75b5",
+    "info": "#45a9f9",
+    "selection": "#613345",
+    "cursor": "#ff2c6d",
+    "syntax": {
+      "comment": "#8b8c8c",
+      "keyword": "#ff75b5",
+      "function": "#ff2c6d",
+      "string": "#19f9d8",
+      "number": "#ffb86c",
+      "type": "#45a9f9",
+      "variable": "#e6e6e6",
+      "constant": "#ffb86c"
+    }
+  }
+}

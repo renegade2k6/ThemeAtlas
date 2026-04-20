@@ -1,0 +1,36 @@
+{
+  "name": "Lavandula",
+  "slug": "lavandula",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#050014",
+    "foreground": "#736e7d",
+    "surface": "#1c003a",
+    "surfaceRaised": "#230046",
+    "border": "#331651",
+    "accent": "#8c91fa",
+    "accentForeground": "#050014",
+    "mutedForeground": "#4d4858",
+    "success": "#337e6f",
+    "warning": "#7f6f49",
+    "error": "#7d1625",
+    "info": "#577d8c",
+    "selection": "#3a206e",
+    "cursor": "#8c91fa",
+    "syntax": {
+      "comment": "#3e394b",
+      "keyword": "#7d1625",
+      "function": "#8c91fa",
+      "string": "#337e6f",
+      "number": "#7f6f49",
+      "type": "#577d8c",
+      "variable": "#736e7d",
+      "constant": "#7f6f49"
+    }
+  }
+}

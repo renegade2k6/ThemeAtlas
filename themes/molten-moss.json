@@ -1,0 +1,36 @@
+{
+  "name": "Molten Moss",
+  "slug": "molten-moss",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#012104",
+    "foreground": "#f2e08a",
+    "surface": "#123211",
+    "surfaceRaised": "#173815",
+    "border": "#435a2c",
+    "accent": "#f9c300",
+    "accentForeground": "#012104",
+    "mutedForeground": "#9e9d5b",
+    "success": "#7dbb42",
+    "warning": "#f9c300",
+    "error": "#db4100",
+    "info": "#f2e08a",
+    "selection": "#495710",
+    "cursor": "#f9c300",
+    "syntax": {
+      "comment": "#7e844a",
+      "keyword": "#db4100",
+      "function": "#f9c300",
+      "string": "#7dbb42",
+      "number": "#f9c300",
+      "type": "#f2e08a",
+      "variable": "#f2e08a",
+      "constant": "#f9c300"
+    }
+  }
+}

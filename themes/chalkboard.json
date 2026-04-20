@@ -1,0 +1,36 @@
+{
+  "name": "Chalkboard",
+  "slug": "chalkboard",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#29262f",
+    "foreground": "#d9e6f2",
+    "surface": "#302e37",
+    "surfaceRaised": "#32313a",
+    "border": "#53555f",
+    "accent": "#7372c3",
+    "accentForeground": "#29262f",
+    "mutedForeground": "#9ba3ae",
+    "success": "#72c373",
+    "warning": "#c2c372",
+    "error": "#c37372",
+    "info": "#72c2c3",
+    "selection": "#403f58",
+    "cursor": "#7372c3",
+    "syntax": {
+      "comment": "#858a94",
+      "keyword": "#c37372",
+      "function": "#7372c3",
+      "string": "#72c373",
+      "number": "#c2c372",
+      "type": "#72c2c3",
+      "variable": "#d9e6f2",
+      "constant": "#c2c372"
+    }
+  }
+}

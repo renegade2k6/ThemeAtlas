@@ -1,0 +1,38 @@
+{
+  "name": "Rose Pine Dawn",
+  "slug": "rose-pine-dawn",
+  "appearance": "light",
+  "group": "Rose Pine",
+  "tags": [
+    "editor",
+    "light",
+    "pastel",
+    "popular"
+  ],
+  "colors": {
+    "background": "#faf4ed",
+    "foreground": "#575279",
+    "surface": "#f4ece4",
+    "surfaceRaised": "#f2e9e1",
+    "border": "#d3cbcc",
+    "accent": "#907aa9",
+    "accentForeground": "#faf4ed",
+    "mutedForeground": "#908ba2",
+    "success": "#286983",
+    "warning": "#ea9d34",
+    "error": "#b4637a",
+    "info": "#56949f",
+    "selection": "#dcd1d5",
+    "cursor": "#907aa9",
+    "syntax": {
+      "comment": "#a5a0b1",
+      "keyword": "#b4637a",
+      "function": "#907aa9",
+      "string": "#286983",
+      "number": "#ea9d34",
+      "type": "#56949f",
+      "variable": "#575279",
+      "constant": "#ea9d34"
+    }
+  }
+}

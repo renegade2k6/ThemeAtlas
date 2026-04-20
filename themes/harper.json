@@ -1,0 +1,36 @@
+{
+  "name": "Harper",
+  "slug": "harper",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#010101",
+    "foreground": "#a8a49d",
+    "surface": "#181818",
+    "surfaceRaised": "#1f1f1f",
+    "border": "#3a3a38",
+    "accent": "#489e48",
+    "accentForeground": "#010101",
+    "mutedForeground": "#6e6b66",
+    "success": "#7fb5e1",
+    "warning": "#d6da25",
+    "error": "#f8b63f",
+    "info": "#f5bfd7",
+    "selection": "#283b28",
+    "cursor": "#489e48",
+    "syntax": {
+      "comment": "#585652",
+      "keyword": "#f8b63f",
+      "function": "#489e48",
+      "string": "#7fb5e1",
+      "number": "#d6da25",
+      "type": "#f5bfd7",
+      "variable": "#a8a49d",
+      "constant": "#d6da25"
+    }
+  }
+}

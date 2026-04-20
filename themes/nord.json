@@ -1,0 +1,39 @@
+{
+  "name": "Nord",
+  "slug": "nord",
+  "appearance": "dark",
+  "group": "Nord",
+  "tags": [
+    "dark",
+    "editor",
+    "featured",
+    "pastel",
+    "popular"
+  ],
+  "colors": {
+    "background": "#2e3440",
+    "foreground": "#d8dee9",
+    "surface": "#3e4657",
+    "surfaceRaised": "#434c5e",
+    "border": "#61697a",
+    "accent": "#88c0d0",
+    "accentForeground": "#2e3440",
+    "mutedForeground": "#9da3ae",
+    "success": "#a3be8c",
+    "warning": "#ebcb8b",
+    "error": "#bf616a",
+    "info": "#81a1c1",
+    "selection": "#526677",
+    "cursor": "#88c0d0",
+    "syntax": {
+      "comment": "#868c98",
+      "keyword": "#bf616a",
+      "function": "#88c0d0",
+      "string": "#a3be8c",
+      "number": "#ebcb8b",
+      "type": "#81a1c1",
+      "variable": "#d8dee9",
+      "constant": "#ebcb8b"
+    }
+  }
+}

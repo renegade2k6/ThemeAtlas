@@ -1,0 +1,37 @@
+{
+  "name": "Ayu Light",
+  "slug": "ayu-light",
+  "appearance": "light",
+  "group": "Ayu",
+  "tags": [
+    "editor",
+    "light",
+    "popular"
+  ],
+  "colors": {
+    "background": "#fafafa",
+    "foreground": "#5c6773",
+    "surface": "#f5f6f6",
+    "surfaceRaised": "#f3f4f5",
+    "border": "#d5d8db",
+    "accent": "#ffaa33",
+    "accentForeground": "#fafafa",
+    "mutedForeground": "#939aa2",
+    "success": "#86b300",
+    "warning": "#f2ae49",
+    "error": "#f07171",
+    "info": "#55b4d4",
+    "selection": "#f6e4ca",
+    "cursor": "#ffaa33",
+    "syntax": {
+      "comment": "#a8aeb4",
+      "keyword": "#f07171",
+      "function": "#ffaa33",
+      "string": "#86b300",
+      "number": "#f2ae49",
+      "type": "#55b4d4",
+      "variable": "#5c6773",
+      "constant": "#f2ae49"
+    }
+  }
+}

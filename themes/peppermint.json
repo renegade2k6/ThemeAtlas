@@ -1,0 +1,36 @@
+{
+  "name": "Peppermint",
+  "slug": "peppermint",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#000000",
+    "foreground": "#c7c7c7",
+    "surface": "#171717",
+    "surfaceRaised": "#1f1f1f",
+    "border": "#414141",
+    "accent": "#8796b0",
+    "accentForeground": "#000000",
+    "mutedForeground": "#818181",
+    "success": "#89d287",
+    "warning": "#dab752",
+    "error": "#e46d6d",
+    "info": "#79b8ff",
+    "selection": "#36393f",
+    "cursor": "#8796b0",
+    "syntax": {
+      "comment": "#676767",
+      "keyword": "#e46d6d",
+      "function": "#8796b0",
+      "string": "#89d287",
+      "number": "#dab752",
+      "type": "#79b8ff",
+      "variable": "#c7c7c7",
+      "constant": "#dab752"
+    }
+  }
+}

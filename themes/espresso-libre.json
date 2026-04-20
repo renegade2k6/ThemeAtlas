@@ -1,0 +1,36 @@
+{
+  "name": "Espresso Libre",
+  "slug": "espresso-libre",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#2a211c",
+    "foreground": "#b8a898",
+    "surface": "#362c25",
+    "surfaceRaised": "#3a2f28",
+    "border": "#53473e",
+    "accent": "#0066ff",
+    "accentForeground": "#2a211c",
+    "mutedForeground": "#86796d",
+    "success": "#1a921c",
+    "warning": "#efe43a",
+    "error": "#cc0000",
+    "info": "#06989a",
+    "selection": "#2d3b57",
+    "cursor": "#0066ff",
+    "syntax": {
+      "comment": "#74675c",
+      "keyword": "#cc0000",
+      "function": "#0066ff",
+      "string": "#1a921c",
+      "number": "#efe43a",
+      "type": "#06989a",
+      "variable": "#b8a898",
+      "constant": "#efe43a"
+    }
+  }
+}

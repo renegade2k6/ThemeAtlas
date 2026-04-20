@@ -1,0 +1,36 @@
+{
+  "name": "Flexoki Dark",
+  "slug": "flexoki-dark",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#100f0f",
+    "foreground": "#cecdc3",
+    "surface": "#191817",
+    "surfaceRaised": "#1c1b1a",
+    "border": "#403f3c",
+    "accent": "#4385be",
+    "accentForeground": "#100f0f",
+    "mutedForeground": "#8c8b84",
+    "success": "#66800b",
+    "warning": "#ad8301",
+    "error": "#af3029",
+    "info": "#24837b",
+    "selection": "#25323e",
+    "cursor": "#4385be",
+    "syntax": {
+      "comment": "#73726d",
+      "keyword": "#af3029",
+      "function": "#4385be",
+      "string": "#66800b",
+      "number": "#ad8301",
+      "type": "#24837b",
+      "variable": "#cecdc3",
+      "constant": "#ad8301"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "PaperColor Light",
+  "slug": "papercolor-light",
+  "appearance": "light",
+  "group": "Light Themes",
+  "tags": [
+    "editor",
+    "light"
+  ],
+  "colors": {
+    "background": "#eeeeee",
+    "foreground": "#444444",
+    "surface": "#d8d8d8",
+    "surfaceRaised": "#d0d0d0",
+    "border": "#b4b4b4",
+    "accent": "#0087af",
+    "accentForeground": "#eeeeee",
+    "mutedForeground": "#808080",
+    "success": "#008700",
+    "warning": "#5f8700",
+    "error": "#af0000",
+    "info": "#0087af",
+    "selection": "#a2c0c9",
+    "cursor": "#0087af",
+    "syntax": {
+      "comment": "#969696",
+      "keyword": "#af0000",
+      "function": "#0087af",
+      "string": "#008700",
+      "number": "#5f8700",
+      "type": "#0087af",
+      "variable": "#444444",
+      "constant": "#5f8700"
+    }
+  }
+}

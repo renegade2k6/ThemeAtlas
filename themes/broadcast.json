@@ -1,0 +1,36 @@
+{
+  "name": "Broadcast",
+  "slug": "broadcast",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#2b2b2b",
+    "foreground": "#e6e1dc",
+    "surface": "#303030",
+    "surfaceRaised": "#323232",
+    "border": "#565554",
+    "accent": "#6d9cbe",
+    "accentForeground": "#2b2b2b",
+    "mutedForeground": "#a5a19e",
+    "success": "#83d182",
+    "warning": "#ffd24a",
+    "error": "#da4939",
+    "info": "#a0cef0",
+    "selection": "#3f4951",
+    "cursor": "#6d9cbe",
+    "syntax": {
+      "comment": "#8c8a87",
+      "keyword": "#da4939",
+      "function": "#6d9cbe",
+      "string": "#83d182",
+      "number": "#ffd24a",
+      "type": "#a0cef0",
+      "variable": "#e6e1dc",
+      "constant": "#ffd24a"
+    }
+  }
+}

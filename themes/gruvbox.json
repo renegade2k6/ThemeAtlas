@@ -1,0 +1,38 @@
+{
+  "name": "Gruvbox",
+  "slug": "gruvbox",
+  "appearance": "dark",
+  "group": "Gruvbox",
+  "tags": [
+    "dark",
+    "editor",
+    "featured",
+    "popular"
+  ],
+  "colors": {
+    "background": "#282828",
+    "foreground": "#ebdbb2",
+    "surface": "#373433",
+    "surfaceRaised": "#3c3836",
+    "border": "#5f594f",
+    "accent": "#d79921",
+    "accentForeground": "#282828",
+    "mutedForeground": "#a79c82",
+    "success": "#98971a",
+    "warning": "#fabd2f",
+    "error": "#cc241d",
+    "info": "#458588",
+    "selection": "#5e4d31",
+    "cursor": "#d79921",
+    "syntax": {
+      "comment": "#8d8570",
+      "keyword": "#cc241d",
+      "function": "#d79921",
+      "string": "#98971a",
+      "number": "#fabd2f",
+      "type": "#458588",
+      "variable": "#ebdbb2",
+      "constant": "#fabd2f"
+    }
+  }
+}

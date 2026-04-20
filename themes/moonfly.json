@@ -1,0 +1,38 @@
+{
+  "name": "Moonfly",
+  "slug": "moonfly",
+  "appearance": "dark",
+  "group": "Terminal Classics",
+  "tags": [
+    "dark",
+    "editor",
+    "pastel",
+    "terminal"
+  ],
+  "colors": {
+    "background": "#080808",
+    "foreground": "#bdbdbd",
+    "surface": "#171717",
+    "surfaceRaised": "#1c1c1c",
+    "border": "#3c3c3c",
+    "accent": "#80a0ff",
+    "accentForeground": "#080808",
+    "mutedForeground": "#7e7e7e",
+    "success": "#8cc85f",
+    "warning": "#e3c78a",
+    "error": "#ff5454",
+    "info": "#79dac8",
+    "selection": "#32394e",
+    "cursor": "#80a0ff",
+    "syntax": {
+      "comment": "#666666",
+      "keyword": "#ff5454",
+      "function": "#80a0ff",
+      "string": "#8cc85f",
+      "number": "#e3c78a",
+      "type": "#79dac8",
+      "variable": "#bdbdbd",
+      "constant": "#e3c78a"
+    }
+  }
+}

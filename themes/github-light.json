@@ -1,0 +1,37 @@
+{
+  "name": "GitHub Light",
+  "slug": "github-light",
+  "appearance": "light",
+  "group": "GitHub",
+  "tags": [
+    "editor",
+    "light",
+    "popular"
+  ],
+  "colors": {
+    "background": "#ffffff",
+    "foreground": "#24292f",
+    "surface": "#f8fafb",
+    "surfaceRaised": "#f6f8fa",
+    "border": "#cccfd1",
+    "accent": "#0969da",
+    "accentForeground": "#ffffff",
+    "mutedForeground": "#717478",
+    "success": "#1a7f37",
+    "warning": "#9a6700",
+    "error": "#cf222e",
+    "info": "#0969da",
+    "selection": "#c2d9f3",
+    "cursor": "#0969da",
+    "syntax": {
+      "comment": "#8d9093",
+      "keyword": "#cf222e",
+      "function": "#0969da",
+      "string": "#1a7f37",
+      "number": "#9a6700",
+      "type": "#0969da",
+      "variable": "#24292f",
+      "constant": "#9a6700"
+    }
+  }
+}

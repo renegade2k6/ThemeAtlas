@@ -1,0 +1,36 @@
+{
+  "name": "Chalk",
+  "slug": "chalk",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#2b2d2e",
+    "foreground": "#d2d8d9",
+    "surface": "#3a3b3c",
+    "surfaceRaised": "#3f4041",
+    "border": "#5c5e5f",
+    "accent": "#2a7fac",
+    "accentForeground": "#2b2d2e",
+    "mutedForeground": "#989c9d",
+    "success": "#789a69",
+    "warning": "#b9ac4a",
+    "error": "#b23a52",
+    "info": "#44a799",
+    "selection": "#3a4e59",
+    "cursor": "#2a7fac",
+    "syntax": {
+      "comment": "#828687",
+      "keyword": "#b23a52",
+      "function": "#2a7fac",
+      "string": "#789a69",
+      "number": "#b9ac4a",
+      "type": "#44a799",
+      "variable": "#d2d8d9",
+      "constant": "#b9ac4a"
+    }
+  }
+}

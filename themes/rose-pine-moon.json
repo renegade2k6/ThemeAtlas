@@ -1,0 +1,38 @@
+{
+  "name": "Rose Pine Moon",
+  "slug": "rose-pine-moon",
+  "appearance": "dark",
+  "group": "Rose Pine",
+  "tags": [
+    "dark",
+    "editor",
+    "pastel",
+    "popular"
+  ],
+  "colors": {
+    "background": "#232136",
+    "foreground": "#e0def4",
+    "surface": "#34304b",
+    "surfaceRaised": "#393552",
+    "border": "#5a5772",
+    "accent": "#c4a7e7",
+    "accentForeground": "#232136",
+    "mutedForeground": "#9e9cb2",
+    "success": "#3e8fb0",
+    "warning": "#f6c177",
+    "error": "#eb6f92",
+    "info": "#9ccfd8",
+    "selection": "#584e73",
+    "cursor": "#c4a7e7",
+    "syntax": {
+      "comment": "#858399",
+      "keyword": "#eb6f92",
+      "function": "#c4a7e7",
+      "string": "#3e8fb0",
+      "number": "#f6c177",
+      "type": "#9ccfd8",
+      "variable": "#e0def4",
+      "constant": "#f6c177"
+    }
+  }
+}

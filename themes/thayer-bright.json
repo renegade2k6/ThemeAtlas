@@ -1,0 +1,36 @@
+{
+  "name": "Thayer Bright",
+  "slug": "thayer-bright",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#1b1d1e",
+    "foreground": "#f8f8f8",
+    "surface": "#28292a",
+    "surfaceRaised": "#2c2d2e",
+    "border": "#555656",
+    "accent": "#2757d6",
+    "accentForeground": "#1b1d1e",
+    "mutedForeground": "#ababac",
+    "success": "#4df840",
+    "warning": "#f4fd22",
+    "error": "#f92672",
+    "info": "#38c8b5",
+    "selection": "#2b3653",
+    "cursor": "#2757d6",
+    "syntax": {
+      "comment": "#8e8f8f",
+      "keyword": "#f92672",
+      "function": "#2757d6",
+      "string": "#4df840",
+      "number": "#f4fd22",
+      "type": "#38c8b5",
+      "variable": "#f8f8f8",
+      "constant": "#f4fd22"
+    }
+  }
+}

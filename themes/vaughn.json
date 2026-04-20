@@ -1,0 +1,36 @@
+{
+  "name": "Vaughn",
+  "slug": "vaughn",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#25234f",
+    "foreground": "#dcdccc",
+    "surface": "#302f59",
+    "surfaceRaised": "#33335c",
+    "border": "#555572",
+    "accent": "#5555ff",
+    "accentForeground": "#25234f",
+    "mutedForeground": "#9c9ba0",
+    "success": "#60b48a",
+    "warning": "#dfaf8f",
+    "error": "#705050",
+    "info": "#8cd0d3",
+    "selection": "#3a3a80",
+    "cursor": "#5555ff",
+    "syntax": {
+      "comment": "#848390",
+      "keyword": "#705050",
+      "function": "#5555ff",
+      "string": "#60b48a",
+      "number": "#dfaf8f",
+      "type": "#8cd0d3",
+      "variable": "#dcdccc",
+      "constant": "#dfaf8f"
+    }
+  }
+}

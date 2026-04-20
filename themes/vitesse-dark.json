@@ -1,0 +1,36 @@
+{
+  "name": "Vitesse Dark",
+  "slug": "vitesse-dark",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#121212",
+    "foreground": "#dbd7ca",
+    "surface": "#1b1b1b",
+    "surfaceRaised": "#1e1e1e",
+    "border": "#444340",
+    "accent": "#4d9375",
+    "accentForeground": "#121212",
+    "mutedForeground": "#95928a",
+    "success": "#80a665",
+    "warning": "#c99076",
+    "error": "#cb7676",
+    "info": "#5eaab5",
+    "selection": "#283831",
+    "cursor": "#4d9375",
+    "syntax": {
+      "comment": "#7b7872",
+      "keyword": "#cb7676",
+      "function": "#4d9375",
+      "string": "#80a665",
+      "number": "#c99076",
+      "type": "#5eaab5",
+      "variable": "#dbd7ca",
+      "constant": "#c99076"
+    }
+  }
+}

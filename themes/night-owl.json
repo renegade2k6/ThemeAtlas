@@ -1,0 +1,38 @@
+{
+  "name": "Night Owl",
+  "slug": "night-owl",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor",
+    "featured",
+    "popular"
+  ],
+  "colors": {
+    "background": "#011627",
+    "foreground": "#d6deeb",
+    "surface": "#09243b",
+    "surfaceRaised": "#0b2942",
+    "border": "#344d64",
+    "accent": "#82aaff",
+    "accentForeground": "#011627",
+    "mutedForeground": "#8b98a6",
+    "success": "#addb67",
+    "warning": "#ecc48d",
+    "error": "#ef5350",
+    "info": "#7fdbca",
+    "selection": "#25456c",
+    "cursor": "#82aaff",
+    "syntax": {
+      "comment": "#707e8d",
+      "keyword": "#ef5350",
+      "function": "#82aaff",
+      "string": "#addb67",
+      "number": "#ecc48d",
+      "type": "#7fdbca",
+      "variable": "#d6deeb",
+      "constant": "#ecc48d"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Sea Shells",
+  "slug": "sea-shells",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#09141b",
+    "foreground": "#deb88d",
+    "surface": "#142f40",
+    "surfaceRaised": "#17384c",
+    "border": "#3f5259",
+    "accent": "#1e4950",
+    "accentForeground": "#09141b",
+    "mutedForeground": "#937f65",
+    "success": "#027c9b",
+    "warning": "#fca02f",
+    "error": "#d15123",
+    "info": "#50a3b5",
+    "selection": "#193c4d",
+    "cursor": "#1e4950",
+    "syntax": {
+      "comment": "#786956",
+      "keyword": "#d15123",
+      "function": "#1e4950",
+      "string": "#027c9b",
+      "number": "#fca02f",
+      "type": "#50a3b5",
+      "variable": "#deb88d",
+      "constant": "#fca02f"
+    }
+  }
+}

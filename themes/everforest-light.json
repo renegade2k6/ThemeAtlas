@@ -1,0 +1,37 @@
+{
+  "name": "Everforest Light",
+  "slug": "everforest-light",
+  "appearance": "light",
+  "group": "Light Themes",
+  "tags": [
+    "editor",
+    "light",
+    "pastel"
+  ],
+  "colors": {
+    "background": "#fdf6e3",
+    "foreground": "#5c6a72",
+    "surface": "#f3eed8",
+    "surfaceRaised": "#efebd4",
+    "border": "#d2d1c0",
+    "accent": "#35a77c",
+    "accentForeground": "#fdf6e3",
+    "mutedForeground": "#949b9a",
+    "success": "#8da101",
+    "warning": "#dfa000",
+    "error": "#f85552",
+    "info": "#3a94c5",
+    "selection": "#c6dcc1",
+    "cursor": "#35a77c",
+    "syntax": {
+      "comment": "#a9ada8",
+      "keyword": "#f85552",
+      "function": "#35a77c",
+      "string": "#8da101",
+      "number": "#dfa000",
+      "type": "#3a94c5",
+      "variable": "#5c6a72",
+      "constant": "#dfa000"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "Base16 Eighties",
+  "slug": "base16-eighties",
+  "appearance": "dark",
+  "group": "Base16",
+  "tags": [
+    "dark",
+    "editor",
+    "terminal"
+  ],
+  "colors": {
+    "background": "#2d2d2d",
+    "foreground": "#d3d0c8",
+    "surface": "#363636",
+    "surfaceRaised": "#393939",
+    "border": "#585756",
+    "accent": "#6699cc",
+    "accentForeground": "#2d2d2d",
+    "mutedForeground": "#999792",
+    "success": "#99cc99",
+    "warning": "#ffcc66",
+    "error": "#f2777a",
+    "info": "#66cccc",
+    "selection": "#434e59",
+    "cursor": "#6699cc",
+    "syntax": {
+      "comment": "#83827e",
+      "keyword": "#f2777a",
+      "function": "#6699cc",
+      "string": "#99cc99",
+      "number": "#ffcc66",
+      "type": "#66cccc",
+      "variable": "#d3d0c8",
+      "constant": "#ffcc66"
+    }
+  }
+}

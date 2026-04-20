@@ -1,0 +1,36 @@
+{
+  "name": "Sonokai",
+  "slug": "sonokai",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#2c2e34",
+    "foreground": "#e2e2e3",
+    "surface": "#343640",
+    "surfaceRaised": "#363944",
+    "border": "#585b64",
+    "accent": "#9ed072",
+    "accentForeground": "#2c2e34",
+    "mutedForeground": "#a2a3a6",
+    "success": "#9ed072",
+    "warning": "#e7c664",
+    "error": "#fc5d7c",
+    "info": "#76cce0",
+    "selection": "#4d5a4e",
+    "cursor": "#9ed072",
+    "syntax": {
+      "comment": "#8b8c8f",
+      "keyword": "#fc5d7c",
+      "function": "#9ed072",
+      "string": "#9ed072",
+      "number": "#e7c664",
+      "type": "#76cce0",
+      "variable": "#e2e2e3",
+      "constant": "#e7c664"
+    }
+  }
+}

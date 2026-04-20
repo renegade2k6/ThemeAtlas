@@ -1,0 +1,36 @@
+{
+  "name": "Fish Tank",
+  "slug": "fish-tank",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#232537",
+    "foreground": "#ecf0fe",
+    "surface": "#2b2d42",
+    "surfaceRaised": "#2d3046",
+    "border": "#53566b",
+    "accent": "#525fb8",
+    "accentForeground": "#232537",
+    "mutedForeground": "#a6a9b8",
+    "success": "#acf157",
+    "warning": "#fdcd5e",
+    "error": "#c6004a",
+    "info": "#968763",
+    "selection": "#353a5f",
+    "cursor": "#525fb8",
+    "syntax": {
+      "comment": "#8c8f9e",
+      "keyword": "#c6004a",
+      "function": "#525fb8",
+      "string": "#acf157",
+      "number": "#fdcd5e",
+      "type": "#968763",
+      "variable": "#ecf0fe",
+      "constant": "#fdcd5e"
+    }
+  }
+}

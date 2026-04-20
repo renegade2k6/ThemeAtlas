@@ -1,0 +1,36 @@
+{
+  "name": "Dimmed Monokai",
+  "slug": "dimmed-monokai",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#1f1f1f",
+    "foreground": "#b9bcba",
+    "surface": "#282828",
+    "surfaceRaised": "#2b2b2b",
+    "border": "#474848",
+    "accent": "#4f76a1",
+    "accentForeground": "#1f1f1f",
+    "mutedForeground": "#838584",
+    "success": "#afb42b",
+    "warning": "#c4a000",
+    "error": "#be3f48",
+    "info": "#669999",
+    "selection": "#333c45",
+    "cursor": "#4f76a1",
+    "syntax": {
+      "comment": "#6f7170",
+      "keyword": "#be3f48",
+      "function": "#4f76a1",
+      "string": "#afb42b",
+      "number": "#c4a000",
+      "type": "#669999",
+      "variable": "#b9bcba",
+      "constant": "#c4a000"
+    }
+  }
+}

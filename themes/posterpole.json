@@ -1,0 +1,36 @@
+{
+  "name": "Posterpole",
+  "slug": "posterpole",
+  "appearance": "dark",
+  "group": "Terminal Classics",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#1f1f28",
+    "foreground": "#e6e1cf",
+    "surface": "#272733",
+    "surfaceRaised": "#2a2a37",
+    "border": "#504f55",
+    "accent": "#a3d4d5",
+    "accentForeground": "#1f1f28",
+    "mutedForeground": "#a09d95",
+    "success": "#b8cc52",
+    "warning": "#ffb454",
+    "error": "#f07178",
+    "info": "#59c2ff",
+    "selection": "#454f5a",
+    "cursor": "#a3d4d5",
+    "syntax": {
+      "comment": "#86847f",
+      "keyword": "#f07178",
+      "function": "#a3d4d5",
+      "string": "#b8cc52",
+      "number": "#ffb454",
+      "type": "#59c2ff",
+      "variable": "#e6e1cf",
+      "constant": "#ffb454"
+    }
+  }
+}

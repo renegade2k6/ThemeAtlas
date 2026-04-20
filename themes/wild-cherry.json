@@ -1,0 +1,36 @@
+{
+  "name": "Wild Cherry",
+  "slug": "wild-cherry",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#1f1726",
+    "foreground": "#daeefa",
+    "surface": "#271d30",
+    "surfaceRaised": "#2a1f33",
+    "border": "#4d485b",
+    "accent": "#883cdc",
+    "accentForeground": "#1f1726",
+    "mutedForeground": "#99a3b0",
+    "success": "#2ab250",
+    "warning": "#ffd16f",
+    "error": "#d94085",
+    "info": "#c1b8ff",
+    "selection": "#3f2558",
+    "cursor": "#883cdc",
+    "syntax": {
+      "comment": "#808794",
+      "keyword": "#d94085",
+      "function": "#883cdc",
+      "string": "#2ab250",
+      "number": "#ffd16f",
+      "type": "#c1b8ff",
+      "variable": "#daeefa",
+      "constant": "#ffd16f"
+    }
+  }
+}

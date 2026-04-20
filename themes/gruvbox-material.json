@@ -1,0 +1,37 @@
+{
+  "name": "Gruvbox Material",
+  "slug": "gruvbox-material",
+  "appearance": "dark",
+  "group": "Gruvbox",
+  "tags": [
+    "dark",
+    "editor",
+    "popular"
+  ],
+  "colors": {
+    "background": "#1d2021",
+    "foreground": "#d4be98",
+    "surface": "#252626",
+    "surfaceRaised": "#282828",
+    "border": "#4a463e",
+    "accent": "#d8a657",
+    "accentForeground": "#1d2021",
+    "mutedForeground": "#94876e",
+    "success": "#a9b665",
+    "warning": "#d8a657",
+    "error": "#ea6962",
+    "info": "#89b482",
+    "selection": "#4f4432",
+    "cursor": "#d8a657",
+    "syntax": {
+      "comment": "#7c725f",
+      "keyword": "#ea6962",
+      "function": "#d8a657",
+      "string": "#a9b665",
+      "number": "#d8a657",
+      "type": "#89b482",
+      "variable": "#d4be98",
+      "constant": "#d8a657"
+    }
+  }
+}

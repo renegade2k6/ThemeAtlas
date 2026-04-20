@@ -1,0 +1,36 @@
+{
+  "name": "Space Gray",
+  "slug": "space-gray",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#20242d",
+    "foreground": "#b3b8c3",
+    "surface": "#282d38",
+    "surfaceRaised": "#2b303b",
+    "border": "#464b56",
+    "accent": "#7d8fa4",
+    "accentForeground": "#20242d",
+    "mutedForeground": "#80848f",
+    "success": "#85a7a5",
+    "warning": "#e5c179",
+    "error": "#b04b57",
+    "info": "#89b4c4",
+    "selection": "#3d4552",
+    "cursor": "#7d8fa4",
+    "syntax": {
+      "comment": "#6c717b",
+      "keyword": "#b04b57",
+      "function": "#7d8fa4",
+      "string": "#85a7a5",
+      "number": "#e5c179",
+      "type": "#89b4c4",
+      "variable": "#b3b8c3",
+      "constant": "#e5c179"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "Seoul256",
+  "slug": "seoul256",
+  "appearance": "dark",
+  "group": "Terminal Classics",
+  "tags": [
+    "dark",
+    "editor",
+    "terminal"
+  ],
+  "colors": {
+    "background": "#3a3a3a",
+    "foreground": "#d0d0d0",
+    "surface": "#494949",
+    "surfaceRaised": "#4e4e4e",
+    "border": "#686868",
+    "accent": "#85add4",
+    "accentForeground": "#3a3a3a",
+    "mutedForeground": "#9c9c9c",
+    "success": "#afd787",
+    "warning": "#d7af87",
+    "error": "#d68787",
+    "info": "#87afaf",
+    "selection": "#5a636b",
+    "cursor": "#85add4",
+    "syntax": {
+      "comment": "#888888",
+      "keyword": "#d68787",
+      "function": "#85add4",
+      "string": "#afd787",
+      "number": "#d7af87",
+      "type": "#87afaf",
+      "variable": "#d0d0d0",
+      "constant": "#d7af87"
+    }
+  }
+}

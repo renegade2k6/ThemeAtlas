@@ -1,0 +1,37 @@
+{
+  "name": "Neon Candy",
+  "slug": "neon-candy",
+  "appearance": "dark",
+  "group": "Cyberpunk / Neon",
+  "tags": [
+    "cyberpunk",
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#16051f",
+    "foreground": "#f8ecff",
+    "surface": "#2b0f3c",
+    "surfaceRaised": "#321246",
+    "border": "#5a3e6b",
+    "accent": "#fac948",
+    "accentForeground": "#16051f",
+    "mutedForeground": "#a99bb1",
+    "success": "#aaa6f5",
+    "warning": "#fac948",
+    "error": "#e367a0",
+    "info": "#ad76d3",
+    "selection": "#5e3a46",
+    "cursor": "#fac948",
+    "syntax": {
+      "comment": "#8c7d93",
+      "keyword": "#e367a0",
+      "function": "#fac948",
+      "string": "#aaa6f5",
+      "number": "#fac948",
+      "type": "#ad76d3",
+      "variable": "#f8ecff",
+      "constant": "#fac948"
+    }
+  }
+}

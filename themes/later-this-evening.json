@@ -1,0 +1,36 @@
+{
+  "name": "Later This Evening",
+  "slug": "later-this-evening",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#222222",
+    "foreground": "#c0c2c2",
+    "surface": "#2d2d2d",
+    "surfaceRaised": "#303030",
+    "border": "#4d4d4d",
+    "accent": "#a0bad6",
+    "accentForeground": "#222222",
+    "mutedForeground": "#898a8a",
+    "success": "#afba67",
+    "warning": "#e5d289",
+    "error": "#d35a5f",
+    "info": "#91beb6",
+    "selection": "#494e55",
+    "cursor": "#a0bad6",
+    "syntax": {
+      "comment": "#747575",
+      "keyword": "#d35a5f",
+      "function": "#a0bad6",
+      "string": "#afba67",
+      "number": "#e5d289",
+      "type": "#91beb6",
+      "variable": "#c0c2c2",
+      "constant": "#e5d289"
+    }
+  }
+}

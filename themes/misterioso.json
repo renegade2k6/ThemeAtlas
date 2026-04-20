@@ -1,0 +1,36 @@
+{
+  "name": "Misterioso",
+  "slug": "misterioso",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#2d3743",
+    "foreground": "#e1e1e0",
+    "surface": "#384755",
+    "surfaceRaised": "#3c4c5b",
+    "border": "#5d6a76",
+    "accent": "#338f86",
+    "accentForeground": "#2d3743",
+    "mutedForeground": "#a2a6a9",
+    "success": "#74af68",
+    "warning": "#ffad29",
+    "error": "#ff4242",
+    "info": "#23d7d7",
+    "selection": "#3a5b64",
+    "cursor": "#338f86",
+    "syntax": {
+      "comment": "#8b8f95",
+      "keyword": "#ff4242",
+      "function": "#338f86",
+      "string": "#74af68",
+      "number": "#ffad29",
+      "type": "#23d7d7",
+      "variable": "#e1e1e0",
+      "constant": "#ffad29"
+    }
+  }
+}

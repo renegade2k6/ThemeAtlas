@@ -1,0 +1,36 @@
+{
+  "name": "Tinacious Design Dark",
+  "slug": "tinacious-design-dark",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#1d1d26",
+    "foreground": "#cbcbf0",
+    "surface": "#282832",
+    "surfaceRaised": "#2b2b36",
+    "border": "#4b4b5b",
+    "accent": "#00cbff",
+    "accentForeground": "#1d1d26",
+    "mutedForeground": "#8e8ea9",
+    "success": "#00d364",
+    "warning": "#ffcc66",
+    "error": "#ff3399",
+    "info": "#00ceca",
+    "selection": "#224e62",
+    "cursor": "#00cbff",
+    "syntax": {
+      "comment": "#77778f",
+      "keyword": "#ff3399",
+      "function": "#00cbff",
+      "string": "#00d364",
+      "number": "#ffcc66",
+      "type": "#00ceca",
+      "variable": "#cbcbf0",
+      "constant": "#ffcc66"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Vibrant Ink",
+  "slug": "vibrant-ink",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#000000",
+    "foreground": "#ffffff",
+    "surface": "#1a1a1a",
+    "surfaceRaised": "#222222",
+    "border": "#4e4e4e",
+    "accent": "#44b4cc",
+    "accentForeground": "#000000",
+    "mutedForeground": "#a6a6a6",
+    "success": "#ccff04",
+    "warning": "#ffcc00",
+    "error": "#ff6600",
+    "info": "#44b4cc",
+    "selection": "#294247",
+    "cursor": "#44b4cc",
+    "syntax": {
+      "comment": "#858585",
+      "keyword": "#ff6600",
+      "function": "#44b4cc",
+      "string": "#ccff04",
+      "number": "#ffcc00",
+      "type": "#44b4cc",
+      "variable": "#ffffff",
+      "constant": "#ffcc00"
+    }
+  }
+}

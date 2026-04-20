@@ -1,0 +1,37 @@
+{
+  "name": "Cyberpunk",
+  "slug": "cyberpunk",
+  "appearance": "dark",
+  "group": "Cyberpunk / Neon",
+  "tags": [
+    "cyberpunk",
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#10002b",
+    "foreground": "#fff200",
+    "surface": "#1f003f",
+    "surfaceRaised": "#240046",
+    "border": "#503038",
+    "accent": "#ff00a8",
+    "accentForeground": "#10002b",
+    "mutedForeground": "#ab9d0f",
+    "success": "#00f5d4",
+    "warning": "#fcee09",
+    "error": "#ff3864",
+    "info": "#00bbf9",
+    "selection": "#54005c",
+    "cursor": "#ff00a8",
+    "syntax": {
+      "comment": "#8c7e15",
+      "keyword": "#ff3864",
+      "function": "#ff00a8",
+      "string": "#00f5d4",
+      "number": "#fcee09",
+      "type": "#00bbf9",
+      "variable": "#fff200",
+      "constant": "#fcee09"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Tomorrow Night",
+  "slug": "tomorrow-night",
+  "appearance": "dark",
+  "group": "Terminal Classics",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#1d1f21",
+    "foreground": "#c5c8c6",
+    "surface": "#25272b",
+    "surfaceRaised": "#282a2e",
+    "border": "#474a4c",
+    "accent": "#81a2be",
+    "accentForeground": "#1d1f21",
+    "mutedForeground": "#8a8d8c",
+    "success": "#b5bd68",
+    "warning": "#f0c674",
+    "error": "#cc6666",
+    "info": "#8abeb7",
+    "selection": "#3c444e",
+    "cursor": "#81a2be",
+    "syntax": {
+      "comment": "#747777",
+      "keyword": "#cc6666",
+      "function": "#81a2be",
+      "string": "#b5bd68",
+      "number": "#f0c674",
+      "type": "#8abeb7",
+      "variable": "#c5c8c6",
+      "constant": "#f0c674"
+    }
+  }
+}

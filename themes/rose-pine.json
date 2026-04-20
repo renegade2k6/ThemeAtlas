@@ -1,0 +1,39 @@
+{
+  "name": "Rose Pine",
+  "slug": "rose-pine",
+  "appearance": "dark",
+  "group": "Rose Pine",
+  "tags": [
+    "dark",
+    "editor",
+    "featured",
+    "pastel",
+    "popular"
+  ],
+  "colors": {
+    "background": "#191724",
+    "foreground": "#e0def4",
+    "surface": "#232035",
+    "surfaceRaised": "#26233a",
+    "border": "#4b485f",
+    "accent": "#c4a7e7",
+    "accentForeground": "#191724",
+    "mutedForeground": "#9a98ab",
+    "success": "#31748f",
+    "warning": "#f6c177",
+    "error": "#eb6f92",
+    "info": "#9ccfd8",
+    "selection": "#494060",
+    "cursor": "#c4a7e7",
+    "syntax": {
+      "comment": "#807e90",
+      "keyword": "#eb6f92",
+      "function": "#c4a7e7",
+      "string": "#31748f",
+      "number": "#f6c177",
+      "type": "#9ccfd8",
+      "variable": "#e0def4",
+      "constant": "#f6c177"
+    }
+  }
+}

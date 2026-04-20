@@ -1,0 +1,37 @@
+{
+  "name": "Everforest",
+  "slug": "everforest",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor",
+    "pastel"
+  ],
+  "colors": {
+    "background": "#2d353b",
+    "foreground": "#d3c6aa",
+    "surface": "#394349",
+    "surfaceRaised": "#3d484d",
+    "border": "#5b6160",
+    "accent": "#83c092",
+    "accentForeground": "#2d353b",
+    "mutedForeground": "#999383",
+    "success": "#a7c080",
+    "warning": "#dbbc7f",
+    "error": "#e67e80",
+    "info": "#7fbbb3",
+    "selection": "#4c625c",
+    "cursor": "#83c092",
+    "syntax": {
+      "comment": "#838075",
+      "keyword": "#e67e80",
+      "function": "#83c092",
+      "string": "#a7c080",
+      "number": "#dbbc7f",
+      "type": "#7fbbb3",
+      "variable": "#d3c6aa",
+      "constant": "#dbbc7f"
+    }
+  }
+}

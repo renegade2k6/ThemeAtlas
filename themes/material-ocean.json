@@ -1,0 +1,37 @@
+{
+  "name": "Material Ocean",
+  "slug": "material-ocean",
+  "appearance": "dark",
+  "group": "Material",
+  "tags": [
+    "dark",
+    "editor",
+    "popular"
+  ],
+  "colors": {
+    "background": "#0f111a",
+    "foreground": "#a6accd",
+    "surface": "#171922",
+    "surfaceRaised": "#1a1c25",
+    "border": "#363947",
+    "accent": "#82aaff",
+    "accentForeground": "#0f111a",
+    "mutedForeground": "#71768e",
+    "success": "#c3e88d",
+    "warning": "#ffcb6b",
+    "error": "#f07178",
+    "info": "#89ddff",
+    "selection": "#313b55",
+    "cursor": "#82aaff",
+    "syntax": {
+      "comment": "#5e6277",
+      "keyword": "#f07178",
+      "function": "#82aaff",
+      "string": "#c3e88d",
+      "number": "#ffcb6b",
+      "type": "#89ddff",
+      "variable": "#a6accd",
+      "constant": "#ffcb6b"
+    }
+  }
+}

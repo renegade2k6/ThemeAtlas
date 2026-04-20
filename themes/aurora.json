@@ -1,0 +1,36 @@
+{
+  "name": "Aurora",
+  "slug": "aurora",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#0b1020",
+    "foreground": "#e6f0ff",
+    "surface": "#11182b",
+    "surfaceRaised": "#131a2e",
+    "border": "#3d4558",
+    "accent": "#78a8ff",
+    "accentForeground": "#0b1020",
+    "mutedForeground": "#99a2b1",
+    "success": "#7ee787",
+    "warning": "#f2cc60",
+    "error": "#ff7b72",
+    "info": "#a5d6ff",
+    "selection": "#29395c",
+    "cursor": "#78a8ff",
+    "syntax": {
+      "comment": "#7d8494",
+      "keyword": "#ff7b72",
+      "function": "#78a8ff",
+      "string": "#7ee787",
+      "number": "#f2cc60",
+      "type": "#a5d6ff",
+      "variable": "#e6f0ff",
+      "constant": "#f2cc60"
+    }
+  }
+}

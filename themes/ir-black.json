@@ -1,0 +1,37 @@
+{
+  "name": "IR Black",
+  "slug": "ir-black",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor",
+    "oled"
+  ],
+  "colors": {
+    "background": "#000000",
+    "foreground": "#f1f1f1",
+    "surface": "#151515",
+    "surfaceRaised": "#1c1c1c",
+    "border": "#474747",
+    "accent": "#96cbfe",
+    "accentForeground": "#000000",
+    "mutedForeground": "#9d9d9d",
+    "success": "#a8ff60",
+    "warning": "#ffffb6",
+    "error": "#ff6c60",
+    "info": "#c6c5fe",
+    "selection": "#37434e",
+    "cursor": "#96cbfe",
+    "syntax": {
+      "comment": "#7d7d7d",
+      "keyword": "#ff6c60",
+      "function": "#96cbfe",
+      "string": "#a8ff60",
+      "number": "#ffffb6",
+      "type": "#c6c5fe",
+      "variable": "#f1f1f1",
+      "constant": "#ffffb6"
+    }
+  }
+}

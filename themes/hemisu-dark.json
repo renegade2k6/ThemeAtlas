@@ -1,0 +1,36 @@
+{
+  "name": "Hemisu Dark",
+  "slug": "hemisu-dark",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#000000",
+    "foreground": "#ffffff",
+    "surface": "#1a1a1a",
+    "surfaceRaised": "#222222",
+    "border": "#4e4e4e",
+    "accent": "#9fd3e6",
+    "accentForeground": "#000000",
+    "mutedForeground": "#a6a6a6",
+    "success": "#b1d631",
+    "warning": "#ae9b00",
+    "error": "#ff0054",
+    "info": "#bbffaa",
+    "selection": "#3e494d",
+    "cursor": "#9fd3e6",
+    "syntax": {
+      "comment": "#858585",
+      "keyword": "#ff0054",
+      "function": "#9fd3e6",
+      "string": "#b1d631",
+      "number": "#ae9b00",
+      "type": "#bbffaa",
+      "variable": "#ffffff",
+      "constant": "#ae9b00"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "Poimandres",
+  "slug": "poimandres",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor",
+    "pastel"
+  ],
+  "colors": {
+    "background": "#1b1e28",
+    "foreground": "#a6accd",
+    "surface": "#232833",
+    "surfaceRaised": "#252b37",
+    "border": "#3f4555",
+    "accent": "#add7ff",
+    "accentForeground": "#1b1e28",
+    "mutedForeground": "#757a93",
+    "success": "#5de4c7",
+    "warning": "#fffac2",
+    "error": "#d0679d",
+    "info": "#89ddff",
+    "selection": "#435163",
+    "cursor": "#add7ff",
+    "syntax": {
+      "comment": "#63687e",
+      "keyword": "#d0679d",
+      "function": "#add7ff",
+      "string": "#5de4c7",
+      "number": "#fffac2",
+      "type": "#89ddff",
+      "variable": "#a6accd",
+      "constant": "#fffac2"
+    }
+  }
+}

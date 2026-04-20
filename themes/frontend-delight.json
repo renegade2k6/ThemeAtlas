@@ -1,0 +1,36 @@
+{
+  "name": "Frontend Delight",
+  "slug": "frontend-delight",
+  "appearance": "dark",
+  "group": "Light Themes",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#1b1c1d",
+    "foreground": "#adadad",
+    "surface": "#222324",
+    "surfaceRaised": "#242526",
+    "border": "#3f4041",
+    "accent": "#2c70b7",
+    "accentForeground": "#1b1c1d",
+    "mutedForeground": "#7a7a7b",
+    "success": "#565747",
+    "warning": "#fa771d",
+    "error": "#f8511b",
+    "info": "#3ca1a6",
+    "selection": "#263646",
+    "cursor": "#2c70b7",
+    "syntax": {
+      "comment": "#676768",
+      "keyword": "#f8511b",
+      "function": "#2c70b7",
+      "string": "#565747",
+      "number": "#fa771d",
+      "type": "#3ca1a6",
+      "variable": "#adadad",
+      "constant": "#fa771d"
+    }
+  }
+}

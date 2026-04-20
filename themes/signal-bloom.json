@@ -1,0 +1,36 @@
+{
+  "name": "Signal Bloom",
+  "slug": "signal-bloom",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#111827",
+    "foreground": "#f8fbff",
+    "surface": "#1e2b47",
+    "surfaceRaised": "#223152",
+    "border": "#4d5975",
+    "accent": "#67ca94",
+    "accentForeground": "#111827",
+    "mutedForeground": "#a7acb3",
+    "success": "#67ca94",
+    "warning": "#f0c56a",
+    "error": "#d43671",
+    "info": "#3e7be5",
+    "selection": "#315361",
+    "cursor": "#67ca94",
+    "syntax": {
+      "comment": "#898e97",
+      "keyword": "#d43671",
+      "function": "#67ca94",
+      "string": "#67ca94",
+      "number": "#f0c56a",
+      "type": "#3e7be5",
+      "variable": "#f8fbff",
+      "constant": "#f0c56a"
+    }
+  }
+}

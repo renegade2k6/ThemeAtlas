@@ -1,0 +1,38 @@
+{
+  "name": "OLED Black",
+  "slug": "oled-black",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor",
+    "featured",
+    "oled"
+  ],
+  "colors": {
+    "background": "#000000",
+    "foreground": "#f4f7fb",
+    "surface": "#0c0c0c",
+    "surfaceRaised": "#101010",
+    "border": "#3e3e3f",
+    "accent": "#00f5d4",
+    "accentForeground": "#000000",
+    "mutedForeground": "#9fa1a3",
+    "success": "#39ff14",
+    "warning": "#fee440",
+    "error": "#ff4d6d",
+    "info": "#00bbf9",
+    "selection": "#0c423b",
+    "cursor": "#00f5d4",
+    "syntax": {
+      "comment": "#7f8083",
+      "keyword": "#ff4d6d",
+      "function": "#00f5d4",
+      "string": "#39ff14",
+      "number": "#fee440",
+      "type": "#00bbf9",
+      "variable": "#f4f7fb",
+      "constant": "#fee440"
+    }
+  }
+}

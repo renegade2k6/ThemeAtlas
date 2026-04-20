@@ -1,0 +1,17 @@
+{
+  "name": "Theme Atlas",
+  "short_name": "Theme Atlas",
+  "description": "A comprehensive browser-based catalog of reusable app theme color tokens.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#111318",
+  "theme_color": "#00f5d4",
+  "icons": [
+    {
+      "src": "assets/theme-viewer-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

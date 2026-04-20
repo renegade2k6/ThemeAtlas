@@ -1,0 +1,36 @@
+{
+  "name": "Pacific Ember",
+  "slug": "pacific-ember",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#102b35",
+    "foreground": "#f5f1dc",
+    "surface": "#1c3f4c",
+    "surfaceRaised": "#204653",
+    "border": "#4b686e",
+    "accent": "#e9c46a",
+    "accentForeground": "#102b35",
+    "mutedForeground": "#a5aca2",
+    "success": "#2a9d8f",
+    "warning": "#f4a261",
+    "error": "#e76f51",
+    "info": "#8ecae6",
+    "selection": "#4c6258",
+    "cursor": "#e9c46a",
+    "syntax": {
+      "comment": "#87928c",
+      "keyword": "#e76f51",
+      "function": "#e9c46a",
+      "string": "#2a9d8f",
+      "number": "#f4a261",
+      "type": "#8ecae6",
+      "variable": "#f5f1dc",
+      "constant": "#f4a261"
+    }
+  }
+}

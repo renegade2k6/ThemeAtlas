@@ -1,0 +1,36 @@
+{
+  "name": "Batman",
+  "slug": "batman",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#1b1d1e",
+    "foreground": "#f1f1f1",
+    "surface": "#434647",
+    "surfaceRaised": "#505354",
+    "border": "#707373",
+    "accent": "#737174",
+    "accentForeground": "#1b1d1e",
+    "mutedForeground": "#a6a7a7",
+    "success": "#c8be46",
+    "warning": "#f4fd22",
+    "error": "#e6dc44",
+    "info": "#615f5e",
+    "selection": "#585a5b",
+    "cursor": "#737174",
+    "syntax": {
+      "comment": "#8a8b8c",
+      "keyword": "#e6dc44",
+      "function": "#737174",
+      "string": "#c8be46",
+      "number": "#f4fd22",
+      "type": "#615f5e",
+      "variable": "#f1f1f1",
+      "constant": "#f4fd22"
+    }
+  }
+}

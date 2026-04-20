@@ -1,0 +1,36 @@
+{
+  "name": "Wez",
+  "slug": "wez",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#000000",
+    "foreground": "#b3b3b3",
+    "surface": "#1a1a1a",
+    "surfaceRaised": "#222222",
+    "border": "#3f3f3f",
+    "accent": "#5555cc",
+    "accentForeground": "#000000",
+    "mutedForeground": "#747474",
+    "success": "#55cc55",
+    "warning": "#cdcd55",
+    "error": "#cc5555",
+    "info": "#7acaca",
+    "selection": "#2d2d47",
+    "cursor": "#5555cc",
+    "syntax": {
+      "comment": "#5d5d5d",
+      "keyword": "#cc5555",
+      "function": "#5555cc",
+      "string": "#55cc55",
+      "number": "#cdcd55",
+      "type": "#7acaca",
+      "variable": "#b3b3b3",
+      "constant": "#cdcd55"
+    }
+  }
+}

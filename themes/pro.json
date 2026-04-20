@@ -1,0 +1,36 @@
+{
+  "name": "Pro",
+  "slug": "pro",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#000000",
+    "foreground": "#f2f2f2",
+    "surface": "#171717",
+    "surfaceRaised": "#1f1f1f",
+    "border": "#494949",
+    "accent": "#3b75ff",
+    "accentForeground": "#000000",
+    "mutedForeground": "#9d9d9d",
+    "success": "#4dbe0c",
+    "warning": "#f0e68c",
+    "error": "#990000",
+    "info": "#00a7aa",
+    "selection": "#253250",
+    "cursor": "#3b75ff",
+    "syntax": {
+      "comment": "#7e7e7e",
+      "keyword": "#990000",
+      "function": "#3b75ff",
+      "string": "#4dbe0c",
+      "number": "#f0e68c",
+      "type": "#00a7aa",
+      "variable": "#f2f2f2",
+      "constant": "#f0e68c"
+    }
+  }
+}

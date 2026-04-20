@@ -1,0 +1,38 @@
+{
+  "name": "Kanagawa",
+  "slug": "kanagawa",
+  "appearance": "dark",
+  "group": "Kanagawa",
+  "tags": [
+    "dark",
+    "editor",
+    "featured",
+    "popular"
+  ],
+  "colors": {
+    "background": "#1f1f28",
+    "foreground": "#dcd7ba",
+    "surface": "#272733",
+    "surfaceRaised": "#2a2a37",
+    "border": "#4e4d51",
+    "accent": "#7e9cd8",
+    "accentForeground": "#1f1f28",
+    "mutedForeground": "#9a9787",
+    "success": "#98bb6c",
+    "warning": "#e6c384",
+    "error": "#e82424",
+    "info": "#7aa89f",
+    "selection": "#3c435a",
+    "cursor": "#7e9cd8",
+    "syntax": {
+      "comment": "#817f74",
+      "keyword": "#e82424",
+      "function": "#7e9cd8",
+      "string": "#98bb6c",
+      "number": "#e6c384",
+      "type": "#7aa89f",
+      "variable": "#dcd7ba",
+      "constant": "#e6c384"
+    }
+  }
+}

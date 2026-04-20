@@ -1,0 +1,36 @@
+{
+  "name": "Golden Grove",
+  "slug": "golden-grove",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#2d3027",
+    "foreground": "#fff0c7",
+    "surface": "#404332",
+    "surfaceRaised": "#464936",
+    "border": "#6b6a53",
+    "accent": "#ffcb70",
+    "accentForeground": "#2d3027",
+    "mutedForeground": "#b6ad8f",
+    "success": "#9b9b7a",
+    "warning": "#ffcb70",
+    "error": "#d08c60",
+    "info": "#f0b27a",
+    "selection": "#6f6643",
+    "cursor": "#ffcb70",
+    "syntax": {
+      "comment": "#9a947a",
+      "keyword": "#d08c60",
+      "function": "#ffcb70",
+      "string": "#9b9b7a",
+      "number": "#ffcb70",
+      "type": "#f0b27a",
+      "variable": "#fff0c7",
+      "constant": "#ffcb70"
+    }
+  }
+}

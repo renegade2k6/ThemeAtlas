@@ -1,0 +1,36 @@
+{
+  "name": "Light Owl",
+  "slug": "light-owl",
+  "appearance": "light",
+  "group": "Light Themes",
+  "tags": [
+    "editor",
+    "light"
+  ],
+  "colors": {
+    "background": "#fbfbfb",
+    "foreground": "#403f53",
+    "surface": "#f3f3f3",
+    "surfaceRaised": "#f0f0f0",
+    "border": "#cdcdd1",
+    "accent": "#4876d6",
+    "accentForeground": "#fbfbfb",
+    "mutedForeground": "#81818e",
+    "success": "#2aa298",
+    "warning": "#daaa01",
+    "error": "#de3d3b",
+    "info": "#08916a",
+    "selection": "#cbd5ea",
+    "cursor": "#4876d6",
+    "syntax": {
+      "comment": "#9a99a4",
+      "keyword": "#de3d3b",
+      "function": "#4876d6",
+      "string": "#2aa298",
+      "number": "#daaa01",
+      "type": "#08916a",
+      "variable": "#403f53",
+      "constant": "#daaa01"
+    }
+  }
+}

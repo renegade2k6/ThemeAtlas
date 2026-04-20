@@ -1,0 +1,36 @@
+{
+  "name": "Argonaut",
+  "slug": "argonaut",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#0e1019",
+    "foreground": "#fffaf4",
+    "surface": "#1e1e21",
+    "surfaceRaised": "#232323",
+    "border": "#4f4e4d",
+    "accent": "#008df8",
+    "accentForeground": "#0e1019",
+    "mutedForeground": "#aba8a7",
+    "success": "#8ce10b",
+    "warning": "#ffb900",
+    "error": "#ff000f",
+    "info": "#00d8eb",
+    "selection": "#1b3a52",
+    "cursor": "#008df8",
+    "syntax": {
+      "comment": "#8b8a8b",
+      "keyword": "#ff000f",
+      "function": "#008df8",
+      "string": "#8ce10b",
+      "number": "#ffb900",
+      "type": "#00d8eb",
+      "variable": "#fffaf4",
+      "constant": "#ffb900"
+    }
+  }
+}

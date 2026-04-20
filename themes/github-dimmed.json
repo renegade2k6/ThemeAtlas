@@ -1,0 +1,37 @@
+{
+  "name": "GitHub Dimmed",
+  "slug": "github-dimmed",
+  "appearance": "dark",
+  "group": "GitHub",
+  "tags": [
+    "dark",
+    "editor",
+    "popular"
+  ],
+  "colors": {
+    "background": "#22272e",
+    "foreground": "#adbac7",
+    "surface": "#2a3038",
+    "surfaceRaised": "#2d333b",
+    "border": "#474e57",
+    "accent": "#539bf5",
+    "accentForeground": "#22272e",
+    "mutedForeground": "#7c8791",
+    "success": "#57ab5a",
+    "warning": "#daaa3f",
+    "error": "#e5534b",
+    "info": "#6cb6ff",
+    "selection": "#354a64",
+    "cursor": "#539bf5",
+    "syntax": {
+      "comment": "#6a737e",
+      "keyword": "#e5534b",
+      "function": "#539bf5",
+      "string": "#57ab5a",
+      "number": "#daaa3f",
+      "type": "#6cb6ff",
+      "variable": "#adbac7",
+      "constant": "#daaa3f"
+    }
+  }
+}

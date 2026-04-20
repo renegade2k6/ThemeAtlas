@@ -1,0 +1,36 @@
+{
+  "name": "Birds of Paradise",
+  "slug": "birds-of-paradise",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#2a1f1d",
+    "foreground": "#e0dbb7",
+    "surface": "#382823",
+    "surfaceRaised": "#3d2b25",
+    "border": "#5e4e42",
+    "accent": "#5a86ad",
+    "accentForeground": "#2a1f1d",
+    "mutedForeground": "#a09981",
+    "success": "#6ba18a",
+    "warning": "#e99d2a",
+    "error": "#be2d26",
+    "info": "#74a6ad",
+    "selection": "#433f43",
+    "cursor": "#5a86ad",
+    "syntax": {
+      "comment": "#89816d",
+      "keyword": "#be2d26",
+      "function": "#5a86ad",
+      "string": "#6ba18a",
+      "number": "#e99d2a",
+      "type": "#74a6ad",
+      "variable": "#e0dbb7",
+      "constant": "#e99d2a"
+    }
+  }
+}

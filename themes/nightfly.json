@@ -1,0 +1,37 @@
+{
+  "name": "Nightfly",
+  "slug": "nightfly",
+  "appearance": "dark",
+  "group": "Terminal Classics",
+  "tags": [
+    "dark",
+    "editor",
+    "terminal"
+  ],
+  "colors": {
+    "background": "#011627",
+    "foreground": "#bdc1c6",
+    "surface": "#071f32",
+    "surfaceRaised": "#092236",
+    "border": "#2d4253",
+    "accent": "#82aaff",
+    "accentForeground": "#011627",
+    "mutedForeground": "#7b858e",
+    "success": "#21c7a8",
+    "warning": "#ecc48d",
+    "error": "#fc514e",
+    "info": "#7fdbca",
+    "selection": "#244062",
+    "cursor": "#82aaff",
+    "syntax": {
+      "comment": "#636f7a",
+      "keyword": "#fc514e",
+      "function": "#82aaff",
+      "string": "#21c7a8",
+      "number": "#ecc48d",
+      "type": "#7fdbca",
+      "variable": "#bdc1c6",
+      "constant": "#ecc48d"
+    }
+  }
+}

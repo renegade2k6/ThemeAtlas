@@ -1,0 +1,37 @@
+{
+  "name": "Carbonfox",
+  "slug": "carbonfox",
+  "appearance": "dark",
+  "group": "Nightfox",
+  "tags": [
+    "dark",
+    "editor",
+    "oled"
+  ],
+  "colors": {
+    "background": "#161616",
+    "foreground": "#f2f4f8",
+    "surface": "#212121",
+    "surfaceRaised": "#252525",
+    "border": "#4e4e4f",
+    "accent": "#78a9ff",
+    "accentForeground": "#161616",
+    "mutedForeground": "#a5a6a9",
+    "success": "#42be65",
+    "warning": "#be95ff",
+    "error": "#ee5396",
+    "info": "#33b1ff",
+    "selection": "#374255",
+    "cursor": "#78a9ff",
+    "syntax": {
+      "comment": "#88898c",
+      "keyword": "#ee5396",
+      "function": "#78a9ff",
+      "string": "#42be65",
+      "number": "#be95ff",
+      "type": "#33b1ff",
+      "variable": "#f2f4f8",
+      "constant": "#be95ff"
+    }
+  }
+}

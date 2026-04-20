@@ -1,0 +1,37 @@
+{
+  "name": "One Half Light",
+  "slug": "one-half-light",
+  "appearance": "light",
+  "group": "One / Atom",
+  "tags": [
+    "editor",
+    "light",
+    "terminal"
+  ],
+  "colors": {
+    "background": "#fafafa",
+    "foreground": "#383a42",
+    "surface": "#eaeaeb",
+    "surfaceRaised": "#e5e5e6",
+    "border": "#c2c3c5",
+    "accent": "#0184bc",
+    "accentForeground": "#fafafa",
+    "mutedForeground": "#7c7d82",
+    "success": "#50a14f",
+    "warning": "#c18401",
+    "error": "#e45649",
+    "info": "#0997b3",
+    "selection": "#b3d0dd",
+    "cursor": "#0184bc",
+    "syntax": {
+      "comment": "#95969a",
+      "keyword": "#e45649",
+      "function": "#0184bc",
+      "string": "#50a14f",
+      "number": "#c18401",
+      "type": "#0997b3",
+      "variable": "#383a42",
+      "constant": "#c18401"
+    }
+  }
+}

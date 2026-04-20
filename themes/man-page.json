@@ -1,0 +1,36 @@
+{
+  "name": "Man Page",
+  "slug": "man-page",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#fef49c",
+    "foreground": "#000000",
+    "surface": "#eee07f",
+    "surfaceRaised": "#e8d975",
+    "border": "#baae5e",
+    "accent": "#0000b2",
+    "accentForeground": "#fef49c",
+    "mutedForeground": "#595537",
+    "success": "#00a600",
+    "warning": "#999900",
+    "error": "#cc0000",
+    "info": "#00a6b2",
+    "selection": "#b5a982",
+    "cursor": "#0000b2",
+    "syntax": {
+      "comment": "#7a754b",
+      "keyword": "#cc0000",
+      "function": "#0000b2",
+      "string": "#00a600",
+      "number": "#999900",
+      "type": "#00a6b2",
+      "variable": "#000000",
+      "constant": "#999900"
+    }
+  }
+}

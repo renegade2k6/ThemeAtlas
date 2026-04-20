@@ -1,0 +1,36 @@
+{
+  "name": "Flatland",
+  "slug": "flatland",
+  "appearance": "dark",
+  "group": "Terminal Classics",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#1d1f21",
+    "foreground": "#b8dbef",
+    "surface": "#25272b",
+    "surfaceRaised": "#282a2e",
+    "border": "#454d55",
+    "accent": "#5096be",
+    "accentForeground": "#1d1f21",
+    "mutedForeground": "#8299a7",
+    "success": "#9fd364",
+    "warning": "#f4bf75",
+    "error": "#f18339",
+    "info": "#d63865",
+    "selection": "#31424e",
+    "cursor": "#5096be",
+    "syntax": {
+      "comment": "#6e818c",
+      "keyword": "#f18339",
+      "function": "#5096be",
+      "string": "#9fd364",
+      "number": "#f4bf75",
+      "type": "#d63865",
+      "variable": "#b8dbef",
+      "constant": "#f4bf75"
+    }
+  }
+}

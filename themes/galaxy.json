@@ -1,0 +1,36 @@
+{
+  "name": "Galaxy",
+  "slug": "galaxy",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#1d2837",
+    "foreground": "#ffffff",
+    "surface": "#253445",
+    "surfaceRaised": "#27384a",
+    "border": "#52606e",
+    "accent": "#589df6",
+    "accentForeground": "#1d2837",
+    "mutedForeground": "#b0b4b9",
+    "success": "#35bb9a",
+    "warning": "#ffff55",
+    "error": "#f9555f",
+    "info": "#1f9ee7",
+    "selection": "#324e70",
+    "cursor": "#589df6",
+    "syntax": {
+      "comment": "#93989f",
+      "keyword": "#f9555f",
+      "function": "#589df6",
+      "string": "#35bb9a",
+      "number": "#ffff55",
+      "type": "#1f9ee7",
+      "variable": "#ffffff",
+      "constant": "#ffff55"
+    }
+  }
+}

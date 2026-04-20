@@ -1,0 +1,37 @@
+{
+  "name": "Liquid Carbon",
+  "slug": "liquid-carbon",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor",
+    "oled"
+  ],
+  "colors": {
+    "background": "#303030",
+    "foreground": "#afc2c2",
+    "surface": "#383838",
+    "surfaceRaised": "#3a3a3a",
+    "border": "#515555",
+    "accent": "#0099cc",
+    "accentForeground": "#303030",
+    "mutedForeground": "#838f8f",
+    "success": "#559a70",
+    "warning": "#ccac00",
+    "error": "#ff3030",
+    "info": "#7ac4cc",
+    "selection": "#2d4f5a",
+    "cursor": "#0099cc",
+    "syntax": {
+      "comment": "#727c7c",
+      "keyword": "#ff3030",
+      "function": "#0099cc",
+      "string": "#559a70",
+      "number": "#ccac00",
+      "type": "#7ac4cc",
+      "variable": "#afc2c2",
+      "constant": "#ccac00"
+    }
+  }
+}

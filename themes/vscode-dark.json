@@ -1,0 +1,36 @@
+{
+  "name": "VS Code Dark",
+  "slug": "vscode-dark",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#1e1e1e",
+    "foreground": "#d4d4d4",
+    "surface": "#232324",
+    "surfaceRaised": "#252526",
+    "border": "#484849",
+    "accent": "#569cd6",
+    "accentForeground": "#1e1e1e",
+    "mutedForeground": "#949494",
+    "success": "#6a9955",
+    "warning": "#dcdcaa",
+    "error": "#f44747",
+    "info": "#4ec9b0",
+    "selection": "#303f4d",
+    "cursor": "#569cd6",
+    "syntax": {
+      "comment": "#7d7d7d",
+      "keyword": "#f44747",
+      "function": "#569cd6",
+      "string": "#6a9955",
+      "number": "#dcdcaa",
+      "type": "#4ec9b0",
+      "variable": "#d4d4d4",
+      "constant": "#dcdcaa"
+    }
+  }
+}

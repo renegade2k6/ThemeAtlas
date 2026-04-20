@@ -1,0 +1,36 @@
+{
+  "name": "Japanesque",
+  "slug": "japanesque",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#1e1e1e",
+    "foreground": "#f7f6ec",
+    "surface": "#282828",
+    "surfaceRaised": "#2b2b2b",
+    "border": "#545452",
+    "accent": "#4c9ad4",
+    "accentForeground": "#1e1e1e",
+    "mutedForeground": "#abaaa4",
+    "success": "#7bb75b",
+    "warning": "#e9b32a",
+    "error": "#cf3f61",
+    "info": "#389aad",
+    "selection": "#324350",
+    "cursor": "#4c9ad4",
+    "syntax": {
+      "comment": "#8f8e89",
+      "keyword": "#cf3f61",
+      "function": "#4c9ad4",
+      "string": "#7bb75b",
+      "number": "#e9b32a",
+      "type": "#389aad",
+      "variable": "#f7f6ec",
+      "constant": "#e9b32a"
+    }
+  }
+}

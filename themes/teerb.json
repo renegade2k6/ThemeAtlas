@@ -1,0 +1,36 @@
+{
+  "name": "Teerb",
+  "slug": "teerb",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#262626",
+    "foreground": "#d0d0d0",
+    "surface": "#2e2e2e",
+    "surfaceRaised": "#303030",
+    "border": "#505050",
+    "accent": "#86aed6",
+    "accentForeground": "#262626",
+    "mutedForeground": "#959595",
+    "success": "#aed686",
+    "warning": "#d7af87",
+    "error": "#d68686",
+    "info": "#8adbb4",
+    "selection": "#434c55",
+    "cursor": "#86aed6",
+    "syntax": {
+      "comment": "#7e7e7e",
+      "keyword": "#d68686",
+      "function": "#86aed6",
+      "string": "#aed686",
+      "number": "#d7af87",
+      "type": "#8adbb4",
+      "variable": "#d0d0d0",
+      "constant": "#d7af87"
+    }
+  }
+}

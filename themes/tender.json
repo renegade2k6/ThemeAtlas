@@ -1,0 +1,37 @@
+{
+  "name": "Tender",
+  "slug": "tender",
+  "appearance": "dark",
+  "group": "Terminal Classics",
+  "tags": [
+    "dark",
+    "editor",
+    "terminal"
+  ],
+  "colors": {
+    "background": "#282828",
+    "foreground": "#eeeeee",
+    "surface": "#343434",
+    "surfaceRaised": "#383838",
+    "border": "#5c5c5c",
+    "accent": "#b3deef",
+    "accentForeground": "#282828",
+    "mutedForeground": "#a9a9a9",
+    "success": "#c9d05c",
+    "warning": "#ffc24b",
+    "error": "#f43753",
+    "info": "#73cef4",
+    "selection": "#535d60",
+    "cursor": "#b3deef",
+    "syntax": {
+      "comment": "#8f8f8f",
+      "keyword": "#f43753",
+      "function": "#b3deef",
+      "string": "#c9d05c",
+      "number": "#ffc24b",
+      "type": "#73cef4",
+      "variable": "#eeeeee",
+      "constant": "#ffc24b"
+    }
+  }
+}

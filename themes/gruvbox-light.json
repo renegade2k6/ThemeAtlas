@@ -1,0 +1,37 @@
+{
+  "name": "Gruvbox Light",
+  "slug": "gruvbox-light",
+  "appearance": "light",
+  "group": "Gruvbox",
+  "tags": [
+    "editor",
+    "light",
+    "popular"
+  ],
+  "colors": {
+    "background": "#fbf1c7",
+    "foreground": "#3c3836",
+    "surface": "#efe1b7",
+    "surfaceRaised": "#ebdbb2",
+    "border": "#c8ba99",
+    "accent": "#076678",
+    "accentForeground": "#fbf1c7",
+    "mutedForeground": "#7f7969",
+    "success": "#79740e",
+    "warning": "#b57614",
+    "error": "#9d0006",
+    "info": "#427b58",
+    "selection": "#b9c1a5",
+    "cursor": "#076678",
+    "syntax": {
+      "comment": "#98917c",
+      "keyword": "#9d0006",
+      "function": "#076678",
+      "string": "#79740e",
+      "number": "#b57614",
+      "type": "#427b58",
+      "variable": "#3c3836",
+      "constant": "#b57614"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "Laserwave",
+  "slug": "laserwave",
+  "appearance": "dark",
+  "group": "Cyberpunk / Neon",
+  "tags": [
+    "cyberpunk",
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#27212e",
+    "foreground": "#ffffff",
+    "surface": "#2f2638",
+    "surfaceRaised": "#31283b",
+    "border": "#5a5362",
+    "accent": "#eb64b9",
+    "accentForeground": "#27212e",
+    "mutedForeground": "#b3b1b6",
+    "success": "#b4dce7",
+    "warning": "#ffe261",
+    "error": "#ff4473",
+    "info": "#40b4c4",
+    "selection": "#5a3557",
+    "cursor": "#eb64b9",
+    "syntax": {
+      "comment": "#97949b",
+      "keyword": "#ff4473",
+      "function": "#eb64b9",
+      "string": "#b4dce7",
+      "number": "#ffe261",
+      "type": "#40b4c4",
+      "variable": "#ffffff",
+      "constant": "#ffe261"
+    }
+  }
+}

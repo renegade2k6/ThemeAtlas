@@ -1,0 +1,36 @@
+{
+  "name": "Miasma",
+  "slug": "miasma",
+  "appearance": "dark",
+  "group": "Terminal Classics",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#222222",
+    "foreground": "#c2c2b0",
+    "surface": "#2c2c2c",
+    "surfaceRaised": "#2f2f2f",
+    "border": "#4c4c49",
+    "accent": "#c9a554",
+    "accentForeground": "#222222",
+    "mutedForeground": "#8a8a7e",
+    "success": "#5f875f",
+    "warning": "#c9a554",
+    "error": "#af5f5f",
+    "info": "#78824b",
+    "selection": "#514937",
+    "cursor": "#c9a554",
+    "syntax": {
+      "comment": "#75756c",
+      "keyword": "#af5f5f",
+      "function": "#c9a554",
+      "string": "#5f875f",
+      "number": "#c9a554",
+      "type": "#78824b",
+      "variable": "#c2c2b0",
+      "constant": "#c9a554"
+    }
+  }
+}

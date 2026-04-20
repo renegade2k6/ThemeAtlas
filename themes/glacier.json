@@ -1,0 +1,36 @@
+{
+  "name": "Glacier",
+  "slug": "glacier",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#0c1115",
+    "foreground": "#ffffff",
+    "surface": "#1a242c",
+    "surfaceRaised": "#1f2a33",
+    "border": "#4c555c",
+    "accent": "#1f5872",
+    "accentForeground": "#0c1115",
+    "mutedForeground": "#aaacad",
+    "success": "#35a770",
+    "warning": "#fb9435",
+    "error": "#bd0f2f",
+    "info": "#778397",
+    "selection": "#1f3441",
+    "cursor": "#1f5872",
+    "syntax": {
+      "comment": "#8a8d8f",
+      "keyword": "#bd0f2f",
+      "function": "#1f5872",
+      "string": "#35a770",
+      "number": "#fb9435",
+      "type": "#778397",
+      "variable": "#ffffff",
+      "constant": "#fb9435"
+    }
+  }
+}
