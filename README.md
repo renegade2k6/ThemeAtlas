@@ -2,8 +2,6 @@
 
 Theme Atlas is a static theme viewer and color-token catalog. It includes 169 reusable themes for apps, dashboards, editors, terminals, and internal tools.
 
-Open `index.html` locally or publish the folder with GitHub Pages.
-
 ## Features
 
 - 169 generated theme JSON files
