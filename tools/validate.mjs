@@ -8,8 +8,12 @@ const requiredFiles = [
   "site.webmanifest",
   "robots.txt",
   ".nojekyll",
+  "assets/app.css",
+  "assets/app.js",
+  "assets/app-utils.mjs",
   "assets/theme-viewer-icon.svg",
   "assets/theme-atlas-og.svg",
+  "sw.js",
   "themes/index.json",
   "themes/theme-data.js",
   "themes/theme-seeds.json"
@@ -58,9 +62,15 @@ if (fs.existsSync(indexPath)) {
       if (!data.group) errs.push(`Missing group in ${theme.path}`);
       if (!Array.isArray(data.tags) || data.tags.length === 0) errs.push(`Missing tags in ${theme.path}`);
 
-      for (const key of ["background", "foreground", "surface", "surfaceRaised", "border", "accent", "success", "warning", "error", "info"]) {
+      for (const key of ["background", "foreground", "surface", "surfaceRaised", "border", "accent", "accentForeground", "mutedForeground", "selection", "cursor", "success", "warning", "error", "info"]) {
         if (!/^#[0-9a-fA-F]{6}$/.test(data.colors?.[key] || "")) {
           errs.push(`Invalid ${key} in ${theme.path}`);
+        }
+      }
+
+      for (const key of ["comment", "keyword", "function", "string", "number", "type", "constant"]) {
+        if (!/^#[0-9a-fA-F]{6}$/.test(data.colors?.syntax?.[key] || "")) {
+          errs.push(`Invalid syntax.${key} in ${theme.path}`);
         }
       }
 
@@ -91,12 +101,22 @@ for (const expected of [
   "assets/theme-viewer-icon.svg",
   "assets/theme-atlas-og.svg",
   "site.webmanifest",
+  "assets/app.css",
+  "assets/app.js",
+  "themes/theme-data.js",
+  "navigator.serviceWorker.register",
   "Export current JSON",
-  "Export all JSON",
-  "filterOptions",
-  "contrastRatio"
+  "Export all JSON"
 ]) {
   if (!html.includes(expected)) failures.push(`index.html missing: ${expected}`);
+}
+
+const appJs = fs.existsSync(path.join(root, "assets", "app.js"))
+  ? fs.readFileSync(path.join(root, "assets", "app.js"), "utf8")
+  : "";
+
+for (const expected of ["filterOptions", "contrastRatio", "compareSlugs", "themeUrl", "toggleCompare"]) {
+  if (!appJs.includes(expected)) failures.push(`assets/app.js missing: ${expected}`);
 }
 
 if (failures.length) {

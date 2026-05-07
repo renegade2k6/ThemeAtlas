@@ -23,7 +23,7 @@ call :run "Building themes" "node tools/build-themes.mjs"
 if errorlevel 1 goto :end_fail
 call :run "Validating" "node tools/validate.mjs"
 if errorlevel 1 goto :end_fail
-call :run "Staging site changes" "git add index.html themes/ assets/ robots.txt sitemap.xml site.webmanifest 404.html .nojekyll package.json tools/ README.md deploy.bat .gitignore"
+call :run "Staging site changes" "git add index.html themes/ assets/ tests/ robots.txt sitemap.xml site.webmanifest 404.html .nojekyll package.json tools/ README.md deploy.bat .gitignore"
 if errorlevel 1 goto :end_fail
 call :run "Staging workflow" "git add -f .github/workflows/pages.yml"
 if errorlevel 1 goto :end_fail
@@ -44,8 +44,10 @@ if errorlevel 1 goto :end_fail
 
 :success
 call :log "Deploy finished successfully."
+call :log "GitHub Actions: https://github.com/renegade2k6/ThemeAtlas/actions"
 echo.
 echo Log written to: "%LOG_FILE%"
+echo GitHub Actions: https://github.com/renegade2k6/ThemeAtlas/actions
 goto :end
 
 :run
