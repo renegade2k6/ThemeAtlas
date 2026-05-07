@@ -12,21 +12,35 @@ set "LOG_FILE=%LOG_DIR%\deploy-%STAMP%.log"
 
 call :log "ThemeAtlas deploy started"
 call :log "Working directory: %CD%"
-call :run "Updating from GitHub" "git pull --rebase --autostash" || goto :end_fail
-call :run "Building themes" "node tools/build-themes.mjs" || goto :end_fail
-call :run "Validating" "node tools/validate.mjs" || goto :end_fail
-call :run "Staging changes" "git add index.html themes/ assets/ robots.txt sitemap.xml site.webmanifest 404.html .nojekyll package.json tools/ README.md deploy.bat .gitignore && git add -f .github/workflows/pages.yml" || goto :end_fail
+call :run "Fetching GitHub state" "git fetch origin"
+if errorlevel 1 goto :end_fail
+for /f %%I in ('git rev-list --count HEAD..origin/master') do set "BEHIND=%%I"
+if not "%BEHIND%"=="0" (
+    call :log "Local branch is behind origin/master by %BEHIND% commit(s). Run git pull --rebase first, then deploy again."
+    goto :end_fail
+)
+call :run "Building themes" "node tools/build-themes.mjs"
+if errorlevel 1 goto :end_fail
+call :run "Validating" "node tools/validate.mjs"
+if errorlevel 1 goto :end_fail
+call :run "Staging site changes" "git add index.html themes/ assets/ robots.txt sitemap.xml site.webmanifest 404.html .nojekyll package.json tools/ README.md deploy.bat .gitignore"
+if errorlevel 1 goto :end_fail
+call :run "Staging workflow" "git add -f .github/workflows/pages.yml"
+if errorlevel 1 goto :end_fail
 
 git diff --cached --quiet >> "%LOG_FILE%" 2>&1
 if not errorlevel 1 (
     call :log "Nothing to commit - working tree clean."
-    call :run "Pushing" "git push" || goto :end_fail
+    call :run "Pushing" "git push"
+    if errorlevel 1 goto :end_fail
     goto :success
 )
 
 for /f %%I in ('powershell -NoProfile -Command "Get-Date -Format yyyy-MM-dd-HHmm"') do set "COMMIT_STAMP=%%I"
-call :run "Committing" "git commit -m chore-rebuild-themes-%COMMIT_STAMP%" || goto :end_fail
-call :run "Pushing" "git push" || goto :end_fail
+call :run "Committing" "git commit -m chore-rebuild-themes-%COMMIT_STAMP%"
+if errorlevel 1 goto :end_fail
+call :run "Pushing" "git push"
+if errorlevel 1 goto :end_fail
 
 :success
 call :log "Deploy finished successfully."
