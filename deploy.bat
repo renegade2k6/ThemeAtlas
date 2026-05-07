@@ -19,9 +19,7 @@ if not "%BEHIND%"=="0" (
     call :log "Local branch is behind origin/master by %BEHIND% commit(s). Run git pull --rebase first, then deploy again."
     goto :end_fail
 )
-call :run "Building themes" "node tools/build-themes.mjs"
-if errorlevel 1 goto :end_fail
-call :run "Validating" "node tools/validate.mjs"
+call :run "Checking site" "npm run check"
 if errorlevel 1 goto :end_fail
 call :run "Staging site changes" "git add index.html themes/ assets/ tests/ sw.js robots.txt sitemap.xml site.webmanifest 404.html .nojekyll package.json tools/ README.md deploy.bat .gitignore"
 if errorlevel 1 goto :end_fail
