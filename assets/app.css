@@ -224,9 +224,9 @@
 
     .theme-meta strong {
       display: block;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
+      white-space: normal;
+      overflow-wrap: anywhere;
+      line-height: 1.25;
     }
 
     .badges {
