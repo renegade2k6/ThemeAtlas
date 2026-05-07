@@ -844,6 +844,106 @@
       "name": "Zenburn",
       "slug": "zenburn",
       "path": "themes/zenburn.json"
+    },
+    {
+      "name": "Aura",
+      "slug": "aura",
+      "path": "themes/aura.json"
+    },
+    {
+      "name": "Snazzy",
+      "slug": "snazzy",
+      "path": "themes/snazzy.json"
+    },
+    {
+      "name": "Winter is Coming Dark",
+      "slug": "winter-is-coming-dark",
+      "path": "themes/winter-is-coming-dark.json"
+    },
+    {
+      "name": "Bluloco Light",
+      "slug": "bluloco-light",
+      "path": "themes/bluloco-light.json"
+    },
+    {
+      "name": "Mellow",
+      "slug": "mellow",
+      "path": "themes/mellow.json"
+    },
+    {
+      "name": "Bamboo",
+      "slug": "bamboo",
+      "path": "themes/bamboo.json"
+    },
+    {
+      "name": "Melange Dark",
+      "slug": "melange-dark",
+      "path": "themes/melange-dark.json"
+    },
+    {
+      "name": "Melange Light",
+      "slug": "melange-light",
+      "path": "themes/melange-light.json"
+    },
+    {
+      "name": "Tundra",
+      "slug": "tundra",
+      "path": "themes/tundra.json"
+    },
+    {
+      "name": "Decay",
+      "slug": "decay",
+      "path": "themes/decay.json"
+    },
+    {
+      "name": "Nordfox",
+      "slug": "nordfox",
+      "path": "themes/nordfox.json"
+    },
+    {
+      "name": "Dawnfox",
+      "slug": "dawnfox",
+      "path": "themes/dawnfox.json"
+    },
+    {
+      "name": "Terafox",
+      "slug": "terafox",
+      "path": "themes/terafox.json"
+    },
+    {
+      "name": "Flexoki Light",
+      "slug": "flexoki-light",
+      "path": "themes/flexoki-light.json"
+    },
+    {
+      "name": "Penumbra Dark",
+      "slug": "penumbra-dark",
+      "path": "themes/penumbra-dark.json"
+    },
+    {
+      "name": "Penumbra Light",
+      "slug": "penumbra-light",
+      "path": "themes/penumbra-light.json"
+    },
+    {
+      "name": "Adwaita Dark",
+      "slug": "adwaita-dark",
+      "path": "themes/adwaita-dark.json"
+    },
+    {
+      "name": "Adwaita Light",
+      "slug": "adwaita-light",
+      "path": "themes/adwaita-light.json"
+    },
+    {
+      "name": "Oldworld",
+      "slug": "oldworld",
+      "path": "themes/oldworld.json"
+    },
+    {
+      "name": "Base16 Tomorrow",
+      "slug": "base16-tomorrow",
+      "path": "themes/base16-tomorrow.json"
     }
   ]
 }

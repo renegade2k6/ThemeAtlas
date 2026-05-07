@@ -1,0 +1,36 @@
+{
+  "name": "Tundra",
+  "slug": "tundra",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#1b2b34",
+    "foreground": "#cdd9e5",
+    "surface": "#202f3a",
+    "surfaceRaised": "#22303c",
+    "border": "#44525e",
+    "accent": "#7eb4c5",
+    "accentForeground": "#1b2b34",
+    "mutedForeground": "#8f9ca7",
+    "success": "#8ec07c",
+    "warning": "#fabd2f",
+    "error": "#fb4934",
+    "info": "#83a598",
+    "selection": "#364d5a",
+    "cursor": "#7eb4c5",
+    "syntax": {
+      "comment": "#788590",
+      "keyword": "#fb4934",
+      "function": "#7eb4c5",
+      "string": "#8ec07c",
+      "number": "#fabd2f",
+      "type": "#83a598",
+      "variable": "#cdd9e5",
+      "constant": "#fabd2f"
+    }
+  }
+}

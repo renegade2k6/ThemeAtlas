@@ -1,0 +1,36 @@
+{
+  "name": "Mellow",
+  "slug": "mellow",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#1a1a1a",
+    "foreground": "#c0b9a8",
+    "surface": "#222222",
+    "surfaceRaised": "#252525",
+    "border": "#44433f",
+    "accent": "#e3b896",
+    "accentForeground": "#1a1a1a",
+    "mutedForeground": "#868176",
+    "success": "#8db48e",
+    "warning": "#d4a24a",
+    "error": "#de6e7c",
+    "info": "#9eb0c7",
+    "selection": "#4f453e",
+    "cursor": "#e3b896",
+    "syntax": {
+      "comment": "#706d64",
+      "keyword": "#de6e7c",
+      "function": "#e3b896",
+      "string": "#8db48e",
+      "number": "#d4a24a",
+      "type": "#9eb0c7",
+      "variable": "#c0b9a8",
+      "constant": "#d4a24a"
+    }
+  }
+}

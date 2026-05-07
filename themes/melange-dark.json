@@ -1,0 +1,36 @@
+{
+  "name": "Melange Dark",
+  "slug": "melange-dark",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#2a2520",
+    "foreground": "#ece1d7",
+    "surface": "#332e28",
+    "surfaceRaised": "#36312b",
+    "border": "#5a544d",
+    "accent": "#dbb185",
+    "accentForeground": "#2a2520",
+    "mutedForeground": "#a89f97",
+    "success": "#78997a",
+    "warning": "#e49b5d",
+    "error": "#b65c60",
+    "info": "#7f91b2",
+    "selection": "#5a4d3f",
+    "cursor": "#dbb185",
+    "syntax": {
+      "comment": "#8f877f",
+      "keyword": "#b65c60",
+      "function": "#dbb185",
+      "string": "#78997a",
+      "number": "#e49b5d",
+      "type": "#7f91b2",
+      "variable": "#ece1d7",
+      "constant": "#e49b5d"
+    }
+  }
+}

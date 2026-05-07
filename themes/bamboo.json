@@ -1,0 +1,36 @@
+{
+  "name": "Bamboo",
+  "slug": "bamboo",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#292e23",
+    "foreground": "#dde3c9",
+    "surface": "#313729",
+    "surfaceRaised": "#333a2b",
+    "border": "#555c4b",
+    "accent": "#9dbb6a",
+    "accentForeground": "#292e23",
+    "mutedForeground": "#9ea48f",
+    "success": "#9dbb6a",
+    "warning": "#d7c483",
+    "error": "#ec6b64",
+    "info": "#88b8d8",
+    "selection": "#4a5639",
+    "cursor": "#9dbb6a",
+    "syntax": {
+      "comment": "#878c79",
+      "keyword": "#ec6b64",
+      "function": "#9dbb6a",
+      "string": "#9dbb6a",
+      "number": "#d7c483",
+      "type": "#88b8d8",
+      "variable": "#dde3c9",
+      "constant": "#d7c483"
+    }
+  }
+}

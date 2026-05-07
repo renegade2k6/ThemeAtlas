@@ -1,0 +1,36 @@
+{
+  "name": "Adwaita Light",
+  "slug": "adwaita-light",
+  "appearance": "light",
+  "group": "Light Themes",
+  "tags": [
+    "editor",
+    "light"
+  ],
+  "colors": {
+    "background": "#fafafa",
+    "foreground": "#2e3436",
+    "surface": "#f7f6f6",
+    "surfaceRaised": "#f6f5f4",
+    "border": "#cecece",
+    "accent": "#3584e4",
+    "accentForeground": "#fafafa",
+    "mutedForeground": "#75797b",
+    "success": "#26a269",
+    "warning": "#e5a50a",
+    "error": "#c01c28",
+    "info": "#1c71d8",
+    "selection": "#ccdcf0",
+    "cursor": "#3584e4",
+    "syntax": {
+      "comment": "#909394",
+      "keyword": "#c01c28",
+      "function": "#3584e4",
+      "string": "#26a269",
+      "number": "#e5a50a",
+      "type": "#1c71d8",
+      "variable": "#2e3436",
+      "constant": "#e5a50a"
+    }
+  }
+}

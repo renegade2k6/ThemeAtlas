@@ -1,0 +1,36 @@
+{
+  "name": "Flexoki Light",
+  "slug": "flexoki-light",
+  "appearance": "light",
+  "group": "Light Themes",
+  "tags": [
+    "editor",
+    "light"
+  ],
+  "colors": {
+    "background": "#fffcf0",
+    "foreground": "#100f0f",
+    "surface": "#eceadf",
+    "surfaceRaised": "#e6e4d9",
+    "border": "#bbb9b1",
+    "accent": "#4385be",
+    "accentForeground": "#fffcf0",
+    "mutedForeground": "#64625e",
+    "success": "#879a39",
+    "warning": "#d0a215",
+    "error": "#d14d41",
+    "info": "#3aa99f",
+    "selection": "#c2cfd3",
+    "cursor": "#4385be",
+    "syntax": {
+      "comment": "#83817b",
+      "keyword": "#d14d41",
+      "function": "#4385be",
+      "string": "#879a39",
+      "number": "#d0a215",
+      "type": "#3aa99f",
+      "variable": "#100f0f",
+      "constant": "#d0a215"
+    }
+  }
+}

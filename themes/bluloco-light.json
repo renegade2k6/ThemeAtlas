@@ -1,0 +1,36 @@
+{
+  "name": "Bluloco Light",
+  "slug": "bluloco-light",
+  "appearance": "light",
+  "group": "Light Themes",
+  "tags": [
+    "editor",
+    "light"
+  ],
+  "colors": {
+    "background": "#f9f9f9",
+    "foreground": "#383a42",
+    "surface": "#eaeaea",
+    "surfaceRaised": "#e5e5e5",
+    "border": "#c2c3c4",
+    "accent": "#0098dd",
+    "accentForeground": "#f9f9f9",
+    "mutedForeground": "#7c7d82",
+    "success": "#23974a",
+    "warning": "#df631c",
+    "error": "#d52753",
+    "info": "#275fe4",
+    "selection": "#b3d4e3",
+    "cursor": "#0098dd",
+    "syntax": {
+      "comment": "#95969a",
+      "keyword": "#d52753",
+      "function": "#0098dd",
+      "string": "#23974a",
+      "number": "#df631c",
+      "type": "#275fe4",
+      "variable": "#383a42",
+      "constant": "#df631c"
+    }
+  }
+}

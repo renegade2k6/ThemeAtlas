@@ -7,6 +7,7 @@
   "scripts": {
     "build": "node tools/build-themes.mjs",
     "validate": "node tools/validate.mjs",
-    "check": "npm run build && npm run validate"
+    "check": "npm run build && npm run validate",
+    "dev": "node --watch tools/build-themes.mjs"
   }
 }

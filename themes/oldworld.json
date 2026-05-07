@@ -1,0 +1,36 @@
+{
+  "name": "Oldworld",
+  "slug": "oldworld",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#161616",
+    "foreground": "#e0d7c3",
+    "surface": "#1f1f1f",
+    "surfaceRaised": "#222222",
+    "border": "#484642",
+    "accent": "#c59f7b",
+    "accentForeground": "#161616",
+    "mutedForeground": "#999386",
+    "success": "#8da070",
+    "warning": "#c4a06a",
+    "error": "#c76a6a",
+    "info": "#7a9ec2",
+    "selection": "#463e36",
+    "cursor": "#c59f7b",
+    "syntax": {
+      "comment": "#7f7a70",
+      "keyword": "#c76a6a",
+      "function": "#c59f7b",
+      "string": "#8da070",
+      "number": "#c4a06a",
+      "type": "#7a9ec2",
+      "variable": "#e0d7c3",
+      "constant": "#c4a06a"
+    }
+  }
+}

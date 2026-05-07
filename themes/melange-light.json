@@ -1,0 +1,36 @@
+{
+  "name": "Melange Light",
+  "slug": "melange-light",
+  "appearance": "light",
+  "group": "Light Themes",
+  "tags": [
+    "editor",
+    "light"
+  ],
+  "colors": {
+    "background": "#f4ede8",
+    "foreground": "#302923",
+    "surface": "#ebe1da",
+    "surfaceRaised": "#e8ddd5",
+    "border": "#c3b9b1",
+    "accent": "#a45e3e",
+    "accentForeground": "#f4ede8",
+    "mutedForeground": "#756e68",
+    "success": "#7a9a6c",
+    "warning": "#9e7c3d",
+    "error": "#9e4347",
+    "info": "#5c7f9e",
+    "selection": "#d9c1b4",
+    "cursor": "#a45e3e",
+    "syntax": {
+      "comment": "#8e8782",
+      "keyword": "#9e4347",
+      "function": "#a45e3e",
+      "string": "#7a9a6c",
+      "number": "#9e7c3d",
+      "type": "#5c7f9e",
+      "variable": "#302923",
+      "constant": "#9e7c3d"
+    }
+  }
+}

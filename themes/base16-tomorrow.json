@@ -1,0 +1,37 @@
+{
+  "name": "Base16 Tomorrow",
+  "slug": "base16-tomorrow",
+  "appearance": "dark",
+  "group": "Base16",
+  "tags": [
+    "dark",
+    "editor",
+    "terminal"
+  ],
+  "colors": {
+    "background": "#1d1f21",
+    "foreground": "#c5c8c6",
+    "surface": "#25272b",
+    "surfaceRaised": "#282a2e",
+    "border": "#474a4c",
+    "accent": "#81a2be",
+    "accentForeground": "#1d1f21",
+    "mutedForeground": "#8a8d8c",
+    "success": "#b5bd68",
+    "warning": "#de935f",
+    "error": "#cc6666",
+    "info": "#8abeb7",
+    "selection": "#3c444e",
+    "cursor": "#81a2be",
+    "syntax": {
+      "comment": "#747777",
+      "keyword": "#cc6666",
+      "function": "#81a2be",
+      "string": "#b5bd68",
+      "number": "#de935f",
+      "type": "#8abeb7",
+      "variable": "#c5c8c6",
+      "constant": "#de935f"
+    }
+  }
+}

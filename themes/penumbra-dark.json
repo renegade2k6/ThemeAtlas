@@ -1,0 +1,36 @@
+{
+  "name": "Penumbra Dark",
+  "slug": "penumbra-dark",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#1e1e1e",
+    "foreground": "#e5e5e5",
+    "surface": "#2a2a2a",
+    "surfaceRaised": "#2e2e2e",
+    "border": "#535353",
+    "accent": "#7d9cc4",
+    "accentForeground": "#1e1e1e",
+    "mutedForeground": "#9f9f9f",
+    "success": "#759982",
+    "warning": "#c4a87d",
+    "error": "#c47d7d",
+    "info": "#7da8c4",
+    "selection": "#3f464f",
+    "cursor": "#7d9cc4",
+    "syntax": {
+      "comment": "#858585",
+      "keyword": "#c47d7d",
+      "function": "#7d9cc4",
+      "string": "#759982",
+      "number": "#c4a87d",
+      "type": "#7da8c4",
+      "variable": "#e5e5e5",
+      "constant": "#c4a87d"
+    }
+  }
+}

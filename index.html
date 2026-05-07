@@ -17,7 +17,7 @@
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Theme Atlas color token catalog preview">
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Theme Atlas">
   <meta name="twitter:description" content="Browse, preview, favorite, copy, and export reusable app theme color tokens.">
   <meta name="twitter:image" content="assets/theme-atlas-og.svg">
@@ -593,6 +593,35 @@
         grid-template-columns: 1fr;
       }
     }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+    }
+
+    .chip {
+      cursor: pointer;
+      transition: opacity 120ms ease;
+    }
+
+    .chip:hover { opacity: 0.8; }
+
+    .chip-count {
+      opacity: 0.55;
+      font-size: 11px;
+      font-weight: normal;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      white-space: nowrap;
+      border: 0;
+    }
   </style>
 </head>
 <body>
@@ -611,7 +640,7 @@
         </div>
         <div class="filter-chips" id="filterChips"></div>
       </div>
-      <div class="theme-list" id="themeList"></div>
+      <div class="theme-list" id="themeList" role="list"></div>
     </aside>
 
     <section class="stage" id="stage">
@@ -673,6 +702,8 @@
               <button type="button" data-copy="css">Copy CSS variables</button>
               <button type="button" data-copy="ts">Copy TypeScript export</button>
               <button type="button" data-copy="json">Copy labelled JSON</button>
+              <button type="button" data-copy="tailwind">Copy Tailwind config</button>
+              <button type="button" data-copy="vscode">Copy VSCode theme JSON</button>
             </div>
           </div>
 
@@ -685,9 +716,19 @@
     </section>
   </main>
 
+  <div class="sr-only" aria-live="polite" aria-atomic="true" id="liveRegion"></div>
+
   <script src="themes/theme-data.js"></script>
   <script>
     const themes = window.THEME_DATA || [];
+
+    // O(1) slug → theme lookup
+    const themeMap = new Map(themes.map(t => [t.slug, t]));
+
+    // Pre-compute search strings once at startup
+    const searchIndex = themes.map(t =>
+      `${t.name} ${t.slug} ${t.appearance} ${t.group} ${(t.tags || []).join(" ")}`.toLowerCase()
+    );
 
     const themeList = document.querySelector("#themeList");
     const stage = document.querySelector("#stage");
@@ -705,16 +746,32 @@
     const tokenGrid = document.querySelector("#tokenGrid");
     const statusGrid = document.querySelector("#statusGrid");
     const contrastList = document.querySelector("#contrastList");
+    const liveRegion = document.querySelector("#liveRegion");
 
-    let currentSlug = themes[0]?.slug;
+    const lastKey = "theme-viewer-last";
+    const favoriteKey = "theme-viewer-favorites";
+    const recentKey = "theme-viewer-recent";
+    const MAX_RECENT = 8;
+    const urlSlug = new URLSearchParams(location.search).get("theme");
+
+    let currentSlug = (urlSlug && themeMap.has(urlSlug) ? urlSlug : null)
+      || localStorage.getItem(lastKey)
+      || themes[0]?.slug;
     let filterText = "";
     let activeFilter = "all";
+    let debounceTimer;
     const filterOptions = ["all", "favorites", "featured", "popular", "dark", "light", "oled", "cyberpunk", "pastel", "terminal"];
-    const favoriteKey = "theme-viewer-favorites";
     const favorites = new Set(JSON.parse(localStorage.getItem(favoriteKey) || "[]"));
+    let recentSlugs = JSON.parse(localStorage.getItem(recentKey) || "[]");
+
+    // Tracks user-opened/closed <details> groups across re-renders
+    const openGroups = new Set(["Featured", "Recently Viewed"]);
+
+    // Memoized luminance — hex values are static per theme
+    const luminanceCache = new Map();
 
     function getTheme(slug) {
-      return themes.find((theme) => theme.slug === slug) || themes[0];
+      return themeMap.get(slug) ?? themes[0];
     }
 
     function setVar(name, value) {
@@ -723,9 +780,8 @@
 
     function visibleThemes() {
       const query = filterText.trim().toLowerCase();
-      return themes.filter((theme) => {
-        const searchable = `${theme.name} ${theme.slug} ${theme.appearance} ${theme.group} ${(theme.tags || []).join(" ")}`.toLowerCase();
-        const matchesSearch = !query || searchable.includes(query);
+      return themes.filter((theme, i) => {
+        const matchesSearch = !query || searchIndex[i].includes(query);
         const matchesFilter = activeFilter === "all"
           || (activeFilter === "favorites" && favorites.has(theme.slug))
           || (theme.tags || []).includes(activeFilter);
@@ -733,10 +789,17 @@
       });
     }
 
+    function tagCount(filter) {
+      if (filter === "all") return themes.length;
+      if (filter === "favorites") return favorites.size;
+      return themes.filter(t => (t.tags || []).includes(filter)).length;
+    }
+
     function renderFilters() {
       filterChips.innerHTML = filterOptions.map((filter) => {
         const label = filter === "all" ? "All" : filter[0].toUpperCase() + filter.slice(1);
-        return `<button class="filter-chip" type="button" data-filter="${filter}" aria-pressed="${filter === activeFilter}">${label}</button>`;
+        const count = tagCount(filter);
+        return `<button class="filter-chip" type="button" data-filter="${filter}" aria-pressed="${filter === activeFilter}">${label} <span class="chip-count">${count}</span></button>`;
       }).join("");
     }
 
@@ -755,59 +818,106 @@
         colors.success,
         colors.error
       ].map((color) => `<span style="background:${color}"></span>`).join("");
+      const isFav = favorites.has(theme.slug);
 
-      return `<button class="theme-button" type="button" data-slug="${theme.slug}" aria-pressed="${theme.slug === currentSlug}">
-        <span class="favorite-toggle ${favorites.has(theme.slug) ? "is-favorite" : ""}" data-favorite="${theme.slug}" title="Toggle favorite">${favorites.has(theme.slug) ? "★" : "☆"}</span>
+      return `<button class="theme-button" type="button" data-slug="${theme.slug}" aria-pressed="${theme.slug === currentSlug}" role="listitem">
+        <span class="favorite-toggle ${isFav ? "is-favorite" : ""}" data-favorite="${theme.slug}" title="Toggle favorite">${isFav ? "★" : "☆"}</span>
         <span class="theme-meta"><strong>${theme.name}</strong><span class="badges">${tags}</span></span>
         <span class="swatches" aria-hidden="true">${swatches}</span>
       </button>`;
     }
 
+    // Snapshot open/closed state before any re-render
+    function snapshotOpenGroups() {
+      themeList.querySelectorAll("details.theme-section").forEach(d => {
+        const title = d.querySelector("summary span")?.textContent;
+        if (title) {
+          if (d.open) openGroups.add(title);
+          else openGroups.delete(title);
+        }
+      });
+    }
+
+    function trackRecent(slug) {
+      recentSlugs = [slug, ...recentSlugs.filter(s => s !== slug)].slice(0, MAX_RECENT);
+      localStorage.setItem(recentKey, JSON.stringify(recentSlugs));
+    }
+
     function renderList() {
+      snapshotOpenGroups();
       const items = visibleThemes();
       themeCount.textContent = `${items.length} of ${themes.length} themes`;
       const searching = filterText.trim().length > 0;
 
-      if (searching) {
-        themeList.innerHTML = items.map(renderThemeButton).join("");
-      } else {
-        const featured = items.filter((theme) => (theme.tags || []).includes("featured"));
-        const grouped = new Map();
-        for (const theme of items) {
-          const group = theme.group || "Other";
-          if (!grouped.has(group)) grouped.set(group, []);
-          grouped.get(group).push(theme);
-        }
-
-        const sections = [];
-        if (featured.length && activeFilter === "all") {
-          sections.push(sectionHtml("Featured", featured, true));
-        }
-
-        for (const [group, groupThemes] of [...grouped.entries()].sort((a, b) => a[0].localeCompare(b[0]))) {
-          if (group === "Featured") continue;
-          sections.push(sectionHtml(group, groupThemes, activeFilter !== "all" || groupThemes.some((theme) => theme.slug === currentSlug)));
-        }
-
-        themeList.innerHTML = sections.join("");
-      }
-
       if (!items.length) {
         themeList.innerHTML = `<div class="panel">No matching themes.</div>`;
+        return;
       }
+
+      if (searching) {
+        themeList.innerHTML = items.map(renderThemeButton).join("");
+        return;
+      }
+
+      const featured = items.filter((theme) => (theme.tags || []).includes("featured"));
+      const grouped = new Map();
+      for (const theme of items) {
+        const group = theme.group || "Other";
+        if (!grouped.has(group)) grouped.set(group, []);
+        grouped.get(group).push(theme);
+      }
+
+      const sections = [];
+
+      if (recentSlugs.length > 1 && activeFilter === "all") {
+        const recentThemes = recentSlugs.map(s => themeMap.get(s)).filter(Boolean);
+        sections.push(sectionHtml("Recently Viewed", recentThemes));
+      }
+
+      if (featured.length && activeFilter === "all") {
+        sections.push(sectionHtml("Featured", featured));
+      }
+
+      for (const [group, groupThemes] of [...grouped.entries()].sort((a, b) => a[0].localeCompare(b[0]))) {
+        if (group === "Featured") continue;
+        sections.push(sectionHtml(group, groupThemes));
+      }
+
+      themeList.innerHTML = sections.join("");
     }
 
-    function sectionHtml(title, items, open) {
+    function sectionHtml(title, items) {
+      const open = openGroups.has(title) || items.some(t => t.slug === currentSlug);
       return `<details class="theme-section" ${open ? "open" : ""}>
         <summary><span>${title}</span><span class="section-count">${items.length}</span></summary>
         <div class="section-list">${items.map(renderThemeButton).join("")}</div>
       </details>`;
     }
 
+    // Update only the active button — avoids full list re-render on theme change
+    function updateActiveButton() {
+      const prev = themeList.querySelector('button[aria-pressed="true"]');
+      if (prev) prev.setAttribute("aria-pressed", "false");
+      const next = themeList.querySelector(`button[data-slug="${currentSlug}"]`);
+      if (next) {
+        next.setAttribute("aria-pressed", "true");
+        next.scrollIntoView({ block: "nearest", behavior: "smooth" });
+      }
+    }
+
+    // Update a single favorite star in-place — avoids full list re-render
+    function updateFavoriteButton(slug) {
+      const btn = themeList.querySelector(`[data-favorite="${slug}"]`);
+      if (!btn) return;
+      const isFav = favorites.has(slug);
+      btn.textContent = isFav ? "★" : "☆";
+      btn.classList.toggle("is-favorite", isFav);
+    }
+
     function renderTokens(container, tokens) {
       container.innerHTML = Object.entries(tokens).map(([name, value]) => `
         <div class="token">
-          <span class="chip" style="background:${value}"></span>
+          <span class="chip" style="background:${value}" title="Click to copy ${value}" data-hex="${value}"></span>
           <span>
             <span class="token-name">${name}</span><br>
             <span class="token-value">${value}</span>
@@ -854,9 +964,12 @@
     }
 
     function luminance(hex) {
-      return hexToRgb(hex).map((value) => {
-        return value <= 0.03928 ? value / 12.92 : Math.pow((value + 0.055) / 1.055, 2.4);
-      }).reduce((sum, value, index) => sum + value * [0.2126, 0.7152, 0.0722][index], 0);
+      if (luminanceCache.has(hex)) return luminanceCache.get(hex);
+      const result = hexToRgb(hex).map(v =>
+        v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4)
+      ).reduce((sum, v, i) => sum + v * [0.2126, 0.7152, 0.0722][i], 0);
+      luminanceCache.set(hex, result);
+      return result;
     }
 
     function contrastRatio(a, b) {
@@ -895,7 +1008,7 @@
     function cssVariables(theme) {
       return Object.entries(theme.colors)
         .filter(([, value]) => typeof value === "string")
-        .map(([key, value]) => `  --${theme.slug}-${key.replace(/[A-Z]/g, (letter) => "-" + letter.toLowerCase())}: ${value};`)
+        .map(([key, value]) => `  --${theme.slug}-${key.replace(/[A-Z]/g, l => "-" + l.toLowerCase())}: ${value};`)
         .join("\n");
     }
 
@@ -905,31 +1018,68 @@
       if (type === "slug") return theme.slug;
       if (type === "hex") {
         return [
-          colors.background,
-          colors.foreground,
-          colors.surface,
-          colors.surfaceRaised,
-          colors.border,
-          colors.accent,
-          colors.success,
-          colors.warning,
-          colors.error,
-          colors.info
+          colors.background, colors.foreground, colors.surface, colors.surfaceRaised,
+          colors.border, colors.accent, colors.success, colors.warning, colors.error, colors.info
         ].join(", ");
       }
       if (type === "css") return `:root {\n${cssVariables(theme)}\n}`;
-      if (type === "ts") return `export const ${theme.slug.replace(/-([a-z])/g, (_, letter) => letter.toUpperCase())}Theme = ${JSON.stringify(labelledTheme(theme), null, 2)} as const;`;
+      if (type === "ts") return `export const ${theme.slug.replace(/-([a-z])/g, (_, l) => l.toUpperCase())}Theme = ${JSON.stringify(labelledTheme(theme), null, 2)} as const;`;
+      if (type === "tailwind") {
+        const c = colors;
+        return `// tailwind.config.js — ${theme.name}\nmodule.exports = {\n  theme: {\n    extend: {\n      colors: {\n        background: '${c.background}',\n        foreground: '${c.foreground}',\n        surface: '${c.surface}',\n        'surface-raised': '${c.surfaceRaised}',\n        border: '${c.border}',\n        accent: '${c.accent}',\n        success: '${c.success}',\n        warning: '${c.warning}',\n        error: '${c.error}',\n        info: '${c.info}',\n      },\n    },\n  },\n};`;
+      }
+      if (type === "vscode") {
+        const c = colors;
+        return JSON.stringify({
+          name: theme.name,
+          type: theme.appearance,
+          colors: {
+            "editor.background": c.background,
+            "editor.foreground": c.foreground,
+            "editor.selectionBackground": c.selection,
+            "editorCursor.foreground": c.cursor,
+            "editor.lineHighlightBackground": c.surface,
+            "editorLineNumber.foreground": c.mutedForeground,
+            "activityBar.background": c.background,
+            "activityBar.foreground": c.foreground,
+            "sideBar.background": c.surface,
+            "sideBar.foreground": c.foreground,
+            "statusBar.background": c.accent,
+            "statusBar.foreground": c.accentForeground,
+            "tab.activeBackground": c.surfaceRaised,
+            "tab.inactiveBackground": c.surface,
+            "titleBar.activeBackground": c.background,
+            "focusBorder": c.accent,
+            "button.background": c.accent,
+            "button.foreground": c.accentForeground
+          },
+          tokenColors: [
+            { scope: ["comment", "punctuation.definition.comment"], settings: { foreground: c.syntax.comment, fontStyle: "italic" } },
+            { scope: ["keyword", "storage.type", "storage.modifier"], settings: { foreground: c.syntax.keyword } },
+            { scope: ["entity.name.function", "support.function"], settings: { foreground: c.syntax.function } },
+            { scope: ["string", "string.quoted"], settings: { foreground: c.syntax.string } },
+            { scope: ["constant.numeric"], settings: { foreground: c.syntax.number } },
+            { scope: ["entity.name.type", "support.type"], settings: { foreground: c.syntax.type } },
+            { scope: ["variable", "variable.other"], settings: { foreground: c.syntax.variable } },
+            { scope: ["constant", "constant.language"], settings: { foreground: c.syntax.constant } }
+          ]
+        }, null, 2);
+      }
       return JSON.stringify({ exportType: "single-theme", theme: labelledTheme(theme) }, null, 2);
     }
 
     async function copyText(text) {
-      if (navigator.clipboard?.writeText) {
-        await navigator.clipboard.writeText(text);
-        return;
-      }
+      try {
+        if (navigator.clipboard?.writeText) {
+          await navigator.clipboard.writeText(text);
+          return;
+        }
+      } catch {}
       const textarea = document.createElement("textarea");
       textarea.value = text;
+      textarea.style.cssText = "position:fixed;opacity:0;pointer-events:none";
       document.body.appendChild(textarea);
+      textarea.focus();
       textarea.select();
       document.execCommand("copy");
       textarea.remove();
@@ -937,8 +1087,19 @@
 
     function applyTheme(slug) {
       currentSlug = slug;
+      localStorage.setItem(lastKey, slug);
+      trackRecent(slug);
+
+      // Sync URL so the current theme is shareable/bookmarkable
+      const url = new URL(location.href);
+      url.searchParams.set("theme", slug);
+      history.replaceState(null, "", url);
+
       const theme = getTheme(slug);
       const colors = theme.colors;
+
+      document.title = `${theme.name} | Theme Atlas`;
+      liveRegion.textContent = `Now viewing: ${theme.name}, ${theme.appearance} theme`;
 
       themeName.textContent = theme.name;
       themeSlug.textContent = `themes/${theme.slug}.json`;
@@ -982,18 +1143,12 @@
       });
 
       heroStrip.innerHTML = [
-        colors.background,
-        colors.surface,
-        colors.surfaceRaised,
-        colors.accent,
-        colors.success,
-        colors.warning,
-        colors.error,
-        colors.info
+        colors.background, colors.surface, colors.surfaceRaised, colors.accent,
+        colors.success, colors.warning, colors.error, colors.info
       ].map((color) => `<span style="background:${color}"></span>`).join("");
 
       renderContrast(colors);
-      renderList();
+      updateActiveButton();
     }
 
     themeList.addEventListener("click", (event) => {
@@ -1002,7 +1157,11 @@
         const slug = favorite.dataset.favorite;
         favorites.has(slug) ? favorites.delete(slug) : favorites.add(slug);
         saveFavorites();
-        applyTheme(currentSlug);
+        updateFavoriteButton(slug);
+        if (slug === currentSlug) {
+          favoriteCurrent.textContent = favorites.has(slug) ? "Unfavorite" : "Favorite";
+        }
+        if (activeFilter === "favorites") renderList();
         event.stopPropagation();
         return;
       }
@@ -1012,9 +1171,24 @@
       applyTheme(button.dataset.slug);
     });
 
+    // Arrow key navigation through the theme list
+    themeList.addEventListener("keydown", (event) => {
+      if (event.key !== "ArrowDown" && event.key !== "ArrowUp") return;
+      event.preventDefault();
+      const buttons = [...themeList.querySelectorAll("button[data-slug]")];
+      const idx = buttons.findIndex(b => b.dataset.slug === currentSlug);
+      const next = event.key === "ArrowDown" ? buttons[idx + 1] : buttons[idx - 1];
+      if (next) {
+        next.focus();
+        applyTheme(next.dataset.slug);
+        next.scrollIntoView({ block: "nearest" });
+      }
+    });
+
     themeSearch.addEventListener("input", () => {
       filterText = themeSearch.value;
-      renderList();
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(renderList, 150);
     });
 
     filterChips.addEventListener("click", (event) => {
@@ -1035,18 +1209,47 @@
     favoriteCurrent.addEventListener("click", () => {
       favorites.has(currentSlug) ? favorites.delete(currentSlug) : favorites.add(currentSlug);
       saveFavorites();
-      applyTheme(currentSlug);
+      favoriteCurrent.textContent = favorites.has(currentSlug) ? "Unfavorite" : "Favorite";
+      updateFavoriteButton(currentSlug);
+      if (activeFilter === "favorites") renderList();
     });
 
     document.addEventListener("click", async (event) => {
-      const button = event.target.closest("button[data-copy]");
-      if (!button) return;
-      const original = button.textContent;
-      await copyText(copyPayload(button.dataset.copy));
-      button.textContent = "Copied";
-      setTimeout(() => {
-        button.textContent = original;
-      }, 900);
+      // Copy format buttons
+      const copyBtn = event.target.closest("button[data-copy]");
+      if (copyBtn) {
+        const original = copyBtn.textContent;
+        await copyText(copyPayload(copyBtn.dataset.copy));
+        copyBtn.textContent = "Copied";
+        setTimeout(() => { copyBtn.textContent = original; }, 900);
+        return;
+      }
+
+      // Click individual colour chip to copy its hex
+      const chip = event.target.closest(".chip[data-hex]");
+      if (chip) {
+        const hex = chip.dataset.hex;
+        await copyText(hex);
+        const orig = chip.title;
+        chip.title = "Copied!";
+        setTimeout(() => { chip.title = orig; }, 900);
+      }
+    });
+
+    // / focuses search; Escape clears it
+    document.addEventListener("keydown", (event) => {
+      const tag = document.activeElement?.tagName;
+      if (event.key === "/" && tag !== "INPUT" && tag !== "TEXTAREA" && !event.ctrlKey && !event.metaKey) {
+        event.preventDefault();
+        themeSearch.focus();
+        themeSearch.select();
+      }
+      if (event.key === "Escape" && document.activeElement === themeSearch) {
+        themeSearch.value = "";
+        filterText = "";
+        themeSearch.blur();
+        renderList();
+      }
     });
 
     exportCurrent.addEventListener("click", () => {
@@ -1066,6 +1269,7 @@
     });
 
     renderFilters();
+    renderList();
     applyTheme(currentSlug);
   </script>
 </body>

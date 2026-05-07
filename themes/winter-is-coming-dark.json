@@ -1,0 +1,36 @@
+{
+  "name": "Winter is Coming Dark",
+  "slug": "winter-is-coming-dark",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#011627",
+    "foreground": "#d6deeb",
+    "surface": "#022a41",
+    "surfaceRaised": "#023049",
+    "border": "#2c5369",
+    "accent": "#82aaff",
+    "accentForeground": "#011627",
+    "mutedForeground": "#8b98a6",
+    "success": "#22da6e",
+    "warning": "#ffeb95",
+    "error": "#ef5350",
+    "info": "#7fdbca",
+    "selection": "#1e4b71",
+    "cursor": "#82aaff",
+    "syntax": {
+      "comment": "#707e8d",
+      "keyword": "#ef5350",
+      "function": "#82aaff",
+      "string": "#22da6e",
+      "number": "#ffeb95",
+      "type": "#7fdbca",
+      "variable": "#d6deeb",
+      "constant": "#ffeb95"
+    }
+  }
+}

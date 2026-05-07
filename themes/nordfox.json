@@ -1,0 +1,38 @@
+{
+  "name": "Nordfox",
+  "slug": "nordfox",
+  "appearance": "dark",
+  "group": "Nightfox",
+  "tags": [
+    "dark",
+    "editor",
+    "pastel",
+    "popular"
+  ],
+  "colors": {
+    "background": "#2e3440",
+    "foreground": "#cdcecf",
+    "surface": "#383f4e",
+    "surfaceRaised": "#3b4252",
+    "border": "#585e6b",
+    "accent": "#81a1c1",
+    "accentForeground": "#2e3440",
+    "mutedForeground": "#95989d",
+    "success": "#a3be8c",
+    "warning": "#ebcb8b",
+    "error": "#bf616a",
+    "info": "#88c0d0",
+    "selection": "#4a576a",
+    "cursor": "#81a1c1",
+    "syntax": {
+      "comment": "#81848a",
+      "keyword": "#bf616a",
+      "function": "#81a1c1",
+      "string": "#a3be8c",
+      "number": "#ebcb8b",
+      "type": "#88c0d0",
+      "variable": "#cdcecf",
+      "constant": "#ebcb8b"
+    }
+  }
+}

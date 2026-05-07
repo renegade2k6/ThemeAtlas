@@ -1,0 +1,36 @@
+{
+  "name": "Adwaita Dark",
+  "slug": "adwaita-dark",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#1e1e1e",
+    "foreground": "#ffffff",
+    "surface": "#2c2c2c",
+    "surfaceRaised": "#303030",
+    "border": "#595959",
+    "accent": "#3584e4",
+    "accentForeground": "#1e1e1e",
+    "mutedForeground": "#b0b0b0",
+    "success": "#26a269",
+    "warning": "#e5a50a",
+    "error": "#c01c28",
+    "info": "#1c71d8",
+    "selection": "#314258",
+    "cursor": "#3584e4",
+    "syntax": {
+      "comment": "#939393",
+      "keyword": "#c01c28",
+      "function": "#3584e4",
+      "string": "#26a269",
+      "number": "#e5a50a",
+      "type": "#1c71d8",
+      "variable": "#ffffff",
+      "constant": "#e5a50a"
+    }
+  }
+}

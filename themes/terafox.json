@@ -1,0 +1,36 @@
+{
+  "name": "Terafox",
+  "slug": "terafox",
+  "appearance": "dark",
+  "group": "Nightfox",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#152528",
+    "foreground": "#e6eaea",
+    "surface": "#1b3033",
+    "surfaceRaised": "#1d3337",
+    "border": "#45585b",
+    "accent": "#5a93aa",
+    "accentForeground": "#152528",
+    "mutedForeground": "#9da5a6",
+    "success": "#7aa4a1",
+    "warning": "#ffa500",
+    "error": "#e85c51",
+    "info": "#507b9c",
+    "selection": "#2a4850",
+    "cursor": "#5a93aa",
+    "syntax": {
+      "comment": "#828b8d",
+      "keyword": "#e85c51",
+      "function": "#5a93aa",
+      "string": "#7aa4a1",
+      "number": "#ffa500",
+      "type": "#507b9c",
+      "variable": "#e6eaea",
+      "constant": "#ffa500"
+    }
+  }
+}

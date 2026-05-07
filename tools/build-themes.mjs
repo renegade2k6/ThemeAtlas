@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 const root = process.cwd();
+const BASE_URL = process.env.SITE_URL || "https://themeatlas.dev";
 const seedsPath = path.join(root, "themes", "theme-seeds.json");
 const seeds = JSON.parse(fs.readFileSync(seedsPath, "utf8"));
 
@@ -82,7 +83,12 @@ function mix(a, b, amount) {
   return "#" + mixed.map((channel) => channel.toString(16).padStart(2, "0")).join("");
 }
 
+const PALETTE_SIZE = 8;
+
 function themeFromSeed(seed) {
+  if (!Array.isArray(seed.palette) || seed.palette.length < PALETTE_SIZE) {
+    throw new Error(`Seed "${seed.slug}" palette needs ${PALETTE_SIZE} entries, got ${seed.palette?.length ?? 0}`);
+  }
   const [background, foreground, raised, accent, success, error, warning, info] = seed.palette;
   const surface = mix(raised, background, 0.25);
   const border = mix(raised, foreground, 0.2);
@@ -144,7 +150,20 @@ fs.writeFileSync(
 
 fs.writeFileSync(
   path.join(root, "themes", "theme-data.js"),
-  `window.THEME_DATA = ${JSON.stringify(themes, null, 2)};\n`
+  `window.THEME_DATA = ${JSON.stringify(themes)};\n`
+);
+
+const today = new Date().toISOString().slice(0, 10);
+const urlEntries = [
+  `  <url>\n    <loc>${BASE_URL}/</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>1.0</priority>\n  </url>`,
+  ...themes.map(t =>
+    `  <url>\n    <loc>${BASE_URL}/?theme=${t.slug}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>`
+  )
+].join("\n");
+
+fs.writeFileSync(
+  path.join(root, "sitemap.xml"),
+  `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urlEntries}\n</urlset>\n`
 );
 
 console.log(`Generated ${themes.length} themes.`);

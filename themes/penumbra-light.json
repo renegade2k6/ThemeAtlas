@@ -1,0 +1,36 @@
+{
+  "name": "Penumbra Light",
+  "slug": "penumbra-light",
+  "appearance": "light",
+  "group": "Light Themes",
+  "tags": [
+    "editor",
+    "light"
+  ],
+  "colors": {
+    "background": "#f2f2f2",
+    "foreground": "#1e1e1e",
+    "surface": "#e6e6e6",
+    "surfaceRaised": "#e2e2e2",
+    "border": "#bbbbbb",
+    "accent": "#4d7cc4",
+    "accentForeground": "#f2f2f2",
+    "mutedForeground": "#686868",
+    "success": "#557562",
+    "warning": "#c4804d",
+    "error": "#c44d4d",
+    "info": "#4d90c4",
+    "selection": "#c1ccdb",
+    "cursor": "#4d7cc4",
+    "syntax": {
+      "comment": "#848484",
+      "keyword": "#c44d4d",
+      "function": "#4d7cc4",
+      "string": "#557562",
+      "number": "#c4804d",
+      "type": "#4d90c4",
+      "variable": "#1e1e1e",
+      "constant": "#c4804d"
+    }
+  }
+}

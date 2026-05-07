@@ -1,0 +1,36 @@
+{
+  "name": "Decay",
+  "slug": "decay",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#0d0f18",
+    "foreground": "#b0b8d1",
+    "surface": "#151721",
+    "surfaceRaised": "#171924",
+    "border": "#363947",
+    "accent": "#91a4cf",
+    "accentForeground": "#0d0f18",
+    "mutedForeground": "#777d90",
+    "success": "#8fb573",
+    "warning": "#f0a45d",
+    "error": "#e05f65",
+    "info": "#79c1d4",
+    "selection": "#32384a",
+    "cursor": "#91a4cf",
+    "syntax": {
+      "comment": "#626778",
+      "keyword": "#e05f65",
+      "function": "#91a4cf",
+      "string": "#8fb573",
+      "number": "#f0a45d",
+      "type": "#79c1d4",
+      "variable": "#b0b8d1",
+      "constant": "#f0a45d"
+    }
+  }
+}

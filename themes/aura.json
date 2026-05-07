@@ -1,0 +1,36 @@
+{
+  "name": "Aura",
+  "slug": "aura",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#15141b",
+    "foreground": "#edecee",
+    "surface": "#1c1a23",
+    "surfaceRaised": "#1e1c26",
+    "border": "#47464e",
+    "accent": "#a277ff",
+    "accentForeground": "#15141b",
+    "mutedForeground": "#a1a0a4",
+    "success": "#61ffca",
+    "warning": "#ffca85",
+    "error": "#ff6767",
+    "info": "#82e2ff",
+    "selection": "#3b3056",
+    "cursor": "#a277ff",
+    "syntax": {
+      "comment": "#858489",
+      "keyword": "#ff6767",
+      "function": "#a277ff",
+      "string": "#61ffca",
+      "number": "#ffca85",
+      "type": "#82e2ff",
+      "variable": "#edecee",
+      "constant": "#ffca85"
+    }
+  }
+}

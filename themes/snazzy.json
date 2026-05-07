@@ -1,0 +1,36 @@
+{
+  "name": "Snazzy",
+  "slug": "snazzy",
+  "appearance": "dark",
+  "group": "Modern & Custom",
+  "tags": [
+    "dark",
+    "editor"
+  ],
+  "colors": {
+    "background": "#282a36",
+    "foreground": "#eff0eb",
+    "surface": "#363847",
+    "surfaceRaised": "#3a3d4d",
+    "border": "#5e616d",
+    "accent": "#ff6ac1",
+    "accentForeground": "#282a36",
+    "mutedForeground": "#a9abac",
+    "success": "#5af78e",
+    "warning": "#f3f99d",
+    "error": "#ff5c57",
+    "info": "#57c7ff",
+    "selection": "#654767",
+    "cursor": "#ff6ac1",
+    "syntax": {
+      "comment": "#8f9194",
+      "keyword": "#ff5c57",
+      "function": "#ff6ac1",
+      "string": "#5af78e",
+      "number": "#f3f99d",
+      "type": "#57c7ff",
+      "variable": "#eff0eb",
+      "constant": "#f3f99d"
+    }
+  }
+}

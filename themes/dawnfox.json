@@ -1,0 +1,36 @@
+{
+  "name": "Dawnfox",
+  "slug": "dawnfox",
+  "appearance": "light",
+  "group": "Nightfox",
+  "tags": [
+    "editor",
+    "light"
+  ],
+  "colors": {
+    "background": "#faebd7",
+    "foreground": "#575279",
+    "surface": "#eddbc6",
+    "surfaceRaised": "#e8d5c0",
+    "border": "#cbbbb2",
+    "accent": "#b279a7",
+    "accentForeground": "#faebd7",
+    "mutedForeground": "#90889a",
+    "success": "#618774",
+    "warning": "#ac7b3c",
+    "error": "#994545",
+    "info": "#396292",
+    "selection": "#dcc1bb",
+    "cursor": "#b279a7",
+    "syntax": {
+      "comment": "#a59ba6",
+      "keyword": "#994545",
+      "function": "#b279a7",
+      "string": "#618774",
+      "number": "#ac7b3c",
+      "type": "#396292",
+      "variable": "#575279",
+      "constant": "#ac7b3c"
+    }
+  }
+}
