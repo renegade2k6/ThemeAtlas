@@ -180,13 +180,10 @@
 
     .theme-button {
       width: 100%;
-      display: grid;
-      grid-template-columns: auto auto minmax(0, 1fr);
-      grid-template-areas:
-        "favorite compare meta"
-        "swatches swatches swatches";
-      gap: 8px 12px;
-      align-items: start;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
       padding: 10px;
       border: 1px solid var(--line);
       border-radius: 8px;
@@ -198,7 +195,7 @@
     }
 
     .favorite-toggle {
-      grid-area: favorite;
+      order: 2;
       border: 0;
       background: transparent;
       color: var(--muted);
@@ -213,7 +210,7 @@
     }
 
     .compare-toggle {
-      grid-area: compare;
+      order: 2;
       color: var(--muted);
       font-size: 12px;
       line-height: 1;
@@ -224,7 +221,8 @@
     }
 
     .theme-meta {
-      grid-area: meta;
+      order: 1;
+      flex: 1 0 100%;
       min-width: 0;
     }
 
@@ -263,7 +261,8 @@
     }
 
     .swatches {
-      grid-area: swatches;
+      order: 3;
+      flex: 1 0 100%;
       display: flex;
       gap: 3px;
     }
