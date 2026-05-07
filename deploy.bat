@@ -23,7 +23,7 @@ call :run "Building themes" "node tools/build-themes.mjs"
 if errorlevel 1 goto :end_fail
 call :run "Validating" "node tools/validate.mjs"
 if errorlevel 1 goto :end_fail
-call :run "Staging site changes" "git add index.html themes/ assets/ tests/ robots.txt sitemap.xml site.webmanifest 404.html .nojekyll package.json tools/ README.md deploy.bat .gitignore"
+call :run "Staging site changes" "git add index.html themes/ assets/ tests/ sw.js robots.txt sitemap.xml site.webmanifest 404.html .nojekyll package.json tools/ README.md deploy.bat .gitignore"
 if errorlevel 1 goto :end_fail
 call :run "Staging workflow" "git add -f .github/workflows/pages.yml"
 if errorlevel 1 goto :end_fail
