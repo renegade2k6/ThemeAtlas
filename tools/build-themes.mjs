@@ -165,6 +165,11 @@ function themeFromSeed(seed) {
 
 const themes = seeds.map(themeFromSeed);
 
+// Bump this whenever the theme JSON shape changes in a way that invalidates
+// previously-cached theme data in users' localStorage. The runtime uses it
+// to know when to discard its persistent theme cache.
+const CATALOG_VERSION = 2;
+
 for (const theme of themes) {
   // Enrich tags with derived warm/cool/bright/low-light so the app can
   // count filters without fetching every theme's full record.
@@ -179,6 +184,8 @@ fs.writeFileSync(
   path.join(root, "themes", "index.json"),
   `${JSON.stringify(
     {
+      version: CATALOG_VERSION,
+      count: themes.length,
       themes: themes.map((theme) => ({
         name: theme.name,
         slug: theme.slug,
@@ -186,6 +193,17 @@ fs.writeFileSync(
         appearance: theme.appearance,
         group: theme.group,
         tags: theme.tags,
+        // Tiny preview palette (6 colors) so the UI can show meaningful
+        // swatches and a hero strip without fetching the full theme JSON.
+        // Index grows by ~30 bytes/entry (~5 KB for 189 themes).
+        preview: {
+          background: theme.colors.background,
+          foreground: theme.colors.foreground,
+          surface: theme.colors.surfaceRaised,
+          accent: theme.colors.accent,
+          success: theme.colors.success,
+          error: theme.colors.error,
+        },
       })),
     },
     null,

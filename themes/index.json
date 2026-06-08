@@ -1,4 +1,6 @@
 {
+  "version": 2,
+  "count": 189,
   "themes": [
     {
       "name": "Dracula",
@@ -13,7 +15,15 @@
         "featured",
         "low light",
         "popular"
-      ]
+      ],
+      "preview": {
+        "background": "#282a36",
+        "foreground": "#f8f8f2",
+        "surface": "#44475a",
+        "accent": "#bd93f9",
+        "success": "#50fa7b",
+        "error": "#ff5555"
+      }
     },
     {
       "name": "Tokyo Night",
@@ -28,7 +38,15 @@
         "featured",
         "low light",
         "popular"
-      ]
+      ],
+      "preview": {
+        "background": "#1a1b26",
+        "foreground": "#c0caf5",
+        "surface": "#292e42",
+        "accent": "#7aa2f7",
+        "success": "#9ece6a",
+        "error": "#f7768e"
+      }
     },
     {
       "name": "Nord",
@@ -43,7 +61,15 @@
         "featured",
         "pastel",
         "popular"
-      ]
+      ],
+      "preview": {
+        "background": "#2e3440",
+        "foreground": "#d8dee9",
+        "surface": "#434c5e",
+        "accent": "#88c0d0",
+        "success": "#a3be8c",
+        "error": "#bf616a"
+      }
     },
     {
       "name": "Catppuccin Mocha",
@@ -59,7 +85,15 @@
         "low light",
         "pastel",
         "popular"
-      ]
+      ],
+      "preview": {
+        "background": "#1e1e2e",
+        "foreground": "#cdd6f4",
+        "surface": "#45475a",
+        "accent": "#cba6f7",
+        "success": "#a6e3a1",
+        "error": "#f38ba8"
+      }
     },
     {
       "name": "Rose Pine",
@@ -75,7 +109,15 @@
         "low light",
         "pastel",
         "popular"
-      ]
+      ],
+      "preview": {
+        "background": "#191724",
+        "foreground": "#e0def4",
+        "surface": "#26233a",
+        "accent": "#c4a7e7",
+        "success": "#31748f",
+        "error": "#eb6f92"
+      }
     },
     {
       "name": "One Dark",
@@ -90,7 +132,15 @@
         "featured",
         "low light",
         "popular"
-      ]
+      ],
+      "preview": {
+        "background": "#282c34",
+        "foreground": "#abb2bf",
+        "surface": "#3a3f4b",
+        "accent": "#61afef",
+        "success": "#98c379",
+        "error": "#e06c75"
+      }
     },
     {
       "name": "Gruvbox",
@@ -105,7 +155,15 @@
         "low light",
         "popular",
         "warm"
-      ]
+      ],
+      "preview": {
+        "background": "#282828",
+        "foreground": "#ebdbb2",
+        "surface": "#3c3836",
+        "accent": "#d79921",
+        "success": "#98971a",
+        "error": "#cc241d"
+      }
     },
     {
       "name": "GitHub Dark",
@@ -120,7 +178,15 @@
         "featured",
         "low light",
         "popular"
-      ]
+      ],
+      "preview": {
+        "background": "#0d1117",
+        "foreground": "#c9d1d9",
+        "surface": "#21262d",
+        "accent": "#58a6ff",
+        "success": "#3fb950",
+        "error": "#f85149"
+      }
     },
     {
       "name": "Solarized Dark",
@@ -133,7 +199,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#002b36",
+        "foreground": "#839496",
+        "surface": "#073642",
+        "accent": "#268bd2",
+        "success": "#859900",
+        "error": "#dc322f"
+      }
     },
     {
       "name": "Monokai",
@@ -146,7 +220,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#272822",
+        "foreground": "#f8f8f2",
+        "surface": "#3e3d32",
+        "accent": "#66d9ef",
+        "success": "#a6e22e",
+        "error": "#f92672"
+      }
     },
     {
       "name": "Synthwave",
@@ -160,7 +242,15 @@
         "editor",
         "low light",
         "warm"
-      ]
+      ],
+      "preview": {
+        "background": "#241b2f",
+        "foreground": "#f8f8f2",
+        "surface": "#3a2a4d",
+        "accent": "#ff7edb",
+        "success": "#72f1b8",
+        "error": "#fe4450"
+      }
     },
     {
       "name": "Everforest",
@@ -172,7 +262,15 @@
         "dark",
         "editor",
         "pastel"
-      ]
+      ],
+      "preview": {
+        "background": "#2d353b",
+        "foreground": "#d3c6aa",
+        "surface": "#3d484d",
+        "accent": "#83c092",
+        "success": "#a7c080",
+        "error": "#e67e80"
+      }
     },
     {
       "name": "OLED Black",
@@ -187,7 +285,15 @@
         "featured",
         "low light",
         "oled"
-      ]
+      ],
+      "preview": {
+        "background": "#000000",
+        "foreground": "#f4f7fb",
+        "surface": "#101010",
+        "accent": "#00f5d4",
+        "success": "#39ff14",
+        "error": "#ff4d6d"
+      }
     },
     {
       "name": "Cyberpunk",
@@ -201,7 +307,15 @@
         "editor",
         "low light",
         "warm"
-      ]
+      ],
+      "preview": {
+        "background": "#10002b",
+        "foreground": "#fff200",
+        "surface": "#240046",
+        "accent": "#ff00a8",
+        "success": "#00f5d4",
+        "error": "#ff3864"
+      }
     },
     {
       "name": "Cyberpunk 2077",
@@ -216,7 +330,15 @@
         "editor",
         "featured",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#0b0f14",
+        "foreground": "#fcee09",
+        "surface": "#161b22",
+        "accent": "#00f0ff",
+        "success": "#39ff14",
+        "error": "#ff003c"
+      }
     },
     {
       "name": "Neon Candy",
@@ -230,7 +352,15 @@
         "editor",
         "low light",
         "warm"
-      ]
+      ],
+      "preview": {
+        "background": "#16051f",
+        "foreground": "#f8ecff",
+        "surface": "#321246",
+        "accent": "#fac948",
+        "success": "#aaa6f5",
+        "error": "#e367a0"
+      }
     },
     {
       "name": "Forest Flare",
@@ -243,7 +373,15 @@
         "editor",
         "low light",
         "warm"
-      ]
+      ],
+      "preview": {
+        "background": "#172622",
+        "foreground": "#f0e6af",
+        "surface": "#283f3b",
+        "accent": "#fc7753",
+        "success": "#8eb06a",
+        "error": "#fc7753"
+      }
     },
     {
       "name": "Signal Bloom",
@@ -256,7 +394,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#111827",
+        "foreground": "#f8fbff",
+        "surface": "#223152",
+        "accent": "#67ca94",
+        "success": "#67ca94",
+        "error": "#d43671"
+      }
     },
     {
       "name": "Molten Moss",
@@ -269,7 +415,15 @@
         "editor",
         "low light",
         "warm"
-      ]
+      ],
+      "preview": {
+        "background": "#012104",
+        "foreground": "#f2e08a",
+        "surface": "#173815",
+        "accent": "#f9c300",
+        "success": "#7dbb42",
+        "error": "#db4100"
+      }
     },
     {
       "name": "Orchard Ember",
@@ -282,7 +436,15 @@
         "editor",
         "low light",
         "warm"
-      ]
+      ],
+      "preview": {
+        "background": "#090b09",
+        "foreground": "#fffefe",
+        "surface": "#20281f",
+        "accent": "#ce94a2",
+        "success": "#7f9f70",
+        "error": "#a74906"
+      }
     },
     {
       "name": "Golden Grove",
@@ -294,7 +456,15 @@
         "dark",
         "editor",
         "warm"
-      ]
+      ],
+      "preview": {
+        "background": "#2d3027",
+        "foreground": "#fff0c7",
+        "surface": "#464936",
+        "accent": "#ffcb70",
+        "success": "#9b9b7a",
+        "error": "#d08c60"
+      }
     },
     {
       "name": "Pacific Ember",
@@ -307,7 +477,15 @@
         "editor",
         "low light",
         "warm"
-      ]
+      ],
+      "preview": {
+        "background": "#102b35",
+        "foreground": "#f5f1dc",
+        "surface": "#204653",
+        "accent": "#e9c46a",
+        "success": "#2a9d8f",
+        "error": "#e76f51"
+      }
     },
     {
       "name": "Arcade Pop",
@@ -321,7 +499,15 @@
         "editor",
         "low light",
         "warm"
-      ]
+      ],
+      "preview": {
+        "background": "#13071f",
+        "foreground": "#f9f7ff",
+        "surface": "#281545",
+        "accent": "#ff006e",
+        "success": "#06d6a0",
+        "error": "#fb5607"
+      }
     },
     {
       "name": "One Dark Pro",
@@ -335,7 +521,15 @@
         "editor",
         "low light",
         "popular"
-      ]
+      ],
+      "preview": {
+        "background": "#282c34",
+        "foreground": "#abb2bf",
+        "surface": "#3e4451",
+        "accent": "#61afef",
+        "success": "#98c379",
+        "error": "#e06c75"
+      }
     },
     {
       "name": "Ayu Dark",
@@ -349,7 +543,15 @@
         "low light",
         "popular",
         "warm"
-      ]
+      ],
+      "preview": {
+        "background": "#0f1419",
+        "foreground": "#e6e1cf",
+        "surface": "#1f2430",
+        "accent": "#ffb454",
+        "success": "#b8cc52",
+        "error": "#f07178"
+      }
     },
     {
       "name": "Ayu Mirage",
@@ -363,7 +565,15 @@
         "low light",
         "popular",
         "warm"
-      ]
+      ],
+      "preview": {
+        "background": "#1f2430",
+        "foreground": "#cbccc6",
+        "surface": "#242936",
+        "accent": "#ffcc66",
+        "success": "#bae67e",
+        "error": "#f28779"
+      }
     },
     {
       "name": "Material Palenight",
@@ -376,7 +586,15 @@
         "dark",
         "editor",
         "popular"
-      ]
+      ],
+      "preview": {
+        "background": "#292d3e",
+        "foreground": "#a6accd",
+        "surface": "#34324a",
+        "accent": "#c792ea",
+        "success": "#c3e88d",
+        "error": "#f07178"
+      }
     },
     {
       "name": "Material Ocean",
@@ -390,7 +608,15 @@
         "editor",
         "low light",
         "popular"
-      ]
+      ],
+      "preview": {
+        "background": "#0f111a",
+        "foreground": "#a6accd",
+        "surface": "#1a1c25",
+        "accent": "#82aaff",
+        "success": "#c3e88d",
+        "error": "#f07178"
+      }
     },
     {
       "name": "Night Owl",
@@ -405,7 +631,15 @@
         "featured",
         "low light",
         "popular"
-      ]
+      ],
+      "preview": {
+        "background": "#011627",
+        "foreground": "#d6deeb",
+        "surface": "#0b2942",
+        "accent": "#82aaff",
+        "success": "#addb67",
+        "error": "#ef5350"
+      }
     },
     {
       "name": "Cobalt2",
@@ -417,7 +651,15 @@
         "dark",
         "editor",
         "warm"
-      ]
+      ],
+      "preview": {
+        "background": "#193549",
+        "foreground": "#ffffff",
+        "surface": "#0d3a58",
+        "accent": "#ffc600",
+        "success": "#3ad900",
+        "error": "#ff628c"
+      }
     },
     {
       "name": "Shades of Purple",
@@ -429,7 +671,15 @@
         "dark",
         "editor",
         "warm"
-      ]
+      ],
+      "preview": {
+        "background": "#2d2b55",
+        "foreground": "#ffffff",
+        "surface": "#3d3a70",
+        "accent": "#fad000",
+        "success": "#a5ff90",
+        "error": "#ff628c"
+      }
     },
     {
       "name": "Omni",
@@ -442,7 +692,15 @@
         "editor",
         "low light",
         "warm"
-      ]
+      ],
+      "preview": {
+        "background": "#191622",
+        "foreground": "#e1e1e6",
+        "surface": "#211d2b",
+        "accent": "#ff79c6",
+        "success": "#67e480",
+        "error": "#e96379"
+      }
     },
     {
       "name": "Kanagawa",
@@ -457,7 +715,15 @@
         "featured",
         "low light",
         "popular"
-      ]
+      ],
+      "preview": {
+        "background": "#1f1f28",
+        "foreground": "#dcd7ba",
+        "surface": "#2a2a37",
+        "accent": "#7e9cd8",
+        "success": "#98bb6c",
+        "error": "#e82424"
+      }
     },
     {
       "name": "Kanagawa Dragon",
@@ -471,7 +737,15 @@
         "editor",
         "low light",
         "popular"
-      ]
+      ],
+      "preview": {
+        "background": "#181616",
+        "foreground": "#c5c9c5",
+        "surface": "#282727",
+        "accent": "#8ba4b0",
+        "success": "#8a9a7b",
+        "error": "#c4746e"
+      }
     },
     {
       "name": "Nightfox",
@@ -484,7 +758,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#192330",
+        "foreground": "#cdcecf",
+        "surface": "#212e3f",
+        "accent": "#719cd6",
+        "success": "#81b29a",
+        "error": "#c94f6d"
+      }
     },
     {
       "name": "Carbonfox",
@@ -498,7 +780,15 @@
         "editor",
         "low light",
         "oled"
-      ]
+      ],
+      "preview": {
+        "background": "#161616",
+        "foreground": "#f2f4f8",
+        "surface": "#252525",
+        "accent": "#78a9ff",
+        "success": "#42be65",
+        "error": "#ee5396"
+      }
     },
     {
       "name": "Duskfox",
@@ -512,7 +802,15 @@
         "editor",
         "low light",
         "pastel"
-      ]
+      ],
+      "preview": {
+        "background": "#232136",
+        "foreground": "#e0def4",
+        "surface": "#2d2a45",
+        "accent": "#569fba",
+        "success": "#a3be8c",
+        "error": "#eb6f92"
+      }
     },
     {
       "name": "Oxocarbon",
@@ -526,7 +824,15 @@
         "editor",
         "low light",
         "oled"
-      ]
+      ],
+      "preview": {
+        "background": "#161616",
+        "foreground": "#f2f4f8",
+        "surface": "#262626",
+        "accent": "#78a9ff",
+        "success": "#42be65",
+        "error": "#ee5396"
+      }
     },
     {
       "name": "Poimandres",
@@ -540,7 +846,15 @@
         "editor",
         "low light",
         "pastel"
-      ]
+      ],
+      "preview": {
+        "background": "#1b1e28",
+        "foreground": "#a6accd",
+        "surface": "#252b37",
+        "accent": "#add7ff",
+        "success": "#5de4c7",
+        "error": "#d0679d"
+      }
     },
     {
       "name": "Vitesse Dark",
@@ -553,7 +867,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#121212",
+        "foreground": "#dbd7ca",
+        "surface": "#1e1e1e",
+        "accent": "#4d9375",
+        "success": "#80a665",
+        "error": "#cb7676"
+      }
     },
     {
       "name": "Flexoki Dark",
@@ -566,7 +888,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#100f0f",
+        "foreground": "#cecdc3",
+        "surface": "#1c1b1a",
+        "accent": "#4385be",
+        "success": "#66800b",
+        "error": "#af3029"
+      }
     },
     {
       "name": "Vesper",
@@ -579,7 +909,15 @@
         "editor",
         "low light",
         "warm"
-      ]
+      ],
+      "preview": {
+        "background": "#101010",
+        "foreground": "#ffffff",
+        "surface": "#1f1f1f",
+        "accent": "#ffc799",
+        "success": "#99ffe4",
+        "error": "#ff8080"
+      }
     },
     {
       "name": "Horizon",
@@ -592,7 +930,15 @@
         "editor",
         "low light",
         "warm"
-      ]
+      ],
+      "preview": {
+        "background": "#1c1e26",
+        "foreground": "#d5d8da",
+        "surface": "#232530",
+        "accent": "#e95678",
+        "success": "#29d398",
+        "error": "#f43e5c"
+      }
     },
     {
       "name": "City Lights",
@@ -605,7 +951,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#1d252c",
+        "foreground": "#a0b3c5",
+        "surface": "#28323a",
+        "accent": "#5ec4ff",
+        "success": "#8bd49c",
+        "error": "#d95468"
+      }
     },
     {
       "name": "Andromeda",
@@ -618,7 +972,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#23262e",
+        "foreground": "#d5ced9",
+        "surface": "#2b303b",
+        "accent": "#c74ded",
+        "success": "#96e072",
+        "error": "#ee5d43"
+      }
     },
     {
       "name": "Moonlight",
@@ -632,7 +994,15 @@
         "editor",
         "low light",
         "pastel"
-      ]
+      ],
+      "preview": {
+        "background": "#212337",
+        "foreground": "#c8d3f5",
+        "surface": "#2f334d",
+        "accent": "#82aaff",
+        "success": "#c3e88d",
+        "error": "#ff5370"
+      }
     },
     {
       "name": "Lucario",
@@ -644,7 +1014,15 @@
         "cool",
         "dark",
         "editor"
-      ]
+      ],
+      "preview": {
+        "background": "#2b3e50",
+        "foreground": "#f8f8f2",
+        "surface": "#34495e",
+        "accent": "#66d9ef",
+        "success": "#a6e22e",
+        "error": "#ff6e6e"
+      }
     },
     {
       "name": "Panda",
@@ -657,7 +1035,15 @@
         "editor",
         "low light",
         "warm"
-      ]
+      ],
+      "preview": {
+        "background": "#292a2b",
+        "foreground": "#e6e6e6",
+        "surface": "#34353a",
+        "accent": "#ff2c6d",
+        "success": "#19f9d8",
+        "error": "#ff75b5"
+      }
     },
     {
       "name": "Jellybeans",
@@ -671,7 +1057,15 @@
         "low light",
         "terminal",
         "warm"
-      ]
+      ],
+      "preview": {
+        "background": "#151515",
+        "foreground": "#e8e8d3",
+        "surface": "#202020",
+        "accent": "#fad07a",
+        "success": "#99ad6a",
+        "error": "#cf6a4c"
+      }
     },
     {
       "name": "Iceberg",
@@ -684,7 +1078,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#161821",
+        "foreground": "#c6c8d1",
+        "surface": "#1e2132",
+        "accent": "#84a0c6",
+        "success": "#b4be82",
+        "error": "#e27878"
+      }
     },
     {
       "name": "Noctis",
@@ -697,7 +1099,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#122738",
+        "foreground": "#dbe5f0",
+        "surface": "#1b3045",
+        "accent": "#5eb1ff",
+        "success": "#49e9a6",
+        "error": "#ff5370"
+      }
     },
     {
       "name": "Sonokai",
@@ -709,7 +1119,15 @@
         "dark",
         "editor",
         "warm"
-      ]
+      ],
+      "preview": {
+        "background": "#2c2e34",
+        "foreground": "#e2e2e3",
+        "surface": "#363944",
+        "accent": "#9ed072",
+        "success": "#9ed072",
+        "error": "#fc5d7c"
+      }
     },
     {
       "name": "Srcery",
@@ -723,7 +1141,15 @@
         "editor",
         "low light",
         "terminal"
-      ]
+      ],
+      "preview": {
+        "background": "#1c1b19",
+        "foreground": "#fce8c3",
+        "surface": "#2d2b28",
+        "accent": "#68a8e4",
+        "success": "#98bc37",
+        "error": "#ef2f27"
+      }
     },
     {
       "name": "Tender",
@@ -737,7 +1163,15 @@
         "editor",
         "low light",
         "terminal"
-      ]
+      ],
+      "preview": {
+        "background": "#282828",
+        "foreground": "#eeeeee",
+        "surface": "#383838",
+        "accent": "#b3deef",
+        "success": "#c9d05c",
+        "error": "#f43753"
+      }
     },
     {
       "name": "Tomorrow Night",
@@ -750,7 +1184,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#1d1f21",
+        "foreground": "#c5c8c6",
+        "surface": "#282a2e",
+        "accent": "#81a2be",
+        "success": "#b5bd68",
+        "error": "#cc6666"
+      }
     },
     {
       "name": "Tomorrow Night Blue",
@@ -763,7 +1205,15 @@
         "editor",
         "low light",
         "warm"
-      ]
+      ],
+      "preview": {
+        "background": "#002451",
+        "foreground": "#ffffff",
+        "surface": "#00346e",
+        "accent": "#ff9da4",
+        "success": "#d1f1a9",
+        "error": "#ff9da4"
+      }
     },
     {
       "name": "Base16 Eighties",
@@ -776,7 +1226,15 @@
         "dark",
         "editor",
         "terminal"
-      ]
+      ],
+      "preview": {
+        "background": "#2d2d2d",
+        "foreground": "#d3d0c8",
+        "surface": "#393939",
+        "accent": "#6699cc",
+        "success": "#99cc99",
+        "error": "#f2777a"
+      }
     },
     {
       "name": "Base16 Ocean",
@@ -789,7 +1247,15 @@
         "dark",
         "editor",
         "terminal"
-      ]
+      ],
+      "preview": {
+        "background": "#2b303b",
+        "foreground": "#c0c5ce",
+        "surface": "#343d46",
+        "accent": "#8fa1b3",
+        "success": "#a3be8c",
+        "error": "#bf616a"
+      }
     },
     {
       "name": "One Half Dark",
@@ -803,7 +1269,15 @@
         "editor",
         "low light",
         "terminal"
-      ]
+      ],
+      "preview": {
+        "background": "#282c34",
+        "foreground": "#dcdfe4",
+        "surface": "#313640",
+        "accent": "#61afef",
+        "success": "#98c379",
+        "error": "#e06c75"
+      }
     },
     {
       "name": "Matrix",
@@ -817,7 +1291,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#000000",
+        "foreground": "#00ff41",
+        "surface": "#041f0b",
+        "accent": "#00ff41",
+        "success": "#00cc33",
+        "error": "#ff1744"
+      }
     },
     {
       "name": "High Contrast",
@@ -831,7 +1313,15 @@
         "low light",
         "oled",
         "warm"
-      ]
+      ],
+      "preview": {
+        "background": "#000000",
+        "foreground": "#ffffff",
+        "surface": "#1a1a1a",
+        "accent": "#ffff00",
+        "success": "#00ff66",
+        "error": "#ff3b30"
+      }
     },
     {
       "name": "Catppuccin Frappe",
@@ -844,7 +1334,15 @@
         "editor",
         "pastel",
         "popular"
-      ]
+      ],
+      "preview": {
+        "background": "#303446",
+        "foreground": "#c6d0f5",
+        "surface": "#414559",
+        "accent": "#ca9ee6",
+        "success": "#a6d189",
+        "error": "#e78284"
+      }
     },
     {
       "name": "Catppuccin Macchiato",
@@ -859,7 +1357,15 @@
         "low light",
         "pastel",
         "popular"
-      ]
+      ],
+      "preview": {
+        "background": "#24273a",
+        "foreground": "#cad3f5",
+        "surface": "#363a4f",
+        "accent": "#c6a0f6",
+        "success": "#a6da95",
+        "error": "#ed8796"
+      }
     },
     {
       "name": "Catppuccin Latte",
@@ -874,7 +1380,15 @@
         "light",
         "pastel",
         "popular"
-      ]
+      ],
+      "preview": {
+        "background": "#eff1f5",
+        "foreground": "#4c4f69",
+        "surface": "#ccd0da",
+        "accent": "#8839ef",
+        "success": "#40a02b",
+        "error": "#d20f39"
+      }
     },
     {
       "name": "Rose Pine Moon",
@@ -889,7 +1403,15 @@
         "low light",
         "pastel",
         "popular"
-      ]
+      ],
+      "preview": {
+        "background": "#232136",
+        "foreground": "#e0def4",
+        "surface": "#393552",
+        "accent": "#c4a7e7",
+        "success": "#3e8fb0",
+        "error": "#eb6f92"
+      }
     },
     {
       "name": "Rose Pine Dawn",
@@ -903,7 +1425,15 @@
         "light",
         "pastel",
         "popular"
-      ]
+      ],
+      "preview": {
+        "background": "#faf4ed",
+        "foreground": "#575279",
+        "surface": "#f2e9e1",
+        "accent": "#907aa9",
+        "success": "#286983",
+        "error": "#b4637a"
+      }
     },
     {
       "name": "GitHub Dimmed",
@@ -917,7 +1447,15 @@
         "editor",
         "low light",
         "popular"
-      ]
+      ],
+      "preview": {
+        "background": "#22272e",
+        "foreground": "#adbac7",
+        "surface": "#2d333b",
+        "accent": "#539bf5",
+        "success": "#57ab5a",
+        "error": "#e5534b"
+      }
     },
     {
       "name": "GitHub Light",
@@ -931,7 +1469,15 @@
         "editor",
         "light",
         "popular"
-      ]
+      ],
+      "preview": {
+        "background": "#ffffff",
+        "foreground": "#24292f",
+        "surface": "#f6f8fa",
+        "accent": "#0969da",
+        "success": "#1a7f37",
+        "error": "#cf222e"
+      }
     },
     {
       "name": "Solarized Light",
@@ -944,7 +1490,15 @@
         "cool",
         "editor",
         "light"
-      ]
+      ],
+      "preview": {
+        "background": "#fdf6e3",
+        "foreground": "#657b83",
+        "surface": "#eee8d5",
+        "accent": "#268bd2",
+        "success": "#859900",
+        "error": "#dc322f"
+      }
     },
     {
       "name": "Ayu Light",
@@ -958,7 +1512,15 @@
         "light",
         "popular",
         "warm"
-      ]
+      ],
+      "preview": {
+        "background": "#fafafa",
+        "foreground": "#5c6773",
+        "surface": "#f3f4f5",
+        "accent": "#ffaa33",
+        "success": "#86b300",
+        "error": "#f07171"
+      }
     },
     {
       "name": "One Half Light",
@@ -972,7 +1534,15 @@
         "editor",
         "light",
         "terminal"
-      ]
+      ],
+      "preview": {
+        "background": "#fafafa",
+        "foreground": "#383a42",
+        "surface": "#e5e5e6",
+        "accent": "#0184bc",
+        "success": "#50a14f",
+        "error": "#e45649"
+      }
     },
     {
       "name": "Atom One Light",
@@ -985,7 +1555,15 @@
         "cool",
         "editor",
         "light"
-      ]
+      ],
+      "preview": {
+        "background": "#fafafa",
+        "foreground": "#383a42",
+        "surface": "#eaeaeb",
+        "accent": "#4078f2",
+        "success": "#50a14f",
+        "error": "#e45649"
+      }
     },
     {
       "name": "Everforest Light",
@@ -999,7 +1577,15 @@
         "editor",
         "light",
         "pastel"
-      ]
+      ],
+      "preview": {
+        "background": "#fdf6e3",
+        "foreground": "#5c6a72",
+        "surface": "#efebd4",
+        "accent": "#35a77c",
+        "success": "#8da101",
+        "error": "#f85552"
+      }
     },
     {
       "name": "Apprentice",
@@ -1013,7 +1599,15 @@
         "editor",
         "low light",
         "terminal"
-      ]
+      ],
+      "preview": {
+        "background": "#262626",
+        "foreground": "#bcbcbc",
+        "surface": "#303030",
+        "accent": "#87afd7",
+        "success": "#5f875f",
+        "error": "#af5f5f"
+      }
     },
     {
       "name": "Deus",
@@ -1026,7 +1620,15 @@
         "dark",
         "editor",
         "terminal"
-      ]
+      ],
+      "preview": {
+        "background": "#2c323b",
+        "foreground": "#eaeaea",
+        "surface": "#343b46",
+        "accent": "#2c89a0",
+        "success": "#98c379",
+        "error": "#ec3a37"
+      }
     },
     {
       "name": "Gotham",
@@ -1040,7 +1642,15 @@
         "editor",
         "low light",
         "terminal"
-      ]
+      ],
+      "preview": {
+        "background": "#0a0f14",
+        "foreground": "#d3ebe9",
+        "surface": "#11151c",
+        "accent": "#195466",
+        "success": "#2aa889",
+        "error": "#c23127"
+      }
     },
     {
       "name": "Miasma",
@@ -1053,7 +1663,15 @@
         "editor",
         "low light",
         "warm"
-      ]
+      ],
+      "preview": {
+        "background": "#222222",
+        "foreground": "#c2c2b0",
+        "surface": "#2f2f2f",
+        "accent": "#c9a554",
+        "success": "#5f875f",
+        "error": "#af5f5f"
+      }
     },
     {
       "name": "Moonfly",
@@ -1068,7 +1686,15 @@
         "low light",
         "pastel",
         "terminal"
-      ]
+      ],
+      "preview": {
+        "background": "#080808",
+        "foreground": "#bdbdbd",
+        "surface": "#1c1c1c",
+        "accent": "#80a0ff",
+        "success": "#8cc85f",
+        "error": "#ff5454"
+      }
     },
     {
       "name": "Nightfly",
@@ -1082,7 +1708,15 @@
         "editor",
         "low light",
         "terminal"
-      ]
+      ],
+      "preview": {
+        "background": "#011627",
+        "foreground": "#bdc1c6",
+        "surface": "#092236",
+        "accent": "#82aaff",
+        "success": "#21c7a8",
+        "error": "#fc514e"
+      }
     },
     {
       "name": "Nordic",
@@ -1097,7 +1731,15 @@
         "low light",
         "pastel",
         "popular"
-      ]
+      ],
+      "preview": {
+        "background": "#242933",
+        "foreground": "#d8dee9",
+        "surface": "#2e3440",
+        "accent": "#88c0d0",
+        "success": "#a3be8c",
+        "error": "#bf616a"
+      }
     },
     {
       "name": "Posterpole",
@@ -1110,7 +1752,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#1f1f28",
+        "foreground": "#e6e1cf",
+        "surface": "#2a2a37",
+        "accent": "#a3d4d5",
+        "success": "#b8cc52",
+        "error": "#f07178"
+      }
     },
     {
       "name": "Seoul256",
@@ -1123,7 +1773,15 @@
         "dark",
         "editor",
         "terminal"
-      ]
+      ],
+      "preview": {
+        "background": "#3a3a3a",
+        "foreground": "#d0d0d0",
+        "surface": "#4e4e4e",
+        "accent": "#85add4",
+        "success": "#afd787",
+        "error": "#d68787"
+      }
     },
     {
       "name": "Zenbones",
@@ -1137,7 +1795,15 @@
         "editor",
         "low light",
         "terminal"
-      ]
+      ],
+      "preview": {
+        "background": "#191919",
+        "foreground": "#b4bdc3",
+        "surface": "#252525",
+        "accent": "#6099c0",
+        "success": "#819b69",
+        "error": "#de6e7c"
+      }
     },
     {
       "name": "Cyberdream",
@@ -1151,7 +1817,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#16181a",
+        "foreground": "#ffffff",
+        "surface": "#1e2124",
+        "accent": "#5ea1ff",
+        "success": "#5eff6c",
+        "error": "#ff6e5e"
+      }
     },
     {
       "name": "VS Code Dark",
@@ -1164,7 +1838,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#1e1e1e",
+        "foreground": "#d4d4d4",
+        "surface": "#252526",
+        "accent": "#569cd6",
+        "success": "#6a9955",
+        "error": "#f44747"
+      }
     },
     {
       "name": "Darcula",
@@ -1177,7 +1859,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#2b2b2b",
+        "foreground": "#a9b7c6",
+        "surface": "#3c3f41",
+        "accent": "#6897bb",
+        "success": "#6a8759",
+        "error": "#cc7832"
+      }
     },
     {
       "name": "Quiet Light",
@@ -1190,7 +1880,15 @@
         "cool",
         "editor",
         "light"
-      ]
+      ],
+      "preview": {
+        "background": "#f5f5f5",
+        "foreground": "#333333",
+        "surface": "#eeeeee",
+        "accent": "#4b69c6",
+        "success": "#448c27",
+        "error": "#aa3731"
+      }
     },
     {
       "name": "Light Owl",
@@ -1203,7 +1901,15 @@
         "cool",
         "editor",
         "light"
-      ]
+      ],
+      "preview": {
+        "background": "#fbfbfb",
+        "foreground": "#403f53",
+        "surface": "#f0f0f0",
+        "accent": "#4876d6",
+        "success": "#2aa298",
+        "error": "#de3d3b"
+      }
     },
     {
       "name": "Noctis Lux",
@@ -1216,7 +1922,15 @@
         "cool",
         "editor",
         "light"
-      ]
+      ],
+      "preview": {
+        "background": "#fef8ec",
+        "foreground": "#005661",
+        "surface": "#f6efe3",
+        "accent": "#0094f0",
+        "success": "#00b368",
+        "error": "#c82f5c"
+      }
     },
     {
       "name": "Solarized Osaka",
@@ -1229,7 +1943,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#001a1f",
+        "foreground": "#839496",
+        "surface": "#002b36",
+        "accent": "#268bd2",
+        "success": "#859900",
+        "error": "#dc322f"
+      }
     },
     {
       "name": "Material Deep Ocean",
@@ -1243,7 +1965,15 @@
         "editor",
         "low light",
         "popular"
-      ]
+      ],
+      "preview": {
+        "background": "#0f111a",
+        "foreground": "#a6accd",
+        "surface": "#1a1c25",
+        "accent": "#84ffff",
+        "success": "#c3e88d",
+        "error": "#f07178"
+      }
     },
     {
       "name": "Material Lighter",
@@ -1257,7 +1987,15 @@
         "editor",
         "light",
         "popular"
-      ]
+      ],
+      "preview": {
+        "background": "#fafafa",
+        "foreground": "#546e7a",
+        "surface": "#f5f5f5",
+        "accent": "#6182b8",
+        "success": "#91b859",
+        "error": "#e53935"
+      }
     },
     {
       "name": "Tokyo Night Storm",
@@ -1271,7 +2009,15 @@
         "editor",
         "low light",
         "popular"
-      ]
+      ],
+      "preview": {
+        "background": "#24283b",
+        "foreground": "#c0caf5",
+        "surface": "#292e42",
+        "accent": "#7aa2f7",
+        "success": "#9ece6a",
+        "error": "#f7768e"
+      }
     },
     {
       "name": "Tokyo Night Moon",
@@ -1286,7 +2032,15 @@
         "low light",
         "pastel",
         "popular"
-      ]
+      ],
+      "preview": {
+        "background": "#222436",
+        "foreground": "#c8d3f5",
+        "surface": "#2f334d",
+        "accent": "#82aaff",
+        "success": "#c3e88d",
+        "error": "#ff757f"
+      }
     },
     {
       "name": "Gruvbox Material",
@@ -1300,7 +2054,15 @@
         "low light",
         "popular",
         "warm"
-      ]
+      ],
+      "preview": {
+        "background": "#1d2021",
+        "foreground": "#d4be98",
+        "surface": "#282828",
+        "accent": "#d8a657",
+        "success": "#a9b665",
+        "error": "#ea6962"
+      }
     },
     {
       "name": "Gruvbox Light",
@@ -1314,7 +2076,15 @@
         "editor",
         "light",
         "popular"
-      ]
+      ],
+      "preview": {
+        "background": "#fbf1c7",
+        "foreground": "#3c3836",
+        "surface": "#ebdbb2",
+        "accent": "#076678",
+        "success": "#79740e",
+        "error": "#9d0006"
+      }
     },
     {
       "name": "PaperColor Dark",
@@ -1327,7 +2097,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#1c1c1c",
+        "foreground": "#d0d0d0",
+        "surface": "#303030",
+        "accent": "#5fafd7",
+        "success": "#afd700",
+        "error": "#af005f"
+      }
     },
     {
       "name": "PaperColor Light",
@@ -1340,7 +2118,15 @@
         "cool",
         "editor",
         "light"
-      ]
+      ],
+      "preview": {
+        "background": "#eeeeee",
+        "foreground": "#444444",
+        "surface": "#d0d0d0",
+        "accent": "#0087af",
+        "success": "#008700",
+        "error": "#af0000"
+      }
     },
     {
       "name": "Flatland",
@@ -1353,7 +2139,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#1d1f21",
+        "foreground": "#b8dbef",
+        "surface": "#282a2e",
+        "accent": "#5096be",
+        "success": "#9fd364",
+        "error": "#f18339"
+      }
     },
     {
       "name": "Spacedust",
@@ -1366,7 +2160,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#0a1e24",
+        "foreground": "#ecf0c1",
+        "surface": "#112b33",
+        "accent": "#5cab96",
+        "success": "#5cab96",
+        "error": "#e35b00"
+      }
     },
     {
       "name": "Blue Matrix",
@@ -1380,7 +2182,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#101116",
+        "foreground": "#d9e6f2",
+        "surface": "#181b23",
+        "accent": "#00a2ff",
+        "success": "#00ff9c",
+        "error": "#ff3d7f"
+      }
     },
     {
       "name": "Hotline Miami",
@@ -1394,7 +2204,15 @@
         "editor",
         "low light",
         "warm"
-      ]
+      ],
+      "preview": {
+        "background": "#12041f",
+        "foreground": "#fff5fb",
+        "surface": "#24113a",
+        "accent": "#ff2a6d",
+        "success": "#05ffa1",
+        "error": "#ff3864"
+      }
     },
     {
       "name": "Miami Vice",
@@ -1408,7 +2226,15 @@
         "editor",
         "low light",
         "warm"
-      ]
+      ],
+      "preview": {
+        "background": "#0f1021",
+        "foreground": "#fdfcff",
+        "surface": "#1f2041",
+        "accent": "#ff2e88",
+        "success": "#00f5d4",
+        "error": "#ff6b6b"
+      }
     },
     {
       "name": "Aurora",
@@ -1421,7 +2247,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#0b1020",
+        "foreground": "#e6f0ff",
+        "surface": "#131a2e",
+        "accent": "#78a8ff",
+        "success": "#7ee787",
+        "error": "#ff7b72"
+      }
     },
     {
       "name": "Nebula",
@@ -1434,7 +2268,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#15112b",
+        "foreground": "#eee8ff",
+        "surface": "#211a3d",
+        "accent": "#8b5cf6",
+        "success": "#34d399",
+        "error": "#fb7185"
+      }
     },
     {
       "name": "Black Metal",
@@ -1447,7 +2289,15 @@
         "editor",
         "low light",
         "oled"
-      ]
+      ],
+      "preview": {
+        "background": "#000000",
+        "foreground": "#c1c1c1",
+        "surface": "#121212",
+        "accent": "#888888",
+        "success": "#8f9d6a",
+        "error": "#5f8787"
+      }
     },
     {
       "name": "Laserwave",
@@ -1461,7 +2311,15 @@
         "editor",
         "low light",
         "warm"
-      ]
+      ],
+      "preview": {
+        "background": "#27212e",
+        "foreground": "#ffffff",
+        "surface": "#31283b",
+        "accent": "#eb64b9",
+        "success": "#b4dce7",
+        "error": "#ff4473"
+      }
     },
     {
       "name": "Bluloco Dark",
@@ -1474,7 +2332,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#282c34",
+        "foreground": "#abb2bf",
+        "surface": "#323842",
+        "accent": "#10b1fe",
+        "success": "#3fc56b",
+        "error": "#ff6480"
+      }
     },
     {
       "name": "Min Dark",
@@ -1487,7 +2353,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#1f1f1f",
+        "foreground": "#d4d4d4",
+        "surface": "#292929",
+        "accent": "#7aa2f7",
+        "success": "#9ece6a",
+        "error": "#f7768e"
+      }
     },
     {
       "name": "Afterglow",
@@ -1499,7 +2373,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#222222",
+        "foreground": "#d0d0d0",
+        "surface": "#2f2f2f",
+        "accent": "#7e8e91",
+        "success": "#7e8e50",
+        "error": "#ac4142"
+      }
     },
     {
       "name": "Alabaster Dark",
@@ -1512,7 +2394,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#0e1415",
+        "foreground": "#cecece",
+        "surface": "#1f282a",
+        "accent": "#0e6f91",
+        "success": "#448c27",
+        "error": "#aa3731"
+      }
     },
     {
       "name": "Argonaut",
@@ -1525,7 +2415,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#0e1019",
+        "foreground": "#fffaf4",
+        "surface": "#232323",
+        "accent": "#008df8",
+        "success": "#8ce10b",
+        "error": "#ff000f"
+      }
     },
     {
       "name": "Batman",
@@ -1537,7 +2435,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#1b1d1e",
+        "foreground": "#f1f1f1",
+        "surface": "#505354",
+        "accent": "#737174",
+        "success": "#c8be46",
+        "error": "#e6dc44"
+      }
     },
     {
       "name": "Birds of Paradise",
@@ -1550,7 +2456,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#2a1f1d",
+        "foreground": "#e0dbb7",
+        "surface": "#3d2b25",
+        "accent": "#5a86ad",
+        "success": "#6ba18a",
+        "error": "#be2d26"
+      }
     },
     {
       "name": "Broadcast",
@@ -1563,7 +2477,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#2b2b2b",
+        "foreground": "#e6e1dc",
+        "surface": "#323232",
+        "accent": "#6d9cbe",
+        "success": "#83d182",
+        "error": "#da4939"
+      }
     },
     {
       "name": "Chalk",
@@ -1576,7 +2498,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#2b2d2e",
+        "foreground": "#d2d8d9",
+        "surface": "#3f4041",
+        "accent": "#2a7fac",
+        "success": "#789a69",
+        "error": "#b23a52"
+      }
     },
     {
       "name": "Chalkboard",
@@ -1589,7 +2519,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#29262f",
+        "foreground": "#d9e6f2",
+        "surface": "#32313a",
+        "accent": "#7372c3",
+        "success": "#72c373",
+        "error": "#c37372"
+      }
     },
     {
       "name": "Ciapre",
@@ -1602,7 +2540,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#191c27",
+        "foreground": "#aea47a",
+        "surface": "#2a2d3a",
+        "accent": "#566d8c",
+        "success": "#48513b",
+        "error": "#810009"
+      }
     },
     {
       "name": "Dimmed Monokai",
@@ -1615,7 +2561,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#1f1f1f",
+        "foreground": "#b9bcba",
+        "surface": "#2b2b2b",
+        "accent": "#4f76a1",
+        "success": "#afb42b",
+        "error": "#be3f48"
+      }
     },
     {
       "name": "Espresso Libre",
@@ -1628,7 +2582,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#2a211c",
+        "foreground": "#b8a898",
+        "surface": "#3a2f28",
+        "accent": "#0066ff",
+        "success": "#1a921c",
+        "error": "#cc0000"
+      }
     },
     {
       "name": "Firefox Dev",
@@ -1641,7 +2603,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#0e1011",
+        "foreground": "#f2f5f6",
+        "surface": "#1d4f73",
+        "accent": "#359ddf",
+        "success": "#5eb83c",
+        "error": "#e63853"
+      }
     },
     {
       "name": "Firewatch",
@@ -1654,7 +2624,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#1e2027",
+        "foreground": "#9ba2b2",
+        "surface": "#282c34",
+        "accent": "#4d89c4",
+        "success": "#5ab977",
+        "error": "#d95360"
+      }
     },
     {
       "name": "Fish Tank",
@@ -1667,7 +2645,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#232537",
+        "foreground": "#ecf0fe",
+        "surface": "#2d3046",
+        "accent": "#525fb8",
+        "success": "#acf157",
+        "error": "#c6004a"
+      }
     },
     {
       "name": "Forest Blue",
@@ -1680,7 +2666,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#051519",
+        "foreground": "#e2d8cd",
+        "surface": "#12252b",
+        "accent": "#8ed0ce",
+        "success": "#6bb48d",
+        "error": "#f8818e"
+      }
     },
     {
       "name": "Frontend Delight",
@@ -1693,7 +2687,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#1b1c1d",
+        "foreground": "#adadad",
+        "surface": "#242526",
+        "accent": "#2c70b7",
+        "success": "#565747",
+        "error": "#f8511b"
+      }
     },
     {
       "name": "Galaxy",
@@ -1706,7 +2708,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#1d2837",
+        "foreground": "#ffffff",
+        "surface": "#27384a",
+        "accent": "#589df6",
+        "success": "#35bb9a",
+        "error": "#f9555f"
+      }
     },
     {
       "name": "Glacier",
@@ -1719,7 +2729,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#0c1115",
+        "foreground": "#ffffff",
+        "surface": "#1f2a33",
+        "accent": "#1f5872",
+        "success": "#35a770",
+        "error": "#bd0f2f"
+      }
     },
     {
       "name": "Hardcore",
@@ -1732,7 +2750,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#121212",
+        "foreground": "#a0a0a0",
+        "surface": "#1c1c1c",
+        "accent": "#66d9ef",
+        "success": "#a6e22e",
+        "error": "#f92672"
+      }
     },
     {
       "name": "Harper",
@@ -1744,7 +2770,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#010101",
+        "foreground": "#a8a49d",
+        "surface": "#1f1f1f",
+        "accent": "#489e48",
+        "success": "#7fb5e1",
+        "error": "#f8b63f"
+      }
     },
     {
       "name": "Hemisu Dark",
@@ -1757,7 +2791,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#000000",
+        "foreground": "#ffffff",
+        "surface": "#222222",
+        "accent": "#9fd3e6",
+        "success": "#b1d631",
+        "error": "#ff0054"
+      }
     },
     {
       "name": "Hopscotch",
@@ -1770,7 +2812,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#322931",
+        "foreground": "#b9b5b8",
+        "surface": "#433b42",
+        "accent": "#1290bf",
+        "success": "#8fc13e",
+        "error": "#dd464c"
+      }
     },
     {
       "name": "Hurtado",
@@ -1783,7 +2833,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#000000",
+        "foreground": "#dbdbdb",
+        "surface": "#262626",
+        "accent": "#496487",
+        "success": "#a5e055",
+        "error": "#ff1b00"
+      }
     },
     {
       "name": "Hybrid",
@@ -1796,7 +2854,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#161719",
+        "foreground": "#c5c8c6",
+        "surface": "#1f2022",
+        "accent": "#5f819d",
+        "success": "#8c9440",
+        "error": "#a54242"
+      }
     },
     {
       "name": "IR Black",
@@ -1810,7 +2876,15 @@
         "editor",
         "low light",
         "oled"
-      ]
+      ],
+      "preview": {
+        "background": "#000000",
+        "foreground": "#f1f1f1",
+        "surface": "#1c1c1c",
+        "accent": "#96cbfe",
+        "success": "#a8ff60",
+        "error": "#ff6c60"
+      }
     },
     {
       "name": "Jackie Brown",
@@ -1823,7 +2897,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#2c1d16",
+        "foreground": "#ffcc2f",
+        "surface": "#3a251c",
+        "accent": "#246eb2",
+        "success": "#2baf2b",
+        "error": "#ef5734"
+      }
     },
     {
       "name": "Japanesque",
@@ -1836,7 +2918,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#1e1e1e",
+        "foreground": "#f7f6ec",
+        "surface": "#2b2b2b",
+        "accent": "#4c9ad4",
+        "success": "#7bb75b",
+        "error": "#cf3f61"
+      }
     },
     {
       "name": "Kibble",
@@ -1849,7 +2939,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#0e100a",
+        "foreground": "#f7f7f7",
+        "surface": "#2d2e2c",
+        "accent": "#3449d1",
+        "success": "#29cf13",
+        "error": "#c70031"
+      }
     },
     {
       "name": "Later This Evening",
@@ -1862,7 +2960,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#222222",
+        "foreground": "#c0c2c2",
+        "surface": "#303030",
+        "accent": "#a0bad6",
+        "success": "#afba67",
+        "error": "#d35a5f"
+      }
     },
     {
       "name": "Lavandula",
@@ -1875,7 +2981,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#050014",
+        "foreground": "#736e7d",
+        "surface": "#230046",
+        "accent": "#8c91fa",
+        "success": "#337e6f",
+        "error": "#7d1625"
+      }
     },
     {
       "name": "Liquid Carbon",
@@ -1888,7 +3002,15 @@
         "dark",
         "editor",
         "oled"
-      ]
+      ],
+      "preview": {
+        "background": "#303030",
+        "foreground": "#afc2c2",
+        "surface": "#3a3a3a",
+        "accent": "#0099cc",
+        "success": "#559a70",
+        "error": "#ff3030"
+      }
     },
     {
       "name": "Man Page",
@@ -1901,7 +3023,15 @@
         "cool",
         "dark",
         "editor"
-      ]
+      ],
+      "preview": {
+        "background": "#fef49c",
+        "foreground": "#000000",
+        "surface": "#e8d975",
+        "accent": "#0000b2",
+        "success": "#00a600",
+        "error": "#cc0000"
+      }
     },
     {
       "name": "Misterioso",
@@ -1913,7 +3043,15 @@
         "cool",
         "dark",
         "editor"
-      ]
+      ],
+      "preview": {
+        "background": "#2d3743",
+        "foreground": "#e1e1e0",
+        "surface": "#3c4c5b",
+        "accent": "#338f86",
+        "success": "#74af68",
+        "error": "#ff4242"
+      }
     },
     {
       "name": "Molokai",
@@ -1926,7 +3064,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#1b1d1e",
+        "foreground": "#f8f8f2",
+        "surface": "#293739",
+        "accent": "#66d9ef",
+        "success": "#a6e22e",
+        "error": "#f92672"
+      }
     },
     {
       "name": "N0tch2k",
@@ -1939,7 +3085,15 @@
         "editor",
         "low light",
         "warm"
-      ]
+      ],
+      "preview": {
+        "background": "#222222",
+        "foreground": "#a0a0a0",
+        "surface": "#333333",
+        "accent": "#98bd5e",
+        "success": "#666666",
+        "error": "#a95551"
+      }
     },
     {
       "name": "Neopolitan",
@@ -1952,7 +3106,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#271f19",
+        "foreground": "#ffffff",
+        "surface": "#3a2b22",
+        "accent": "#253b76",
+        "success": "#61ce3c",
+        "error": "#800000"
+      }
     },
     {
       "name": "Obsidian",
@@ -1964,7 +3126,15 @@
         "cool",
         "dark",
         "editor"
-      ]
+      ],
+      "preview": {
+        "background": "#283033",
+        "foreground": "#cdcdcd",
+        "surface": "#3e4a4f",
+        "accent": "#3a9bdb",
+        "success": "#00bb00",
+        "error": "#a60001"
+      }
     },
     {
       "name": "Oceanic Next",
@@ -1977,7 +3147,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#1b2b34",
+        "foreground": "#c0c5ce",
+        "surface": "#343d46",
+        "accent": "#6699cc",
+        "success": "#99c794",
+        "error": "#ec5f67"
+      }
     },
     {
       "name": "Paraiso Dark",
@@ -1990,7 +3168,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#2f1e2e",
+        "foreground": "#a39e9b",
+        "surface": "#41323f",
+        "accent": "#06b6ef",
+        "success": "#48b685",
+        "error": "#ef6155"
+      }
     },
     {
       "name": "Paul Millr",
@@ -2003,7 +3189,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#000000",
+        "foreground": "#f2f2f2",
+        "surface": "#1f1f1f",
+        "accent": "#396bd7",
+        "success": "#66cc66",
+        "error": "#ff0000"
+      }
     },
     {
       "name": "Peppermint",
@@ -2016,7 +3210,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#000000",
+        "foreground": "#c7c7c7",
+        "surface": "#1f1f1f",
+        "accent": "#8796b0",
+        "success": "#89d287",
+        "error": "#e46d6d"
+      }
     },
     {
       "name": "Pro",
@@ -2029,7 +3231,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#000000",
+        "foreground": "#f2f2f2",
+        "surface": "#1f1f1f",
+        "accent": "#3b75ff",
+        "success": "#4dbe0c",
+        "error": "#990000"
+      }
     },
     {
       "name": "Red Alert",
@@ -2041,7 +3251,15 @@
         "cool",
         "dark",
         "editor"
-      ]
+      ],
+      "preview": {
+        "background": "#762423",
+        "foreground": "#ffffff",
+        "surface": "#8a2d2c",
+        "accent": "#489bee",
+        "success": "#71be6b",
+        "error": "#d62e4e"
+      }
     },
     {
       "name": "Sea Shells",
@@ -2054,7 +3272,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#09141b",
+        "foreground": "#deb88d",
+        "surface": "#17384c",
+        "accent": "#1e4950",
+        "success": "#027c9b",
+        "error": "#d15123"
+      }
     },
     {
       "name": "Smyck",
@@ -2067,7 +3293,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#1b1b1b",
+        "foreground": "#f7f7f7",
+        "surface": "#303030",
+        "accent": "#62a3c4",
+        "success": "#7da900",
+        "error": "#b84131"
+      }
     },
     {
       "name": "Space Gray",
@@ -2080,7 +3314,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#20242d",
+        "foreground": "#b3b8c3",
+        "surface": "#2b303b",
+        "accent": "#7d8fa4",
+        "success": "#85a7a5",
+        "error": "#b04b57"
+      }
     },
     {
       "name": "Sundried",
@@ -2093,7 +3335,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#1a1818",
+        "foreground": "#c9c9c9",
+        "surface": "#302b2a",
+        "accent": "#485b98",
+        "success": "#587744",
+        "error": "#a7463d"
+      }
     },
     {
       "name": "Teerb",
@@ -2106,7 +3356,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#262626",
+        "foreground": "#d0d0d0",
+        "surface": "#303030",
+        "accent": "#86aed6",
+        "success": "#aed686",
+        "error": "#d68686"
+      }
     },
     {
       "name": "Thayer Bright",
@@ -2119,7 +3377,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#1b1d1e",
+        "foreground": "#f8f8f8",
+        "surface": "#2c2d2e",
+        "accent": "#2757d6",
+        "success": "#4df840",
+        "error": "#f92672"
+      }
     },
     {
       "name": "Tinacious Design Dark",
@@ -2132,7 +3398,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#1d1d26",
+        "foreground": "#cbcbf0",
+        "surface": "#2b2b36",
+        "accent": "#00cbff",
+        "success": "#00d364",
+        "error": "#ff3399"
+      }
     },
     {
       "name": "Under The Sea",
@@ -2145,7 +3419,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#011116",
+        "foreground": "#ffffff",
+        "surface": "#022b36",
+        "accent": "#459a86",
+        "success": "#00a941",
+        "error": "#b2302d"
+      }
     },
     {
       "name": "Urple",
@@ -2158,7 +3440,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#1b1b23",
+        "foreground": "#877a9b",
+        "surface": "#292933",
+        "accent": "#564d9b",
+        "success": "#37a415",
+        "error": "#b0425b"
+      }
     },
     {
       "name": "Vaughn",
@@ -2171,7 +3461,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#25234f",
+        "foreground": "#dcdccc",
+        "surface": "#33335c",
+        "accent": "#5555ff",
+        "success": "#60b48a",
+        "error": "#705050"
+      }
     },
     {
       "name": "Vibrant Ink",
@@ -2184,7 +3482,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#000000",
+        "foreground": "#ffffff",
+        "surface": "#222222",
+        "accent": "#44b4cc",
+        "success": "#ccff04",
+        "error": "#ff6600"
+      }
     },
     {
       "name": "Warm Neon",
@@ -2197,7 +3503,15 @@
         "cyberpunk",
         "dark",
         "editor"
-      ]
+      ],
+      "preview": {
+        "background": "#404040",
+        "foreground": "#afdab6",
+        "surface": "#4a4a4a",
+        "accent": "#4261c5",
+        "success": "#39b13a",
+        "error": "#e24346"
+      }
     },
     {
       "name": "Wez",
@@ -2210,7 +3524,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#000000",
+        "foreground": "#b3b3b3",
+        "surface": "#222222",
+        "accent": "#5555cc",
+        "success": "#55cc55",
+        "error": "#cc5555"
+      }
     },
     {
       "name": "Wild Cherry",
@@ -2223,7 +3545,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#1f1726",
+        "foreground": "#daeefa",
+        "surface": "#2a1f33",
+        "accent": "#883cdc",
+        "success": "#2ab250",
+        "error": "#d94085"
+      }
     },
     {
       "name": "Wombat",
@@ -2236,7 +3566,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#171717",
+        "foreground": "#dedacf",
+        "surface": "#2d2d2d",
+        "accent": "#5da9f6",
+        "success": "#b1e969",
+        "error": "#ff615a"
+      }
     },
     {
       "name": "Wryan",
@@ -2249,7 +3587,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#101010",
+        "foreground": "#999993",
+        "surface": "#333333",
+        "accent": "#395573",
+        "success": "#287373",
+        "error": "#8c4665"
+      }
     },
     {
       "name": "Zenburn",
@@ -2261,7 +3607,15 @@
         "cool",
         "dark",
         "editor"
-      ]
+      ],
+      "preview": {
+        "background": "#3f3f3f",
+        "foreground": "#dcdccc",
+        "surface": "#4f4f4f",
+        "accent": "#8cd0d3",
+        "success": "#7f9f7f",
+        "error": "#cc9393"
+      }
     },
     {
       "name": "Aura",
@@ -2274,7 +3628,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#15141b",
+        "foreground": "#edecee",
+        "surface": "#1e1c26",
+        "accent": "#a277ff",
+        "success": "#61ffca",
+        "error": "#ff6767"
+      }
     },
     {
       "name": "Snazzy",
@@ -2287,7 +3649,15 @@
         "editor",
         "low light",
         "warm"
-      ]
+      ],
+      "preview": {
+        "background": "#282a36",
+        "foreground": "#eff0eb",
+        "surface": "#3a3d4d",
+        "accent": "#ff6ac1",
+        "success": "#5af78e",
+        "error": "#ff5c57"
+      }
     },
     {
       "name": "Winter is Coming Dark",
@@ -2300,7 +3670,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#011627",
+        "foreground": "#d6deeb",
+        "surface": "#023049",
+        "accent": "#82aaff",
+        "success": "#22da6e",
+        "error": "#ef5350"
+      }
     },
     {
       "name": "Bluloco Light",
@@ -2313,7 +3691,15 @@
         "cool",
         "editor",
         "light"
-      ]
+      ],
+      "preview": {
+        "background": "#f9f9f9",
+        "foreground": "#383a42",
+        "surface": "#e5e5e5",
+        "accent": "#0098dd",
+        "success": "#23974a",
+        "error": "#d52753"
+      }
     },
     {
       "name": "Mellow",
@@ -2326,7 +3712,15 @@
         "editor",
         "low light",
         "warm"
-      ]
+      ],
+      "preview": {
+        "background": "#1a1a1a",
+        "foreground": "#c0b9a8",
+        "surface": "#252525",
+        "accent": "#e3b896",
+        "success": "#8db48e",
+        "error": "#de6e7c"
+      }
     },
     {
       "name": "Bamboo",
@@ -2339,7 +3733,15 @@
         "editor",
         "low light",
         "warm"
-      ]
+      ],
+      "preview": {
+        "background": "#292e23",
+        "foreground": "#dde3c9",
+        "surface": "#333a2b",
+        "accent": "#9dbb6a",
+        "success": "#9dbb6a",
+        "error": "#ec6b64"
+      }
     },
     {
       "name": "Melange Dark",
@@ -2352,7 +3754,15 @@
         "editor",
         "low light",
         "warm"
-      ]
+      ],
+      "preview": {
+        "background": "#2a2520",
+        "foreground": "#ece1d7",
+        "surface": "#36312b",
+        "accent": "#dbb185",
+        "success": "#78997a",
+        "error": "#b65c60"
+      }
     },
     {
       "name": "Melange Light",
@@ -2365,7 +3775,15 @@
         "editor",
         "light",
         "warm"
-      ]
+      ],
+      "preview": {
+        "background": "#f4ede8",
+        "foreground": "#302923",
+        "surface": "#e8ddd5",
+        "accent": "#a45e3e",
+        "success": "#7a9a6c",
+        "error": "#9e4347"
+      }
     },
     {
       "name": "Tundra",
@@ -2378,7 +3796,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#1b2b34",
+        "foreground": "#cdd9e5",
+        "surface": "#22303c",
+        "accent": "#7eb4c5",
+        "success": "#8ec07c",
+        "error": "#fb4934"
+      }
     },
     {
       "name": "Decay",
@@ -2391,7 +3817,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#0d0f18",
+        "foreground": "#b0b8d1",
+        "surface": "#171924",
+        "accent": "#91a4cf",
+        "success": "#8fb573",
+        "error": "#e05f65"
+      }
     },
     {
       "name": "Nordfox",
@@ -2405,7 +3839,15 @@
         "editor",
         "pastel",
         "popular"
-      ]
+      ],
+      "preview": {
+        "background": "#2e3440",
+        "foreground": "#cdcecf",
+        "surface": "#3b4252",
+        "accent": "#81a1c1",
+        "success": "#a3be8c",
+        "error": "#bf616a"
+      }
     },
     {
       "name": "Dawnfox",
@@ -2417,7 +3859,15 @@
         "bright",
         "editor",
         "light"
-      ]
+      ],
+      "preview": {
+        "background": "#faebd7",
+        "foreground": "#575279",
+        "surface": "#e8d5c0",
+        "accent": "#b279a7",
+        "success": "#618774",
+        "error": "#994545"
+      }
     },
     {
       "name": "Terafox",
@@ -2430,7 +3880,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#152528",
+        "foreground": "#e6eaea",
+        "surface": "#1d3337",
+        "accent": "#5a93aa",
+        "success": "#7aa4a1",
+        "error": "#e85c51"
+      }
     },
     {
       "name": "Flexoki Light",
@@ -2443,7 +3901,15 @@
         "cool",
         "editor",
         "light"
-      ]
+      ],
+      "preview": {
+        "background": "#fffcf0",
+        "foreground": "#100f0f",
+        "surface": "#e6e4d9",
+        "accent": "#4385be",
+        "success": "#879a39",
+        "error": "#d14d41"
+      }
     },
     {
       "name": "Penumbra Dark",
@@ -2456,7 +3922,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#1e1e1e",
+        "foreground": "#e5e5e5",
+        "surface": "#2e2e2e",
+        "accent": "#7d9cc4",
+        "success": "#759982",
+        "error": "#c47d7d"
+      }
     },
     {
       "name": "Penumbra Light",
@@ -2469,7 +3943,15 @@
         "cool",
         "editor",
         "light"
-      ]
+      ],
+      "preview": {
+        "background": "#f2f2f2",
+        "foreground": "#1e1e1e",
+        "surface": "#e2e2e2",
+        "accent": "#4d7cc4",
+        "success": "#557562",
+        "error": "#c44d4d"
+      }
     },
     {
       "name": "Adwaita Dark",
@@ -2482,7 +3964,15 @@
         "dark",
         "editor",
         "low light"
-      ]
+      ],
+      "preview": {
+        "background": "#1e1e1e",
+        "foreground": "#ffffff",
+        "surface": "#303030",
+        "accent": "#3584e4",
+        "success": "#26a269",
+        "error": "#c01c28"
+      }
     },
     {
       "name": "Adwaita Light",
@@ -2495,7 +3985,15 @@
         "cool",
         "editor",
         "light"
-      ]
+      ],
+      "preview": {
+        "background": "#fafafa",
+        "foreground": "#2e3436",
+        "surface": "#f6f5f4",
+        "accent": "#3584e4",
+        "success": "#26a269",
+        "error": "#c01c28"
+      }
     },
     {
       "name": "Oldworld",
@@ -2508,7 +4006,15 @@
         "editor",
         "low light",
         "warm"
-      ]
+      ],
+      "preview": {
+        "background": "#161616",
+        "foreground": "#e0d7c3",
+        "surface": "#222222",
+        "accent": "#c59f7b",
+        "success": "#8da070",
+        "error": "#c76a6a"
+      }
     },
     {
       "name": "Base16 Tomorrow",
@@ -2522,7 +4028,15 @@
         "editor",
         "low light",
         "terminal"
-      ]
+      ],
+      "preview": {
+        "background": "#1d1f21",
+        "foreground": "#c5c8c6",
+        "surface": "#282a2e",
+        "accent": "#81a2be",
+        "success": "#b5bd68",
+        "error": "#cc6666"
+      }
     }
   ]
 }

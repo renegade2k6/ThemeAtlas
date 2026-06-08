@@ -22,6 +22,14 @@ const KEY_FAVORITES = "theme-viewer-favorites";
 const KEY_RECENT = "theme-viewer-recent";
 const KEY_COMPARE = "theme-viewer-compare";
 const KEY_COMPARE_LIMIT = "theme-viewer-compare-limit";
+// Persistent theme cache. Holds one big JSON object: { version, slugs: { [slug]: theme } }.
+// Kept separate from the favorites/etc. keys so we can nuke it independently
+// when the catalog version changes.
+const KEY_THEME_CACHE = "theme-viewer-theme-cache";
+// Background-prefetch tuning
+const PREFETCH_BATCH = 8;       // concurrent fetches per batch
+const PREFETCH_IDLE_MS = 1500;  // wait this long of idle time before starting
+const PREFETCH_MIN_INTERVAL = 8; // ms between batches (yield to event loop)
 
 const FILTER_OPTIONS = [
   "all",
@@ -102,7 +110,12 @@ async function boot() {
   // Cached theme records (slug -> full theme object with colors).
   const themeMap = new Map();
   // Lightweight index used for filtering and search ranking.
-  const themeIndex = []; // { slug, name, appearance, group, tags, path, searchBlob }
+  const themeIndex = []; // { slug, name, appearance, group, tags, path, preview, searchBlob }
+  // Catalog version reported by the index (used to invalidate the persistent
+  // theme cache when the catalog shape changes).
+  let catalogVersion = 0;
+  // Prefetch progress for the status line.
+  let prefetchState = { loaded: 0, total: 0, running: false };
 
   const state = {
     currentSlug: null,
@@ -126,11 +139,13 @@ async function boot() {
     if (!data || !Array.isArray(data.themes)) {
       throw new Error("themes/index.json is missing a 'themes' array");
     }
+    catalogVersion = typeof data.version === "number" ? data.version : 0;
     for (const entry of data.themes) {
       if (!entry?.slug || !entry?.path) continue;
       const tags = Array.isArray(entry.tags) ? entry.tags : [];
       const appearance = entry.appearance || "dark";
       const group = entry.group || "Other";
+      const preview = entry.preview || null;
       themeIndex.push({
         slug: entry.slug,
         name: entry.name || entry.slug,
@@ -138,6 +153,7 @@ async function boot() {
         appearance,
         group,
         tags,
+        preview,
         // The full theme object (with colors) once loaded on demand
         loaded: false,
         searchBlob: [entry.name || entry.slug, entry.slug, appearance, group, ...tags]
@@ -145,6 +161,69 @@ async function boot() {
           .join(" ")
           .toLowerCase(),
       });
+    }
+
+    // Hydrate the in-memory themeMap from the persistent cache, but only
+    // if the catalog version still matches. Old cache = stale = drop it.
+    const cache = readJSON(KEY_THEME_CACHE, null);
+    if (cache && cache.version === catalogVersion && cache.slugs) {
+      for (const [slug, theme] of Object.entries(cache.slugs)) {
+        if (theme && theme.colors) themeMap.set(slug, theme);
+      }
+    }
+  }
+
+  // Best-effort: derive a swatch palette from whatever we have for a theme.
+  // Returns the index's preview if loaded=false, or the full colors when
+  // the full theme is in memory.
+  function paletteFor(meta) {
+    const theme = themeMap.get(meta.slug);
+    if (theme?.colors) {
+      return [
+        theme.colors.background,
+        theme.colors.foreground,
+        theme.colors.surfaceRaised,
+        theme.colors.accent,
+        theme.colors.success,
+        theme.colors.error,
+      ];
+    }
+    if (meta.preview) {
+      return [
+        meta.preview.background,
+        meta.preview.foreground,
+        meta.preview.surface,
+        meta.preview.accent,
+        meta.preview.success,
+        meta.preview.error,
+      ];
+    }
+    return ["#1d222c", "#1d222c", "#1d222c", "#1d222c", "#1d222c", "#1d222c"];
+  }
+
+  // Persist the current in-memory themeMap to localStorage. Called in
+  // throttled bursts during prefetch and on visibility change. Capped at
+  // ~4 MB so we don't fill the user's quota.
+  let persistTimer = 0;
+  function schedulePersist() {
+    if (persistTimer) return;
+    persistTimer = setTimeout(() => {
+      persistTimer = 0;
+      persistCacheNow();
+    }, 4000);
+  }
+  function persistCacheNow() {
+    try {
+      const slugs = {};
+      for (const [slug, theme] of themeMap) {
+        slugs[slug] = theme;
+      }
+      writeJSON(KEY_THEME_CACHE, { version: catalogVersion, slugs });
+    } catch {
+      /* quota — drop the cache so we don't keep trying */
+      try {
+        localStorage.removeItem(KEY_THEME_CACHE);
+      } catch {}
     }
   }
 
@@ -165,6 +244,9 @@ async function boot() {
       meta.appearance = enriched.appearance || meta.appearance;
       meta.group = enriched.group || meta.group;
       meta.tags = enriched.tags;
+      prefetchState.loaded++;
+      schedulePersist();
+      updateThemeCount();
       return enriched;
     } catch (err) {
       console.warn("Failed to load theme", slug, err);
@@ -174,6 +256,62 @@ async function boot() {
 
   async function ensureAllThemes() {
     await Promise.all(themeIndex.map((m) => ensureTheme(m.slug)));
+  }
+
+  // ---------- Background prefetch ----------
+  // After first paint, batch-fetch every theme so swatches and the current
+  // preview are always complete. Respects Save-Data and slow connections.
+
+  function shouldPrefetch() {
+    // Honor the Save-Data header / media query if the user opted in.
+    const conn = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+    if (conn) {
+      if (conn.saveData) return false;
+      // 2g / slow-2g → too costly
+      if (conn.effectiveType && /(^|-)2g$/.test(conn.effectiveType)) return false;
+    }
+    return true;
+  }
+
+  function startPrefetch() {
+    if (prefetchState.running) return;
+    if (!shouldPrefetch()) return;
+    const pending = themeIndex.filter((m) => !themeMap.has(m.slug));
+    if (!pending.length) {
+      // Everything's already in memory (e.g. from a persistent cache) — just
+      // persist to keep the cache fresh.
+      persistCacheNow();
+      return;
+    }
+    prefetchState.running = true;
+    prefetchState.total = pending.length;
+    prefetchState.loaded = 0;
+    updateThemeCount();
+
+    const start = (deadline) => {
+      const batch = pending.splice(0, PREFETCH_BATCH);
+      Promise.all(batch.map((m) => ensureTheme(m.slug))).then(() => {
+        schedulePersist();
+        if (pending.length) {
+          // Yield to the event loop, then grab the next batch
+          if (deadline && deadline.timeRemaining && deadline.timeRemaining() > 4) {
+            start(deadline);
+          } else {
+            setTimeout(() => start(null), PREFETCH_MIN_INTERVAL);
+          }
+        } else {
+          prefetchState.running = false;
+          // Final persist so the user has a complete cache for next visit
+          persistCacheNow();
+        }
+      });
+    };
+
+    if (typeof window.requestIdleCallback === "function") {
+      window.requestIdleCallback(() => start(window.__deadline || { timeRemaining: () => 50 }), { timeout: 5000 });
+    } else {
+      setTimeout(() => start(null), PREFETCH_IDLE_MS);
+    }
   }
 
   function getTheme(slug) {
@@ -250,16 +388,12 @@ async function boot() {
 
   function renderThemeButton(meta) {
     const theme = themeMap.get(meta.slug);
-    const colors = theme?.colors;
     const tags = meta.tags
       .filter((t) => ["popular", "oled", "terminal", "light", "bright", "low light", "warm", "cool"].includes(t))
       .slice(0, 3)
       .map((t) => `<span class="badge">${escapeHtml(t)}</span>`)
       .join("");
-    const swatchColors = colors
-      ? [colors.background, colors.foreground, colors.surfaceRaised, colors.accent, colors.success, colors.error]
-      : ["#1d222c", "#1d222c", "#1d222c", "#1d222c", "#1d222c", "#1d222c"];
-    const swatches = swatchColors
+    const swatches = paletteFor(meta)
       .map((c) => `<span style="background:${escapeStyle(c)}"></span>`)
       .join("");
     const isFav = state.favorites.has(meta.slug);
@@ -294,11 +428,24 @@ async function boot() {
     </details>`;
   }
 
+  function updateThemeCount() {
+    const total = themeIndex.length;
+    if (prefetchState.running && prefetchState.total > 0) {
+      const loaded = total - prefetchState.total + prefetchState.loaded;
+      root.themeCount.textContent = `${loaded} of ${total} themes (preloading…)`;
+    } else {
+      const loaded = themeMap.size;
+      root.themeCount.textContent = `${loaded} of ${total} themes cached`;
+    }
+  }
+
   function renderList() {
     snapshotOpenGroups();
     const items = visibleThemes();
     const total = themeIndex.length;
-    root.themeCount.textContent = `${items.length} of ${total} themes`;
+    if (!prefetchState.running) {
+      root.themeCount.textContent = `${items.length} of ${total} themes`;
+    }
     const searching = state.filterText.trim().length > 0;
 
     if (!items.length) {
@@ -383,8 +530,72 @@ async function boot() {
       .join("");
   }
 
-  function applyTheme(slug) {
-    const theme = getTheme(slug);
+  // Build a synthetic full theme from index data so applyTheme() can render
+  // a meaningful preview (CSS variables, status grid, hero strip, contrast
+  // matrix) without waiting for the per-theme JSON to load. Anything that
+  // requires the real colors (e.g. mutedForeground, full syntax set) is
+  // derived locally; the user gets a fast, useful preview, and the real
+  // theme replaces it as soon as the fetch resolves.
+  function themeFromIndex(meta) {
+    if (!meta?.preview) return null;
+    const p = meta.preview;
+    // Use the preview colors as the source of truth and synthesize
+    // accentForeground from the background. The real values will overwrite
+    // these when the full theme is loaded.
+    const brightness = (hex) => {
+      const r = parseInt(hex.slice(1, 3), 16);
+      const g = parseInt(hex.slice(3, 5), 16);
+      const b = parseInt(hex.slice(5, 7), 16);
+      return (r * 299 + g * 587 + b * 114) / 1000;
+    };
+    const mix = (a, b, t) => {
+      const ax = parseInt(a.slice(1, 3), 16), ay = parseInt(a.slice(3, 5), 16), az = parseInt(a.slice(5, 7), 16);
+      const bx = parseInt(b.slice(1, 3), 16), by = parseInt(b.slice(3, 5), 16), bz = parseInt(b.slice(5, 7), 16);
+      const r = Math.round(ax * (1 - t) + bx * t);
+      const g = Math.round(ay * (1 - t) + by * t);
+      const bz2 = Math.round(az * (1 - t) + bz * t);
+      return "#" + [r, g, bz2].map((c) => c.toString(16).padStart(2, "0")).join("");
+    };
+    return {
+      name: meta.name,
+      slug: meta.slug,
+      appearance: meta.appearance,
+      group: meta.group,
+      tags: meta.tags,
+      preview: true,
+      colors: {
+        background: p.background,
+        foreground: p.foreground,
+        surface: mix(p.background, p.surface, 0.5),
+        surfaceRaised: p.surface,
+        border: mix(p.surface, p.foreground, 0.3),
+        accent: p.accent,
+        accentForeground: brightness(p.accent) > 128 ? "#000000" : "#ffffff",
+        mutedForeground: mix(p.foreground, p.background, 0.35),
+        success: p.success,
+        warning: p.success, // best-effort fallback
+        error: p.error,
+        info: p.accent,    // best-effort fallback
+        selection: mix(p.surface, p.accent, 0.25),
+        cursor: p.accent,
+        syntax: {
+          comment: mix(p.foreground, p.background, 0.48),
+          keyword: p.error,
+          function: p.accent,
+          string: p.success,
+          number: p.success,
+          type: p.accent,
+          variable: p.foreground,
+          constant: p.success,
+        },
+      },
+    };
+  }
+
+  function applyTheme(slug, fallbackMeta) {
+    // Pick the best available theme record: in-memory → index preview.
+    let theme = themeMap.get(slug);
+    if (!theme && fallbackMeta) theme = themeFromIndex(fallbackMeta);
     if (!theme) return;
     state.currentSlug = slug;
     try {
@@ -689,14 +900,14 @@ module.exports = {
       const btn = event.target.closest("button[data-slug]");
       if (!btn) return;
       const slug = btn.dataset.slug;
+      const meta = themeIndex.find((m) => m.slug === slug);
+      // Apply the preview immediately so the user sees the colors right
+      // away, then fetch the full theme and re-apply with complete data.
+      applyTheme(slug, meta);
       const theme = await ensureTheme(slug);
       if (theme) {
-        applyTheme(slug);
-        // If this is a brand-new theme, re-render the list so tags/swatches reflect it
-        if (!themeMap.has(slug) || true) {
-          // Always re-render so derived tags (warm/cool etc.) appear immediately
-          renderList();
-        }
+        applyTheme(slug, meta);
+        renderList();
       }
     });
 
@@ -710,8 +921,11 @@ module.exports = {
       const next = event.key === "ArrowDown" ? buttons[idx + 1] || buttons[0] : buttons[idx - 1] || buttons[buttons.length - 1];
       if (next) {
         next.focus();
-        ensureTheme(next.dataset.slug).then((t) => {
-          if (t) applyTheme(next.dataset.slug);
+        const slug = next.dataset.slug;
+        const meta = themeIndex.find((m) => m.slug === slug);
+        applyTheme(slug, meta);
+        ensureTheme(slug).then((t) => {
+          if (t) applyTheme(slug, meta);
         });
         next.scrollIntoView({ block: "nearest", behavior: prefersReducedMotion ? "auto" : "smooth" });
       }
@@ -736,9 +950,11 @@ module.exports = {
       const pool = items.length ? items : themeIndex;
       const next = pool[Math.floor(Math.random() * pool.length)];
       if (!next) return;
+      // Apply preview immediately for instant feedback
+      applyTheme(next.slug, next);
       const theme = await ensureTheme(next.slug);
       if (theme) {
-        applyTheme(next.slug);
+        applyTheme(next.slug, next);
         renderList();
       }
     });
@@ -899,18 +1115,41 @@ module.exports = {
       readJSON(KEY_LAST, null) ||
       themeIndex[0]?.slug;
 
-    if (initialSlug) {
-      await ensureTheme(initialSlug);
+    const initialMeta = initialSlug ? themeIndex.find((m) => m.slug === initialSlug) : null;
+    // If we don't have the initial theme in the persistent cache, show a
+    // preview immediately so the chrome isn't empty.
+    if (initialSlug && !themeMap.has(initialSlug)) {
+      applyTheme(initialSlug, initialMeta);
     }
 
     renderFilters();
     renderList();
     if (initialSlug) {
-      applyTheme(initialSlug);
+      applyTheme(initialSlug, initialMeta);
     }
     renderCompare();
     bindEvents();
     registerServiceWorker();
+
+    // Always kick off the full prefetch (it'll be a no-op if every theme
+    // was already hydrated from localStorage). The background work uses
+    // requestIdleCallback so it never competes with the user.
+    if (initialSlug && !themeMap.has(initialSlug)) {
+      // Make sure the current theme is loaded as fast as possible, then
+      // start the background batch.
+      ensureTheme(initialSlug).then(() => {
+        if (initialMeta) applyTheme(initialSlug, initialMeta);
+        startPrefetch();
+      });
+    } else {
+      startPrefetch();
+    }
+
+    // Persist on tab close so the cache survives a quick visit
+    window.addEventListener("visibilitychange", () => {
+      if (document.visibilityState === "hidden") persistCacheNow();
+    });
+    window.addEventListener("pagehide", persistCacheNow);
   }
 
   init();

@@ -163,6 +163,35 @@ test("theme index carries pre-computed tags for accurate chip counts", async () 
   assert.ok(light.length >= 1, `expected at least one light theme`);
 });
 
+test("theme index carries a preview palette for instant rendering", async () => {
+  // Each entry must include a 6-color preview so the app can render swatches
+  // and the current theme's chrome before the per-theme JSON has been fetched.
+  const index = JSON.parse(await read("themes/index.json"));
+  const hexRe = /^#[0-9a-fA-F]{6}$/;
+  for (const theme of index.themes) {
+    assert.ok(theme.preview, `${theme.slug} missing 'preview'`);
+    for (const key of ["background", "foreground", "surface", "accent", "success", "error"]) {
+      assert.ok(hexRe.test(theme.preview[key] || ""), `${theme.slug} preview.${key} invalid hex`);
+    }
+  }
+});
+
+test("app caches loaded themes for repeat visits", async () => {
+  const appJs = await read("assets/app.js");
+  // Persistent cache key
+  assert.match(appJs, /theme-viewer-theme-cache/);
+  // Catalog version check to invalidate stale caches
+  assert.match(appJs, /catalogVersion/);
+  // Background prefetch loop
+  assert.match(appJs, /startPrefetch/);
+  assert.match(appJs, /requestIdleCallback/);
+  // Honors Save-Data and slow connections
+  assert.match(appJs, /saveData/);
+  assert.match(appJs, /effectiveType/);
+  // Hydrates themeMap from the persistent cache on startup
+  assert.match(appJs, /cache\.version === catalogVersion/);
+});
+
 test("individual theme files have the expected token contract", async () => {
   const data = JSON.parse(await read("themes/dracula.json"));
   for (const key of [
