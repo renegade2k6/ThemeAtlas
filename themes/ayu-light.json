@@ -4,9 +4,11 @@
   "appearance": "light",
   "group": "Ayu",
   "tags": [
+    "bright",
     "editor",
     "light",
-    "popular"
+    "popular",
+    "warm"
   ],
   "colors": {
     "background": "#fafafa",

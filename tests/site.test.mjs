@@ -11,7 +11,6 @@ test("site uses cacheable app assets and service worker", async () => {
   const html = await read("index.html");
   assert.match(html, /<link rel="stylesheet" href="assets\/app\.css">/);
   assert.match(html, /<script type="module" src="assets\/app\.js"><\/script>/);
-  assert.match(html, /navigator\.serviceWorker\.register\("sw\.js"\)/);
   assert.ok(exists("assets/app.css"));
   assert.ok(exists("assets/app.js"));
   assert.ok(exists("sw.js"));
@@ -20,6 +19,27 @@ test("site uses cacheable app assets and service worker", async () => {
   assert.match(html, /Content-Security-Policy/);
   // Sanity: legacy data bundle is gone
   assert.doesNotMatch(html, /themes\/theme-data\.js/);
+  // Sanity: no inline executable <script> blocks (CSP-friendly).
+  // JSON-LD (`type="application/ld+json"`) is a data block, not script, and is allowed.
+  const inlineJs = [...html.matchAll(/<script\b([^>]*)>/gi)].some((m) => {
+    const attrs = m[1];
+    if (/\bsrc\s*=/.test(attrs)) return false;
+    const typeMatch = attrs.match(/\btype\s*=\s*"([^"]+)"/i);
+    if (typeMatch && !/^(?:text\/javascript|application\/javascript|text\/ecmascript|module)$/i.test(typeMatch[1])) {
+      return false;
+    }
+    return true;
+  });
+  assert.equal(inlineJs, false, "index.html contains an inline executable <script>");
+  // Sanity: meta CSP must not contain 'frame-ancestors' (only valid in HTTP headers)
+  const csp = html.match(/Content-Security-Policy[^"]*"([^"]+)"/);
+  assert.ok(csp, "CSP meta tag should be present");
+  assert.doesNotMatch(csp[1], /frame-ancestors/i, "frame-ancestors is invalid in a <meta> tag");
+  // Sanity: SW registration is now done from app.js, not index.html
+  assert.doesNotMatch(html, /navigator\.serviceWorker\.register/);
+  const appJs = await read("assets/app.js");
+  assert.match(appJs, /navigator\.serviceWorker\.register\("sw\.js"\)/);
+  assert.match(appJs, /navigator\.serviceWorker\.getRegistrations/);
 });
 
 test("app utility API supports shareable urls, comparison limits, and classification", async () => {
@@ -116,6 +136,31 @@ test("theme index is valid and contains the expected slugs", async () => {
   for (const theme of index.themes) {
     assert.ok(exists(theme.path), `theme file missing: ${theme.path}`);
   }
+});
+
+test("theme index carries pre-computed tags for accurate chip counts", async () => {
+  // The build must enrich themes/index.json with appearance/group/tags so
+  // the runtime can show correct filter chip counts immediately (without
+  // having to fetch every theme JSON just to count).
+  const index = JSON.parse(await read("themes/index.json"));
+  for (const theme of index.themes) {
+    assert.ok(theme.appearance, `${theme.slug} missing 'appearance'`);
+    assert.ok(theme.group, `${theme.slug} missing 'group'`);
+    assert.ok(Array.isArray(theme.tags) && theme.tags.length > 0, `${theme.slug} missing 'tags'`);
+    // The four filter chips the user can actually click
+    for (const required of ["dark", "light", "popular", "featured"]) {
+      if (required === "featured" && !theme.tags.includes("featured")) continue;
+      // Skip if theme isn't dark/light
+      if (required === theme.appearance) {
+        assert.ok(theme.tags.includes(required), `${theme.slug} should include '${required}'`);
+      }
+    }
+  }
+  // Sanity: at least one popular, at least one light theme
+  const popular = index.themes.filter((t) => t.tags.includes("popular"));
+  const light = index.themes.filter((t) => t.appearance === "light");
+  assert.ok(popular.length >= 10, `expected >=10 popular themes, got ${popular.length}`);
+  assert.ok(light.length >= 1, `expected at least one light theme`);
 });
 
 test("individual theme files have the expected token contract", async () => {

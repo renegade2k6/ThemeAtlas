@@ -128,14 +128,22 @@ async function boot() {
     }
     for (const entry of data.themes) {
       if (!entry?.slug || !entry?.path) continue;
+      const tags = Array.isArray(entry.tags) ? entry.tags : [];
+      const appearance = entry.appearance || "dark";
+      const group = entry.group || "Other";
       themeIndex.push({
         slug: entry.slug,
         name: entry.name || entry.slug,
         path: entry.path,
-        appearance: null,
-        group: null,
-        tags: [],
-        searchBlob: `${(entry.name || entry.slug).toLowerCase()} ${entry.slug.toLowerCase()}`,
+        appearance,
+        group,
+        tags,
+        // The full theme object (with colors) once loaded on demand
+        loaded: false,
+        searchBlob: [entry.name || entry.slug, entry.slug, appearance, group, ...tags]
+          .filter(Boolean)
+          .join(" ")
+          .toLowerCase(),
       });
     }
   }
@@ -148,23 +156,15 @@ async function boot() {
       const data = await fetchJSON(meta.path);
       const enriched = {
         ...data,
+        // Re-run classifier at runtime to merge any new derived tags.
         tags: classifyTheme(data),
       };
       themeMap.set(slug, enriched);
-      // Backfill metadata in the index from the first time we see the full record
-      meta.appearance = data.appearance || "dark";
-      meta.group = data.group || "Other";
+      meta.loaded = true;
+      // Keep the index entry in sync in case the build is older than runtime.
+      meta.appearance = enriched.appearance || meta.appearance;
+      meta.group = enriched.group || meta.group;
       meta.tags = enriched.tags;
-      meta.searchBlob = [
-        data.name,
-        data.slug,
-        data.appearance,
-        data.group,
-        ...(enriched.tags || []),
-      ]
-        .filter(Boolean)
-        .join(" ")
-        .toLowerCase();
       return enriched;
     } catch (err) {
       console.warn("Failed to load theme", slug, err);
@@ -206,12 +206,10 @@ async function boot() {
     const query = state.filterText.trim().toLowerCase();
     return themeIndex.filter((meta) => {
       const matchesSearch = !query || meta.searchBlob.includes(query);
-      const theme = themeMap.get(meta.slug);
-      const tags = theme?.tags || meta.tags || [];
       const matchesFilter =
         state.activeFilter === "all" ||
         (state.activeFilter === "favorites" && state.favorites.has(meta.slug)) ||
-        tags.includes(state.activeFilter);
+        meta.tags.includes(state.activeFilter);
       return matchesSearch && matchesFilter;
     });
   }
@@ -221,9 +219,7 @@ async function boot() {
     if (filter === "favorites") return state.favorites.size;
     let n = 0;
     for (const meta of themeIndex) {
-      const theme = themeMap.get(meta.slug);
-      const tags = theme?.tags || meta.tags || [];
-      if (tags.includes(filter)) n++;
+      if (meta.tags.includes(filter)) n++;
     }
     return n;
   }
@@ -255,7 +251,7 @@ async function boot() {
   function renderThemeButton(meta) {
     const theme = themeMap.get(meta.slug);
     const colors = theme?.colors;
-    const tags = (theme?.tags || meta.tags || [])
+    const tags = meta.tags
       .filter((t) => ["popular", "oled", "terminal", "light", "bright", "low light", "warm", "cool"].includes(t))
       .slice(0, 3)
       .map((t) => `<span class="badge">${escapeHtml(t)}</span>`)
@@ -315,12 +311,11 @@ async function boot() {
       return;
     }
 
-    const featured = items.filter((m) => (themeMap.get(m.slug)?.tags || m.tags).includes("featured"));
+    const featured = items.filter((m) => m.tags.includes("featured"));
     const grouped = new Map();
     for (const meta of items) {
-      const group = themeMap.get(meta.slug)?.group || meta.group || "Other";
-      if (!grouped.has(group)) grouped.set(group, []);
-      grouped.get(group).push(meta);
+      if (!grouped.has(meta.group)) grouped.set(meta.group, []);
+      grouped.get(meta.group).push(meta);
     }
 
     const sections = [];
@@ -852,21 +847,37 @@ module.exports = {
 
   // ---------- Service worker registration with update prompt ----------
 
-  function registerServiceWorker() {
+  async function registerServiceWorker() {
     if (!("serviceWorker" in navigator)) return;
     if (location.protocol !== "http:" && location.protocol !== "https:") return;
-    window.addEventListener("load", () => {
-      navigator.serviceWorker.register("sw.js").catch((err) => {
-        console.warn("Service worker registration failed:", err);
-      });
-      // Listen for updates and prompt the user
+    try {
+      // Defensively unregister any worker whose scriptURL isn't the current
+      // sw.js. This kicks out old workers from previous deploys that may
+      // have precached external resources now blocked by CSP (e.g. a
+      // previous build that precached Google Fonts stylesheets).
+      const regs = await navigator.serviceWorker.getRegistrations();
+      await Promise.all(
+        regs
+          .filter((r) => {
+            const url = r.active?.scriptURL || r.installing?.scriptURL || r.waiting?.scriptURL || "";
+            // Keep registrations whose script is the current sw.js
+            return !url.endsWith("/sw.js");
+          })
+          .map((r) => r.unregister().catch(() => {}))
+      );
+
+      // Register (or update) the current sw.js
+      const reg = await navigator.serviceWorker.register("sw.js");
+      // Soft reload once a new worker takes over.
       navigator.serviceWorker.addEventListener("controllerchange", () => {
-        // Soft reload once the new worker takes over
         if (window.__themeAtlasReloading) return;
         window.__themeAtlasReloading = true;
         location.reload();
       });
-    });
+      return reg;
+    } catch (err) {
+      console.warn("Service worker registration failed:", err);
+    }
   }
 
   // ---------- Initial render ----------

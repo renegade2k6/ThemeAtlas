@@ -4,8 +4,10 @@
   "appearance": "dark",
   "group": "Light Themes",
   "tags": [
+    "cool",
     "dark",
-    "editor"
+    "editor",
+    "low light"
   ],
   "colors": {
     "background": "#1b1c1d",

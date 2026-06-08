@@ -6,7 +6,9 @@
   "tags": [
     "dark",
     "editor",
-    "oled"
+    "low light",
+    "oled",
+    "warm"
   ],
   "colors": {
     "background": "#000000",

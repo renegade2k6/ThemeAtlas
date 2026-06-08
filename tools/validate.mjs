@@ -100,7 +100,6 @@ for (const expected of [
   "assets/app.css",
   "assets/app.js",
   "themes/index.json",
-  "navigator.serviceWorker.register",
   "Export current JSON",
   "Export all JSON",
   "Skip to theme preview",
@@ -114,6 +113,30 @@ if (/themes\/theme-data\.js/.test(html)) {
   failures.push("index.html still references themes/theme-data.js — should be removed");
 }
 
+// index.html should NOT contain any inline executable <script> blocks.
+// JSON-LD (`type="application/ld+json"`) and other data-block types are
+// not executed and are therefore allowed.
+const inlineJs = [...html.matchAll(/<script\b([^>]*)>/gi)].some((m) => {
+  const attrs = m[1];
+  // Has a src attribute => external, allowed
+  if (/\bsrc\s*=/.test(attrs)) return false;
+  // Has an explicit non-executable type => data block, allowed
+  const typeMatch = attrs.match(/\btype\s*=\s*"([^"]+)"/i);
+  if (typeMatch && !/^(?:text\/javascript|application\/javascript|text\/ecmascript|module)$/i.test(typeMatch[1])) {
+    return false;
+  }
+  return true;
+});
+if (inlineJs) {
+  failures.push("index.html contains an inline executable <script> — must be moved to an external module");
+}
+
+// The meta CSP must not include 'frame-ancestors' (invalid in a <meta> tag)
+const cspMatch = html.match(/Content-Security-Policy[^"]*"([^"]+)"/);
+if (cspMatch && /frame-ancestors/i.test(cspMatch[1])) {
+  failures.push("CSP meta tag contains 'frame-ancestors' (only valid in HTTP headers, not <meta>)");
+}
+
 const appJs = fs.existsSync(path.join(root, "assets", "app.js"))
   ? fs.readFileSync(path.join(root, "assets", "app.js"), "utf8")
   : "";
@@ -121,8 +144,24 @@ const appJs = fs.existsSync(path.join(root, "assets", "app.js"))
 for (const expected of [
   "themeIndex", "themeMap", "compareSlugs", "toggleCompare",
   "contrastRatio", "wcagLevel", "classifyTheme", "fetchJSON",
+  "navigator.serviceWorker.register", "navigator.serviceWorker.getRegistrations",
 ]) {
   if (!appJs.includes(expected)) failures.push(`assets/app.js missing symbol: ${expected}`);
+}
+
+// The theme index must carry pre-computed tags so filter chip counts are
+// correct from first paint (no fetch needed for counting).
+if (registry?.themes?.length) {
+  const sample = registry.themes[0];
+  for (const field of ["appearance", "group", "tags"]) {
+    if (sample[field] === undefined) {
+      failures.push(`themes/index.json entries are missing '${field}' — needed for filter chip counts`);
+      break;
+    }
+  }
+  // Every entry should have a non-empty tags array
+  const noTags = registry.themes.filter((t) => !Array.isArray(t.tags) || t.tags.length === 0);
+  if (noTags.length) failures.push(`${noTags.length} theme(s) in index.json have empty tags array`);
 }
 
 const utils = fs.existsSync(path.join(root, "assets", "app-utils.mjs"))

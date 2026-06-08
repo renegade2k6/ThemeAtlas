@@ -1,1 +1,125 @@
-<!doctype html><html lang="en"><head>  <meta charset="utf-8">  <meta name="viewport" content="width=device-width, initial-scale=1">  <title>Theme Atlas</title>  <meta name="description" content="Browse, preview, favorite, copy, and export a comprehensive catalog of reusable app theme color tokens.">  <meta name="application-name" content="Theme Atlas">  <meta name="theme-color" content="#00f5d4" media="(prefers-color-scheme: dark)">  <meta name="theme-color" content="#0d1117" media="(prefers-color-scheme: light)">  <meta name="color-scheme" content="dark light">  <meta name="referrer" content="strict-origin-when-cross-origin">  <meta name="robots" content="index, follow">  <link rel="canonical" href="https://themeatlas.dev/">  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'">  <meta property="og:title" content="Theme Atlas">  <meta property="og:description" content="A comprehensive browser-based catalog of reusable app theme color tokens.">  <meta property="og:type" content="website">  <meta property="og:image" content="assets/theme-atlas-og.svg">  <meta property="og:image:type" content="image/svg+xml">  <meta property="og:image:width" content="1200">  <meta property="og:image:height" content="630">  <meta property="og:image:alt" content="Theme Atlas color token catalog preview">  <meta name="twitter:card" content="summary_large_image">  <meta name="twitter:title" content="Theme Atlas">  <meta name="twitter:description" content="Browse, preview, favorite, copy, and export reusable app theme color tokens.">  <meta name="twitter:image" content="assets/theme-atlas-og.svg">  <meta name="twitter:image:alt" content="Theme Atlas color token catalog preview">  <link rel="icon" href="assets/theme-viewer-icon.svg" type="image/svg+xml">  <link rel="apple-touch-icon" href="assets/theme-viewer-icon.svg">  <link rel="manifest" href="site.webmanifest">  <script type="application/ld+json">    {      "@context": "https://schema.org",      "@type": "SoftwareApplication",      "name": "Theme Atlas",      "applicationCategory": "DeveloperApplication",      "operatingSystem": "Any",      "description": "Browse, preview, favorite, copy, and export a comprehensive catalog of reusable app theme color tokens.",      "offers": {        "@type": "Offer",        "price": "0",        "priceCurrency": "USD"      }    }  </script>    <link rel="stylesheet" href="assets/app.css"></head><body>  <a class="skip-link" href="#stage">Skip to theme preview</a>  <main class="shell">    <aside class="sidebar" aria-label="Theme browser">      <a class="brand" href="./index.html" aria-label="Theme Atlas home">        <img src="assets/theme-viewer-icon.svg" alt="">        <h1>Theme Atlas</h1>      </a>      <p>Shared color tokens for apps, dashboards, editors, and tools.</p>      <div class="toolbar">        <label class="visually-hidden" for="themeSearch">Search themes</label>        <input class="theme-search" id="themeSearch" type="search" placeholder="Search themes" autocomplete="off" aria-label="Search themes" aria-controls="themeList" aria-describedby="themeCount">        <div class="toolbar-row">          <span id="themeCount"></span>          <button class="random-button" id="randomTheme" type="button">Surprise me</button>        </div>        <div class="filter-chips" id="filterChips"></div>      </div>      <div class="theme-list" id="themeList" role="list" aria-label="Available themes" aria-busy="true"></div>    </aside>    <section class="stage" id="stage" tabindex="-1" aria-label="Theme preview">      <div class="preview">        <div class="topbar">          <div>            <div class="theme-kicker"><span class="pulse"></span><span id="themeMode"></span></div>            <h2 id="themeName"></h2>            <span id="themeSlug"></span>          </div>        <div class="actions">          <button class="secondary" id="favoriteCurrent" type="button">Favorite</button>          <button class="secondary" id="compareCurrent" type="button">Compare</button>          <button class="primary" id="exportCurrent" type="button">Export current JSON</button>          <button class="secondary" id="exportAll" type="button">Export all JSON</button>        </div>        </div>        <div class="content-grid">          <section class="panel raised">            <h3>Dashboard Preview</h3>            <div class="metric-row">              <div class="metric"><strong>92%</strong><span>Health</span></div>              <div class="metric"><strong>18</strong><span>Tasks</span></div>              <div class="metric"><strong>4.8</strong><span>Score</span></div>            </div>          </section>          <section class="panel">            <h3>Status Colors</h3>            <div class="token-grid" id="statusGrid"></div>          </section>        </div>        <section class="hero-strip" id="heroStrip" aria-hidden="true"></section>        <section class="panel">          <h3>Syntax Preview</h3>          <pre><code><span class="comment">// Theme tokens stay portable across apps.</span><span class="keyword">const</span> <span class="fn">applyTheme</span> = (<span class="type">theme</span>) => {  <span class="keyword">return</span> {    accent: <span class="string">"var(--theme-accent)"</span>,    radius: <span class="number">8</span>,    mode: <span class="constant">theme.appearance</span>  };};</code></pre>        </section>        <section class="panel">          <h3>Core Tokens</h3>          <div class="token-grid" id="tokenGrid"></div>        </section>        <section class="utility-grid">          <div class="panel">            <h3>Copy Formats</h3>            <div class="copy-grid">              <button type="button" data-copy="slug">Copy slug</button>              <button type="button" data-copy="hex">Copy hex palette</button>              <button type="button" data-copy="css">Copy CSS variables</button>              <button type="button" data-copy="ts">Copy TypeScript export</button>              <button type="button" data-copy="json">Copy labelled JSON</button>              <button type="button" data-copy="tailwind">Copy Tailwind config</button>              <button type="button" data-copy="vscode">Copy VSCode theme JSON</button>            </div>          </div>          <div class="panel">            <h3>Contrast Checks</h3>            <div class="contrast-list" id="contrastList"></div>          </div>        </section>        <section class="panel compare-panel" id="comparePanel" hidden>          <div class="panel-heading">            <h3>Pinned Comparison</h3>            <button class="secondary compact" id="clearCompare" type="button">Clear</button>          </div>          <div class="compare-grid" id="compareGrid"></div>        </section>      </div>    </section>  </main>  <div class="sr-only" aria-live="polite" aria-atomic="true" id="liveRegion"></div>  <noscript>    <p style="padding:24px;text-align:center;font-family:system-ui">      Theme Atlas needs JavaScript to browse the theme catalog. You can still      <a href="themes/index.json">download the theme index JSON</a> or browse      <a href="themes/dracula.json">individual theme files</a> directly.    </p>  </noscript>  <script>    if ("serviceWorker" in navigator && (location.protocol === "http:" || location.protocol === "https:")) {      window.addEventListener("load", () => {        navigator.serviceWorker.register("sw.js").catch(() => {});      });    }  </script>  <script type="module" src="assets/app.js"></script></body></html>
+<!doctype html><html lang="en"><head>  <meta charset="utf-8">  <meta name="viewport" content="width=device-width, initial-scale=1">  <title>Theme Atlas</title>  <meta name="description" content="Browse, preview, favorite, copy, and export a comprehensive catalog of reusable app theme color tokens.">  <meta name="application-name" content="Theme Atlas">  <meta name="theme-color" content="#00f5d4" media="(prefers-color-scheme: dark)">  <meta name="theme-color" content="#0d1117" media="(prefers-color-scheme: light)">  <meta name="color-scheme" content="dark light">  <meta name="referrer" content="strict-origin-when-cross-origin">  <meta name="robots" content="index, follow">  <link rel="canonical" href="https://themeatlas.dev/">  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'none'; ">  <meta property="og:title" content="Theme Atlas">  <meta property="og:description" content="A comprehensive browser-based catalog of reusable app theme color tokens.">  <meta property="og:type" content="website">  <meta property="og:image" content="assets/theme-atlas-og.svg">  <meta property="og:image:type" content="image/svg+xml">  <meta property="og:image:width" content="1200">  <meta property="og:image:height" content="630">  <meta property="og:image:alt" content="Theme Atlas color token catalog preview">  <meta name="twitter:card" content="summary_large_image">  <meta name="twitter:title" content="Theme Atlas">  <meta name="twitter:description" content="Browse, preview, favorite, copy, and export reusable app theme color tokens.">  <meta name="twitter:image" content="assets/theme-atlas-og.svg">  <meta name="twitter:image:alt" content="Theme Atlas color token catalog preview">  
+  <link rel="icon" href="assets/theme-viewer-icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/theme-viewer-icon.svg">
+  <link rel="manifest" href="site.webmanifest">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Theme Atlas",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Any",
+      "description": "Browse, preview, favorite, copy, and export a comprehensive catalog of reusable app theme color tokens.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+  </script>
+    <link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+  <a class="skip-link" href="#stage">Skip to theme preview</a>
+  <main class="shell">
+    <aside class="sidebar" aria-label="Theme browser">
+      <a class="brand" href="./index.html" aria-label="Theme Atlas home">
+        <img src="assets/theme-viewer-icon.svg" alt="">
+        <h1>Theme Atlas</h1>
+      </a>
+      <p>Shared color tokens for apps, dashboards, editors, and tools.</p>
+      <div class="toolbar">
+        <label class="visually-hidden" for="themeSearch">Search themes</label>
+        <input class="theme-search" id="themeSearch" type="search" placeholder="Search themes" autocomplete="off" aria-label="Search themes" aria-controls="themeList" aria-describedby="themeCount">
+        <div class="toolbar-row">
+          <span id="themeCount"></span>
+          <button class="random-button" id="randomTheme" type="button">Surprise me</button>
+        </div>
+        <div class="filter-chips" id="filterChips"></div>
+      </div>
+      <div class="theme-list" id="themeList" role="list" aria-label="Available themes" aria-busy="true"></div>
+    </aside>
+    <section class="stage" id="stage" tabindex="-1" aria-label="Theme preview">
+      <div class="preview">
+        <div class="topbar">
+          <div>
+            <div class="theme-kicker"><span class="pulse"></span><span id="themeMode"></span></div>
+            <h2 id="themeName"></h2>
+            <span id="themeSlug"></span>
+          </div>
+          <div class="actions">
+            <button class="secondary" id="favoriteCurrent" type="button">Favorite</button>
+            <button class="secondary" id="compareCurrent" type="button">Compare</button>
+            <button class="primary" id="exportCurrent" type="button">Export current JSON</button>
+            <button class="secondary" id="exportAll" type="button">Export all JSON</button>
+          </div>
+        </div>
+        <div class="content-grid">
+          <section class="panel raised">
+            <h3>Dashboard Preview</h3>
+            <div class="metric-row">
+              <div class="metric"><strong>92%</strong><span>Health</span></div>
+              <div class="metric"><strong>18</strong><span>Tasks</span></div>
+              <div class="metric"><strong>4.8</strong><span>Score</span></div>
+            </div>
+          </section>
+          <section class="panel">
+            <h3>Status Colors</h3>
+            <div class="token-grid" id="statusGrid"></div>
+          </section>
+        </div>
+        <section class="hero-strip" id="heroStrip" aria-hidden="true"></section>
+        <section class="panel">
+          <h3>Syntax Preview</h3>
+          <pre><code><span class="comment">// Theme tokens stay portable across apps.</span>
+<span class="keyword">const</span> <span class="fn">applyTheme</span> = (<span class="type">theme</span>) => {
+  <span class="keyword">return</span> {
+    accent: <span class="string">"var(--theme-accent)"</span>,
+    radius: <span class="number">8</span>,
+    mode: <span class="constant">theme.appearance</span>
+  };
+};</code></pre>
+        </section>
+        <section class="panel">
+          <h3>Core Tokens</h3>
+          <div class="token-grid" id="tokenGrid"></div>
+        </section>
+        <section class="utility-grid">
+          <div class="panel">
+            <h3>Copy Formats</h3>
+            <div class="copy-grid">
+              <button type="button" data-copy="slug">Copy slug</button>
+              <button type="button" data-copy="hex">Copy hex palette</button>
+              <button type="button" data-copy="css">Copy CSS variables</button>
+              <button type="button" data-copy="ts">Copy TypeScript export</button>
+              <button type="button" data-copy="json">Copy labelled JSON</button>
+              <button type="button" data-copy="tailwind">Copy Tailwind config</button>
+              <button type="button" data-copy="vscode">Copy VSCode theme JSON</button>
+            </div>
+          </div>
+          <div class="panel">
+            <h3>Contrast Checks</h3>
+            <div class="contrast-list" id="contrastList"></div>
+          </div>
+        </section>
+        <section class="panel compare-panel" id="comparePanel" hidden>
+          <div class="panel-heading">
+            <h3>Pinned Comparison</h3>
+            <button class="secondary compact" id="clearCompare" type="button">Clear</button>
+          </div>
+          <div class="compare-grid" id="compareGrid"></div>
+        </section>
+      </div>
+    </section>
+  </main>
+  <div class="sr-only" aria-live="polite" aria-atomic="true" id="liveRegion"></div>
+  <noscript>
+    <p style="padding:24px;text-align:center;font-family:system-ui">
+      Theme Atlas needs JavaScript to browse the theme catalog. You can still
+      <a href="themes/index.json">download the theme index JSON</a> or browse
+      <a href="themes/dracula.json">individual theme files</a> directly.
+    </p>
+  </noscript>
+  <script type="module" src="assets/app.js"></script>
+</body>
+</html>

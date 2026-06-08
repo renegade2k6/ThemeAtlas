@@ -3,947 +3,2526 @@
     {
       "name": "Dracula",
       "slug": "dracula",
-      "path": "themes/dracula.json"
+      "path": "themes/dracula.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "featured",
+        "low light",
+        "popular"
+      ]
     },
     {
       "name": "Tokyo Night",
       "slug": "tokyo-night",
-      "path": "themes/tokyo-night.json"
+      "path": "themes/tokyo-night.json",
+      "appearance": "dark",
+      "group": "Tokyo Night",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "featured",
+        "low light",
+        "popular"
+      ]
     },
     {
       "name": "Nord",
       "slug": "nord",
-      "path": "themes/nord.json"
+      "path": "themes/nord.json",
+      "appearance": "dark",
+      "group": "Nord",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "featured",
+        "pastel",
+        "popular"
+      ]
     },
     {
       "name": "Catppuccin Mocha",
       "slug": "catppuccin-mocha",
-      "path": "themes/catppuccin-mocha.json"
+      "path": "themes/catppuccin-mocha.json",
+      "appearance": "dark",
+      "group": "Catppuccin",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "featured",
+        "low light",
+        "pastel",
+        "popular"
+      ]
     },
     {
       "name": "Rose Pine",
       "slug": "rose-pine",
-      "path": "themes/rose-pine.json"
+      "path": "themes/rose-pine.json",
+      "appearance": "dark",
+      "group": "Rose Pine",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "featured",
+        "low light",
+        "pastel",
+        "popular"
+      ]
     },
     {
       "name": "One Dark",
       "slug": "one-dark",
-      "path": "themes/one-dark.json"
+      "path": "themes/one-dark.json",
+      "appearance": "dark",
+      "group": "One / Atom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "featured",
+        "low light",
+        "popular"
+      ]
     },
     {
       "name": "Gruvbox",
       "slug": "gruvbox",
-      "path": "themes/gruvbox.json"
+      "path": "themes/gruvbox.json",
+      "appearance": "dark",
+      "group": "Gruvbox",
+      "tags": [
+        "dark",
+        "editor",
+        "featured",
+        "low light",
+        "popular",
+        "warm"
+      ]
     },
     {
       "name": "GitHub Dark",
       "slug": "github-dark",
-      "path": "themes/github-dark.json"
+      "path": "themes/github-dark.json",
+      "appearance": "dark",
+      "group": "GitHub",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "featured",
+        "low light",
+        "popular"
+      ]
     },
     {
       "name": "Solarized Dark",
       "slug": "solarized-dark",
-      "path": "themes/solarized-dark.json"
+      "path": "themes/solarized-dark.json",
+      "appearance": "dark",
+      "group": "Solarized",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Monokai",
       "slug": "monokai",
-      "path": "themes/monokai.json"
+      "path": "themes/monokai.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Synthwave",
       "slug": "synthwave",
-      "path": "themes/synthwave.json"
+      "path": "themes/synthwave.json",
+      "appearance": "dark",
+      "group": "Cyberpunk / Neon",
+      "tags": [
+        "cyberpunk",
+        "dark",
+        "editor",
+        "low light",
+        "warm"
+      ]
     },
     {
       "name": "Everforest",
       "slug": "everforest",
-      "path": "themes/everforest.json"
+      "path": "themes/everforest.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "dark",
+        "editor",
+        "pastel"
+      ]
     },
     {
       "name": "OLED Black",
       "slug": "oled-black",
-      "path": "themes/oled-black.json"
+      "path": "themes/oled-black.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "featured",
+        "low light",
+        "oled"
+      ]
     },
     {
       "name": "Cyberpunk",
       "slug": "cyberpunk",
-      "path": "themes/cyberpunk.json"
+      "path": "themes/cyberpunk.json",
+      "appearance": "dark",
+      "group": "Cyberpunk / Neon",
+      "tags": [
+        "cyberpunk",
+        "dark",
+        "editor",
+        "low light",
+        "warm"
+      ]
     },
     {
       "name": "Cyberpunk 2077",
       "slug": "cyberpunk-2077",
-      "path": "themes/cyberpunk-2077.json"
+      "path": "themes/cyberpunk-2077.json",
+      "appearance": "dark",
+      "group": "Cyberpunk / Neon",
+      "tags": [
+        "cool",
+        "cyberpunk",
+        "dark",
+        "editor",
+        "featured",
+        "low light"
+      ]
     },
     {
       "name": "Neon Candy",
       "slug": "neon-candy",
-      "path": "themes/neon-candy.json"
+      "path": "themes/neon-candy.json",
+      "appearance": "dark",
+      "group": "Cyberpunk / Neon",
+      "tags": [
+        "cyberpunk",
+        "dark",
+        "editor",
+        "low light",
+        "warm"
+      ]
     },
     {
       "name": "Forest Flare",
       "slug": "forest-flare",
-      "path": "themes/forest-flare.json"
+      "path": "themes/forest-flare.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "dark",
+        "editor",
+        "low light",
+        "warm"
+      ]
     },
     {
       "name": "Signal Bloom",
       "slug": "signal-bloom",
-      "path": "themes/signal-bloom.json"
+      "path": "themes/signal-bloom.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Molten Moss",
       "slug": "molten-moss",
-      "path": "themes/molten-moss.json"
+      "path": "themes/molten-moss.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "dark",
+        "editor",
+        "low light",
+        "warm"
+      ]
     },
     {
       "name": "Orchard Ember",
       "slug": "orchard-ember",
-      "path": "themes/orchard-ember.json"
+      "path": "themes/orchard-ember.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "dark",
+        "editor",
+        "low light",
+        "warm"
+      ]
     },
     {
       "name": "Golden Grove",
       "slug": "golden-grove",
-      "path": "themes/golden-grove.json"
+      "path": "themes/golden-grove.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "dark",
+        "editor",
+        "warm"
+      ]
     },
     {
       "name": "Pacific Ember",
       "slug": "pacific-ember",
-      "path": "themes/pacific-ember.json"
+      "path": "themes/pacific-ember.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "dark",
+        "editor",
+        "low light",
+        "warm"
+      ]
     },
     {
       "name": "Arcade Pop",
       "slug": "arcade-pop",
-      "path": "themes/arcade-pop.json"
+      "path": "themes/arcade-pop.json",
+      "appearance": "dark",
+      "group": "Cyberpunk / Neon",
+      "tags": [
+        "cyberpunk",
+        "dark",
+        "editor",
+        "low light",
+        "warm"
+      ]
     },
     {
       "name": "One Dark Pro",
       "slug": "one-dark-pro",
-      "path": "themes/one-dark-pro.json"
+      "path": "themes/one-dark-pro.json",
+      "appearance": "dark",
+      "group": "One / Atom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light",
+        "popular"
+      ]
     },
     {
       "name": "Ayu Dark",
       "slug": "ayu-dark",
-      "path": "themes/ayu-dark.json"
+      "path": "themes/ayu-dark.json",
+      "appearance": "dark",
+      "group": "Ayu",
+      "tags": [
+        "dark",
+        "editor",
+        "low light",
+        "popular",
+        "warm"
+      ]
     },
     {
       "name": "Ayu Mirage",
       "slug": "ayu-mirage",
-      "path": "themes/ayu-mirage.json"
+      "path": "themes/ayu-mirage.json",
+      "appearance": "dark",
+      "group": "Ayu",
+      "tags": [
+        "dark",
+        "editor",
+        "low light",
+        "popular",
+        "warm"
+      ]
     },
     {
       "name": "Material Palenight",
       "slug": "material-palenight",
-      "path": "themes/material-palenight.json"
+      "path": "themes/material-palenight.json",
+      "appearance": "dark",
+      "group": "Material",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "popular"
+      ]
     },
     {
       "name": "Material Ocean",
       "slug": "material-ocean",
-      "path": "themes/material-ocean.json"
+      "path": "themes/material-ocean.json",
+      "appearance": "dark",
+      "group": "Material",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light",
+        "popular"
+      ]
     },
     {
       "name": "Night Owl",
       "slug": "night-owl",
-      "path": "themes/night-owl.json"
+      "path": "themes/night-owl.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "featured",
+        "low light",
+        "popular"
+      ]
     },
     {
       "name": "Cobalt2",
       "slug": "cobalt2",
-      "path": "themes/cobalt2.json"
+      "path": "themes/cobalt2.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "dark",
+        "editor",
+        "warm"
+      ]
     },
     {
       "name": "Shades of Purple",
       "slug": "shades-of-purple",
-      "path": "themes/shades-of-purple.json"
+      "path": "themes/shades-of-purple.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "dark",
+        "editor",
+        "warm"
+      ]
     },
     {
       "name": "Omni",
       "slug": "omni",
-      "path": "themes/omni.json"
+      "path": "themes/omni.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "dark",
+        "editor",
+        "low light",
+        "warm"
+      ]
     },
     {
       "name": "Kanagawa",
       "slug": "kanagawa",
-      "path": "themes/kanagawa.json"
+      "path": "themes/kanagawa.json",
+      "appearance": "dark",
+      "group": "Kanagawa",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "featured",
+        "low light",
+        "popular"
+      ]
     },
     {
       "name": "Kanagawa Dragon",
       "slug": "kanagawa-dragon",
-      "path": "themes/kanagawa-dragon.json"
+      "path": "themes/kanagawa-dragon.json",
+      "appearance": "dark",
+      "group": "Kanagawa",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light",
+        "popular"
+      ]
     },
     {
       "name": "Nightfox",
       "slug": "nightfox",
-      "path": "themes/nightfox.json"
+      "path": "themes/nightfox.json",
+      "appearance": "dark",
+      "group": "Nightfox",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Carbonfox",
       "slug": "carbonfox",
-      "path": "themes/carbonfox.json"
+      "path": "themes/carbonfox.json",
+      "appearance": "dark",
+      "group": "Nightfox",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light",
+        "oled"
+      ]
     },
     {
       "name": "Duskfox",
       "slug": "duskfox",
-      "path": "themes/duskfox.json"
+      "path": "themes/duskfox.json",
+      "appearance": "dark",
+      "group": "Nightfox",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light",
+        "pastel"
+      ]
     },
     {
       "name": "Oxocarbon",
       "slug": "oxocarbon",
-      "path": "themes/oxocarbon.json"
+      "path": "themes/oxocarbon.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light",
+        "oled"
+      ]
     },
     {
       "name": "Poimandres",
       "slug": "poimandres",
-      "path": "themes/poimandres.json"
+      "path": "themes/poimandres.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light",
+        "pastel"
+      ]
     },
     {
       "name": "Vitesse Dark",
       "slug": "vitesse-dark",
-      "path": "themes/vitesse-dark.json"
+      "path": "themes/vitesse-dark.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Flexoki Dark",
       "slug": "flexoki-dark",
-      "path": "themes/flexoki-dark.json"
+      "path": "themes/flexoki-dark.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Vesper",
       "slug": "vesper",
-      "path": "themes/vesper.json"
+      "path": "themes/vesper.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "dark",
+        "editor",
+        "low light",
+        "warm"
+      ]
     },
     {
       "name": "Horizon",
       "slug": "horizon",
-      "path": "themes/horizon.json"
+      "path": "themes/horizon.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "dark",
+        "editor",
+        "low light",
+        "warm"
+      ]
     },
     {
       "name": "City Lights",
       "slug": "city-lights",
-      "path": "themes/city-lights.json"
+      "path": "themes/city-lights.json",
+      "appearance": "dark",
+      "group": "Light Themes",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Andromeda",
       "slug": "andromeda",
-      "path": "themes/andromeda.json"
+      "path": "themes/andromeda.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Moonlight",
       "slug": "moonlight",
-      "path": "themes/moonlight.json"
+      "path": "themes/moonlight.json",
+      "appearance": "dark",
+      "group": "Light Themes",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light",
+        "pastel"
+      ]
     },
     {
       "name": "Lucario",
       "slug": "lucario",
-      "path": "themes/lucario.json"
+      "path": "themes/lucario.json",
+      "appearance": "dark",
+      "group": "Terminal Classics",
+      "tags": [
+        "cool",
+        "dark",
+        "editor"
+      ]
     },
     {
       "name": "Panda",
       "slug": "panda",
-      "path": "themes/panda.json"
+      "path": "themes/panda.json",
+      "appearance": "dark",
+      "group": "Terminal Classics",
+      "tags": [
+        "dark",
+        "editor",
+        "low light",
+        "warm"
+      ]
     },
     {
       "name": "Jellybeans",
       "slug": "jellybeans",
-      "path": "themes/jellybeans.json"
+      "path": "themes/jellybeans.json",
+      "appearance": "dark",
+      "group": "Terminal Classics",
+      "tags": [
+        "dark",
+        "editor",
+        "low light",
+        "terminal",
+        "warm"
+      ]
     },
     {
       "name": "Iceberg",
       "slug": "iceberg",
-      "path": "themes/iceberg.json"
+      "path": "themes/iceberg.json",
+      "appearance": "dark",
+      "group": "Terminal Classics",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Noctis",
       "slug": "noctis",
-      "path": "themes/noctis.json"
+      "path": "themes/noctis.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Sonokai",
       "slug": "sonokai",
-      "path": "themes/sonokai.json"
+      "path": "themes/sonokai.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "dark",
+        "editor",
+        "warm"
+      ]
     },
     {
       "name": "Srcery",
       "slug": "srcery",
-      "path": "themes/srcery.json"
+      "path": "themes/srcery.json",
+      "appearance": "dark",
+      "group": "Terminal Classics",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light",
+        "terminal"
+      ]
     },
     {
       "name": "Tender",
       "slug": "tender",
-      "path": "themes/tender.json"
+      "path": "themes/tender.json",
+      "appearance": "dark",
+      "group": "Terminal Classics",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light",
+        "terminal"
+      ]
     },
     {
       "name": "Tomorrow Night",
       "slug": "tomorrow-night",
-      "path": "themes/tomorrow-night.json"
+      "path": "themes/tomorrow-night.json",
+      "appearance": "dark",
+      "group": "Terminal Classics",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Tomorrow Night Blue",
       "slug": "tomorrow-night-blue",
-      "path": "themes/tomorrow-night-blue.json"
+      "path": "themes/tomorrow-night-blue.json",
+      "appearance": "dark",
+      "group": "Terminal Classics",
+      "tags": [
+        "dark",
+        "editor",
+        "low light",
+        "warm"
+      ]
     },
     {
       "name": "Base16 Eighties",
       "slug": "base16-eighties",
-      "path": "themes/base16-eighties.json"
+      "path": "themes/base16-eighties.json",
+      "appearance": "dark",
+      "group": "Base16",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "terminal"
+      ]
     },
     {
       "name": "Base16 Ocean",
       "slug": "base16-ocean",
-      "path": "themes/base16-ocean.json"
+      "path": "themes/base16-ocean.json",
+      "appearance": "dark",
+      "group": "Base16",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "terminal"
+      ]
     },
     {
       "name": "One Half Dark",
       "slug": "one-half-dark",
-      "path": "themes/one-half-dark.json"
+      "path": "themes/one-half-dark.json",
+      "appearance": "dark",
+      "group": "One / Atom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light",
+        "terminal"
+      ]
     },
     {
       "name": "Matrix",
       "slug": "matrix",
-      "path": "themes/matrix.json"
+      "path": "themes/matrix.json",
+      "appearance": "dark",
+      "group": "Cyberpunk / Neon",
+      "tags": [
+        "cool",
+        "cyberpunk",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "High Contrast",
       "slug": "high-contrast",
-      "path": "themes/high-contrast.json"
+      "path": "themes/high-contrast.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "dark",
+        "editor",
+        "low light",
+        "oled",
+        "warm"
+      ]
     },
     {
       "name": "Catppuccin Frappe",
       "slug": "catppuccin-frappe",
-      "path": "themes/catppuccin-frappe.json"
+      "path": "themes/catppuccin-frappe.json",
+      "appearance": "dark",
+      "group": "Catppuccin",
+      "tags": [
+        "dark",
+        "editor",
+        "pastel",
+        "popular"
+      ]
     },
     {
       "name": "Catppuccin Macchiato",
       "slug": "catppuccin-macchiato",
-      "path": "themes/catppuccin-macchiato.json"
+      "path": "themes/catppuccin-macchiato.json",
+      "appearance": "dark",
+      "group": "Catppuccin",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light",
+        "pastel",
+        "popular"
+      ]
     },
     {
       "name": "Catppuccin Latte",
       "slug": "catppuccin-latte",
-      "path": "themes/catppuccin-latte.json"
+      "path": "themes/catppuccin-latte.json",
+      "appearance": "light",
+      "group": "Catppuccin",
+      "tags": [
+        "bright",
+        "cool",
+        "editor",
+        "light",
+        "pastel",
+        "popular"
+      ]
     },
     {
       "name": "Rose Pine Moon",
       "slug": "rose-pine-moon",
-      "path": "themes/rose-pine-moon.json"
+      "path": "themes/rose-pine-moon.json",
+      "appearance": "dark",
+      "group": "Rose Pine",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light",
+        "pastel",
+        "popular"
+      ]
     },
     {
       "name": "Rose Pine Dawn",
       "slug": "rose-pine-dawn",
-      "path": "themes/rose-pine-dawn.json"
+      "path": "themes/rose-pine-dawn.json",
+      "appearance": "light",
+      "group": "Rose Pine",
+      "tags": [
+        "bright",
+        "editor",
+        "light",
+        "pastel",
+        "popular"
+      ]
     },
     {
       "name": "GitHub Dimmed",
       "slug": "github-dimmed",
-      "path": "themes/github-dimmed.json"
+      "path": "themes/github-dimmed.json",
+      "appearance": "dark",
+      "group": "GitHub",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light",
+        "popular"
+      ]
     },
     {
       "name": "GitHub Light",
       "slug": "github-light",
-      "path": "themes/github-light.json"
+      "path": "themes/github-light.json",
+      "appearance": "light",
+      "group": "GitHub",
+      "tags": [
+        "bright",
+        "cool",
+        "editor",
+        "light",
+        "popular"
+      ]
     },
     {
       "name": "Solarized Light",
       "slug": "solarized-light",
-      "path": "themes/solarized-light.json"
+      "path": "themes/solarized-light.json",
+      "appearance": "light",
+      "group": "Solarized",
+      "tags": [
+        "bright",
+        "cool",
+        "editor",
+        "light"
+      ]
     },
     {
       "name": "Ayu Light",
       "slug": "ayu-light",
-      "path": "themes/ayu-light.json"
+      "path": "themes/ayu-light.json",
+      "appearance": "light",
+      "group": "Ayu",
+      "tags": [
+        "bright",
+        "editor",
+        "light",
+        "popular",
+        "warm"
+      ]
     },
     {
       "name": "One Half Light",
       "slug": "one-half-light",
-      "path": "themes/one-half-light.json"
+      "path": "themes/one-half-light.json",
+      "appearance": "light",
+      "group": "One / Atom",
+      "tags": [
+        "bright",
+        "cool",
+        "editor",
+        "light",
+        "terminal"
+      ]
     },
     {
       "name": "Atom One Light",
       "slug": "atom-one-light",
-      "path": "themes/atom-one-light.json"
+      "path": "themes/atom-one-light.json",
+      "appearance": "light",
+      "group": "One / Atom",
+      "tags": [
+        "bright",
+        "cool",
+        "editor",
+        "light"
+      ]
     },
     {
       "name": "Everforest Light",
       "slug": "everforest-light",
-      "path": "themes/everforest-light.json"
+      "path": "themes/everforest-light.json",
+      "appearance": "light",
+      "group": "Light Themes",
+      "tags": [
+        "bright",
+        "cool",
+        "editor",
+        "light",
+        "pastel"
+      ]
     },
     {
       "name": "Apprentice",
       "slug": "apprentice",
-      "path": "themes/apprentice.json"
+      "path": "themes/apprentice.json",
+      "appearance": "dark",
+      "group": "Terminal Classics",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light",
+        "terminal"
+      ]
     },
     {
       "name": "Deus",
       "slug": "deus",
-      "path": "themes/deus.json"
+      "path": "themes/deus.json",
+      "appearance": "dark",
+      "group": "Terminal Classics",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "terminal"
+      ]
     },
     {
       "name": "Gotham",
       "slug": "gotham",
-      "path": "themes/gotham.json"
+      "path": "themes/gotham.json",
+      "appearance": "dark",
+      "group": "Terminal Classics",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light",
+        "terminal"
+      ]
     },
     {
       "name": "Miasma",
       "slug": "miasma",
-      "path": "themes/miasma.json"
+      "path": "themes/miasma.json",
+      "appearance": "dark",
+      "group": "Terminal Classics",
+      "tags": [
+        "dark",
+        "editor",
+        "low light",
+        "warm"
+      ]
     },
     {
       "name": "Moonfly",
       "slug": "moonfly",
-      "path": "themes/moonfly.json"
+      "path": "themes/moonfly.json",
+      "appearance": "dark",
+      "group": "Terminal Classics",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light",
+        "pastel",
+        "terminal"
+      ]
     },
     {
       "name": "Nightfly",
       "slug": "nightfly",
-      "path": "themes/nightfly.json"
+      "path": "themes/nightfly.json",
+      "appearance": "dark",
+      "group": "Terminal Classics",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light",
+        "terminal"
+      ]
     },
     {
       "name": "Nordic",
       "slug": "nordic",
-      "path": "themes/nordic.json"
+      "path": "themes/nordic.json",
+      "appearance": "dark",
+      "group": "Nord",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light",
+        "pastel",
+        "popular"
+      ]
     },
     {
       "name": "Posterpole",
       "slug": "posterpole",
-      "path": "themes/posterpole.json"
+      "path": "themes/posterpole.json",
+      "appearance": "dark",
+      "group": "Terminal Classics",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Seoul256",
       "slug": "seoul256",
-      "path": "themes/seoul256.json"
+      "path": "themes/seoul256.json",
+      "appearance": "dark",
+      "group": "Terminal Classics",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "terminal"
+      ]
     },
     {
       "name": "Zenbones",
       "slug": "zenbones",
-      "path": "themes/zenbones.json"
+      "path": "themes/zenbones.json",
+      "appearance": "dark",
+      "group": "Terminal Classics",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light",
+        "terminal"
+      ]
     },
     {
       "name": "Cyberdream",
       "slug": "cyberdream",
-      "path": "themes/cyberdream.json"
+      "path": "themes/cyberdream.json",
+      "appearance": "dark",
+      "group": "Cyberpunk / Neon",
+      "tags": [
+        "cool",
+        "cyberpunk",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "VS Code Dark",
       "slug": "vscode-dark",
-      "path": "themes/vscode-dark.json"
+      "path": "themes/vscode-dark.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Darcula",
       "slug": "darcula",
-      "path": "themes/darcula.json"
+      "path": "themes/darcula.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Quiet Light",
       "slug": "quiet-light",
-      "path": "themes/quiet-light.json"
+      "path": "themes/quiet-light.json",
+      "appearance": "light",
+      "group": "Light Themes",
+      "tags": [
+        "bright",
+        "cool",
+        "editor",
+        "light"
+      ]
     },
     {
       "name": "Light Owl",
       "slug": "light-owl",
-      "path": "themes/light-owl.json"
+      "path": "themes/light-owl.json",
+      "appearance": "light",
+      "group": "Light Themes",
+      "tags": [
+        "bright",
+        "cool",
+        "editor",
+        "light"
+      ]
     },
     {
       "name": "Noctis Lux",
       "slug": "noctis-lux",
-      "path": "themes/noctis-lux.json"
+      "path": "themes/noctis-lux.json",
+      "appearance": "light",
+      "group": "Light Themes",
+      "tags": [
+        "bright",
+        "cool",
+        "editor",
+        "light"
+      ]
     },
     {
       "name": "Solarized Osaka",
       "slug": "solarized-osaka",
-      "path": "themes/solarized-osaka.json"
+      "path": "themes/solarized-osaka.json",
+      "appearance": "dark",
+      "group": "Solarized",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Material Deep Ocean",
       "slug": "material-deep-ocean",
-      "path": "themes/material-deep-ocean.json"
+      "path": "themes/material-deep-ocean.json",
+      "appearance": "dark",
+      "group": "Material",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light",
+        "popular"
+      ]
     },
     {
       "name": "Material Lighter",
       "slug": "material-lighter",
-      "path": "themes/material-lighter.json"
+      "path": "themes/material-lighter.json",
+      "appearance": "light",
+      "group": "Material",
+      "tags": [
+        "bright",
+        "cool",
+        "editor",
+        "light",
+        "popular"
+      ]
     },
     {
       "name": "Tokyo Night Storm",
       "slug": "tokyo-night-storm",
-      "path": "themes/tokyo-night-storm.json"
+      "path": "themes/tokyo-night-storm.json",
+      "appearance": "dark",
+      "group": "Tokyo Night",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light",
+        "popular"
+      ]
     },
     {
       "name": "Tokyo Night Moon",
       "slug": "tokyo-night-moon",
-      "path": "themes/tokyo-night-moon.json"
+      "path": "themes/tokyo-night-moon.json",
+      "appearance": "dark",
+      "group": "Tokyo Night",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light",
+        "pastel",
+        "popular"
+      ]
     },
     {
       "name": "Gruvbox Material",
       "slug": "gruvbox-material",
-      "path": "themes/gruvbox-material.json"
+      "path": "themes/gruvbox-material.json",
+      "appearance": "dark",
+      "group": "Gruvbox",
+      "tags": [
+        "dark",
+        "editor",
+        "low light",
+        "popular",
+        "warm"
+      ]
     },
     {
       "name": "Gruvbox Light",
       "slug": "gruvbox-light",
-      "path": "themes/gruvbox-light.json"
+      "path": "themes/gruvbox-light.json",
+      "appearance": "light",
+      "group": "Gruvbox",
+      "tags": [
+        "bright",
+        "cool",
+        "editor",
+        "light",
+        "popular"
+      ]
     },
     {
       "name": "PaperColor Dark",
       "slug": "papercolor-dark",
-      "path": "themes/papercolor-dark.json"
+      "path": "themes/papercolor-dark.json",
+      "appearance": "dark",
+      "group": "Terminal Classics",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "PaperColor Light",
       "slug": "papercolor-light",
-      "path": "themes/papercolor-light.json"
+      "path": "themes/papercolor-light.json",
+      "appearance": "light",
+      "group": "Light Themes",
+      "tags": [
+        "bright",
+        "cool",
+        "editor",
+        "light"
+      ]
     },
     {
       "name": "Flatland",
       "slug": "flatland",
-      "path": "themes/flatland.json"
+      "path": "themes/flatland.json",
+      "appearance": "dark",
+      "group": "Terminal Classics",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Spacedust",
       "slug": "spacedust",
-      "path": "themes/spacedust.json"
+      "path": "themes/spacedust.json",
+      "appearance": "dark",
+      "group": "Terminal Classics",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Blue Matrix",
       "slug": "blue-matrix",
-      "path": "themes/blue-matrix.json"
+      "path": "themes/blue-matrix.json",
+      "appearance": "dark",
+      "group": "Cyberpunk / Neon",
+      "tags": [
+        "cool",
+        "cyberpunk",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Hotline Miami",
       "slug": "hotline-miami",
-      "path": "themes/hotline-miami.json"
+      "path": "themes/hotline-miami.json",
+      "appearance": "dark",
+      "group": "Cyberpunk / Neon",
+      "tags": [
+        "cyberpunk",
+        "dark",
+        "editor",
+        "low light",
+        "warm"
+      ]
     },
     {
       "name": "Miami Vice",
       "slug": "miami-vice",
-      "path": "themes/miami-vice.json"
+      "path": "themes/miami-vice.json",
+      "appearance": "dark",
+      "group": "Cyberpunk / Neon",
+      "tags": [
+        "cyberpunk",
+        "dark",
+        "editor",
+        "low light",
+        "warm"
+      ]
     },
     {
       "name": "Aurora",
       "slug": "aurora",
-      "path": "themes/aurora.json"
+      "path": "themes/aurora.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Nebula",
       "slug": "nebula",
-      "path": "themes/nebula.json"
+      "path": "themes/nebula.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Black Metal",
       "slug": "black-metal",
-      "path": "themes/black-metal.json"
+      "path": "themes/black-metal.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "dark",
+        "editor",
+        "low light",
+        "oled"
+      ]
     },
     {
       "name": "Laserwave",
       "slug": "laserwave",
-      "path": "themes/laserwave.json"
+      "path": "themes/laserwave.json",
+      "appearance": "dark",
+      "group": "Cyberpunk / Neon",
+      "tags": [
+        "cyberpunk",
+        "dark",
+        "editor",
+        "low light",
+        "warm"
+      ]
     },
     {
       "name": "Bluloco Dark",
       "slug": "bluloco-dark",
-      "path": "themes/bluloco-dark.json"
+      "path": "themes/bluloco-dark.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Min Dark",
       "slug": "min-dark",
-      "path": "themes/min-dark.json"
+      "path": "themes/min-dark.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Afterglow",
       "slug": "afterglow",
-      "path": "themes/afterglow.json"
+      "path": "themes/afterglow.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Alabaster Dark",
       "slug": "alabaster-dark",
-      "path": "themes/alabaster-dark.json"
+      "path": "themes/alabaster-dark.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Argonaut",
       "slug": "argonaut",
-      "path": "themes/argonaut.json"
+      "path": "themes/argonaut.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Batman",
       "slug": "batman",
-      "path": "themes/batman.json"
+      "path": "themes/batman.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Birds of Paradise",
       "slug": "birds-of-paradise",
-      "path": "themes/birds-of-paradise.json"
+      "path": "themes/birds-of-paradise.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Broadcast",
       "slug": "broadcast",
-      "path": "themes/broadcast.json"
+      "path": "themes/broadcast.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Chalk",
       "slug": "chalk",
-      "path": "themes/chalk.json"
+      "path": "themes/chalk.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Chalkboard",
       "slug": "chalkboard",
-      "path": "themes/chalkboard.json"
+      "path": "themes/chalkboard.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Ciapre",
       "slug": "ciapre",
-      "path": "themes/ciapre.json"
+      "path": "themes/ciapre.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Dimmed Monokai",
       "slug": "dimmed-monokai",
-      "path": "themes/dimmed-monokai.json"
+      "path": "themes/dimmed-monokai.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Espresso Libre",
       "slug": "espresso-libre",
-      "path": "themes/espresso-libre.json"
+      "path": "themes/espresso-libre.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Firefox Dev",
       "slug": "firefox-dev",
-      "path": "themes/firefox-dev.json"
+      "path": "themes/firefox-dev.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Firewatch",
       "slug": "firewatch",
-      "path": "themes/firewatch.json"
+      "path": "themes/firewatch.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Fish Tank",
       "slug": "fish-tank",
-      "path": "themes/fish-tank.json"
+      "path": "themes/fish-tank.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Forest Blue",
       "slug": "forest-blue",
-      "path": "themes/forest-blue.json"
+      "path": "themes/forest-blue.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Frontend Delight",
       "slug": "frontend-delight",
-      "path": "themes/frontend-delight.json"
+      "path": "themes/frontend-delight.json",
+      "appearance": "dark",
+      "group": "Light Themes",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Galaxy",
       "slug": "galaxy",
-      "path": "themes/galaxy.json"
+      "path": "themes/galaxy.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Glacier",
       "slug": "glacier",
-      "path": "themes/glacier.json"
+      "path": "themes/glacier.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Hardcore",
       "slug": "hardcore",
-      "path": "themes/hardcore.json"
+      "path": "themes/hardcore.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Harper",
       "slug": "harper",
-      "path": "themes/harper.json"
+      "path": "themes/harper.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Hemisu Dark",
       "slug": "hemisu-dark",
-      "path": "themes/hemisu-dark.json"
+      "path": "themes/hemisu-dark.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Hopscotch",
       "slug": "hopscotch",
-      "path": "themes/hopscotch.json"
+      "path": "themes/hopscotch.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Hurtado",
       "slug": "hurtado",
-      "path": "themes/hurtado.json"
+      "path": "themes/hurtado.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Hybrid",
       "slug": "hybrid",
-      "path": "themes/hybrid.json"
+      "path": "themes/hybrid.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "IR Black",
       "slug": "ir-black",
-      "path": "themes/ir-black.json"
+      "path": "themes/ir-black.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light",
+        "oled"
+      ]
     },
     {
       "name": "Jackie Brown",
       "slug": "jackie-brown",
-      "path": "themes/jackie-brown.json"
+      "path": "themes/jackie-brown.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Japanesque",
       "slug": "japanesque",
-      "path": "themes/japanesque.json"
+      "path": "themes/japanesque.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Kibble",
       "slug": "kibble",
-      "path": "themes/kibble.json"
+      "path": "themes/kibble.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Later This Evening",
       "slug": "later-this-evening",
-      "path": "themes/later-this-evening.json"
+      "path": "themes/later-this-evening.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Lavandula",
       "slug": "lavandula",
-      "path": "themes/lavandula.json"
+      "path": "themes/lavandula.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Liquid Carbon",
       "slug": "liquid-carbon",
-      "path": "themes/liquid-carbon.json"
+      "path": "themes/liquid-carbon.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "oled"
+      ]
     },
     {
       "name": "Man Page",
       "slug": "man-page",
-      "path": "themes/man-page.json"
+      "path": "themes/man-page.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "bright",
+        "cool",
+        "dark",
+        "editor"
+      ]
     },
     {
       "name": "Misterioso",
       "slug": "misterioso",
-      "path": "themes/misterioso.json"
+      "path": "themes/misterioso.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor"
+      ]
     },
     {
       "name": "Molokai",
       "slug": "molokai",
-      "path": "themes/molokai.json"
+      "path": "themes/molokai.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "N0tch2k",
       "slug": "n0tch2k",
-      "path": "themes/n0tch2k.json"
+      "path": "themes/n0tch2k.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "dark",
+        "editor",
+        "low light",
+        "warm"
+      ]
     },
     {
       "name": "Neopolitan",
       "slug": "neopolitan",
-      "path": "themes/neopolitan.json"
+      "path": "themes/neopolitan.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Obsidian",
       "slug": "obsidian",
-      "path": "themes/obsidian.json"
+      "path": "themes/obsidian.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor"
+      ]
     },
     {
       "name": "Oceanic Next",
       "slug": "oceanic-next",
-      "path": "themes/oceanic-next.json"
+      "path": "themes/oceanic-next.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Paraiso Dark",
       "slug": "paraiso-dark",
-      "path": "themes/paraiso-dark.json"
+      "path": "themes/paraiso-dark.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Paul Millr",
       "slug": "paul-millr",
-      "path": "themes/paul-millr.json"
+      "path": "themes/paul-millr.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Peppermint",
       "slug": "peppermint",
-      "path": "themes/peppermint.json"
+      "path": "themes/peppermint.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Pro",
       "slug": "pro",
-      "path": "themes/pro.json"
+      "path": "themes/pro.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Red Alert",
       "slug": "red-alert",
-      "path": "themes/red-alert.json"
+      "path": "themes/red-alert.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor"
+      ]
     },
     {
       "name": "Sea Shells",
       "slug": "sea-shells",
-      "path": "themes/sea-shells.json"
+      "path": "themes/sea-shells.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Smyck",
       "slug": "smyck",
-      "path": "themes/smyck.json"
+      "path": "themes/smyck.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Space Gray",
       "slug": "space-gray",
-      "path": "themes/space-gray.json"
+      "path": "themes/space-gray.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Sundried",
       "slug": "sundried",
-      "path": "themes/sundried.json"
+      "path": "themes/sundried.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Teerb",
       "slug": "teerb",
-      "path": "themes/teerb.json"
+      "path": "themes/teerb.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Thayer Bright",
       "slug": "thayer-bright",
-      "path": "themes/thayer-bright.json"
+      "path": "themes/thayer-bright.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Tinacious Design Dark",
       "slug": "tinacious-design-dark",
-      "path": "themes/tinacious-design-dark.json"
+      "path": "themes/tinacious-design-dark.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Under The Sea",
       "slug": "under-the-sea",
-      "path": "themes/under-the-sea.json"
+      "path": "themes/under-the-sea.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Urple",
       "slug": "urple",
-      "path": "themes/urple.json"
+      "path": "themes/urple.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Vaughn",
       "slug": "vaughn",
-      "path": "themes/vaughn.json"
+      "path": "themes/vaughn.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Vibrant Ink",
       "slug": "vibrant-ink",
-      "path": "themes/vibrant-ink.json"
+      "path": "themes/vibrant-ink.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Warm Neon",
       "slug": "warm-neon",
-      "path": "themes/warm-neon.json"
+      "path": "themes/warm-neon.json",
+      "appearance": "dark",
+      "group": "Cyberpunk / Neon",
+      "tags": [
+        "cool",
+        "cyberpunk",
+        "dark",
+        "editor"
+      ]
     },
     {
       "name": "Wez",
       "slug": "wez",
-      "path": "themes/wez.json"
+      "path": "themes/wez.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Wild Cherry",
       "slug": "wild-cherry",
-      "path": "themes/wild-cherry.json"
+      "path": "themes/wild-cherry.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Wombat",
       "slug": "wombat",
-      "path": "themes/wombat.json"
+      "path": "themes/wombat.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Wryan",
       "slug": "wryan",
-      "path": "themes/wryan.json"
+      "path": "themes/wryan.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Zenburn",
       "slug": "zenburn",
-      "path": "themes/zenburn.json"
+      "path": "themes/zenburn.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor"
+      ]
     },
     {
       "name": "Aura",
       "slug": "aura",
-      "path": "themes/aura.json"
+      "path": "themes/aura.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Snazzy",
       "slug": "snazzy",
-      "path": "themes/snazzy.json"
+      "path": "themes/snazzy.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "dark",
+        "editor",
+        "low light",
+        "warm"
+      ]
     },
     {
       "name": "Winter is Coming Dark",
       "slug": "winter-is-coming-dark",
-      "path": "themes/winter-is-coming-dark.json"
+      "path": "themes/winter-is-coming-dark.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Bluloco Light",
       "slug": "bluloco-light",
-      "path": "themes/bluloco-light.json"
+      "path": "themes/bluloco-light.json",
+      "appearance": "light",
+      "group": "Light Themes",
+      "tags": [
+        "bright",
+        "cool",
+        "editor",
+        "light"
+      ]
     },
     {
       "name": "Mellow",
       "slug": "mellow",
-      "path": "themes/mellow.json"
+      "path": "themes/mellow.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "dark",
+        "editor",
+        "low light",
+        "warm"
+      ]
     },
     {
       "name": "Bamboo",
       "slug": "bamboo",
-      "path": "themes/bamboo.json"
+      "path": "themes/bamboo.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "dark",
+        "editor",
+        "low light",
+        "warm"
+      ]
     },
     {
       "name": "Melange Dark",
       "slug": "melange-dark",
-      "path": "themes/melange-dark.json"
+      "path": "themes/melange-dark.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "dark",
+        "editor",
+        "low light",
+        "warm"
+      ]
     },
     {
       "name": "Melange Light",
       "slug": "melange-light",
-      "path": "themes/melange-light.json"
+      "path": "themes/melange-light.json",
+      "appearance": "light",
+      "group": "Light Themes",
+      "tags": [
+        "bright",
+        "editor",
+        "light",
+        "warm"
+      ]
     },
     {
       "name": "Tundra",
       "slug": "tundra",
-      "path": "themes/tundra.json"
+      "path": "themes/tundra.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Decay",
       "slug": "decay",
-      "path": "themes/decay.json"
+      "path": "themes/decay.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Nordfox",
       "slug": "nordfox",
-      "path": "themes/nordfox.json"
+      "path": "themes/nordfox.json",
+      "appearance": "dark",
+      "group": "Nightfox",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "pastel",
+        "popular"
+      ]
     },
     {
       "name": "Dawnfox",
       "slug": "dawnfox",
-      "path": "themes/dawnfox.json"
+      "path": "themes/dawnfox.json",
+      "appearance": "light",
+      "group": "Nightfox",
+      "tags": [
+        "bright",
+        "editor",
+        "light"
+      ]
     },
     {
       "name": "Terafox",
       "slug": "terafox",
-      "path": "themes/terafox.json"
+      "path": "themes/terafox.json",
+      "appearance": "dark",
+      "group": "Nightfox",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Flexoki Light",
       "slug": "flexoki-light",
-      "path": "themes/flexoki-light.json"
+      "path": "themes/flexoki-light.json",
+      "appearance": "light",
+      "group": "Light Themes",
+      "tags": [
+        "bright",
+        "cool",
+        "editor",
+        "light"
+      ]
     },
     {
       "name": "Penumbra Dark",
       "slug": "penumbra-dark",
-      "path": "themes/penumbra-dark.json"
+      "path": "themes/penumbra-dark.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Penumbra Light",
       "slug": "penumbra-light",
-      "path": "themes/penumbra-light.json"
+      "path": "themes/penumbra-light.json",
+      "appearance": "light",
+      "group": "Light Themes",
+      "tags": [
+        "bright",
+        "cool",
+        "editor",
+        "light"
+      ]
     },
     {
       "name": "Adwaita Dark",
       "slug": "adwaita-dark",
-      "path": "themes/adwaita-dark.json"
+      "path": "themes/adwaita-dark.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light"
+      ]
     },
     {
       "name": "Adwaita Light",
       "slug": "adwaita-light",
-      "path": "themes/adwaita-light.json"
+      "path": "themes/adwaita-light.json",
+      "appearance": "light",
+      "group": "Light Themes",
+      "tags": [
+        "bright",
+        "cool",
+        "editor",
+        "light"
+      ]
     },
     {
       "name": "Oldworld",
       "slug": "oldworld",
-      "path": "themes/oldworld.json"
+      "path": "themes/oldworld.json",
+      "appearance": "dark",
+      "group": "Modern & Custom",
+      "tags": [
+        "dark",
+        "editor",
+        "low light",
+        "warm"
+      ]
     },
     {
       "name": "Base16 Tomorrow",
       "slug": "base16-tomorrow",
-      "path": "themes/base16-tomorrow.json"
+      "path": "themes/base16-tomorrow.json",
+      "appearance": "dark",
+      "group": "Base16",
+      "tags": [
+        "cool",
+        "dark",
+        "editor",
+        "low light",
+        "terminal"
+      ]
     }
   ]
 }

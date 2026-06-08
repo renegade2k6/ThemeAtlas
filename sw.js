@@ -8,8 +8,8 @@
 // The CACHE_NAME is injected at build time by tools/build-themes.mjs;
 // the placeholder below is replaced during `npm run build`.
 
-const CACHE_NAME = "theme-atlas-2026-06-08-b041e532";
-const RUNTIME_CACHE = "theme-atlas-runtime-2026-06-08-b041e532";
+const CACHE_NAME = "theme-atlas-2026-06-08-3e1f5b90";
+const RUNTIME_CACHE = "theme-atlas-runtime-2026-06-08-3e1f5b90";
 
 const PRECACHE = [
   "./",

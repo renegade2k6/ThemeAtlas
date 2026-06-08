@@ -97,6 +97,27 @@ function mix(a, b, amount) {
   return "#" + mixed.map((channel) => channel.toString(16).padStart(2, "0")).join("");
 }
 
+function brightness(hex) {
+  const [r, g, b] = hexToRgb(hex);
+  return (r * 299 + g * 587 + b * 114) / 1000;
+}
+
+// Mirror of classifyTheme() in assets/app-utils.mjs. Runs at build time so
+// the runtime can use these tags for filter chip counts without fetching
+// every theme's full record.
+function classifyAtBuild(theme) {
+  const tags = new Set(theme.tags || []);
+  const colors = theme.colors || {};
+  const b = brightness(colors.background);
+  if (b > 185) tags.add("bright");
+  if (b < 45) tags.add("low light");
+  const accent = colors.accent;
+  const [ar, ag, ab] = hexToRgb(accent);
+  if (ar > ab + 30) tags.add("warm");
+  if (ab > ar + 30) tags.add("cool");
+  return [...tags].sort();
+}
+
 const PALETTE_SIZE = 8;
 
 function themeFromSeed(seed) {
@@ -145,6 +166,9 @@ function themeFromSeed(seed) {
 const themes = seeds.map(themeFromSeed);
 
 for (const theme of themes) {
+  // Enrich tags with derived warm/cool/bright/low-light so the app can
+  // count filters without fetching every theme's full record.
+  theme.tags = classifyAtBuild(theme);
   fs.writeFileSync(
     path.join(root, "themes", `${theme.slug}.json`),
     `${JSON.stringify(theme, null, 2)}\n`
@@ -159,6 +183,9 @@ fs.writeFileSync(
         name: theme.name,
         slug: theme.slug,
         path: `themes/${theme.slug}.json`,
+        appearance: theme.appearance,
+        group: theme.group,
+        tags: theme.tags,
       })),
     },
     null,

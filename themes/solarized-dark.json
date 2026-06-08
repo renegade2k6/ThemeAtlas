@@ -4,8 +4,10 @@
   "appearance": "dark",
   "group": "Solarized",
   "tags": [
+    "cool",
     "dark",
-    "editor"
+    "editor",
+    "low light"
   ],
   "colors": {
     "background": "#002b36",

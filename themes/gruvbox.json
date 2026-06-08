@@ -7,7 +7,9 @@
     "dark",
     "editor",
     "featured",
-    "popular"
+    "low light",
+    "popular",
+    "warm"
   ],
   "colors": {
     "background": "#282828",
