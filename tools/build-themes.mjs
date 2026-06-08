@@ -1,3 +1,15 @@
+// Theme Atlas build script.
+//
+// Inputs:  themes/theme-seeds.json
+// Outputs: themes/<slug>.json (one per theme)
+//          themes/index.json
+//          sitemap.xml
+//          sw.js (cache name injected from a content hash)
+//
+// We intentionally do NOT emit themes/theme-data.js anymore. The app loads
+// themes/index.json at runtime and fetches each theme JSON on demand.
+
+import { createHash } from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 
@@ -18,7 +30,7 @@ const featuredSlugs = new Set([
   "kanagawa",
   "rose-pine",
   "night-owl",
-  "oled-black"
+  "oled-black",
 ]);
 
 const familyRules = [
@@ -37,7 +49,10 @@ const familyRules = [
   ["Kanagawa", /^kanagawa/],
   ["Base16", /^base16/],
   ["Light Themes", /light|latte|dawn|lux/],
-  ["Terminal Classics", /(apprentice|deus|gotham|miasma|moonfly|nightfly|posterpole|seoul|zenbones|srcery|tender|jellybeans|iceberg|lucario|panda|tomorrow|papercolor|flatland|spacedust)/]
+  [
+    "Terminal Classics",
+    /(apprentice|deus|gotham|miasma|moonfly|nightfly|posterpole|seoul|zenbones|srcery|tender|jellybeans|iceberg|lucario|panda|tomorrow|papercolor|flatland|spacedust)/,
+  ],
 ];
 
 function groupFor(seed) {
@@ -70,16 +85,15 @@ function hexToRgb(hex) {
   return [
     Number.parseInt(value.slice(0, 2), 16),
     Number.parseInt(value.slice(2, 4), 16),
-    Number.parseInt(value.slice(4, 6), 16)
+    Number.parseInt(value.slice(4, 6), 16),
   ];
 }
 
 function mix(a, b, amount) {
   const ar = hexToRgb(a);
   const br = hexToRgb(b);
-  const mixed = ar.map((channel, index) => {
-    return Math.round(channel * (1 - amount) + br[index] * amount);
-  });
+  const t = Math.max(0, Math.min(1, amount));
+  const mixed = ar.map((channel, index) => Math.round(channel * (1 - t) + br[index] * t));
   return "#" + mixed.map((channel) => channel.toString(16).padStart(2, "0")).join("");
 }
 
@@ -122,9 +136,9 @@ function themeFromSeed(seed) {
         number: warning,
         type: info,
         variable: foreground,
-        constant: warning
-      }
-    }
+        constant: warning,
+      },
+    },
   };
 }
 
@@ -139,31 +153,47 @@ for (const theme of themes) {
 
 fs.writeFileSync(
   path.join(root, "themes", "index.json"),
-  `${JSON.stringify({
-    themes: themes.map((theme) => ({
-      name: theme.name,
-      slug: theme.slug,
-      path: `themes/${theme.slug}.json`
-    }))
-  }, null, 2)}\n`
-);
-
-fs.writeFileSync(
-  path.join(root, "themes", "theme-data.js"),
-  `window.THEME_DATA = ${JSON.stringify(themes)};\n`
+  `${JSON.stringify(
+    {
+      themes: themes.map((theme) => ({
+        name: theme.name,
+        slug: theme.slug,
+        path: `themes/${theme.slug}.json`,
+      })),
+    },
+    null,
+    2
+  )}\n`
 );
 
 const today = new Date().toISOString().slice(0, 10);
 const urlEntries = [
   `  <url>\n    <loc>${BASE_URL}/</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>1.0</priority>\n  </url>`,
-  ...themes.map(t =>
-    `  <url>\n    <loc>${BASE_URL}/?theme=${t.slug}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>`
-  )
+  ...themes.map(
+    (t) =>
+      `  <url>\n    <loc>${BASE_URL}/?theme=${t.slug}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>`
+  ),
 ].join("\n");
 
 fs.writeFileSync(
   path.join(root, "sitemap.xml"),
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urlEntries}\n</urlset>\n`
 );
+
+// Inject a content-hashed cache name into sw.js so that deploys invalidate
+// the old cache automatically. We rewrite the CACHE_NAME line on every build.
+const swPath = path.join(root, "sw.js");
+const swSource = fs.readFileSync(swPath, "utf8");
+const hash = createHash("sha256").update(swSource).digest("hex").slice(0, 8);
+const datedHash = `${new Date().toISOString().slice(0, 10)}-${hash}`;
+const newCacheName = `theme-atlas-${datedHash}`;
+const newRuntimeName = `theme-atlas-runtime-${datedHash}`;
+const updatedSw = swSource
+  .replace(/const CACHE_NAME = "[^"]*";/, `const CACHE_NAME = "${newCacheName}";`)
+  .replace(/const RUNTIME_CACHE = "[^"]*";/, `const RUNTIME_CACHE = "${newRuntimeName}";`);
+if (updatedSw !== swSource) {
+  fs.writeFileSync(swPath, updatedSw);
+  console.log(`Service worker cache name: ${newCacheName}`);
+}
 
 console.log(`Generated ${themes.length} themes.`);

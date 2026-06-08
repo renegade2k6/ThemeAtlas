@@ -1,35 +1,46 @@
 # Theme Atlas
 
-Theme Atlas is a static theme viewer and color-token catalog. It includes 169 reusable themes for apps, dashboards, editors, terminals, and internal tools.
+Theme Atlas is a static theme viewer and color-token catalog. It ships with 189 reusable themes for apps, dashboards, editors, terminals, and internal tools.
 
 ## Features
 
-- 169 generated theme JSON files
+- 189 generated theme JSON files
+- lazy-loaded: only the visible theme is fetched on demand
 - searchable and grouped theme browser
 - favorites stored in `localStorage`
-- live UI preview for each theme
-- contrast checks for key color pairs
-- copy buttons for slugs, hex palettes, CSS variables, TypeScript exports, and labelled JSON
+- live UI preview for each theme, with proper light/dark chrome
+- full WCAG 2.x contrast matrix per theme (AA / AAA / AA-Large / Fail)
+- copy buttons for slugs, hex palettes, CSS variables, TypeScript, Tailwind, VSCode and labelled JSON
 - single-theme and full-catalog JSON export
-- favicon, web manifest, Open Graph image, and GitHub Pages workflow
+- keyboard shortcuts: `/` focus search, `f` favorite, `c` compare, `r` random
+- stale-while-revalidate service worker with hashed cache busting
+- skip link, ARIA-correct lists, reduced-motion support, CSP, manifest, OG image
+- continuous integration (build + validate + test on every PR)
 
 ## Structure
 
 ```text
 assets/
+  app.css
+  app.js
+  app-utils.mjs
   theme-atlas-og.svg
   theme-viewer-icon.svg
 themes/
   index.json
-  theme-data.js
   theme-seeds.json
   <theme-slug>.json
 tools/
   build-themes.mjs
+  clean.mjs
   validate.mjs
 index.html
 site.webmanifest
+sw.js
 ```
+
+The viewer loads `themes/index.json` at startup and fetches each theme JSON
+on demand, so visitors don't have to download the full catalog up front.
 
 ## Theme Format
 

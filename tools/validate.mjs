@@ -1,3 +1,12 @@
+// Theme Atlas validator.
+// Runs after `npm run build` to catch:
+//
+//  - missing required files
+//  - duplicate slugs in themes/index.json
+//  - missing or invalid per-theme JSON (color token shape, group, tags)
+//  - stale references in index.html (e.g. theme-data.js)
+//  - the contract symbols app.js relies on still existing in app-utils.mjs
+
 import fs from "node:fs";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
@@ -15,8 +24,7 @@ const requiredFiles = [
   "assets/theme-atlas-og.svg",
   "sw.js",
   "themes/index.json",
-  "themes/theme-data.js",
-  "themes/theme-seeds.json"
+  "themes/theme-seeds.json",
 ];
 
 const failures = [];
@@ -39,7 +47,6 @@ if (fs.existsSync(indexPath)) {
     slugs.add(theme.slug);
   }
 
-  // Check all theme files in parallel
   const themeResults = await Promise.all(
     registry.themes.map(async (theme) => {
       const errs = [];
@@ -62,34 +69,23 @@ if (fs.existsSync(indexPath)) {
       if (!data.group) errs.push(`Missing group in ${theme.path}`);
       if (!Array.isArray(data.tags) || data.tags.length === 0) errs.push(`Missing tags in ${theme.path}`);
 
-      for (const key of ["background", "foreground", "surface", "surfaceRaised", "border", "accent", "accentForeground", "mutedForeground", "selection", "cursor", "success", "warning", "error", "info"]) {
-        if (!/^#[0-9a-fA-F]{6}$/.test(data.colors?.[key] || "")) {
-          errs.push(`Invalid ${key} in ${theme.path}`);
-        }
+      const hexRe = /^#[0-9a-fA-F]{6}$/;
+      for (const key of [
+        "background", "foreground", "surface", "surfaceRaised", "border",
+        "accent", "accentForeground", "mutedForeground", "selection", "cursor",
+        "success", "warning", "error", "info",
+      ]) {
+        if (!hexRe.test(data.colors?.[key] || "")) errs.push(`Invalid ${key} in ${theme.path}`);
       }
 
       for (const key of ["comment", "keyword", "function", "string", "number", "type", "constant"]) {
-        if (!/^#[0-9a-fA-F]{6}$/.test(data.colors?.syntax?.[key] || "")) {
-          errs.push(`Invalid syntax.${key} in ${theme.path}`);
-        }
+        if (!hexRe.test(data.colors?.syntax?.[key] || "")) errs.push(`Invalid syntax.${key} in ${theme.path}`);
       }
 
       return errs;
     })
   );
   failures.push(...themeResults.flat());
-
-  // Parse theme-data.js properly — strip the assignment wrapper and JSON.parse
-  const viewerRaw = fs.readFileSync(path.join(root, "themes", "theme-data.js"), "utf8");
-  try {
-    const jsonStr = viewerRaw.replace(/^window\.THEME_DATA\s*=\s*/, "").replace(/;\s*\n?$/, "");
-    const viewerThemes = JSON.parse(jsonStr);
-    if (viewerThemes.length !== registry.themes.length) {
-      failures.push(`Viewer data count ${viewerThemes.length} does not match registry ${registry.themes.length}`);
-    }
-  } catch {
-    failures.push("Failed to parse themes/theme-data.js");
-  }
 }
 
 const html = fs.existsSync(path.join(root, "index.html"))
@@ -103,20 +99,47 @@ for (const expected of [
   "site.webmanifest",
   "assets/app.css",
   "assets/app.js",
-  "themes/theme-data.js",
+  "themes/index.json",
   "navigator.serviceWorker.register",
   "Export current JSON",
-  "Export all JSON"
+  "Export all JSON",
+  "Skip to theme preview",
+  "Content-Security-Policy",
 ]) {
   if (!html.includes(expected)) failures.push(`index.html missing: ${expected}`);
+}
+
+// index.html should NOT load the legacy theme-data.js bundle
+if (/themes\/theme-data\.js/.test(html)) {
+  failures.push("index.html still references themes/theme-data.js — should be removed");
 }
 
 const appJs = fs.existsSync(path.join(root, "assets", "app.js"))
   ? fs.readFileSync(path.join(root, "assets", "app.js"), "utf8")
   : "";
 
-for (const expected of ["filterOptions", "contrastRatio", "compareSlugs", "themeUrl", "toggleCompare"]) {
-  if (!appJs.includes(expected)) failures.push(`assets/app.js missing: ${expected}`);
+for (const expected of [
+  "themeIndex", "themeMap", "compareSlugs", "toggleCompare",
+  "contrastRatio", "wcagLevel", "classifyTheme", "fetchJSON",
+]) {
+  if (!appJs.includes(expected)) failures.push(`assets/app.js missing symbol: ${expected}`);
+}
+
+const utils = fs.existsSync(path.join(root, "assets", "app-utils.mjs"))
+  ? fs.readFileSync(path.join(root, "assets", "app-utils.mjs"), "utf8")
+  : "";
+
+for (const expected of [
+  "export function normalizeSlug",
+  "export function themeUrl",
+  "export function toggleCompare",
+  "export function classifyTheme",
+  "export function contrastRatio",
+  "export function wcagLevel",
+  "export function validHex",
+  "export function escapeHtml",
+]) {
+  if (!utils.includes(expected)) failures.push(`assets/app-utils.mjs missing export: ${expected}`);
 }
 
 if (failures.length) {
